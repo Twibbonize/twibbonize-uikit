@@ -56,7 +56,7 @@ textarea,
     line-height: 1.5;
     font-weight: 400;
     font-size: inherit;
-    border-radius: 12px;
+    border-radius: 8px;
     position: relative;
     -webkit-appearance: none;
     transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
@@ -431,9 +431,9 @@ input[type="checkbox"] {
 label {
     cursor: pointer;
     text-indent: -9999px;
-    width: 44px;
-    height: 24px;
-    background: #c0c9d8;
+    width: 48px;
+    height: 27px;
+    background: #ccc;
     display: block;
     border-radius: 100px;
     position: relative;
@@ -444,8 +444,8 @@ label:after {
     position: absolute;
     top: 2px;
     left: 2px;
-    width: 20px;
-    height: 20px;
+    width: 23px;
+    height: 23px;
     background: #fff;
     border-radius: 90px;
     transition: 0.3s;

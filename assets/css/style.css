@@ -214,7 +214,7 @@ img {
     .dashed_box {
       padding: 15px; } }
 .dashed_border_h {
-  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='8' ry='8' stroke='%237B61FFFF' stroke-width='3' stroke-dasharray='5%2c 10' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='8' ry='8' stroke='currentColor' stroke-width='3' stroke-dasharray='5%2c 10' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
   width: 100%;
   height: 1px; }
 
@@ -8057,7 +8057,7 @@ h5,
 h6 {
   clear: both;
   font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
-  font-weight: bold;
+  font-weight: 700;
   text-align: inherit;
   position: relative;
   color: #121213;
@@ -8069,65 +8069,65 @@ a {
     color: #1baaa0; }
 
 h1 {
-  font-size: calc( 40px + 15 * ((100vw - 576px) / 1024));
+  font-size: calc( 32px + 24 * ((100vw - 576px) / 1024));
   line-height: 1.2;
   letter-spacing: -0.02em; }
   @media screen and (max-width: 576px) {
     h1 {
-      font-size: 40px; } }
+      font-size: 32px; } }
   @media screen and (min-width: 1600px) {
     h1 {
-      font-size: 55px; } }
+      font-size: 56px; } }
   @media screen and (max-width: 768px) {
     h1 {
       line-height: 1.15 !important; } }
 h2 {
-  font-size: calc( 32px + 2 * ((100vw - 576px) / 1024));
+  font-size: calc( 24px + 4 * ((100vw - 576px) / 1024));
   line-height: 1.15;
   letter-spacing: -0.02em; }
   @media screen and (max-width: 576px) {
     h2 {
-      font-size: 32px; } }
+      font-size: 24px; } }
   @media screen and (min-width: 1600px) {
     h2 {
-      font-size: 34px; } }
+      font-size: 28px; } }
 h3 {
-  font-size: calc( 24px + 2 * ((100vw - 576px) / 1024));
+  font-size: calc( 16px + 4 * ((100vw - 576px) / 1024));
   line-height: 1.1; }
   @media screen and (max-width: 576px) {
     h3 {
-      font-size: 24px; } }
+      font-size: 16px; } }
   @media screen and (min-width: 1600px) {
     h3 {
-      font-size: 26px; } }
+      font-size: 20px; } }
 h4 {
-  font-size: calc( 19px + 1 * ((100vw - 576px) / 1024));
+  font-size: calc( 14px + 4 * ((100vw - 576px) / 1024));
   line-height: 1.35; }
   @media screen and (max-width: 576px) {
     h4 {
-      font-size: 19px; } }
+      font-size: 14px; } }
   @media screen and (min-width: 1600px) {
     h4 {
-      font-size: 20px; } }
+      font-size: 18px; } }
 h5 {
-  font-size: calc( 16px + 2 * ((100vw - 576px) / 1024));
+  font-size: calc( 12px + 2 * ((100vw - 576px) / 1024));
   line-height: 1.5; }
   @media screen and (max-width: 576px) {
     h5 {
-      font-size: 16px; } }
+      font-size: 12px; } }
   @media screen and (min-width: 1600px) {
     h5 {
-      font-size: 18px; } }
+      font-size: 14px; } }
 h6 {
-  font-size: calc( 15.5px + 0.5 * ((100vw - 576px) / 1024));
+  font-size: calc( 11.5px + 0.5 * ((100vw - 576px) / 1024));
   line-height: 1.5;
   letter-spacing: 0; }
   @media screen and (max-width: 576px) {
     h6 {
-      font-size: 15.5px; } }
+      font-size: 11.5px; } }
   @media screen and (min-width: 1600px) {
     h6 {
-      font-size: 16px; } }
+      font-size: 12px; } }
 /*--------------------------------------------------------------
 ## Typography
 --------------------------------------------------------------*/
@@ -8854,7 +8854,7 @@ textarea,
   line-height: 1.5;
   font-weight: 400;
   font-size: inherit;
-  border-radius: 12px;
+  border-radius: 8px;
   position: relative;
   -webkit-appearance: none;
   transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
@@ -9222,9 +9222,9 @@ input[type="checkbox"] {
 label {
   cursor: pointer;
   text-indent: -9999px;
-  width: 44px;
-  height: 24px;
-  background: #c0c9d8;
+  width: 48px;
+  height: 27px;
+  background: #ccc;
   display: block;
   border-radius: 100px;
   position: relative; }
@@ -9234,8 +9234,8 @@ label:after {
   position: absolute;
   top: 2px;
   left: 2px;
-  width: 20px;
-  height: 20px;
+  width: 23px;
+  height: 23px;
   background: #fff;
   border-radius: 90px;
   transition: 0.3s; }
@@ -13860,17 +13860,17 @@ label:active:after {
 .blog .blog-title {
   margin: 0 0 20px;
   color: #183b56;
-  font-size: calc( 19px + 7 * ((100vw - 576px) / 1024));
+  font-size: calc( 14px + 6 * ((100vw - 576px) / 1024));
   line-height: 1.33;
   max-height: 2.66em;
   letter-spacing: 0.2px;
   overflow: hidden; }
   @media screen and (max-width: 576px) {
     .blog .blog-title {
-      font-size: 19px; } }
+      font-size: 14px; } }
   @media screen and (min-width: 1600px) {
     .blog .blog-title {
-      font-size: 26px; } }
+      font-size: 20px; } }
   .blog .blog-title a {
     color: #121213;
     transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
