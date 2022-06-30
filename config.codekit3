@@ -690,6 +690,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/assets\/img\/avatars\/twibbonize-avatar.jpg" : {
+      "ft" : 16384,
+      "iS" : 3567,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/img\/avatars\/twibbonize-avatar.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/assets\/img\/bg\/404.png" : {
       "ft" : 32768,
       "iS" : 20537,
@@ -1078,6 +1091,58 @@
       "oIPL" : 1,
       "opt" : 1,
       "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/assets\/img\/campaign thumbnails\/7c4c3af0-1198-4dda-8a7f-6de2c9eacd59.jpg" : {
+      "ft" : 16384,
+      "iS" : 31689,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/img\/campaign thumbnails\/7c4c3af0-1198-4dda-8a7f-6de2c9eacd59.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/assets\/img\/campaign thumbnails\/934691bc-4454-40ef-8a1a-b8742f7a0e55.jpg" : {
+      "ft" : 16384,
+      "iS" : 98867,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/img\/campaign thumbnails\/934691bc-4454-40ef-8a1a-b8742f7a0e55.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/assets\/img\/campaign thumbnails\/b0673efa-5053-47f4-bafa-1f59ea3461e9.jpg" : {
+      "ft" : 16384,
+      "iS" : 166592,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/img\/campaign thumbnails\/b0673efa-5053-47f4-bafa-1f59ea3461e9.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/assets\/img\/campaign thumbnails\/c179de7d-4a57-4f0d-a718-7737277e63e6.jpg" : {
+      "ft" : 16384,
+      "iS" : 117984,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/img\/campaign thumbnails\/c179de7d-4a57-4f0d-a718-7737277e63e6.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
