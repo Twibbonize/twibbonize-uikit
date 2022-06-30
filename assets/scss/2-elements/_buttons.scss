@@ -349,14 +349,25 @@ a.btn-outline {
       width: 15rem;
     }
   }
+
+  &.btn-outline {
+    background-color: $color_white !important;
+    border: 1px solid $color_brand !important;
+    color: $color_brand;
+
+    &:hover {
+      background-color: $color_brand !important;
+      color: $color_white;
+    }
+  }
 }
 
 
 .btn-secondary {
   color: $color_brand;
-  border: solid 1px $color_brand;
+  border: none;
   transition: all 0.4s ease-in-out !important;
-  background: $color_white !important;
+  background: $color_brand_light !important;
   position: relative;
 
   &.dropdown-toggle {
@@ -373,15 +384,12 @@ a.btn-outline {
     color: $color_black !important;
   }
 
-  &.btn-outline {
-    color: white;
-    border: solid 2px white;
-  }
+
   &:hover, &:focus,
   &:active {
     // opacity: 0.8;
-    border: solid 1px $color_brand;
-    background: darken($color: $color_brand_light, $amount: 5) !important;
+    // border: solid 1px $color_brand;
+    background: #1baaa066 !important;
     color: $color_brand !important;
     // box-shadow: 0 9px 6px rgba(0, 0, 0, 0.1), 0 -50px 0 rgba(0, 0, 0, 0) inset;
     // border: solid 1px rgba(10, 33, 65, 0.05) !important;

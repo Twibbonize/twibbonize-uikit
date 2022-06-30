@@ -28,7 +28,7 @@
     .color .color_box .color_palette.Hard_light {
       background-color: #e6edf0; }
     .color .color_box .color_palette.Brand_light {
-      background-color: #F2FFFE; }
+      background-color: #1baaa033; }
     .color .color_box .color_palette.Red {
       background-color: #E40F0F; }
     .color .color_box .color_palette.Green {
@@ -124,7 +124,7 @@ img {
   color: #1baaa0; }
 
 .color_brand_light {
-  color: #F2FFFE; }
+  color: #1baaa033; }
 
 .color_text {
   color: #707070; }
@@ -157,7 +157,7 @@ img {
   background-color: #1baaa0; }
 
 .bg_brand_light {
-  background-color: #F2FFFE; }
+  background-color: #1baaa033; }
 
 .bg_light {
   background-color: #f9fbfc; }
@@ -8515,26 +8515,29 @@ a.btn-outline {
       position: absolute;
       height: 15rem;
       width: 15rem; }
+  .btn-primary.btn-outline {
+    background-color: #ffffff !important;
+    border: 1px solid #1baaa0 !important;
+    color: #1baaa0; }
+    .btn-primary.btn-outline:hover {
+      background-color: #1baaa0 !important;
+      color: #ffffff; }
 
 .btn-secondary {
   color: #1baaa0;
-  border: solid 1px #1baaa0;
+  border: none;
   transition: all 0.4s ease-in-out !important;
-  background: #ffffff !important;
+  background: #1baaa033 !important;
   position: relative; }
   .btn-secondary.dropdown-toggle:focus, .btn-secondary.dropdown-toggle:active {
-    background: #F2FFFE !important;
+    background: #1baaa033 !important;
     border: solid 1px #1baaa0;
     color: #1baaa0 !important;
     box-shadow: 0 9px 6px rgba(0, 0, 0, 0.1), 0 -50px 0 rgba(0, 0, 0, 0) inset; }
   .btn-secondary span::after {
     color: #121213 !important; }
-  .btn-secondary.btn-outline {
-    color: white;
-    border: solid 2px white; }
   .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
-    border: solid 1px #1baaa0;
-    background: #d9fffc !important;
+    background: #1baaa066 !important;
     color: #1baaa0 !important; }
 
 .btn-ghost {
@@ -13381,7 +13384,7 @@ label:active:after {
 
 .comments_article {
   max-width: 1000px;
-  background-color: #F2FFFE;
+  background-color: #1baaa033;
   padding: 30px 30px 10px;
   margin-bottom: 60px;
   border-radius: 20px; }
@@ -14116,7 +14119,7 @@ label:active:after {
   display: inline-block;
   font-size: 13.5px;
   padding: 2px 10px;
-  background-color: #F2FFFE;
+  background-color: #1baaa033;
   margin-right: 5px;
   text-transform: capitalize;
   margin-bottom: 10px;
