@@ -8586,6 +8586,13 @@ a.btn-outline {
   border: none; }
   .btn-danger:hover {
     background-color: #b40c0c; }
+  .btn-danger.btn-outline {
+    color: #E40F0F !important;
+    background-color: #ffffff !important;
+    border: 1px solid #E40F0F; }
+    .btn-danger.btn-outline:hover {
+      background-color: #E40F0F !important;
+      color: #ffffff !important; }
 
 .btn-white {
   background: white;

@@ -454,6 +454,17 @@ a.btn-outline {
   &:hover {
     background-color: darken($color: $color_red, $amount: 10);
   }
+
+  &.btn-outline {
+    color: $color_red !important;
+    background-color: $color_white !important;
+    border: 1px solid $color_red;
+
+    &:hover {
+      background-color: $color_red !important;
+      color: $color_white !important;
+    }
+  }
 }
 
 .btn-white {
