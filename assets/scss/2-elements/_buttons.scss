@@ -364,6 +364,47 @@ a.btn-outline {
 
 
 .btn-secondary {
+  color: $color_black;
+  border: none;
+  transition: all 0.4s ease-in-out !important;
+  background: $color-grey !important;
+  position: relative;
+
+  &.dropdown-toggle {
+    &:focus,
+    &:active {
+      background: $color_brand_light !important;
+      border: solid 1px $color_brand;
+      color: $color_brand !important;
+      box-shadow: 0 9px 6px rgba(0, 0, 0, 0.1), 0 -50px 0 rgba(0, 0, 0, 0) inset;
+    }
+  }
+
+  span::after {
+    color: $color_black !important;
+  }
+
+  &:hover, &:focus,
+  &:active {
+    background: darken($color:  $color-grey, $amount: 10) !important;
+    color: $color_black !important;
+  }
+
+
+  &.btn-outline {
+    background: $color_white !important;
+    border: 1px solid $color_stroke !important;
+
+    &:hover {
+      background: $color-grey !important;
+      border: 1px solid $color-grey !important;
+    }
+  }
+}
+
+
+
+.btn-module {
   color: $color_brand;
   border: none;
   transition: all 0.4s ease-in-out !important;
