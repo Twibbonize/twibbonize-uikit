@@ -70,7 +70,7 @@ textarea,
     }
     &:focus {
         background-color: $color_white !important;
-        border: 1px solid $color_brand !important;
+        // border: 1px solid $color_brand !important;
         box-shadow: none !important;
     }
     &:hover {

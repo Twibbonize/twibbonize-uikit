@@ -769,15 +769,15 @@
                   </div>
 
                   <div class="mb-20">
-                    <div class="btn btn-secondary btn-sm">
+                    <button class="btn btn-secondary btn-sm">
                       Button
-                    </div>
+                    </button>
                   </div>
 
                   <div class="mb-20">
-                    <div class="btn btn-secondary btn-outline btn-sm">
+                    <button class="btn btn-secondary btn-outline btn-sm">
                       Button
-                    </div>
+                    </button>
                   </div>
 
                   <div class="mb-20">
@@ -793,6 +793,11 @@
 
                   <div class="mb-20">
                     <button class="btn btn-danger btn-outline btn-sm">Button</button>
+                  </div>
+
+
+                  <div class="mb-20">
+                    <button class="btn btn-transparent btn-sm">Button</button>
                   </div>
                 </div>
 
@@ -819,7 +824,7 @@
                   <div class="mb-20">
                     <button class="btn btn-module">Button</button>
                   </div>
-                  
+
                   <div class="mb-20">
                     <button class="btn btn-ghost">Button</button>
                   </div>
@@ -830,6 +835,10 @@
 
                   <div class="mb-20">
                     <button class="btn btn-danger btn-outline">Button</button>
+                  </div>
+
+                  <div class="mb-20">
+                    <button class="btn btn-transparent">Button</button>
                   </div>
                 </div>
 
@@ -854,7 +863,7 @@
 
                   <div class="mb-20">
                     <button class="btn btn-module btn-lg">Button</button>
-                  </div>                 
+                  </div>
 
                   <div class="mb-20">
                     <button class="btn btn-ghost btn-lg">Button</button>
@@ -865,6 +874,10 @@
 
                   <div class="mb-20">
                     <button class="btn btn-danger btn-outline btn-lg">Button</button>
+                  </div>
+
+                  <div class="mb-20">
+                    <button class="btn btn-transparent btn-lg">Button</button>
                   </div>
 
                 </div>
@@ -907,7 +920,7 @@
                     </button>
                   </div>
 
-                
+
                   <div class="mb-20">
                     <button class="btn btn-ghost btn-sm">
                       <i data-feather="plus" width="16" height="16"></i>
@@ -923,6 +936,13 @@
 
                   <div class="mb-20">
                     <button class="btn btn-danger btn-outline btn-sm">
+                      <i data-feather="plus" width="16" height="16"></i>
+                      Button
+                    </button>
+                  </div>
+
+                  <div class="mb-20">
+                    <button class="btn btn-transparent btn-sm">
                       <i data-feather="plus" width="16" height="16"></i>
                       Button
                     </button>
@@ -989,6 +1009,13 @@
                     </button>
                   </div>
 
+                  <div class="mb-20">
+                    <button class="btn btn-transparent">
+                      <i data-feather="plus" width="16" height="16"></i>
+                      Button
+                    </button>
+                  </div>
+
                 </div>
                 <div class="col-lg-auto col-sm-6 d-flex flex-column
                         align-items-center">
@@ -1031,7 +1058,7 @@
                     </button>
                   </div>
 
-                 
+
                   <div class="mb-20">
                     <button class="btn btn-ghost btn-lg">
                       <i data-feather="plus" width="16" height="16"></i>
@@ -1053,6 +1080,13 @@
                     </button>
                   </div>
 
+                  <div class="mb-20">
+                    <button class="btn btn-transparent btn-lg">
+                      <i data-feather="plus" width="16" height="16"></i>
+                      Button
+                    </button>
+                  </div>
+
                 </div>
               </div>
             </div>
@@ -1065,7 +1099,7 @@
                   <button class="btn btn-primary" disabled>Primary Disabled</button>
                 </li>
                 <li class="d-flex space-x-10">
-                    <button class="btn btn-secondary" disabled>Secondary Disabled</button>
+                  <button class="btn btn-secondary" disabled>Secondary Disabled</button>
                 </li>
                 <li class="d-flex space-x-10">
                   <button class="btn btn-ghost" disabled>Ghost Disabled</button>
@@ -2388,14 +2422,14 @@
             </div>
           </header>
 
-
+          <!-- twibbonize navbar -->
           <header class="header__1 js-header">
             <div class="top-wrapper">
               <div class="container">
                 <div class="header__menu">
                   <ul class="d-flex space-x-20">
                     <li>
-                      <a href="#">Guide</a>
+                      <a href="#" class="color_brand">Guide</a>
                     </li>
                     <li><a href="#"> About</a></li>
                     <li><a href="#"> News</a></li>
@@ -2434,19 +2468,11 @@
                     <i data-feather="plus-square" width="30" height="30"></i>
                   </button>
                   <!-- <a class="btn btn-primary btn-sm" href="#">Create</a> -->
-                  <div class="more">
-                    <div class="more_box visible position-relative">
-                      <ul class="space-y-10">
-                        <li>
-                          <a href="#" class="space-x-10 d-flex">
-                            <i data-feather="menu" width="24" height="24"></i>
-
-                            <img class="avatar" src="assets/img/avatars/twibbonize-avatar.jpg" alt="avatar" />
-
-                            <!-- <span> Report </span> -->
-                          </a>
-                        </li>
-                      </ul>
+                  <div class="header__menu-profile">
+                    <div class="btn btn-secondary btn-outline btn-sm rounded-pill space-x-3">
+                      <i data-feather="menu" width="24" height="24"></i>
+                      <img src="assets/img/avatars/twibbonize-avatar.jpg" class="rounded-circle" alt="avatar" width="24"
+                        height="24">
                     </div>
                   </div>
                 </div>
@@ -2570,7 +2596,6 @@
   <script src="assets/js/nft.js"></script>
   <script>
     feather.replace()
-
   </script>
 
 </body>

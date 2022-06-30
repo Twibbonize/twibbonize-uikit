@@ -24,7 +24,7 @@ div.button {
   outline: none;
   position: relative;
   text-align: center;
-  border-radius: 5px !important;
+  // border-radius: 5px !important;
   overflow: hidden;
   will-change: transform, box-shadow;
   &:not(.btn-outline):not(.btn-flat):not(.btn-link) {
@@ -447,6 +447,15 @@ a.btn-outline {
   &:hover, &:focus,
   &:active {
       color: darken($color: $color_brand, $amount: 10);
+  }
+}
+
+.btn-transparent {
+  color: lighten($color: $color_dark, $amount: 3);
+
+  &:hover {
+    color: darken($color: $color_dark, $amount: 30);
+    background: none;
   }
 }
 
