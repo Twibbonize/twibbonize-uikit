@@ -3767,6 +3767,21 @@
       "pg" : 0,
       "sct" : 1
     },
+    "\/assets\/scss\/5-Vendors\/_select2.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/scss\/5-Vendors\/_select2.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
     "\/assets\/scss\/style-min.css" : {
       "aP" : 1,
       "bl" : 0,
