@@ -13,6 +13,9 @@
 .logos__wrap {
     margin-top: 100px;
     @include card_item;
+    min-height: 428px;
+    background-image: url('../img/bg/download-app-banner.png');
+    background-position: center center;
     padding: 80px 60px;
     img {
         height: fit-content;
@@ -22,6 +25,21 @@
 
         padding: 50px 15px;
     }
+
+    & .section__title, & .section__text {
+        color: $color_white;
+    }
+
+    & .section__title {
+        font-size: $font_size_h1;
+    }
+
+    & .section__text {
+        font-size: $font_size_large;
+        line-height: 130%;
+    }
+
+
 }
 
 .call2action {

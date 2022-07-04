@@ -7964,6 +7964,12 @@ img {
   src: url("../fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-ExtraBold.ttf") format("truetype");
   font-weight: 800; }
 
+@font-face {
+  font-family: 'Obviously';
+  font-weight: 900;
+  font-style: normal;
+  src: url("../fonts/Obviously-NarrowSuper.otf") format("opentype"); }
+
 /*--------------------------------------------------------------
 ## Base
 --------------------------------------------------------------*/
@@ -9813,7 +9819,7 @@ label:active:after {
     font-weight: 700;
     transition: 0.3s; }
     .avatars .avatars_name.large {
-      font-size: 22px; }
+      font-size: 24px; }
     .avatars .avatars_name:hover {
       color: #1baaa0; }
   .avatars .price {
@@ -10894,6 +10900,13 @@ label:active:after {
     .hero__1.is__dark p {
       color: rgba(255, 255, 255, 0.486); }
 
+#special-hero__title {
+  font-family: "Obviously" !important;
+  font-weight: 900;
+  font-size: 90px;
+  line-height: 80%;
+  letter-spacing: 0.00em; }
+
 .hero__index {
   overflow: hidden;
   position: relative;
@@ -11355,6 +11368,8 @@ label:active:after {
       font-size: 1rem;
       margin: 0;
       color: #a5a5a5; }
+    .footer__1 .copyright a {
+      font-weight: bold; }
 
 .section__title {
   font-size: 34px; }
@@ -11374,6 +11389,9 @@ label:active:after {
   padding: 20px;
   border-radius: 20px;
   box-shadow: 0px 17px 13px 0px #192c4b05;
+  min-height: 428px;
+  background-image: url("../img/bg/download-app-banner.png");
+  background-position: center center;
   padding: 80px 60px; }
   .logos__wrap img {
     height: fit-content; }
@@ -11381,6 +11399,14 @@ label:active:after {
     .logos__wrap {
       margin-top: 50px;
       padding: 50px 15px; } }
+  .logos__wrap .section__title, .logos__wrap .section__text {
+    color: #ffffff; }
+  .logos__wrap .section__title {
+    font-size: 56px; }
+  .logos__wrap .section__text {
+    font-size: 24px;
+    line-height: 130%; }
+
 .call2action {
   background: radial-gradient(100.04% 100.76% at 50.49% -0.76%, #29436d 0%, #050911 100%);
   padding: 100px 0;
@@ -12606,7 +12632,7 @@ label:active:after {
       font-weight: 700;
       transition: 0.3s; }
       .ranking .avatars .avatars_name.large {
-        font-size: 22px; }
+        font-size: 24px; }
       .ranking .avatars .avatars_name:hover {
         color: #1baaa0; }
     .ranking .avatars .price {

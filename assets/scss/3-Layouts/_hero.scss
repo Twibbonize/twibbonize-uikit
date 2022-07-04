@@ -39,6 +39,16 @@
         }
     }
 }
+
+#special-hero__title {
+    font-family: $font-display !important;
+    font-weight: 900;
+    font-size: 90px;
+    line-height: 80%;
+    letter-spacing: 0.00em;
+}
+
+
 .hero__index {
     overflow: hidden;
     position: relative;
@@ -108,6 +118,8 @@
             font-size: 45px;
         }
     }
+
+
     @include after {
         left: 50%;
         transform: translateX(-50%);

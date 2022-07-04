@@ -319,6 +319,14 @@
       "oAP" : "\/assets\/fonts\/CircularStd-Regular.woff2",
       "oF" : 0
     },
+    "\/assets\/fonts\/Obviously-NarrowSuper.otf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/fonts\/Obviously-NarrowSuper.otf",
+      "oF" : 0
+    },
     "\/assets\/fonts\/Plus_Jakarta_Sans.zip" : {
       "cB" : 0,
       "ft" : 8192,
@@ -690,6 +698,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/assets\/img\/avatars\/cintia.jpeg" : {
+      "ft" : 16384,
+      "iS" : 130417,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/img\/avatars\/cintia.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/assets\/img\/avatars\/naikpangkat.jpg" : {
       "ft" : 16384,
       "iS" : 1474,
@@ -885,6 +906,19 @@
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/assets\/img\/bg\/download-app-banner.png" : {
+      "ft" : 32768,
+      "iS" : 993851,
+      "oA" : 0,
+      "oAP" : "\/assets\/img\/bg\/download-app-banner.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -1178,6 +1212,32 @@
       "iS" : 2732004,
       "oA" : 0,
       "oAP" : "\/assets\/img\/bg\/twb.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/assets\/img\/buttons\/App Store.png" : {
+      "ft" : 32768,
+      "iS" : 3500,
+      "oA" : 0,
+      "oAP" : "\/assets\/img\/buttons\/App Store.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/assets\/img\/buttons\/Google Play.png" : {
+      "ft" : 32768,
+      "iS" : 5052,
+      "oA" : 0,
+      "oAP" : "\/assets\/img\/buttons\/Google Play.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -2335,6 +2395,45 @@
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
+    },
+    "\/assets\/img\/news\/App-Launching-EN-1.jpeg" : {
+      "ft" : 16384,
+      "iS" : 159217,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/img\/news\/App-Launching-EN-1.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/assets\/img\/news\/Marketplace-Launching-Whats-New-2.png" : {
+      "ft" : 32768,
+      "iS" : 123442,
+      "oA" : 0,
+      "oAP" : "\/assets\/img\/news\/Marketplace-Launching-Whats-New-2.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/assets\/img\/news\/Text-Module-EN.png" : {
+      "ft" : 32768,
+      "iS" : 501183,
+      "oA" : 0,
+      "oAP" : "\/assets\/img\/news\/Text-Module-EN.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/assets\/img\/notifications\/1.png" : {
       "ft" : 32768,
