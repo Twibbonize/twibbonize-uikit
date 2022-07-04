@@ -690,6 +690,58 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/assets\/img\/avatars\/naikpangkat.jpg" : {
+      "ft" : 16384,
+      "iS" : 1474,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/img\/avatars\/naikpangkat.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/assets\/img\/avatars\/papan-tulis-official.jpg" : {
+      "ft" : 16384,
+      "iS" : 9340,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/img\/avatars\/papan-tulis-official.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/assets\/img\/avatars\/pemprov-dki.jpeg" : {
+      "ft" : 16384,
+      "iS" : 61027,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/img\/avatars\/pemprov-dki.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/assets\/img\/avatars\/tomy-saputra.jpg" : {
+      "ft" : 16384,
+      "iS" : 2317,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/img\/avatars\/tomy-saputra.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/assets\/img\/avatars\/twibbonize-avatar.jpg" : {
       "ft" : 16384,
       "iS" : 3567,
@@ -711,6 +763,19 @@
       "oF" : 0,
       "oIPL" : 1,
       "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/assets\/img\/bg\/artculture 1.png" : {
+      "ft" : 32768,
+      "iS" : 167870,
+      "oA" : 0,
+      "oAP" : "\/assets\/img\/bg\/artculture 1.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
       "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
@@ -938,6 +1003,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/assets\/img\/bg\/kolase_icon.png" : {
+      "ft" : 32768,
+      "iS" : 298228,
+      "oA" : 0,
+      "oAP" : "\/assets\/img\/bg\/kolase_icon.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/assets\/img\/bg\/left-Skull.png" : {
       "ft" : 32768,
       "iS" : 1077,
@@ -1095,6 +1173,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/assets\/img\/bg\/twb.png" : {
+      "ft" : 32768,
+      "iS" : 2732004,
+      "oA" : 0,
+      "oAP" : "\/assets\/img\/bg\/twb.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/assets\/img\/campaign thumbnails\/7c4c3af0-1198-4dda-8a7f-6de2c9eacd59.jpg" : {
       "ft" : 16384,
       "iS" : 31689,
@@ -1140,6 +1231,45 @@
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/assets\/img\/campaign thumbnails\/c179de7d-4a57-4f0d-a718-7737277e63e6.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/assets\/img\/campaign thumbnails\/DIKLAT NASIONAL BERSERTIFIKAT 40 JP GRATIS.jpg" : {
+      "ft" : 16384,
+      "iS" : 141720,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/img\/campaign thumbnails\/DIKLAT NASIONAL BERSERTIFIKAT 40 JP GRATIS.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/assets\/img\/campaign thumbnails\/dkijakarta495.png" : {
+      "ft" : 32768,
+      "iS" : 521087,
+      "oA" : 0,
+      "oAP" : "\/assets\/img\/campaign thumbnails\/dkijakarta495.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/assets\/img\/campaign thumbnails\/iduladha.jpg" : {
+      "ft" : 16384,
+      "iS" : 53173,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/img\/campaign thumbnails\/iduladha.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -3837,6 +3967,22 @@
       "oAP" : "\/build\/.gitignore",
       "oF" : 0
     },
+    "\/home.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/home.html",
+      "oF" : 0
+    },
+    "\/home3.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/home3.html",
+      "oF" : 0
+    },
     "\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -3875,8 +4021,8 @@
     "creationDate" : 678166713.33318901,
     "displayValue" : "twibbonize-uikit",
     "displayValueWasSetByUser" : 0,
-    "iconImageName" : "brackets_gray",
-    "iconImageWasSetByUser" : 0
+    "iconImageName" : "meme-putin",
+    "iconImageWasSetByUser" : 1
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,

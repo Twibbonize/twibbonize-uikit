@@ -517,6 +517,11 @@ img {
   margin-right: calc(10px * var(--cb-space-x-reverse));
   margin-left: calc(10px * calc(1 - var(--cb-space-x-reverse))); }
 
+.space-y-12 > :not([hidden]) ~ :not([hidden]) {
+  --cb-space-y-reverse: 0;
+  margin-top: calc(12px * calc(1 - var(--cb-space-y-reverse)));
+  margin-bottom: calc(12px * var(--cb-space-y-reverse)); }
+
 .space-y-15 > :not([hidden]) ~ :not([hidden]) {
   --cb-space-y-reverse: 0;
   margin-top: calc(15px * calc(1 - var(--cb-space-y-reverse)));
@@ -8018,8 +8023,6 @@ section:focus {
 a {
   transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none !important; }
-  a:hover {
-    text-decoration: underline !important; }
 
 li {
   list-style: none; }
@@ -9017,13 +9020,16 @@ textarea,
       right: 10px;
       top: 50%;
       transform: translateY(-50%); }
+  .form-group .nameInput {
+    font-size: 18px;
+    font-weight: bold; }
 
 .search {
-  background: #DDE5E5;
-  border-radius: 10px;
+  background: #ffffff;
+  border: 1px solid #DDE5E5;
+  border-radius: 80px;
   position: relative;
-  transition: all 0.2s ease-in-out;
-  border: solid 1px transparent; }
+  transition: all 0.2s ease-in-out; }
   .search:hover {
     background: #ffffff;
     box-shadow: 0px 17px 13px 0px #192c4b05;
@@ -9033,16 +9039,23 @@ textarea,
     height: 100%;
     background: transparent !important;
     border: 1px solid transparent !important;
-    padding-left: calc(2rem + 20px); }
+    border-radius: 80px;
+    padding-right: calc(2rem + 20px);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.08); }
+    .search input:hover, .search input:focus {
+      border-radius: 80px;
+      outline: 0 !important;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18) !important; }
   .search .result {
     margin: 0;
     border: none;
-    background: #ffffff;
+    background: #1baaa0;
+    color: #ffffff;
     border-radius: 200px;
     height: 2rem;
     width: 2rem;
     position: absolute;
-    left: 10px;
+    right: 10px;
     top: 50%;
     transform: translateY(-50%); }
 
@@ -10194,7 +10207,7 @@ label:active:after {
       background: rgba(255, 255, 255, 0.966);
       padding: 3px 12px;
       border-radius: 20px;
-      box-shadow: 0px 17px 13px 0px #192c4b05;
+      border: 1px solid #DDE5E5;
       z-index: 1;
       top: 14px;
       right: 14px;
@@ -10853,7 +10866,6 @@ label:active:after {
     content: "";
     position: absolute;
     left: 0;
-    background: url(../img/effects/hero.jpg);
     width: 476px;
     height: 100%;
     background-repeat: no-repeat;

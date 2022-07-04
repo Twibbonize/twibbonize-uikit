@@ -118,14 +118,19 @@ textarea,
       transform: translateY(-50%);
     }
   }
+
+  .nameInput {
+    font-size: 18px;
+    font-weight: bold;
+  }
 }
 
 .search {
-  background: $color_stroke;
-  border-radius: $border_radius/2;
+  background: $color_white;
+  border: 1px solid $color_stroke;
+  border-radius: 80px;
   position: relative;
   transition: all 0.2s ease-in-out;
-  border: solid 1px transparent;
 
   &:hover {
     background: $color_white;
@@ -138,18 +143,27 @@ textarea,
     height: 100%;
     background: transparent !important;
     border: 1px solid transparent !important;
-    padding-left: calc(2rem + 20px);
+    border-radius: 80px;
+    padding-right: calc(2rem + 20px);
+    box-shadow: $shadow_airbnb_1;
+
+    &:hover, &:focus {
+        border-radius: 80px;
+        outline: 0 !important;
+        box-shadow: $shadow_airbnb_2 !important;
+    }
   }
 
   .result {
     margin: 0;
     border: none;
-    background: $color_white;
+    background: $color_brand;
+    color: $color_white;
     border-radius: $border_radius * 10;
     height: 2rem;
     width: 2rem;
     position: absolute;
-    left: 10px;
+    right: 10px;
     top: 50%;
     transform: translateY(-50%);
   }
