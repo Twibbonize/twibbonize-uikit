@@ -1207,6 +1207,16 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/assets\/img\/bg\/twb-alt.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/img\/bg\/twb-alt.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/assets\/img\/bg\/twb.png" : {
       "ft" : 32768,
       "iS" : 2732004,
@@ -1799,6 +1809,19 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/assets\/img\/items\/campaigns.png" : {
+      "ft" : 32768,
+      "iS" : 937445,
+      "oA" : 0,
+      "oAP" : "\/assets\/img\/items\/campaigns.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/assets\/img\/items\/cover_1.png" : {
       "ft" : 32768,
       "iS" : 1152,
@@ -2267,6 +2290,32 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/assets\/img\/items\/sample-campaings.png" : {
+      "ft" : 32768,
+      "iS" : 1189903,
+      "oA" : 0,
+      "oAP" : "\/assets\/img\/items\/sample-campaings.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/assets\/img\/items\/twb-illustration.png" : {
+      "ft" : 32768,
+      "iS" : 314785,
+      "oA" : 0,
+      "oAP" : "\/assets\/img\/items\/twb-illustration.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/assets\/img\/logos\/1.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -2338,6 +2387,36 @@
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/assets\/img\/logos\/Logo_white.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/assets\/img\/logos\/logo-twb-icon-white.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/img\/logos\/logo-twb-icon-white.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/assets\/img\/logos\/logo-twb-icon.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/img\/logos\/logo-twb-icon.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/assets\/img\/logos\/logo-twb-white.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/img\/logos\/logo-twb-white.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -3321,6 +3400,28 @@
       "oAP" : "\/assets\/js\/swiper-bundle.min.js.map",
       "oF" : 0
     },
+    "\/assets\/js\/twb-min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/assets\/js\/twb-min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/assets\/js\/twb.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/assets\/js\/twb-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/assets\/scss\/0-base\/_base.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -3726,6 +3827,21 @@
       "pg" : 0,
       "sct" : 1
     },
+    "\/assets\/scss\/3-Layouts\/_bottom-nav.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/scss\/3-Layouts\/_bottom-nav.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
     "\/assets\/scss\/3-Layouts\/_footer.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -4064,6 +4180,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/build\/.gitignore",
+      "oF" : 0
+    },
+    "\/home_alt.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/home_alt.html",
       "oF" : 0
     },
     "\/home.html" : {

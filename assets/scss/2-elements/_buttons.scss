@@ -323,7 +323,7 @@ a.btn-outline {
 - - - - - - - - - 2/ Button variations
 =======================================================*/
 .btn-primary {
-  color: $color_white;
+  color: $color_white !important;
   border: none !important ;
   transition: all 0.4s ease-in-out !important;
   background: $color_brand !important;
@@ -346,7 +346,7 @@ a.btn-outline {
     color: $color_white;
     @include before {
       height: 15rem;
-      width: 15rem;
+      width: 110%;
     }
   }
 
@@ -362,45 +362,86 @@ a.btn-outline {
   }
 }
 
-
 .btn-secondary {
-  color: $color_black;
-  border: none;
+  color: $color_black !important;
+  border: none !important ;
   transition: all 0.4s ease-in-out !important;
   background: $color-grey !important;
   position: relative;
 
-  &.dropdown-toggle {
-    &:focus,
-    &:active {
-      background: $color_brand_light !important;
-      border: solid 1px $color_brand;
-      color: $color_brand !important;
-      box-shadow: 0 9px 6px rgba(0, 0, 0, 0.1), 0 -50px 0 rgba(0, 0, 0, 0) inset;
+  @include before {
+    height: 0;
+    width: 0;
+    border-radius: 100%;
+    background: $color_black;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: all 0.3s $transition_function;
+    opacity: 0.3;
+  }
+
+  &:hover {
+    @include before {
+      height: 15rem;
+      width: 110%;
     }
   }
 
-  span::after {
-    color: $color_black !important;
-  }
-
-  &:hover, &:focus,
-  &:active {
-    background: darken($color:  $color-grey, $amount: 10) !important;
-    color: $color_black !important;
-  }
-
-
   &.btn-outline {
+    background-color: $color_white !important;
+    border: 1px solid $color_brand !important;
+
     background: $color_white !important;
     border: 1px solid $color_stroke !important;
 
     &:hover {
-      background: $color-grey !important;
-      border: 1px solid $color-grey !important;
+      background-color: $color_brand !important;
+      color: $color_white;
     }
   }
 }
+
+
+// .btn-secondary {
+//   color: $color_black !important;
+//   border: none;
+//   transition: all 0.4s ease-in-out !important;
+//   background: $color-grey !important;
+//   position: relative;
+
+//   &.dropdown-toggle {
+//     &:focus,
+//     &:active {
+//       background: $color_brand_light !important;
+//       border: solid 1px $color_brand;
+//       color: $color_brand !important;
+//       box-shadow: 0 9px 6px rgba(0, 0, 0, 0.1), 0 -50px 0 rgba(0, 0, 0, 0) inset;
+//     }
+//   }
+
+//   span::after {
+//     color: $color_black !important;
+//   }
+
+//   &:hover, &:focus,
+//   &:active {
+//     background: darken($color:  $color-grey, $amount: 10) !important;
+//     color: $color_black !important;
+//   }
+
+
+//   &.btn-outline {
+//     background: $color_white !important;
+//     border: 1px solid $color_stroke !important;
+
+//     &:hover {
+//       background: $color-grey !important;
+//       border: 1px solid $color-grey !important;
+//     }
+//   }
+// }
 
 
 
@@ -441,7 +482,7 @@ a.btn-outline {
 .btn-ghost {
   color: $color_brand;
   transition: all 0.4s ease-in-out !important;
-  background: $color_white !important;
+  background: transparent !important;
   position: relative;
   
   &:hover, &:focus,
@@ -454,8 +495,8 @@ a.btn-outline {
   color: lighten($color: $color_dark, $amount: 3);
 
   &:hover {
-    color: darken($color: $color_dark, $amount: 30);
-    background: none;
+    color: $color_black !important;
+    background: $color-grey;
   }
 }
 
