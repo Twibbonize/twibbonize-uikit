@@ -1,0 +1,12 @@
+.swiper.twb-swiper {
+    overflow: visible;
+    padding: 0 12px;
+
+    @include lg_screen {
+        padding: 0 13rem;
+    }
+
+    .swiper-slide {
+        width: auto;
+    }
+}

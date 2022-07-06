@@ -18,6 +18,10 @@
   <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 
@@ -199,11 +203,13 @@
           </div> -->
 
           <div class="header__actions space-x-5">
-            <button class="header__action-item btn btn-primary btn-sm">Create Campaign</button>
+            <button class="header__action-item btn btn-primary btn-sm">
+              <i data-feather="plus" width="16" height="16"></i>
+              New Campaign
+            </button>
 
             <button class="header__action-item btn btn-secondary btn-sm">
-              <i data-feather="globe" width="16" height="16"></i>
-              <span>ID</span>
+              <i data-feather="globe" width="21" height="21"></i>
             </button>
 
             <button class="header__action-item btn btn-secondary btn-sm">
@@ -224,20 +230,40 @@
 
     <div class="hero__twb">
       <div class="container hero__wrapper">
-        <h1 class="hero__title">
+        <h1 data-aos="zoom-in-up" class="hero__title">
           Find Campaigns that Resonate With You
         </h1>
-        <p class="hero__text">
+        <p data-aos="zoom-in-up" class="hero__text">
           Twibbonize helps you bring every idea, aspiration, and creativity to life.
         </p>
 
-        <div class="hero__cta space-x-10 sm:space-x-0 sm:space-y-10">
-          <a href="#" class="btn btn-primary btn-lg">
-            Explore Campaign
-          </a>
-          <a class="btn btn-secondary btn-lg" href="Upload-type.html">
-            Start New Campaign
-          </a>
+        <div class="hero__cta md:space-y-10 lg:space-y-0 md:space-x-0 space-x-10">
+          <!-- <div class="twb-form-group">
+            <div class="twb-form-group__text">
+              twb.nz/
+            </div>
+            <input type="text" class="twb-form-group__input" placeholder="linkinbio">
+          </div>
+
+          <div data-aos="zoom-in" data-aos-delay="800">
+            <a href="#" class="btn btn-primary btn-lg d-block">
+              Start Campaign
+            </a>
+          </div> -->
+
+          <div data-aos="zoom-in" data-aos-delay="700">
+            <a href="#" class="btn btn-primary btn-lg d-block">
+              Explore Campaign
+            </a>
+          </div>
+
+          <div data-aos="zoom-in" data-aos-delay="800">
+            <a data-aos="zoom-in" data-aos-delay="800" class="btn btn-secondary btn-lg d-block" href="Upload-type.html">
+              Start New Campaign
+            </a>
+          </div>
+
+
         </div>
       </div>
       <img id="hero__illustration" src="assets/img/items/campaigns.png" alt="campaign page">
@@ -290,7 +316,7 @@
       </div>
     </div>
 
-    <div class="section mt-100">
+    <div data-aos="fade-up" class="section mt-100">
       <div class="container">
         <div class="section__head">
           <div class="d-flex justify-content-between sm-column align-items-center space-y-10">
@@ -303,8 +329,10 @@
             Campaigns that gained the most supports in the last 24 hours.
           </p>
         </div>
-        <div class="row">
-          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+      </div>
+      <section class="swiper twb-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
             <div class="card__item four">
               <div class="card_body space-y-10">
                 <!-- =============== -->
@@ -357,30 +385,31 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+
+          <div class="swiper-slide">
             <div class="card__item four">
               <div class="card_body space-y-10">
                 <!-- =============== -->
                 <div class="creators space-x-10">
                   <div class="avatars space-x-3">
                     <a href="Profile.html">
-                      <img src="assets/img/avatars/naikpangkat.jpg" alt="Avatar" class="avatar avatar-sm">
+                      <img src="assets/img/avatars/pemprov-dki.jpeg" alt="Avatar" class="avatar avatar-sm">
                     </a>
                     <a href="Profile.html">
-                      <p class="avatars_name txt_xs">Naik Pangkat</p>
+                      <p class="avatars_name txt_xs">Pemprov DKI Jakarta</p>
                     </a>
                   </div>
 
                 </div>
                 <div class="card_head">
                   <a href="Item-details.html">
-                    <img src="assets/img/campaign thumbnails/DIKLAT NASIONAL BERSERTIFIKAT 40 JP GRATIS.jpg" alt="">
+                    <img src="assets/img/campaign thumbnails/dkijakarta495.png" alt="">
                   </a>
                 </div>
                 <!-- =============== -->
                 <h6 class="card_title">
                   <a class="color_black" href="/Item-details.html">
-                    DIKLAT NASIONAL BERSER...
+                    Hut DKI Jakarta 495
                   </a>
                 </h6>
 
@@ -388,11 +417,11 @@
                   <div class="card_footer justify-content-between">
                     <div class="d-flex align-items-center space-x-5">
                       <i data-feather="users" width="16" height="16"></i>
-                      <p class="color_text txt_sm" style="width: auto"> 5.1K Supports</p>
+                      <p class="color_text txt_sm" style="width: auto"> 245.7K Supports</p>
                     </div>
                     <a href="#">
                       <p class="txt_sm">
-                        <span class="color_green txt_sm">+10.38%</span>
+                        <span class="color_green txt_sm">+300.38%</span>
                       </p>
                     </a>
                   </div>
@@ -401,7 +430,7 @@
                     <div class="d-flex align-items-center space-x-10">
                       <i data-feather="clock" width="16" height="16"></i>
                       <a href="#" data-toggle="modal" data-target="#popup_history">
-                        <p class="color_text txt_sm" style="width: auto"> 3 Days Ago </p>
+                        <p class="color_text txt_sm" style="width: auto"> 24 Days Ago </p>
                       </a>
                     </div>
                     <a class="btn btn-sm btn-primary" href="#" data-toggle="modal" data-target="#popup_bid">Support</a>
@@ -410,31 +439,30 @@
               </div>
             </div>
           </div>
-
-          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+          <div class="swiper-slide">
             <div class="card__item four">
               <div class="card_body space-y-10">
                 <!-- =============== -->
                 <div class="creators space-x-10">
                   <div class="avatars space-x-3">
                     <a href="Profile.html">
-                      <img src="assets/img/avatars/papan-tulis-official.jpg" alt="Avatar" class="avatar avatar-sm">
+                      <img src="assets/img/avatars/pemprov-dki.jpeg" alt="Avatar" class="avatar avatar-sm">
                     </a>
                     <a href="Profile.html">
-                      <p class="avatars_name txt_xs">Papan Tulis Official</p>
+                      <p class="avatars_name txt_xs">Pemprov DKI Jakarta</p>
                     </a>
                   </div>
 
                 </div>
                 <div class="card_head">
                   <a href="Item-details.html">
-                    <img src="assets/img/campaign thumbnails/iduladha.jpg" alt="">
+                    <img src="assets/img/campaign thumbnails/dkijakarta495.png" alt="">
                   </a>
                 </div>
                 <!-- =============== -->
                 <h6 class="card_title">
                   <a class="color_black" href="/Item-details.html">
-                    Frame Twibbon Hari Raya I...
+                    Hut DKI Jakarta 495
                   </a>
                 </h6>
 
@@ -442,10 +470,11 @@
                   <div class="card_footer justify-content-between">
                     <div class="d-flex align-items-center space-x-5">
                       <i data-feather="users" width="16" height="16"></i>
-                      <p class="color_text txt_sm" style="width: auto"> 83.2K Supports </p>
+                      <p class="color_text txt_sm" style="width: auto"> 245.7K Supports</p>
                     </div>
                     <a href="#">
-                      <p class="txt_sm"><span class="color_green txt_sm">+1.38%</span>
+                      <p class="txt_sm">
+                        <span class="color_green txt_sm">+300.38%</span>
                       </p>
                     </a>
                   </div>
@@ -454,7 +483,7 @@
                     <div class="d-flex align-items-center space-x-10">
                       <i data-feather="clock" width="16" height="16"></i>
                       <a href="#" data-toggle="modal" data-target="#popup_history">
-                        <p class="color_text txt_sm" style="width: auto"> 3 Days Ago </p>
+                        <p class="color_text txt_sm" style="width: auto"> 24 Days Ago </p>
                       </a>
                     </div>
                     <a class="btn btn-sm btn-primary" href="#" data-toggle="modal" data-target="#popup_bid">Support</a>
@@ -463,30 +492,30 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+          <div class="swiper-slide">
             <div class="card__item four">
               <div class="card_body space-y-10">
                 <!-- =============== -->
                 <div class="creators space-x-10">
                   <div class="avatars space-x-3">
                     <a href="Profile.html">
-                      <img src="assets/img/avatars/tomy-saputra.jpg" alt="Avatar" class="avatar avatar-sm">
+                      <img src="assets/img/avatars/pemprov-dki.jpeg" alt="Avatar" class="avatar avatar-sm">
                     </a>
                     <a href="Profile.html">
-                      <p class="avatars_name txt_xs">Tomy Saputra</p>
+                      <p class="avatars_name txt_xs">Pemprov DKI Jakarta</p>
                     </a>
                   </div>
 
                 </div>
                 <div class="card_head">
                   <a href="Item-details.html">
-                    <img src="assets/img/campaign thumbnails/934691bc-4454-40ef-8a1a-b8742f7a0e55.jpg" alt="">
+                    <img src="assets/img/campaign thumbnails/dkijakarta495.png" alt="">
                   </a>
                 </div>
                 <!-- =============== -->
                 <h6 class="card_title">
                   <a class="color_black" href="/Item-details.html">
-                    Hari Keluarga Nasional
+                    Hut DKI Jakarta 495
                   </a>
                 </h6>
 
@@ -494,23 +523,126 @@
                   <div class="card_footer justify-content-between">
                     <div class="d-flex align-items-center space-x-5">
                       <i data-feather="users" width="16" height="16"></i>
-                      <p class="color_text txt_sm" style="width: auto"> 5.2K Supports </p>
+                      <p class="color_text txt_sm" style="width: auto"> 245.7K Supports</p>
                     </div>
                     <a href="#">
-                      <p class="txt_sm"><span class="color_green txt_sm">+0.21%</span>
+                      <p class="txt_sm">
+                        <span class="color_green txt_sm">+300.38%</span>
                       </p>
                     </a>
                   </div>
                   <div class="hr"></div>
-                  <div class="d-flex align-items-center space-x-10
-                                                justify-content-between">
-                    <div class="d-flex align-items-center
-                                                    space-x-10">
+                  <div class="d-flex align-items-center space-x-10 justify-content-between">
+                    <div class="d-flex align-items-center space-x-10">
                       <i data-feather="clock" width="16" height="16"></i>
                       <a href="#" data-toggle="modal" data-target="#popup_history">
-                        <p class="color_text txt_sm" style="width: auto">
-                          8 Days Ago
-                        </p>
+                        <p class="color_text txt_sm" style="width: auto"> 24 Days Ago </p>
+                      </a>
+                    </div>
+                    <a class="btn btn-sm btn-primary" href="#" data-toggle="modal" data-target="#popup_bid">Support</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card__item four">
+              <div class="card_body space-y-10">
+                <!-- =============== -->
+                <div class="creators space-x-10">
+                  <div class="avatars space-x-3">
+                    <a href="Profile.html">
+                      <img src="assets/img/avatars/pemprov-dki.jpeg" alt="Avatar" class="avatar avatar-sm">
+                    </a>
+                    <a href="Profile.html">
+                      <p class="avatars_name txt_xs">Pemprov DKI Jakarta</p>
+                    </a>
+                  </div>
+
+                </div>
+                <div class="card_head">
+                  <a href="Item-details.html">
+                    <img src="assets/img/campaign thumbnails/dkijakarta495.png" alt="">
+                  </a>
+                </div>
+                <!-- =============== -->
+                <h6 class="card_title">
+                  <a class="color_black" href="/Item-details.html">
+                    Hut DKI Jakarta 495
+                  </a>
+                </h6>
+
+                <div class="card_footer d-block space-y-10">
+                  <div class="card_footer justify-content-between">
+                    <div class="d-flex align-items-center space-x-5">
+                      <i data-feather="users" width="16" height="16"></i>
+                      <p class="color_text txt_sm" style="width: auto"> 245.7K Supports</p>
+                    </div>
+                    <a href="#">
+                      <p class="txt_sm">
+                        <span class="color_green txt_sm">+300.38%</span>
+                      </p>
+                    </a>
+                  </div>
+                  <div class="hr"></div>
+                  <div class="d-flex align-items-center space-x-10 justify-content-between">
+                    <div class="d-flex align-items-center space-x-10">
+                      <i data-feather="clock" width="16" height="16"></i>
+                      <a href="#" data-toggle="modal" data-target="#popup_history">
+                        <p class="color_text txt_sm" style="width: auto"> 24 Days Ago </p>
+                      </a>
+                    </div>
+                    <a class="btn btn-sm btn-primary" href="#" data-toggle="modal" data-target="#popup_bid">Support</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card__item four">
+              <div class="card_body space-y-10">
+                <!-- =============== -->
+                <div class="creators space-x-10">
+                  <div class="avatars space-x-3">
+                    <a href="Profile.html">
+                      <img src="assets/img/avatars/pemprov-dki.jpeg" alt="Avatar" class="avatar avatar-sm">
+                    </a>
+                    <a href="Profile.html">
+                      <p class="avatars_name txt_xs">Pemprov DKI Jakarta</p>
+                    </a>
+                  </div>
+
+                </div>
+                <div class="card_head">
+                  <a href="Item-details.html">
+                    <img src="assets/img/campaign thumbnails/dkijakarta495.png" alt="">
+                  </a>
+                </div>
+                <!-- =============== -->
+                <h6 class="card_title">
+                  <a class="color_black" href="/Item-details.html">
+                    Hut DKI Jakarta 495
+                  </a>
+                </h6>
+
+                <div class="card_footer d-block space-y-10">
+                  <div class="card_footer justify-content-between">
+                    <div class="d-flex align-items-center space-x-5">
+                      <i data-feather="users" width="16" height="16"></i>
+                      <p class="color_text txt_sm" style="width: auto"> 245.7K Supports</p>
+                    </div>
+                    <a href="#">
+                      <p class="txt_sm">
+                        <span class="color_green txt_sm">+300.38%</span>
+                      </p>
+                    </a>
+                  </div>
+                  <div class="hr"></div>
+                  <div class="d-flex align-items-center space-x-10 justify-content-between">
+                    <div class="d-flex align-items-center space-x-10">
+                      <i data-feather="clock" width="16" height="16"></i>
+                      <a href="#" data-toggle="modal" data-target="#popup_history">
+                        <p class="color_text txt_sm" style="width: auto"> 24 Days Ago </p>
                       </a>
                     </div>
                     <a class="btn btn-sm btn-primary" href="#" data-toggle="modal" data-target="#popup_bid">Support</a>
@@ -520,11 +652,11 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
 
 
-    <div class="section__creators mt-100">
+    <div data-aos="fade-up" class="section__creators mt-100">
       <div class="container">
         <div class="space-y-30">
           <div class="section_head space-y-20">
@@ -949,7 +1081,7 @@
       </div>
     </div>
 
-    <div class="section__artists mt-100">
+    <div data-aos="fade-up" class="section__artists mt-100">
       <div class="container">
         <div class="space-y-30">
           <div class="section_head">
@@ -1075,7 +1207,7 @@
       </div>
     </div>
 
-    <div class="container">
+    <div data-aos="fade-up" class="container">
       <div class="logos__wrap">
         <div class="d-flex flex-column justify-content-between space-y-15">
           <h3 class="section__title text-white">
@@ -1097,7 +1229,7 @@
       </div>
     </div>
 
-    <div class="section__artists mt-100 bg-white">
+    <div data-aos="fade-up" class="section__artists mt-100 bg-white">
       <div class="container">
         <div class="space-y-30">
           <div class="section_head">
@@ -1446,7 +1578,7 @@
       </div>
     </div>
 
-    <div class="container">
+    <div data-aos="fade-up" class="container">
       <div class="community">
         <div class="section__head space-y-20">
           <h3 class="section__title text-center">Global community</h3>
@@ -1572,13 +1704,56 @@
   <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
   <script src="assets/js/nft.js"></script>
   <script src="assets/js/twb.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
   <script>
     feather.replace()
+
+    AOS.init({
+      once: true
+    });
+
+
+    const swiper = new Swiper(".swiper", {
+      direction: "horizontal",
+      slidesPerView: "auto",
+      freeMode: true,
+      spaceBetween: 24,
+      watchSlidesVisibility: true,
+      mousewheel: {
+        forceToAxis: true
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 3,
+        }
+      },
+    });
 
 
     $('.toggle-search').click(function () {
       $('.search-mobile').toggleClass('active')
     })
+
+    // let i = 0;
+    // const txt = 'Find Campaigns that Resonate With You'; /* The text */
+    // const speed = 50; /* The speed/duration of the effect in milliseconds */
+
+    // function typeWriter() {
+    //   if (i < txt.length) {
+    //     document.querySelector(".hero__twb .hero__title").innerHTML += txt.charAt(i);
+    //     i++;
+    //     setTimeout(typeWriter, speed);
+    //   }
+    // }
+
+    // typeWriter()
 
   </script>
 </body>

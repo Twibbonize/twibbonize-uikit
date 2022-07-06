@@ -319,12 +319,52 @@
       "oAP" : "\/assets\/fonts\/CircularStd-Regular.woff2",
       "oF" : 0
     },
+    "\/assets\/fonts\/Obviously-CondensedBlack.otf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/fonts\/Obviously-CondensedBlack.otf",
+      "oF" : 0
+    },
+    "\/assets\/fonts\/Obviously-CondensedBold.otf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/fonts\/Obviously-CondensedBold.otf",
+      "oF" : 0
+    },
+    "\/assets\/fonts\/Obviously-NarrowBlack.otf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/fonts\/Obviously-NarrowBlack.otf",
+      "oF" : 0
+    },
     "\/assets\/fonts\/Obviously-NarrowSuper.otf" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/assets\/fonts\/Obviously-NarrowSuper.otf",
+      "oF" : 0
+    },
+    "\/assets\/fonts\/Obviously-Super.otf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/fonts\/Obviously-Super.otf",
+      "oF" : 0
+    },
+    "\/assets\/fonts\/Obviously-WideSemibold.otf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/fonts\/Obviously-WideSemibold.otf",
       "oF" : 0
     },
     "\/assets\/fonts\/Plus_Jakarta_Sans.zip" : {
@@ -3807,6 +3847,21 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/assets\/scss\/2-elements\/_popups.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/assets\/scss\/2-elements\/_swiper.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/scss\/2-elements\/_swiper.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
