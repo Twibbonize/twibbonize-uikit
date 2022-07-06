@@ -1348,6 +1348,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/assets\/img\/campaign thumbnails\/bni-menyapa.jpg" : {
+      "ft" : 16384,
+      "iS" : 142839,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/img\/campaign thumbnails\/bni-menyapa.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/assets\/img\/campaign thumbnails\/c179de7d-4a57-4f0d-a718-7737277e63e6.jpg" : {
       "ft" : 16384,
       "iS" : 117984,
@@ -1658,6 +1671,56 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/assets\/img\/icons\/modules-icon\/button.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/img\/icons\/modules-icon\/button.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/assets\/img\/icons\/modules-icon\/comment.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/img\/icons\/modules-icon\/comment.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/assets\/img\/icons\/modules-icon\/form.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/img\/icons\/modules-icon\/form.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/assets\/img\/icons\/modules-icon\/Frame.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/img\/icons\/modules-icon\/Frame.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/assets\/img\/icons\/modules-icon\/text.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/img\/icons\/modules-icon\/text.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/assets\/img\/icons\/multiple.png" : {
       "ft" : 32768,
       "iS" : 3803,
@@ -1804,6 +1867,16 @@
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/assets\/img\/icons\/trend.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/assets\/img\/icons\/trending-up.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/img\/icons\/trending-up.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -2338,6 +2411,19 @@
       "oF" : 0,
       "oIPL" : 1,
       "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/assets\/img\/items\/modules-icon.png" : {
+      "ft" : 32768,
+      "iS" : 5280,
+      "oA" : 0,
+      "oAP" : "\/assets\/img\/items\/modules-icon.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
       "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
