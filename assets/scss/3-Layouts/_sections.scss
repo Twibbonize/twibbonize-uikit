@@ -1,14 +1,30 @@
 .section__title {
-    font-size: 34px;
+    font-family: $font-display !important;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 128%;
+    letter-spacing: -4%;
     @include tablet_vert_screen {
-        font-size: 32px;
+        font-size: 28px;
     }
     @include sm {
-        font-size: 30px;
+        font-size: 20px;
     }
 }
+
+.section__text {
+    font-size: 18px;
+    line-height: 128%;
+
+    @include sm {
+        font-size: 14px;
+    }
+}
+
 .section__head {
     margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
 }
 .logos__wrap {
     margin-top: 100px;

@@ -223,7 +223,7 @@
     // ------------ Card one
     &.one, &.six {
         .card_head {
-            max-height: 300px;
+            // max-height: 300px;
             .details {
                 position: absolute;
                 background: rgba(255, 255, 255, 0.93);
@@ -353,7 +353,8 @@
             overflow: hidden;
         }
         .card_head {
-            max-height: 300px;
+            // max-height: 300px;
+            height: auto;
             position: relative;
             .action {
                 position: absolute;
