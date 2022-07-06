@@ -9837,7 +9837,8 @@ label:active:after {
 --------------------------------------------------------------*/
 .avatars {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  min-width: 80px; }
   .avatars .media {
     position: relative; }
     .avatars .media .badge {
@@ -9870,6 +9871,9 @@ label:active:after {
       border-radius: 100%;
       background: radial-gradient(100% 100% at 53.13% 0%, #31e7fa 0%, #4477ff 52.6%, #db74ff 100%); }
   .avatars .avatars_name {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
     font-weight: 700;
     transition: 0.3s; }
     .avatars .avatars_name.large {
@@ -9877,7 +9881,8 @@ label:active:after {
     .avatars .avatars_name:hover {
       color: #1baaa0; }
   .avatars .price {
-    font-size: 15px; }
+    font-size: 14px;
+    white-space: nowrap; }
   .avatars .details {
     display: flex;
     justify-content: space-between;
@@ -10559,8 +10564,7 @@ label:active:after {
         color: #ffffff; }
 
 .swiper.twb-swiper {
-  overflow: visible;
-  padding: 0 12px; }
+  overflow: visible; }
   .swiper.twb-swiper .swiper-slide {
     width: auto; }
 
