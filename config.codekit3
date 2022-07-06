@@ -1152,6 +1152,19 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/assets\/img\/bg\/marketing-mobile-sm.png" : {
+      "ft" : 32768,
+      "iS" : 541913,
+      "oA" : 0,
+      "oAP" : "\/assets\/img\/bg\/marketing-mobile-sm.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/assets\/img\/bg\/metamask-fox (1).svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -2416,11 +2429,37 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/assets\/img\/items\/mobile-app-figure.png" : {
+      "ft" : 32768,
+      "iS" : 472606,
+      "oA" : 0,
+      "oAP" : "\/assets\/img\/items\/mobile-app-figure.png",
+      "oF" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/assets\/img\/items\/modules-icon.png" : {
       "ft" : 32768,
       "iS" : 5280,
       "oA" : 0,
       "oAP" : "\/assets\/img\/items\/modules-icon.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/assets\/img\/items\/qrcode.png" : {
+      "ft" : 32768,
+      "iS" : 47503,
+      "oA" : 0,
+      "oAP" : "\/assets\/img\/items\/qrcode.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
