@@ -608,7 +608,7 @@
   min-height: 350px;
   background-size: cover;
   position: relative;
-  background: url('../img/bg/hero-twb.png');
+  // background: url('../img/bg/hero-twb.png');
   background-size: cover;
   padding-top: 100px;
   padding-bottom: 80px;
@@ -682,5 +682,16 @@
 
   .twb-form-group {
     min-width: 243px;
+  }
+
+
+  #hero-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    object-fit: none;
+    object-position: 464px 320px;
+    min-width: 100%;
+    min-height: 100%;
   }
 }

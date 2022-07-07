@@ -2222,6 +2222,14 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/assets\/img\/bg\/motion-hero.mp4" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/img\/bg\/motion-hero.mp4",
+      "oF" : 0
+    },
     "\/assets\/img\/bg\/newsletter.png" : {
       "ft" : 32768,
       "iS" : 2103,
@@ -4725,6 +4733,14 @@
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
+    },
+    "\/assets\/light-motion.mp4" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/light-motion.mp4",
+      "oF" : 0
     },
     "\/assets\/scss\/0-base\/_base.scss" : {
       "aP" : 0,
