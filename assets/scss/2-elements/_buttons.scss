@@ -353,7 +353,7 @@ a.btn-outline {
   &.btn-outline {
     background-color: $color_white !important;
     border: 1px solid $color_brand !important;
-    color: $color_brand;
+    color: $color_brand !important;
 
     &:hover {
       background-color: $color_brand !important;

@@ -8582,7 +8582,7 @@ a.btn-outline {
   .btn-primary.btn-outline {
     background-color: #ffffff !important;
     border: 1px solid #1baaa0 !important;
-    color: #1baaa0; }
+    color: #1baaa0 !important; }
     .btn-primary.btn-outline:hover {
       background-color: #1baaa0 !important;
       color: #ffffff; }
