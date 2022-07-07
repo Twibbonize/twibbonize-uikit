@@ -173,7 +173,7 @@
       </div>
     </div>
 
-    <header class="header__twb js-header">
+    <header data-aos="fade-down" class="header__twb js-header">
       <div class="container">
         <nav class="header-wrapper">
           <div class="header__logo">
@@ -202,18 +202,35 @@
             </button>
           </div> -->
 
-          <div class="header__actions space-x-5">
+          <div class="header__actions space-x-10">
             <button class="header__action-item btn btn-primary btn-sm">
               <i data-feather="plus" width="16" height="16"></i>
               New Campaign
             </button>
+            <!-- <button class="header__action-item btn-nav-action">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 42 42" fill="none">
+                <path
+                  d="M33.25 5.25H8.75C6.817 5.25 5.25 6.817 5.25 8.75V33.25C5.25 35.183 6.817 36.75 8.75 36.75H33.25C35.183 36.75 36.75 35.183 36.75 33.25V8.75C36.75 6.817 35.183 5.25 33.25 5.25Z"
+                  stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M21 14V28" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M14 21H28" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button> -->
 
-            <button class="header__action-item btn btn-secondary btn-sm">
-              <i data-feather="globe" width="21" height="21"></i>
+            <button class="header__action-item btn-nav-action">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 42 42" fill="none">
+                <path
+                  d="M21 38.5C30.665 38.5 38.5 30.665 38.5 21C38.5 11.335 30.665 3.5 21 3.5C11.335 3.5 3.5 11.335 3.5 21C3.5 30.665 11.335 38.5 21 38.5Z"
+                  stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M28.4201 13.5801L24.7101 24.7101L13.5801 28.4201L17.2901 17.2901L28.4201 13.5801Z"
+                  stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <!-- <i data-feather="globe" width="21" height="21"></i> -->
             </button>
 
-            <button class="header__action-item btn btn-secondary btn-sm">
-              <img src="assets/img/avatars/twibbonize-avatar.jpg" class="rounded-circle" alt="avatar" width="21">
+            <button class="header__action-item btn btn-secondary btn-sm rounded-pill">
+              <i data-feather="menu" width="24" height="24"></i>
+              <img src="assets/img/avatars/twibbonize-avatar.jpg" class="rounded-circle ml-2" alt="avatar" width="21">
             </button>
 
             <button class="header__action-item mobile-only btn-nav-action toggle-search">
@@ -221,7 +238,7 @@
             </button>
 
             <button class="header__action-item mobile-only btn-nav-action">
-              <i data-feather="globe" width="24" height="24"></i>
+              <i data-feather="menu" width="24" height="24"></i>
             </button>
           </div>
         </nav>
@@ -1796,8 +1813,11 @@
         640: {
           slidesPerView: 2,
         },
-        768: {
+        1024: {
           slidesPerView: 3,
+        },
+        1200: {
+          slidesPerView: 4,
         }
       },
     });

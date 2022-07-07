@@ -550,9 +550,10 @@
 
       .header__action-item {
         color: $color_white;
+        display: none;
 
         &.mobile-only {
-          display: none;
+          display: block;
         }
 
 
@@ -560,23 +561,24 @@
           transition: all 0.4s ease-in-out !important;
           background: transparent;
           border: 0;
-          border-radius: 50%;
-          padding: 12px;
+          // border-radius: 50%;
+          // height: 48px;
+          // width: 48px;
 
-          // &:hover {
-          //     color: $color_text;
-          //     background: $color-grey-light;
-          // }
+          &:hover {
+              color: $color_brand;
+              // background: $color_placeholder;
+          }
         }
 
 
-        @include sm_screen {
+        @include lg_screen {
           &:not(.mobile-only) {
-            display: none !important;
+            display: block;
           }
 
           &.mobile-only {
-            display: block;
+            display: none !important;
           }
         }
       }
