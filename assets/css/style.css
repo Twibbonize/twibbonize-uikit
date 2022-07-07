@@ -10409,6 +10409,7 @@ label:active:after {
   .category__card h4 {
     font-size: 20px;
     font-weight: 800;
+    max-width: 164px;
     color: #ffffff !important; }
   .category__card img {
     position: absolute;
