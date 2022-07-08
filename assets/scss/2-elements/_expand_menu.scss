@@ -45,6 +45,20 @@
           border-radius: 16px;
         }
 
+        .btn-change-lang {
+          display: flex;
+          cursor: pointer;
+          align-items: center;
+          font-size: 14px;
+          gap: 8px;
+          color: $color_text !important;
+          margin: 16px 0;
+
+          &:hover {
+            color: $color_brand !important;
+          }
+        }
+
 
         .btn-close-menu {
           position: absolute;

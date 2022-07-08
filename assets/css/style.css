@@ -10699,6 +10699,16 @@ label:active:after {
             margin: 24px;
             height: calc(100% - 48px);
             border-radius: 16px; } }
+        .expand_menu .overlay .menu-wrapper .menu-container .btn-change-lang {
+          display: flex;
+          cursor: pointer;
+          align-items: center;
+          font-size: 14px;
+          gap: 8px;
+          color: #707070 !important;
+          margin: 16px 0; }
+          .expand_menu .overlay .menu-wrapper .menu-container .btn-change-lang:hover {
+            color: #1baaa0 !important; }
         .expand_menu .overlay .menu-wrapper .menu-container .btn-close-menu {
           position: absolute;
           top: 20px;
@@ -11819,11 +11829,19 @@ body.expand-menu--open {
     .footer__1 {
       padding: 70px 0 30px;
       margin-top: 70px; } }
-  .footer__1 .footer_logo img {
-    height: 3rem; }
+  .footer__1 .footer__logo {
+    margin-left: -8px; }
+    .footer__1 .footer__logo img {
+      height: 42px; }
   .footer__1 .footer__text {
     max-width: 30rem;
     margin-left: 0; }
+  .footer__1 .footer_download-app {
+    margin-top: 16px; }
+    .footer__1 .footer_download-app a:first-child {
+      margin-right: 8px; }
+    .footer__1 .footer_download-app img {
+      height: 40px; }
   .footer__1 .footer__social {
     display: flex; }
     .footer__1 .footer__social a,

@@ -7,15 +7,30 @@
     padding: 70px 0 30px;
     margin-top: 70px;
   }
-  .footer_logo {
+  .footer__logo {
+    margin-left: -8px;
     img {
-      height: 3rem;
+      height: 42px;
     }
   }
   .footer__text {
     max-width: 30rem;
     margin-left: 0;
   }
+
+  .footer_download-app {
+    margin-top: 16px;
+
+    a:first-child {
+      margin-right: 8px;
+    }
+
+    img {
+      height: 40px;
+    }
+  }
+
+
   .footer__social {
     display: flex;
     a,
