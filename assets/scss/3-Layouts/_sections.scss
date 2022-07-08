@@ -183,11 +183,11 @@
   }
 
   .swiper-button-prev {
-    height: 3rem;
-    width: 3rem;
+    height: 2rem;
+    width: 2rem;
     top: 20px;
     left: auto;
-    right: 5rem !important;
+    right: 4rem !important;
     background: $color_white;
     border: solid 1px $color_stroke;
     box-shadow: $shadow_2;
@@ -205,11 +205,17 @@
       font-weight: 700;
       transition: all 0.2s ease-in-out 0s;
     }
+
+    @include lg_screen {
+      right: 5rem !important;
+      height: 3rem;
+      width: 3rem;
+    }
   }
 
   .swiper-button-next {
-    height: 3rem;
-    width: 3rem;
+    height: 2rem;
+    width: 2rem;
     top: 20px;
     right: 15px !important;
     background: $color_white;
@@ -229,6 +235,12 @@
       font-weight: 700;
       transition: all 0.2s ease-in-out 0s;
     }
+
+    @include lg_screen {
+      height: 3rem;
+      width: 3rem;
+    }
+
   }
 }
 
@@ -1418,6 +1430,7 @@
 
     .marketing__cta {
       margin-top: 24px;
+
       a:not(:last-child) {
         margin-right: 8px;
       }
@@ -1429,29 +1442,29 @@
 
 
     @include lg_screen {
-        padding: 0 48px;
-        background: url('../img/bg/download-app-banner.png');
-        height: 428px;
+      padding: 0 48px;
+      background: url('../img/bg/download-app-banner.png');
+      height: 428px;
 
-        .marketing__title {
-            font-size: 56px;
-            line-height: 126%;
-            letter-spacing: -2%;
+      .marketing__title {
+        font-size: 56px;
+        line-height: 126%;
+        letter-spacing: -2%;
+      }
+
+      .marketing__text {
+        margin-top: 16px;
+        font-size: 24px;
+        line-height: 130%;
+        max-width: 500px;
+        margin: 0 !important;
+      }
+
+      .marketing__cta {
+        a img {
+          height: 64px;
         }
-
-        .marketing__text {
-            margin-top: 16px;
-            font-size: 24px;
-            line-height: 130%;
-            max-width: 500px;
-            margin: 0 !important;
-        }
-
-        .marketing__cta {
-            a img {
-              height: 64px;
-            }
-          }
+      }
     }
 
 

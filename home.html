@@ -247,7 +247,7 @@
 
     <div class="hero__twb">
       <video autoplay muted loop id="hero-video">
-        <source src="assets/img/bg/motion-hero.mp4" type="video/mp4">  
+        <source src="assets/img/bg/motion-hero.mp4" type="video/mp4">
       </video>
       <div class="container hero__wrapper">
         <h1 data-aos="zoom-in-up" class="hero__title">
@@ -1559,46 +1559,35 @@
     <div data-aos="fade-up" class="container">
       <div class="community">
         <div class="mb-30 space-y-10">
-          <h3 class="section__title text-center">Global community</h3>
-          <p class="section__text text-center"> Learn more about raroin, chat
+          <h3 class="section__title text-center">Other Service & Community</h3>
+          <p class="section__text text-center"> Learn more about Twibbonize, chat
             with the team,
             other people in the community, and express your opinion on the
             future development of raroin. </p>
         </div>
 
-        <div class="community__items">
-          <div class="row justify-content-center mb-20_reset">
-            <div class="col-md-3">
-              <div class="item space-y-10">
-                <div class="logo">
-                  <img src="assets/img/icons/github.svg" alt="logo_community">
-                </div>
-                <h5 class="text-center">Github</h5>
-                <p class="text-center">Understand the progress of our
-                  code and project</p>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="item space-y-10">
-                <div class="logo is_twitter">
-                  <img src="assets/img/icons/twitter.svg" alt="logo_community">
-                </div>
-                <h5 class="text-center">Twitter</h5>
-                <p class="text-center">Understand the progress of our
-                  code and project</p>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="item space-y-10">
-                <div class="logo is_discord">
-                  <img src="assets/img/icons/discord.svg" alt="logo_community">
-                </div>
-                <h5 class="text-center">Discord</h5>
-                <p class="text-center">Understand the progress of our
-                  code and project</p>
+        <div class="wrapper">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="card__community premium">
+                <img src="assets/img/logos/services/Frame-1.svg" alt="">
+                <p>Unlock all features and level up your campaigns</p>
               </div>
             </div>
 
+            <div class="col-lg-4">
+              <div class="card__community marketplace">
+                <img src="assets/img/logos/services/marketplace.svg" alt="">
+                <p>Find partner that helps your campaign design!</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="card__community guide">
+                <img src="assets/img/logos/services/Frame.svg" alt="">
+                <p>Your one place to learn about how to perfect every occassions with Twibbonize</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -1717,9 +1706,17 @@
     });
 
     const swiperCategory = new Swiper(".swiper_category", {
-      slidesPerView: 2,
+      slidesPerView: 1.4,
       spaceBetween: 24,
-      width: 264,
+      breakpoints: {
+        769: {
+          slidesPerView: 3
+        },
+        991: {
+          slidesPerView: 5
+        }
+      },
+      // width: 264,
       // Navigation arrows
       navigation: {
         nextEl: ".swiper-button-next",
