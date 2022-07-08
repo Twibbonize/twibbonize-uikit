@@ -27,6 +27,72 @@
 
 <body>
   <div class="overflow-hidden">
+    <div class="expand_menu">
+      <div class="overlay">
+        <div class="menu-wrapper">
+          <div class="menu-container">
+            <div class="darkmode-wrapper">
+              <div class="switch_item toggle-darkmode checked">
+                <input type="checkbox" id="darkmode" checked>
+                <label for="darkmode"></label>
+              </div>
+            </div>
+
+            <button class="btn-close-menu toggle-expand-menu">
+              <i data-feather="x"></i>
+            </button>
+
+            <ul class="menu-list">
+             
+              <li class="menu-item">
+                <a href="#">
+                  Popular Campaigns
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  Marketplace
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  Guide
+                </a>
+              </li>
+
+              <li class="menu-item">
+                <a href="#">
+                  News
+                </a>
+              </li>
+
+              <li class="menu-item">
+                <a href="#">
+                  About
+                </a>
+              </li>
+            </ul>
+
+
+            <div class="profile-section">
+              <div class="profile-avatar">
+                <img class="profile-img" src="assets/img/avatars/twibbonize-avatar.jpg" alt="avatar">
+                <div class="profile-name">
+                  <h5>Yoga Altariz</h5>
+                  <a href="#">Manage your profile</a>
+                </div>
+              </div>
+
+              <div>
+                <button class="btn btn-transparent btn-sm">
+                  <i data-feather="log-out"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="search-mobile">
       <header class="search-mobile__header">
         <div class="container d-flex justify-content-between align-items-center space-x-15">
@@ -228,7 +294,7 @@
               <!-- <i data-feather="globe" width="21" height="21"></i> -->
             </button>
 
-            <button class="header__action-item btn btn-secondary btn-sm rounded-pill">
+            <button class="header__action-item btn btn-secondary btn-sm rounded-pill toggle-expand-menu">
               <i data-feather="menu" width="24" height="24"></i>
               <img src="assets/img/avatars/twibbonize-avatar.jpg" class="rounded-circle ml-2" alt="avatar" width="21">
             </button>
@@ -237,7 +303,7 @@
               <i data-feather="search" width="24" height="24"></i>
             </button>
 
-            <button class="header__action-item mobile-only btn-nav-action">
+            <button class="header__action-item mobile-only btn-nav-action toggle-expand-menu">
               <i data-feather="menu" width="24" height="24"></i>
             </button>
           </div>
@@ -321,7 +387,7 @@
             </span>
           </a>
 
-          <a href="#" class="bottom-nav__item">
+          <a href="#" class="bottom-nav__item toggle-expand-menu">
             <img class="bottom-nav__icon"
               src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNSAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik0yMC42MjUgMjFWMTlDMjAuNjI1IDE3LjkzOTEgMjAuMjAzNiAxNi45MjE3IDE5LjQ1MzQgMTYuMTcxNkMxOC43MDMzIDE1LjQyMTQgMTcuNjg1OSAxNSAxNi42MjUgMTVIOC42MjVDNy41NjQxMyAxNSA2LjU0NjcyIDE1LjQyMTQgNS43OTY1NyAxNi4xNzE2QzUuMDQ2NDMgMTYuOTIxNyA0LjYyNSAxNy45MzkxIDQuNjI1IDE5VjIxIiBzdHJva2U9IiM3MDcwNzAiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+DQo8cGF0aCBkPSJNMTIuNjI1IDExQzE0LjgzNDEgMTEgMTYuNjI1IDkuMjA5MTQgMTYuNjI1IDdDMTYuNjI1IDQuNzkwODYgMTQuODM0MSAzIDEyLjYyNSAzQzEwLjQxNTkgMyA4LjYyNSA0Ljc5MDg2IDguNjI1IDdDOC42MjUgOS4yMDkxNCAxMC40MTU5IDExIDEyLjYyNSAxMVoiIHN0cm9rZT0iIzcwNzA3MCIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4NCjwvc3ZnPg0K"
               alt="Account">
@@ -1563,7 +1629,7 @@
           <p class="section__text text-center"> Learn more about Twibbonize, chat
             with the team,
             other people in the community, and express your opinion on the
-            future development of raroin. </p>
+            future development of Twibbonize. </p>
         </div>
 
         <div class="wrapper">
@@ -1727,6 +1793,7 @@
 
     $('.toggle-search').click(function () {
       $('.search-mobile').toggleClass('active')
+      $('body').toggleClass('overflow-hidden')
     })
 
     // let i = 0;
@@ -1742,6 +1809,15 @@
     // }
 
     // typeWriter()
+
+
+    $('#darkmode').on('change', function () {
+      $(this).parent().toggleClass('checked', $(this).prop('checked'))
+    })
+
+    $('.toggle-expand-menu').click(function () {
+      $('body').toggleClass('expand-menu--open')
+    })
 
   </script>
 </body>
