@@ -3,7 +3,10 @@
   top: 0;
   left: 0;
   z-index: 103;
-  display: none;
+  // display: none;
+  visibility: hidden;
+  transition: visibility 0s linear, opacity 0.2s linear;
+  opacity: 0;
 
   .overlay {
     height: 100vh;
@@ -21,10 +24,6 @@
       width: 100%;
       max-width: 408px;
       min-height: 100%;
-      animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      animation-fill-mode: both;
-      animation-duration: 380ms;
-      animation-name: dkvTDH;
 
 
       .menu-container {
@@ -185,6 +184,7 @@
 body.expand-menu--open {
     overflow: hidden;
     .expand_menu {
-        display: block;
+      visibility: visible;
+      opacity: 1;
     }
 }
