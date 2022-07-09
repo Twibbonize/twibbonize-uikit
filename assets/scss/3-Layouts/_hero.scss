@@ -693,5 +693,10 @@
     object-position: 464px 320px;
     min-width: 100%;
     min-height: 100%;
+
+    @include xl_screen {
+      object-fit: cover;
+      object-position: center;
+    }
   }
 }
