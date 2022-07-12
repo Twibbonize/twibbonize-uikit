@@ -11814,13 +11814,11 @@ body.expand-menu--open {
         flex-direction: row; } }
   .hero__twb #hero__illustration {
     position: absolute;
-    right: 90px;
-    height: 880px;
-    bottom: -89px;
+    right: 0;
+    height: 140%;
+    bottom: 0;
     z-index: 10;
-    visibility: hidden;
-    transform: translatey(0px);
-    animation: float 6s ease-in-out infinite; }
+    visibility: hidden; }
     @media screen and (min-width: 1025px) {
       .hero__twb #hero__illustration {
         visibility: visible; } }

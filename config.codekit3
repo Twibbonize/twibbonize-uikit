@@ -3340,6 +3340,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/assets\/img\/items\/hero_ilustration.png" : {
+      "ft" : 32768,
+      "iS" : 829323,
+      "oA" : 0,
+      "oAP" : "\/assets\/img\/items\/hero_ilustration.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/assets\/img\/items\/item_1.png" : {
       "ft" : 32768,
       "iS" : 2932,

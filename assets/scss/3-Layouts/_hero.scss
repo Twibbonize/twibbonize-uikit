@@ -609,7 +609,7 @@
   min-height: 350px;
   background-size: cover;
   position: relative;
-  // background: url('../img/bg/hero-twb.png');
+  // background: url('../img/items/hero_ilustration.png');
   background-size: cover;
   padding-top: 100px;
   padding-bottom: 80px;
@@ -667,13 +667,13 @@
 
   #hero__illustration {
     position: absolute;
-    right: 90px;
-    height: 880px;
-    bottom: -89px;
+    right: 0;
+    height: 140%;
+    bottom: 0;
     z-index: 10;
     visibility: hidden;
-    transform: translatey(0px);
-    animation: float 6s ease-in-out infinite;
+    // transform: translatey(0px);
+    // animation: float 6s ease-in-out infinite;
 
     @include lg_screen {
       visibility: visible;
