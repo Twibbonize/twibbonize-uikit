@@ -1,0 +1,1311 @@
+{
+  "statusCode": 200,
+  "message": "OK",
+  "data": [{
+    "uuid": {
+      "0": "a382d964-a11e-4a22-9906-205630d4cdd4",
+      "1": "55aace34-93b9-44fd-a549-a7b4cf395fa6",
+      "2": "b1bc0ce6-e14a-4b62-be0a-e8ba0bfcc580",
+      "3": "de3c3923-2afd-4394-a133-c8928cbc3f5c",
+      "4": "fe67826c-85ce-4d19-a667-e2ffb66e5edf",
+      "5": "48c47a49-a58f-4231-bd5b-fc1a99a68a59",
+      "6": "1eb1212b-ad44-45d0-96dd-442c25a908fe",
+      "7": "4780a7af-629c-427f-b1c0-9ea81b656b98",
+      "8": "2d4ac640-1da6-4862-8cf0-8178d61c19d4",
+      "9": "461ff81b-cc40-491a-b284-44f5d9e5b1e3",
+      "10": "3e74fa9b-ef49-49ca-b77d-0e510b5ba82e",
+      "11": "25dba04a-4e3c-424a-a6c9-df5d6700dc46",
+      "12": "3a03264d-d4bf-4228-be36-d99d3d11021f",
+      "13": "f65ac932-0449-452c-9391-7254bce45ac7",
+      "14": "6474093d-97cf-46a5-ace4-69633973449f",
+      "15": "67faecf7-ecdc-44b5-ba27-407e518f0dff",
+      "16": "964f4b7c-83c8-45fc-8f81-851f0c0371af",
+      "17": "79fa73ba-4114-4e1b-a378-ea35b309af14",
+      "18": "0cd1ecab-babf-4c5f-b911-1b368eeffdde",
+      "19": "58093163-f47a-4827-8074-042ffa304c1a",
+      "20": "46bce51e-7483-402f-ba2d-5bbefd1974fb",
+      "21": "be7fbe95-6d26-49e6-8b5c-15d67d00a22f",
+      "22": "bc868ba0-c20c-460e-be44-8286c0e45ff9",
+      "23": "85b76972-1cea-4826-a87c-25b99c020752",
+      "24": "5f770918-3347-4ce8-b3f6-010d400d0046",
+      "25": "172c8053-ec89-40a0-84ef-91247582bff8",
+      "26": "1127e75f-df69-4115-85d9-6d79914b253b",
+      "27": "e66bfcc0-5ac1-42d1-9ebc-0b12aa930131",
+      "28": "269c101d-94e1-488f-ad6f-7648ea84be73",
+      "29": "45f40971-0b52-41c9-94d8-8cc8e3cc7589",
+      "30": "285d156b-67d1-482c-b4b5-e91ea8300112",
+      "31": "4414166b-cf58-4276-936c-6e52542438f9",
+      "32": "613f1f12-b042-4774-8d24-35030a15bc6d",
+      "33": "8318816f-b151-47d6-b549-c0590d1a3eb7",
+      "34": "5cdc8c9b-c697-4508-b674-5815e637a0cc",
+      "35": "668c36f4-68df-4934-930f-8679dc3568b1",
+      "36": "3b28a9a6-580a-469a-9d09-3d11eaf167df",
+      "37": "593a5cef-6c74-4924-b0f1-a03e2e884bdc",
+      "38": "b8514cf9-c2f8-4c0a-b403-cb18638dcdfe",
+      "39": "a7f519cb-e1b9-4edb-a460-ef14889935d4",
+      "40": "59dd4e92-db14-406e-a853-ea514db1bc47",
+      "41": "b25a2f20-8585-4537-b561-66ed9b442deb",
+      "42": "f6b66d22-37e2-4205-8d10-ea723df0479e",
+      "43": "41c72b9c-83dd-4cfc-a480-4233b0331bb7",
+      "44": "9875500e-bd78-4080-a06c-7c8887e8f390",
+      "45": "64922523-9dc9-4d48-952e-62885c0da161",
+      "46": "209dd744-df1a-416b-b1ab-9e42954b240f",
+      "47": "54ea0aba-4885-4453-9de7-2d78da65a57b",
+      "48": "46bda507-4a96-4d6b-8117-355a74f7475b",
+      "49": "579344a5-7278-42e9-b4bc-6ec9597d7352",
+      "50": "d6073853-3888-4950-a331-b7998c049f63",
+      "51": "85836198-08ee-46f0-9495-c1de10f4633c",
+      "52": "38e25e28-9d27-44a7-83ef-21f2d30fb293",
+      "53": "715b36e8-605e-49c1-9238-c0fcc967ad13",
+      "54": "268d233e-65ef-4a37-8f76-d52478632e96",
+      "55": "429f3fa4-506a-4b69-8557-78c63bb13471",
+      "56": "3a47910b-19f2-4454-8313-29483cc8f370",
+      "57": "0a1e2924-b1e9-4353-940b-8b277e32f53b",
+      "58": "cbb80fa7-a807-465e-ac65-7856871566b6",
+      "59": "489971e2-fbe7-41d5-8bb0-6e30fd9f7c5d",
+      "60": "3afe8034-8f26-4af4-a072-85700c6c8a38",
+      "61": "75e17c11-04a6-482b-bad7-e9c7d550a1e1",
+      "62": "d838dea5-7f9e-4da3-890d-15cfa682df1f",
+      "63": "e2e45c1c-12e8-4720-9540-2444052fc542"
+    },
+    "name": {
+      "0": "Frame Twibon Hari Raya Idul Adha 2022 M",
+      "1": "Frame Twibbon Idul Adha 1443 H \/ 2022 M",
+      "2": "Twibon Idul Adha 1443 H \/ 2022 M",
+      "3": "Twibbon Idul Adha 1443 H",
+      "4": "Kampus Mengajar Angkatan 4",
+      "5": "Twibon Hari Raya Idul Adha 1443 H",
+      "6": "Selamat Idul Adha 1443H \/ 2022",
+      "7": "Selamat Hari Raya Idul Adha 1443 H 2022 M",
+      "8": "Sapa Peserta Didik SMK se-Indonesia Tahun Ajaran 2022\/2023",
+      "9": "Selamat Idul Adha 1443H 2022",
+      "10": "Frame Twibon Hari Raya Idul Adha 2022 M",
+      "11": "HARI JADI KE 345 KABUPATEN CIANJUR",
+      "12": "Sinh Nh\u1eadt MWG 18",
+      "13": "UST Dp blast",
+      "14": "FPT Shop  - 10 Ng\u00e0y \u0110\u1ea1i Ti\u1ec7c",
+      "15": "Idul Adha Qurban 2022 1443H",
+      "16": "SIDANG SINODE XVIII GKI DI TANAH PAPUA",
+      "17": "Peringatan Hari Koperasi ke-75",
+      "18": "Hari Raya Idul Adha 1443H\/2022",
+      "19": "Selamat idul Adha Qurban 1443 H 2022",
+      "20": "Idul Adha 2022 - Desain 1",
+      "21": "Twibbon PKKMB UNIVERSITAS TIDAR 2022",
+      "22": "Twibbon  PKKMB Poltekkes Tanjungkarang 2022",
+      "23": "Twibbon Harlah ke-19 NU Online",
+      "24": "Selamat Hari Raya Idul Adha 1443 H",
+      "25": "Idul Adha 1443 H JSIT",
+      "26": "Selamat Hari Raya Idul Adha",
+      "27": "Selamat Hari Raya Idul Adha 1443 H \/ 2022 M",
+      "28": "Idul Adha 1443 H PLN",
+      "29": "Ucapan Hari Raya Idul Adha 1443 Hijriyah BUMA Berau",
+      "30": "Twibbon Idul Adha 2022 (1)",
+      "31": "Tepat Sewindu HUT ke-8 BTPN Syariah",
+      "32": "IDUL ADHA 2022 MTS BANIN",
+      "33": "DP Blast ng mga Bagong Iskolar ng Bayan",
+      "34": "Selamat Hari Koperasi Nasional 2022",
+      "35": "Twibbon Idul Adha 2022 (7)",
+      "36": "Idul Adha 1443 H",
+      "37": "Yamaha Day 2022 Photo Competition",
+      "38": "Back to School!",
+      "39": "Hari Raya Idul Adha 1443H\/2022",
+      "40": "LATIHAN DASAR KEPEMIMPINAN MAHASISWA POLTEKKES KEMENKES KUPANG TAHUN 2022",
+      "41": "KOMIDA_HARKOPNAS75",
+      "42": "70th Boule | Orlando, FL",
+      "43": "Beasiswa Inspiratif 2022",
+      "44": "Idul Adha 2022",
+      "45": "Selamat IdulAdha 1443H",
+      "46": "Selamat Hari Raya Idul Adha 1443 H Bersama PKS Tebar 1.500.000 Paket Kurban",
+      "47": "Idul Adha 2022",
+      "48": "Selamat Hari Raya Idul Adha 2022 M \/ 1443 H",
+      "49": "Lebaran Idul Adha 1443 H\/2022 M",
+      "50": "IDUL ADHA",
+      "51": "MATSAMA MAN 2 Kota Bekasi 2022",
+      "52": "KongresRiangGembira",
+      "53": "idul adha 2021",
+      "54": "DIKLAT NASIONAL BERSERTIFIKAT 40 JP GRATIS",
+      "55": "MPLS SMKN 4 Batam",
+      "56": "MPLS SMK NEGRI 1 MAGELANG 2022",
+      "57": "HUT Ke-63 HIMPSI",
+      "58": "Selamat Iduladha 2022 KAI Services",
+      "59": "PKKMB POLKESMAR2022",
+      "60": "SMPN 1 Plemahan",
+      "61": "Idul Adha 2022",
+      "62": "Beyond Infinity",
+      "63": "OSIS VHS 7 KABTA"
+    },
+    "description": {
+      "0": "Selamat hari Raya Idul Adha 1443 H \/ 2022 M\ntaqabbalallahu minna wa minkum\n\"Maka dirikanlah shalat karena Tuhanmu; dan berkorbanlah.\" Al Kautsar ayat 2",
+      "1": "Selamat Hari Raya Idul Adha 1443 \/ 2022 M, taqqoballahu minna waminkum",
+      "2": "Selamat hari raya idul adha 1443 h\/2022m taqoballahu mina waminkum, \nSemoga Allah menerima amal kami dan amal kalian.. aamiin",
+      "3": "Ucapan Selamat Hari Raya Idul Adha 2022.\nDemikian desain Twibbon hari raya Idul Adha 2022  Semoga dapat menginspirasi anda untuk memberikan ucapan terbaik kepada teman dan sanak keluarga di hari yang baik ini.\n",
+      "4": "Mari bersama-sama semarakan pelaksanaan Program Kampus Mengajar Angkatan 4 dengan membuat twibbon KM 4",
+      "5": "Selamat Hari Raya Idul Adha 1443H. \nTaqabbalallahu Minna Wa Minkum",
+      "6": "Selamat merayakan idul adha 1443H 2022 - Slabsoft.com",
+      "7": "Selamat Hari Raya Idul Adha 1443 H 2022 M",
+      "8": "",
+      "9": "Selamat idul Adha hari raya qurban 1443 Hijriah",
+      "10": "Gratis Koleksi Twibbon Idul Adha 2022 kualitas HD, Sisipkan fotomu kedalam bingkai foto idul adha dan bagikanmedia sosial. Selamat hari Raya Idul Adha 1443 H \/ 2022 M  taqabbalallahu minna wa minkum",
+      "11": "Cianjur Rahayu Raharja Digjaya",
+      "12": "",
+      "13": "UST Dp blast freshies 2022 - 2023",
+      "14": "10 Ng\u00e0y \u0110\u1ea1i Ti\u1ec7c - Gi\u00e1 H\u1ee7y Di\u1ec7t, FPT Shop gi\u1ea3m t\u1eeb 10% - 50%",
+      "15": "idul adha qurban 2022 1443 Hijriah - Slabsoft.com",
+      "16": "Xviii",
+      "17": "",
+      "18": "Selamat Hari Raya Idul Adha",
+      "19": "Idul Adha 2022 1443H - Slabsoft",
+      "20": "",
+      "21": "",
+      "22": "Twibbon ini merupakan salah satu cara untuk memeriahkan acara pkkmb di poltekkes tanjungkarang pada tahun 2022",
+      "23": "Harlah NU Online memasuki tahun ke-19 pada 11 Juli 2022. Yuk dukung harlah ke-19 ini dengan menulis status, unggah video, gambar atau lainnya tentang NU Online (dalam bentuk testimoni atau pengalaman menggunakan NU Online selama ini).\n ",
+      "24": "",
+      "25": "",
+      "26": "Selamat merayakan hari raya kurban 1443 H \/ 2022 M",
+      "27": "",
+      "28": "",
+      "29": "Ucapan Hari Raya Idul Adha 1443 Hijriyah BUMA Berau",
+      "30": "",
+      "31": "",
+      "32": "official tim redaksi majalah mimbar mts islamiyah banin",
+      "33": "",
+      "34": "Berkoperasi Demi Wujud Kesejahteraan Bersama",
+      "35": "",
+      "36": "",
+      "37": "",
+      "38": "",
+      "39": "Selamat Hari Raya Idul Adha",
+      "40": "Latihan Dasar Kepemimpinan Mahasiswa (LDKM) merupakan suatu pelatihan yang bertujuan untuk meningkatkan kemampuan atau skill mahasiswa dalam memimpin. ",
+      "41": "Keberanianku, ketika aku yang muda berani ikut andil dalam perkoperasian Indonesia. Mendorong anggota untuk selalu semangat meraih kesejahteraan yang kian nyata. \n",
+      "42": "For MEMBERS of AKA Sorority, Inc\u00ae\ufe0f\n\u25aa\ufe0f\ud835\ude72\ud835\ude91\ud835\ude98\ud835\ude98\ud835\ude9c\ud835\ude8e \ud835\ude7f\ud835\ude91\ud835\ude98\ud835\ude9d\ud835\ude98. \ud835\ude82\ud835\ude8c\ud835\ude8a\ud835\ude95\ud835\ude8e \ud835\ude9d\ud835\ude98 \ud835\ude75\ud835\ude92\ud835\ude9d.\n\u25aa\ufe0f\ud835\ude72\ud835\ude95\ud835\ude92\ud835\ude8c\ud835\ude94 \ud835\ude7d\ud835\ude8e\ud835\udea1\ud835\ude9d.\n\u25aa\ufe0f\ud835\ude77\ud835\ude98\ud835\ude95\ud835\ude8d \ud835\ude8f\ud835\ude92\ud835\ude97\ud835\ude90\ud835\ude8e\ud835\ude9b \ud835\ude98\ud835\ude97 \ud835\ude99\ud835\ude92\ud835\ude8c\ud835\ude9d\ud835\ude9e\ud835\ude9b\ud835\ude8e \ud835\ude9d\ud835\ude98 \ud835\ude9c\ud835\ude8a\ud835\ude9f\ud835\ude8e.",
+      "43": "BEASISWA INSPIRATIF merupakan program kolaborasi Yayasan Duta Inspirasi Indonesia dan Yayasan Beasiswa 10.000 dengan tujuan untuk membantu menyukseskan Sustainable Development Goals (SDG\u2019s) point ke 4, yaitu Quality Education.",
+      "44": "Meriahkan Idul Adha mu dengan koleksi frame keren berikut ini.....",
+      "45": "",
+      "46": "",
+      "47": "Koleksi Twibbon Idul Adha 2022, kami menyediakan banyak template bingkai foto Hari raya dengan kualitas HD, Sisipkan fotomu kedalam bingkai foto idul adha dan bagikan keberbagai media sosial",
+      "48": "Sehat Berkah",
+      "49": "Selamat Hari Raya Idul Adha 1443 Hijriah",
+      "50": "IDUL ADHA",
+      "51": "Hi everyone!\r\n\r\nThis is frame twibbon MATSAMA MAN 2 Kota Bekasi 2022 \u2728",
+      "52": "PP FNU menyelenggarakan kongres di Palembang untuk melakukan re organisasi",
+      "53": "",
+      "54": "PENINGKATAN KETERAMPILAN GURU DALAM ADAPTASI PENERAPAN KURIKULUM MERDEKA, Pelaksanaan 10 - 14 juli 2022, 100% GRATIS, Hubungi : 085865988163 (admin lawu)",
+      "55": "",
+      "56": "MPLS SMK N 1 MAGELANG\r\n.\r\nHalo! Saya (nama lengkap) dari kelas (kelas masing-masing), Saya siap mengikuti dan menyemarakkan MPLS SMK N 1 MAGELANG Tahun Pelajaran 2022\/2023  \u2728\r\n.\r\n.\r\n#smkn1magelang\r\n#Osismkn1mgl\r\n#mpls2022\/2023 ",
+      "57": "",
+      "58": "Iduladha 2022 KAI Services",
+      "59": "[PKKMB POLKESMAR 2022] \nDisiplin diri !\nRaih Prestasi !\nSehat Semua !\nMendunia ! ",
+      "60": "SMP Negeri (SMPN) 1 Plemahan, merupakan salah satu Sekolah Menengah Pertama Negeri yang ada di wilayah Kota Kediri, Provinsi Jawa Timur. SMP Negeri 1 Plemahan merupakan salah satu sekolah adiwiyata, ",
+      "61": "Abadikan Momen Hari Rayamu Dengan Bingkai Foto Idul Adha 2022\n\nTwibbon Idul Adha 2022 maker adalah aplikasi untuk membuat Photo profil frame \/campaign (Frame Photo Maker) yang bisa dibbagikan ke berbagai sosial media.\n",
+      "62": "",
+      "63": ""
+    },
+    "thumbnail": {
+      "0": "4dcc98d3-a425-40a8-b2d6-1ace34a9483b.jpg",
+      "1": "df5c8f05-93ca-47d9-bb02-f3c6b3eee65d.jpg",
+      "2": "fe815427-2273-40b0-9357-ce4e1a5ea6df.jpg",
+      "3": "bae99be7-478f-4314-a46b-ddf09b70d00d.jpg",
+      "4": "e0922b26-3768-4764-9e05-5587b00d5cb8.jpg",
+      "5": "0be3bafa-49d7-477a-b081-759f32cdc6ef.jpg",
+      "6": "57c9bead-eea4-4e5b-a96a-8d6130ccbdf3.jpg",
+      "7": "27d1ecac-fddc-4614-9e62-22520657589a.jpg",
+      "8": "bfc7b838-e46a-4a7e-af75-99d033c87b19.jpg",
+      "9": "7b96b996-750c-4ba4-82ff-2f03d2fe8118.jpg",
+      "10": "4fe99a9d-b39c-4e46-899f-3db3de4e9270.jpg",
+      "11": "3293deb6-7d59-4936-8ef1-fb041a0669ee.jpg",
+      "12": "563e14b3-653c-4679-97e8-0136cb2cc0b8.jpg",
+      "13": "915d9947-544b-4dbc-bfde-f0dd9755e9cc.jpg",
+      "14": "fa47f91c-8c47-4847-877a-76038779b117.jpg",
+      "15": "77f62770-bcdc-41db-b72c-d0edf5499462.jpg",
+      "16": "1303f8c3-7d39-4c74-92a4-ccd25c0b5107.jpg",
+      "17": "c87b4d79-5086-42ce-ba07-447a0aeccf72.jpg",
+      "18": "37824572-33a3-4c9d-b3e8-d791e631bee2.jpg",
+      "19": "65c3bc15-3653-4570-9a0b-9a2f09fa2848.jpg",
+      "20": "d72f0203-33ba-4155-bce2-e679fb1dc1c5.jpg",
+      "21": "08028971-c0c4-4c3e-9470-1abbc2f9648d.jpg",
+      "22": "c92e77f9-d6b1-4940-b339-b085d7d5385a.jpg",
+      "23": "111099ea-79b2-4e0e-a5a2-eb14be2b981e.jpg",
+      "24": "ecce7c11-1c96-4c8d-9aaf-c509fd243461.jpg",
+      "25": "8fc82238-6404-4cd4-a550-34d4225eeeba.jpg",
+      "26": "36044299-afbc-47f1-8abb-4222ec778647.jpg",
+      "27": "207bbcc4-d89b-4ba9-aec8-8e37bf540c0e.jpg",
+      "28": "",
+      "29": "d2bc92ba-4433-4da4-b873-f256c7e9e0ca.jpg",
+      "30": "3eb25b65-c550-4db8-aeaf-41db377a8d67.jpg",
+      "31": "fcf120a4-802e-4e76-9a98-c3c19dc06b8f.jpg",
+      "32": "0d3a3734-cdb2-4b92-a84c-7b827364b430.jpg",
+      "33": "85cc6ff6-ef0d-49bd-b61e-1f75538b87f2.jpg",
+      "34": "b58c71d9-f5c9-4eda-a798-5df6768b0022.jpg",
+      "35": "83053f1a-ee9d-491c-b85b-9217ad0294b7.jpg",
+      "36": "9d1aba28-1642-4f9e-b902-a8f1a2ea8efc.jpg",
+      "37": "7092afc7-19ac-423d-b756-42134a8b53ca.jpg",
+      "38": "0c20e96b-4b0b-42bc-977f-41b296f74961.jpg",
+      "39": "d2e48037-9e95-410c-a2e4-fc963dfb8e6e.jpg",
+      "40": "5cac0d8b-709b-4d03-82f9-f2a74a71c7bd.jpg",
+      "41": "67febebf-ca7e-4f76-a404-78e024be40d3.jpg",
+      "42": "523b6343-963d-42bd-b56b-9419a2046fc5.jpg",
+      "43": "ac6e37b8-4e97-4fa3-bbdd-75595628a21c.jpg",
+      "44": "a9df3412-7f86-490e-844f-7dcf91fc324b.jpg",
+      "45": "f5c9f662-8587-464b-b031-e4269d41b551.jpg",
+      "46": "0256bad9-f152-4922-b53a-2eb6b84c5427.jpg",
+      "47": "ab4476c4-8ab8-4873-a778-dc978fd2dab4.jpg",
+      "48": "aa73a2b0-75c1-42b5-9441-f94670d312f0.jpg",
+      "49": "39348f87-18a3-4b95-87bc-c06f5a9fda71.jpg",
+      "50": "a60e305c-c483-467b-83fd-45b71fc0a858.jpg",
+      "51": "058fd838-1ad9-4e53-b168-b8e3fdfe6e58.jpg",
+      "52": "7c930fb2-61b8-4047-9c66-520a6540f164.jpg",
+      "53": "350-01771dfc-31b8-47fb-9daa-283a57bf7876.jpg",
+      "54": "cdcf654d-0aca-4bec-872f-1fe99b93cb51.jpg",
+      "55": "e9130f92-2219-419c-a80c-db973fabf708.jpg",
+      "56": "a7f6ca18-a68f-49eb-8560-d67d1ca13060.jpg",
+      "57": "bce9c787-7638-4d07-95dc-c6030e0040b4.jpg",
+      "58": "f9b63763-a4f9-48ec-a081-980675fdde61.jpg",
+      "59": "75aa7f83-c149-4c7c-96f3-9aeaa258a638.jpg",
+      "60": "bf5a6ecd-186b-426b-9bf6-fe370f1b96a4.jpg",
+      "61": "82fe12f8-ab79-48d6-a35f-2167e5679e93.jpg",
+      "62": "a95a6f87-8c44-405c-aea7-54a1a01e03d4.jpg",
+      "63": "95543c9e-06ad-4e44-8bea-7d6445488f3d.jpg"
+    },
+    "url": {
+      "0": "frametwiboniduladha1443h",
+      "1": "frametwibboniduladha1443h",
+      "2": "iduladhamubarrak1443h",
+      "3": "iduladha-1443h",
+      "4": "kampusmengajarangkatan4",
+      "5": "twiboniduladha1443h",
+      "6": "iduladha-slab-08",
+      "7": "iedadha1443h",
+      "8": "sapapesertadidiksmk2022",
+      "9": "iduladha-slab-07",
+      "10": "storiqurbaniduladha",
+      "11": "harijadike345kabupatencianjur",
+      "12": "mwg18tuoi",
+      "13": "ust2022",
+      "14": "fptshop-daitiec",
+      "15": "iduladha-slab-05",
+      "16": "yally65",
+      "17": "harkopnas-2022",
+      "18": "r2niedmubarak024",
+      "19": "iduladha-slab-06",
+      "20": "iduladha2022desain1",
+      "21": "otadamauntidar2022",
+      "22": "twibbonpkkmbpoltekkestjk22",
+      "23": "harlah19nuonline",
+      "24": "harirayaiduladhakai",
+      "25": "iedadhajsit",
+      "26": "selamatiduladha1443h2022m",
+      "27": "slmtharirayaiduladha1443h",
+      "28": "iduladha1443hpln",
+      "29": "iduladhabumaberau",
+      "30": "idulaha01",
+      "31": "tepatsewindubtpnsyariah",
+      "32": "iduladhamtsbanin2022",
+      "33": "updfst2223",
+      "34": "kodekoharkopnas2022",
+      "35": "iduladha007",
+      "36": "adhagenq2022",
+      "37": "frameyamahaday2022",
+      "38": "penaburback2school",
+      "39": "r2niedmubarak022",
+      "40": "ldkpolkesku2022",
+      "41": "komidaharkopnas75",
+      "42": "akaboule70",
+      "43": "twibbonbeasiswainspiratif2022",
+      "44": "temaidulqurban",
+      "45": "pupr-iduladha1443h",
+      "46": "iduladha1443hbersamapks",
+      "47": "twibboniduladha2022frames",
+      "48": "iduladha2022m1443h",
+      "49": "lebaraniduladha1443hijriyah",
+      "50": "iduladha1443leafhea",
+      "51": "matsamandua2022",
+      "52": "ppfnukongresrianggembira2022",
+      "53": "iduladha2021free2",
+      "54": "free40jp",
+      "55": "mplssmkn4batam",
+      "56": "mplssmkn1mgl2022",
+      "57": "hut63himpsi",
+      "58": "kaiservicesiduladha2022",
+      "59": "pkkmbpolkesmar",
+      "60": "estuimpresyaku",
+      "61": "iduladhaeidmubarak",
+      "62": "pg50",
+      "63": "mpls7kabta"
+    },
+    "createdAt": {
+      "0": 1652921807000,
+      "1": 1654301683000,
+      "2": 1654845787000,
+      "3": 1654412788000,
+      "4": 1657427801000,
+      "5": 1652545606000,
+      "6": 1652331090000,
+      "7": 1625092783000,
+      "8": 1657185337000,
+      "9": 1652330626000,
+      "10": 1656817712000,
+      "11": 1657349955000,
+      "12": 1656824245000,
+      "13": 1656609603000,
+      "14": 1657472930000,
+      "15": 1652328441000,
+      "16": 1657282203000,
+      "17": 1657091793000,
+      "18": 1654870665000,
+      "19": 1652329664000,
+      "20": 1654353891000,
+      "21": 1657378909000,
+      "22": 1657511750000,
+      "23": 1657458262000,
+      "24": 1657373586000,
+      "25": 1657107587000,
+      "26": 1655515939000,
+      "27": 1655618804000,
+      "28": 1656989695000,
+      "29": 1656296317000,
+      "30": 1651312244000,
+      "31": 1657524472000,
+      "32": 1657275290000,
+      "33": 1655277354000,
+      "34": 1657338143000,
+      "35": 1651313057000,
+      "36": 1657334275000,
+      "37": 1656467251000,
+      "38": 1657073885000,
+      "39": 1654870500000,
+      "40": 1657376390000,
+      "41": 1657547432000,
+      "42": 1656984029000,
+      "43": 1646996321000,
+      "44": 1651552000000,
+      "45": 1656404277000,
+      "46": 1657379137000,
+      "47": 1651440856000,
+      "48": 1655818964000,
+      "49": 1655368704000,
+      "50": 1657276408000,
+      "51": 1657282615000,
+      "52": 1657254144000,
+      "53": 1622749043000,
+      "54": 1656650010000,
+      "55": 1657434275000,
+      "56": 1657455603000,
+      "57": 1657506585000,
+      "58": 1657379408000,
+      "59": 1656329970000,
+      "60": 1657514999000,
+      "61": 1653250770000,
+      "62": 1657336612000,
+      "63": 1657444764000
+    },
+    "updatedAt": {
+      "0": 1657071901000,
+      "1": 1654791999000,
+      "2": 1654845787000,
+      "3": 1654387601000,
+      "4": 1657427801000,
+      "5": 1653443283000,
+      "6": 1652331090000,
+      "7": 1655242581000,
+      "8": 1657160571000,
+      "9": 1652330626000,
+      "10": 1656817712000,
+      "11": 1657349955000,
+      "12": 1656824245000,
+      "13": 1656609603000,
+      "14": 1657472930000,
+      "15": 1652328441000,
+      "16": 1657282203000,
+      "17": 1657153810000,
+      "18": 1654870665000,
+      "19": 1652329664000,
+      "20": 1654353891000,
+      "21": 1657378909000,
+      "22": 1657511750000,
+      "23": 1657509865000,
+      "24": 1657373586000,
+      "25": 1657107587000,
+      "26": 1655515939000,
+      "27": 1655618804000,
+      "28": 1656989695000,
+      "29": 1656296317000,
+      "30": 1651312244000,
+      "31": 1657500030000,
+      "32": 1657250123000,
+      "33": 1655277354000,
+      "34": 1657464479000,
+      "35": 1651313057000,
+      "36": 1657334275000,
+      "37": 1656467251000,
+      "38": 1657073885000,
+      "39": 1654870500000,
+      "40": 1657376390000,
+      "41": 1657522974000,
+      "42": 1656984029000,
+      "43": 1646996321000,
+      "44": 1651552000000,
+      "45": 1656404277000,
+      "46": 1657379137000,
+      "47": 1651440856000,
+      "48": 1655818964000,
+      "49": 1655351155000,
+      "50": 1657276408000,
+      "51": 1657295318000,
+      "52": 1657243491000,
+      "53": 1622749043000,
+      "54": 1656624916000,
+      "55": 1657425094000,
+      "56": 1657431873000,
+      "57": 1657506585000,
+      "58": 1657379408000,
+      "59": 1656329970000,
+      "60": 1657514999000,
+      "61": 1653250770000,
+      "62": 1657336612000,
+      "63": 1657444764000
+    },
+    "tags": {
+      "0": [{
+        "uuid": "5d854c3c-4808-469d-b192-cc41cbc77555",
+        "name": "Idul Adha 1443H"
+      }, {
+        "uuid": "2b0a53ff-3ebe-4a9b-8449-f101abee0e76",
+        "name": "frame twibon idul adha"
+      }],
+      "1": [{
+        "uuid": "36bfeb58-e24f-4a48-abd6-138c530fbba5",
+        "name": "Idul Adha 1334 H"
+      }, {
+        "uuid": "cc98a9f2-84d0-4307-8d69-7c48fed82b8d",
+        "name": "Idul Adha 2022M"
+      }, {
+        "uuid": "7ddb3eb9-d0e8-445f-9fc8-efb144724ecb",
+        "name": "Lebaran Haji 2022"
+      }, {
+        "uuid": "f75c2315-f48b-43c6-86d1-778899fb4307",
+        "name": "Lebarab Qurban 1443 H"
+      }],
+      "2": [{
+        "uuid": "f1bd1291-404a-4121-90be-2264cdcc0748",
+        "name": "idul adha mubarrak 1443h"
+      }, {
+        "uuid": "cc98a9f2-84d0-4307-8d69-7c48fed82b8d",
+        "name": "Idul Adha 2022M"
+      }, {
+        "uuid": "5d854c3c-4808-469d-b192-cc41cbc77555",
+        "name": "Idul Adha 1443H"
+      }, {
+        "uuid": "054ffa93-a50e-41b2-b290-5c344e14a09a",
+        "name": "selamat hari raya idul adha 2022"
+      }],
+      "3": [{
+        "uuid": "fc61ae24-788d-4264-b137-5a32e590834e",
+        "name": "iduladha1443h"
+      }, {
+        "uuid": "af513d39-c6d3-493f-91d4-53b733e786d8",
+        "name": "twibbon"
+      }, {
+        "uuid": "72f92e63-49c0-47eb-b555-28460e42917a",
+        "name": "iduladha"
+      }, {
+        "uuid": "e4ae50e4-0261-48e8-80f1-2fe49d8a93dd",
+        "name": "Kurban"
+      }, {
+        "uuid": "79102f3d-9ec4-45f1-9a73-2fe832f9f436",
+        "name": "harirayakurban"
+      }],
+      "4": [{
+        "uuid": "81d3e987-edc8-4ee6-abb4-2295cb50479d",
+        "name": "kampusmengajarangkatan4"
+      }],
+      "5": [{
+        "uuid": "6c4e6da1-6d96-49bf-8dfa-528c96876be3",
+        "name": "idul adha"
+      }, {
+        "uuid": "0c48fc0d-eb25-4336-a615-4b651d05526b",
+        "name": "twibon idul adha 1443h"
+      }, {
+        "uuid": "054ffa93-a50e-41b2-b290-5c344e14a09a",
+        "name": "selamat hari raya idul adha 2022"
+      }, {
+        "uuid": "b13a46a3-1cf4-44a1-bd3e-a66904c80c12",
+        "name": "iedul adha 2022"
+      }],
+      "6": [{
+        "uuid": "6c4e6da1-6d96-49bf-8dfa-528c96876be3",
+        "name": "idul adha"
+      }, {
+        "uuid": "46fea9c8-5b93-4d08-84b8-916ac8e6ab9e",
+        "name": "Idul Adha 2022"
+      }, {
+        "uuid": "5d854c3c-4808-469d-b192-cc41cbc77555",
+        "name": "Idul Adha 1443H"
+      }, {
+        "uuid": "8137297e-0289-4d35-be67-5ca952df4628",
+        "name": "qurban 2022"
+      }, {
+        "uuid": "87eefd2f-6e22-4809-b30f-96b3753a897c",
+        "name": "Idul qurban"
+      }],
+      "7": [{
+        "uuid": "6c4e6da1-6d96-49bf-8dfa-528c96876be3",
+        "name": "idul adha"
+      }, {
+        "uuid": "46fea9c8-5b93-4d08-84b8-916ac8e6ab9e",
+        "name": "Idul Adha 2022"
+      }, {
+        "uuid": "5d854c3c-4808-469d-b192-cc41cbc77555",
+        "name": "Idul Adha 1443H"
+      }, {
+        "uuid": "e01d6d98-bdfb-4ebd-bce4-868935b56004",
+        "name": "1443H"
+      }, {
+        "uuid": "49428ec0-c850-46e3-b294-9089bfea3b41",
+        "name": "kuban"
+      }, {
+        "uuid": "7749a66d-1ae7-42ff-87e3-d6a815396498",
+        "name": "Qurban"
+      }],
+      "8": null,
+      "9": [{
+        "uuid": "6c4e6da1-6d96-49bf-8dfa-528c96876be3",
+        "name": "idul adha"
+      }, {
+        "uuid": "7749a66d-1ae7-42ff-87e3-d6a815396498",
+        "name": "Qurban"
+      }, {
+        "uuid": "5d854c3c-4808-469d-b192-cc41cbc77555",
+        "name": "Idul Adha 1443H"
+      }, {
+        "uuid": "46fea9c8-5b93-4d08-84b8-916ac8e6ab9e",
+        "name": "Idul Adha 2022"
+      }],
+      "10": [{
+        "uuid": "0c70d5e5-3bbd-41dd-aec8-9feb450fedd9",
+        "name": "twibbon idul adha"
+      }, {
+        "uuid": "d98fd9ec-6b71-4f30-8888-efec74ba1c9f",
+        "name": "Twibbon Idul Adha 2022"
+      }, {
+        "uuid": "a5abe17d-59e6-43d1-a1d7-720d66ef649b",
+        "name": "twibbon idul adha 1443 h"
+      }, {
+        "uuid": "af846211-5280-4996-a4f0-41b771a6f34d",
+        "name": "twibbon idul adha 2022 gratis"
+      }, {
+        "uuid": "2326a6f2-ebcb-4b56-ad94-c0804a033ef6",
+        "name": "twibbon idul adha 1443"
+      }, {
+        "uuid": "ebffce95-2868-4767-a865-ec587fdacd33",
+        "name": "twibbon idul adha 2022 terbaru"
+      }, {
+        "uuid": "88e67b14-43c9-4bc1-b0cf-aaeea5d4882b",
+        "name": "twibbon idul adha 1443 h 2022"
+      }, {
+        "uuid": "b764f9fa-10d0-4039-a1ae-ab7e291c3169",
+        "name": "twibbon idul adha 2021 gratis"
+      }, {
+        "uuid": "8c495695-14e8-490b-af98-8d19be7efbe7",
+        "name": "story wa takbir idul adha"
+      }, {
+        "uuid": "fdd60406-19ce-473c-b1d5-cd42ff87ff58",
+        "name": "story telling tentang idul adha"
+      }],
+      "11": [{
+        "uuid": "62027777-5348-4280-8c91-b0eb00d568e6",
+        "name": "HariJadiCianjur345"
+      }, {
+        "uuid": "5383be9c-ff93-41d7-b654-ebb7a68b6629",
+        "name": "cianjurrahayuraharjadigjaya"
+      }, {
+        "uuid": "624d291f-2280-4345-95c6-a4fbd0923eae",
+        "name": "Cianjur"
+      }, {
+        "uuid": "2ec0c175-af3c-4cd4-a9a9-e8b076b42257",
+        "name": "Jawabarat"
+      }, {
+        "uuid": "7095a44f-6d8c-4136-8311-1b4ab7593ad6",
+        "name": "hermansuherman"
+      }],
+      "12": null,
+      "13": null,
+      "14": [{
+        "uuid": "12789cb0-832c-4741-9855-8d15977a669a",
+        "name": "FPTShop"
+      }],
+      "15": [{
+        "uuid": "7749a66d-1ae7-42ff-87e3-d6a815396498",
+        "name": "Qurban"
+      }, {
+        "uuid": "6c4e6da1-6d96-49bf-8dfa-528c96876be3",
+        "name": "idul adha"
+      }, {
+        "uuid": "87eefd2f-6e22-4809-b30f-96b3753a897c",
+        "name": "Idul qurban"
+      }, {
+        "uuid": "46fea9c8-5b93-4d08-84b8-916ac8e6ab9e",
+        "name": "Idul Adha 2022"
+      }, {
+        "uuid": "5d854c3c-4808-469d-b192-cc41cbc77555",
+        "name": "Idul Adha 1443H"
+      }],
+      "16": null,
+      "17": [{
+        "uuid": "1650bc5c-9141-4664-8236-54eceab761d3",
+        "name": "koperasikeren"
+      }, {
+        "uuid": "082cfbe8-ac52-4c11-8049-f8babd609b97",
+        "name": "Ayoberkoperasi"
+      }],
+      "18": null,
+      "19": [{
+        "uuid": "6c4e6da1-6d96-49bf-8dfa-528c96876be3",
+        "name": "idul adha"
+      }, {
+        "uuid": "7749a66d-1ae7-42ff-87e3-d6a815396498",
+        "name": "Qurban"
+      }, {
+        "uuid": "46fea9c8-5b93-4d08-84b8-916ac8e6ab9e",
+        "name": "Idul Adha 2022"
+      }],
+      "20": [{
+        "uuid": "6c4e6da1-6d96-49bf-8dfa-528c96876be3",
+        "name": "idul adha"
+      }, {
+        "uuid": "46fea9c8-5b93-4d08-84b8-916ac8e6ab9e",
+        "name": "Idul Adha 2022"
+      }, {
+        "uuid": "9026d475-4c2f-460b-9ac1-27504192805a",
+        "name": "IDUL Adha 1443"
+      }, {
+        "uuid": "8672a4fd-23e0-4f2b-8595-b737857ce2c5",
+        "name": "Idul Adha 1443 H"
+      }, {
+        "uuid": "05fb4e48-4f46-4a76-a1c7-0a8b343e7797",
+        "name": "idul adha 1443 hijriyah"
+      }, {
+        "uuid": "319873ad-e09a-466b-9094-034c8bfa67ba",
+        "name": "Lebaran haji"
+      }, {
+        "uuid": "7ddb3eb9-d0e8-445f-9fc8-efb144724ecb",
+        "name": "Lebaran Haji 2022"
+      }],
+      "21": null,
+      "22": null,
+      "23": [{
+        "uuid": "deb8828b-e4a8-49a7-9330-d47c4f72264e",
+        "name": "Harlah19NUonline"
+      }, {
+        "uuid": "784c10e9-cf3c-4600-8aa0-f8ef31a23592",
+        "name": "NUonlineSuperApp"
+      }, {
+        "uuid": "0d4e174f-fc1f-4b04-88fa-b3d033c21803",
+        "name": "WeAreD19ital"
+      }],
+      "24": null,
+      "25": null,
+      "26": null,
+      "27": [{
+        "uuid": "fc61ae24-788d-4264-b137-5a32e590834e",
+        "name": "iduladha1443h"
+      }],
+      "28": null,
+      "29": [{
+        "uuid": "b23286d4-87eb-46c0-92bb-2ee4d7c7c9a2",
+        "name": "iduladha1433h"
+      }, {
+        "uuid": "b7ab1215-2a51-4fca-ad17-ce276daf07f5",
+        "name": "eidaladha1443h"
+      }, {
+        "uuid": "f837c438-cce7-484f-8430-7fac66b61d4e",
+        "name": "bumalat"
+      }, {
+        "uuid": "d2628af2-ca60-4e7e-bd7d-caab466c09be",
+        "name": "bumabinungan"
+      }, {
+        "uuid": "8b0698f6-bb8b-4bd8-9860-e579203f8b7c",
+        "name": "bfamilyberau"
+      }],
+      "30": null,
+      "31": null,
+      "32": [{
+        "uuid": "2109f096-0863-4997-8e69-010aa529f2e1",
+        "name": "2022 Idul Adha"
+      }],
+      "33": null,
+      "34": null,
+      "35": null,
+      "36": null,
+      "37": [{
+        "uuid": "a345335a-7e9d-4cd9-acc9-5da95a854393",
+        "name": "yamahaindonesia"
+      }, {
+        "uuid": "c4bfe59e-7076-4f48-bfef-247b11be8fd7",
+        "name": "semakindidepan"
+      }, {
+        "uuid": "3191e87b-ad02-4c88-b03b-b33e1599ab6f",
+        "name": "yamahaday"
+      }, {
+        "uuid": "3f731b4e-ba3f-4d02-83e9-06721a528797",
+        "name": "YamahaDay2022"
+      }, {
+        "uuid": "8a3aea53-6c85-4403-914c-bf2b4dc15782",
+        "name": "YamahaDay2022Indonesia"
+      }, {
+        "uuid": "0a5c6519-f79c-41c5-a20b-a7267eeca214",
+        "name": "Yamaha67thn"
+      }],
+      "38": null,
+      "39": null,
+      "40": [{
+        "uuid": "7da82fd3-b69c-43d1-91f4-e2c093351b9e",
+        "name": "ldkpolkesku_22"
+      }],
+      "41": [{
+        "uuid": "4a8ee05d-35ce-4098-8002-2034bab29756",
+        "name": "Harkopnas75"
+      }, {
+        "uuid": "30acf886-73ee-4ad9-ab7c-60af0b6e1e13",
+        "name": "komidabangkit"
+      }, {
+        "uuid": "107d4f6e-39ad-4b46-8e31-d10e2f2aa530",
+        "name": "bangkitbersamakomida"
+      }, {
+        "uuid": "df417386-6d68-4fb2-ad64-2e3db3299ef6",
+        "name": "KOMIDAuntukPerempuanTangguhIndonesia"
+      }],
+      "42": [{
+        "uuid": "c052b33e-cb88-4987-ad66-d0a556fdcfe3",
+        "name": "AKA1908"
+      }],
+      "43": null,
+      "44": null,
+      "45": null,
+      "46": null,
+      "47": [{
+        "uuid": "46fea9c8-5b93-4d08-84b8-916ac8e6ab9e",
+        "name": "Idul Adha 2022"
+      }, {
+        "uuid": "d98fd9ec-6b71-4f30-8888-efec74ba1c9f",
+        "name": "Twibbon Idul Adha 2022"
+      }, {
+        "uuid": "6c4e6da1-6d96-49bf-8dfa-528c96876be3",
+        "name": "idul adha"
+      }, {
+        "uuid": "5d854c3c-4808-469d-b192-cc41cbc77555",
+        "name": "Idul Adha 1443H"
+      }],
+      "48": [{
+        "uuid": "8b6ae0a0-e7da-4fc7-9b03-2301f5d9b15d",
+        "name": "Iduladha1443"
+      }],
+      "49": [{
+        "uuid": "72db195d-4a51-4915-b7b4-ad8017880285",
+        "name": "Lebaran idul adha 2022"
+      }, {
+        "uuid": "6c4e6da1-6d96-49bf-8dfa-528c96876be3",
+        "name": "idul adha"
+      }, {
+        "uuid": "46fea9c8-5b93-4d08-84b8-916ac8e6ab9e",
+        "name": "Idul Adha 2022"
+      }, {
+        "uuid": "9026d475-4c2f-460b-9ac1-27504192805a",
+        "name": "IDUL Adha 1443"
+      }, {
+        "uuid": "319873ad-e09a-466b-9094-034c8bfa67ba",
+        "name": "Lebaran haji"
+      }, {
+        "uuid": "cdfc921f-ee7f-4de5-999c-b6a2ddfcdec4",
+        "name": "Selamat lebaran"
+      }, {
+        "uuid": "396ea89e-a3e8-446f-8b3e-2fee654e50a8",
+        "name": "Selamat Lebaran 2022"
+      }, {
+        "uuid": "6c649404-6e02-4aa1-a5cb-171c252da4cf",
+        "name": "selamat lebaran 1443"
+      }, {
+        "uuid": "ec828e6a-84b2-4e5c-bcf4-47bcb616746b",
+        "name": "1441 Hijriah"
+      }, {
+        "uuid": "1c831178-ebf0-446e-90ca-a21fb36de68f",
+        "name": "Minal Aidzin Wal Faidzin"
+      }, {
+        "uuid": "52270335-6f5f-410f-89de-6b1900f9d707",
+        "name": "Hari raya qurban"
+      }, {
+        "uuid": "87434e4b-3b91-4a5a-b7b3-20effde29c6e",
+        "name": "SILATURAHMI"
+      }, {
+        "uuid": "e22b6fb2-fcfd-44c5-9608-a3be5f8b8a79",
+        "name": "Ketupat 2022"
+      }, {
+        "uuid": "e37b4071-b868-420f-8892-089443ffbf1a",
+        "name": "Hari Raya Islam"
+      }, {
+        "uuid": "304c35f8-1fa5-4301-88a3-636bea41efc6",
+        "name": "Hari raya idul adha"
+      }],
+      "50": [{
+        "uuid": "8672a4fd-23e0-4f2b-8595-b737857ce2c5",
+        "name": "Idul Adha 1443 H"
+      }, {
+        "uuid": "3c9b3dc9-9c6b-4507-824f-b6bf1aa595cb",
+        "name": "1443 h"
+      }],
+      "51": [{
+        "uuid": "8d66fe1e-5eaa-4d5b-8a59-88620b8ccfa4",
+        "name": "MATSAMAMAN2KOTABEKASI2022"
+      }, {
+        "uuid": "f2ec681e-b95f-4f6e-be54-170e3e455138",
+        "name": "man2kotabekasi"
+      }, {
+        "uuid": "f5012fd4-f866-4ab2-949c-48fb30589d1d",
+        "name": "matsama2022"
+      }, {
+        "uuid": "db3462b6-c356-454c-8fab-6145bcdc35a4",
+        "name": "newschoolnewjourney"
+      }],
+      "52": null,
+      "53": null,
+      "54": null,
+      "55": null,
+      "56": null,
+      "57": null,
+      "58": [{
+        "uuid": "a6d2717b-b36e-454f-83c9-8e312fc958eb",
+        "name": "iduladha20222"
+      }, {
+        "uuid": "6058a703-0017-422e-ba26-6d83bd8f32ad",
+        "name": "kaiservices"
+      }],
+      "59": [{
+        "uuid": "5d91e2ba-b9eb-47d3-ab2d-4d091ef1afcc",
+        "name": "pkkmbpolkemar pkkmb kemenkesRI"
+      }],
+      "60": [{
+        "uuid": "b9831102-b505-4f05-822e-485a6a2e911a",
+        "name": "EstuImpresyaku"
+      }, {
+        "uuid": "7aee91e7-e102-487f-9862-7ddfa042b3a3",
+        "name": "SMPN1PLEMAHAN"
+      }, {
+        "uuid": "f91ac61e-daba-4241-a587-e87d173ee071",
+        "name": "SMPKEDIRI"
+      }, {
+        "uuid": "5492cc24-7c2f-4baa-817f-c85f57f0c41c",
+        "name": "kediri"
+      }, {
+        "uuid": "b7d8e10c-b00f-49b0-8a2a-598569d6bf19",
+        "name": "jawatimur"
+      }],
+      "61": [{
+        "uuid": "d98fd9ec-6b71-4f30-8888-efec74ba1c9f",
+        "name": "Twibbon Idul Adha 2022"
+      }, {
+        "uuid": "9e005db7-12d5-4b64-b33d-19f1f6d92195",
+        "name": "Bingkai Foto Idul Adha 2022"
+      }, {
+        "uuid": "04b543fe-b3a9-4843-83f5-430d0f7c2cfd",
+        "name": "Eid Al Adha 2022"
+      }],
+      "62": null,
+      "63": null
+    },
+    "publish": {
+      "0": true,
+      "1": true,
+      "2": true,
+      "3": true,
+      "4": true,
+      "5": true,
+      "6": true,
+      "7": true,
+      "8": true,
+      "9": true,
+      "10": true,
+      "11": true,
+      "12": true,
+      "13": true,
+      "14": true,
+      "15": true,
+      "16": true,
+      "17": true,
+      "18": true,
+      "19": true,
+      "20": true,
+      "21": true,
+      "22": true,
+      "23": true,
+      "24": true,
+      "25": true,
+      "26": true,
+      "27": true,
+      "28": true,
+      "29": true,
+      "30": true,
+      "31": true,
+      "32": true,
+      "33": true,
+      "34": true,
+      "35": true,
+      "36": true,
+      "37": true,
+      "38": true,
+      "39": true,
+      "40": true,
+      "41": true,
+      "42": true,
+      "43": true,
+      "44": true,
+      "45": true,
+      "46": true,
+      "47": true,
+      "48": true,
+      "49": true,
+      "50": true,
+      "51": true,
+      "52": true,
+      "53": true,
+      "54": true,
+      "55": true,
+      "56": true,
+      "57": true,
+      "58": true,
+      "59": true,
+      "60": true,
+      "61": true,
+      "62": true,
+      "63": true
+    },
+    "firstPublish": {
+      "0": 1652921807000,
+      "1": 1654301800000,
+      "2": 1654845910000,
+      "3": 1654413621000,
+      "4": 1657427845000,
+      "5": 1652545606000,
+      "6": 1652331090000,
+      "7": 1625092783000,
+      "8": 1657185617000,
+      "9": 1652330626000,
+      "10": 1656817965000,
+      "11": 1657350033000,
+      "12": 1656824262000,
+      "13": 1656609872000,
+      "14": 1657473125000,
+      "15": 1652328441000,
+      "16": 1657282309000,
+      "17": 1657091818000,
+      "18": 1654870687000,
+      "19": 1652329664000,
+      "20": 1654354034000,
+      "21": 1657379026000,
+      "22": 1657511929000,
+      "23": 1657458317000,
+      "24": 1657373643000,
+      "25": 1657107610000,
+      "26": 1655515968000,
+      "27": 1655618858000,
+      "28": 1656989724000,
+      "29": 1656296358000,
+      "30": 1651312244000,
+      "31": 1657524963000,
+      "32": 1657275386000,
+      "33": 1655277478000,
+      "34": 1657338312000,
+      "35": 1651313057000,
+      "36": 1657334289000,
+      "37": 1656471268000,
+      "38": 1657074111000,
+      "39": 1654870522000,
+      "40": 1657376828000,
+      "41": 1657547701000,
+      "42": 1656984080000,
+      "43": 1646996321000,
+      "44": 1651552000000,
+      "45": 1656404690000,
+      "46": 1657379216000,
+      "47": 1651440856000,
+      "48": 1655819011000,
+      "49": 1655369902000,
+      "50": 1657276458000,
+      "51": 1657319331000,
+      "52": 1657254229000,
+      "53": 1622749043000,
+      "54": 1656650205000,
+      "55": 1657436193000,
+      "56": 1657455668000,
+      "57": 1657506619000,
+      "58": 1657379502000,
+      "59": 1656330559000,
+      "60": 1657517539000,
+      "61": 1653250770000,
+      "62": 1657336955000,
+      "63": 1657444901000
+    },
+    "campaignCreator.uuid": {
+      "0": "3f98a306-6f8a-4117-a327-371416949109",
+      "1": "3f98a306-6f8a-4117-a327-371416949109",
+      "2": "3f98a306-6f8a-4117-a327-371416949109",
+      "3": "6349b5e5-bf35-4c5a-8c4d-cdb58254514c",
+      "4": "1ce5400b-3bed-434e-8b70-5dfeec1398d9",
+      "5": "3f98a306-6f8a-4117-a327-371416949109",
+      "6": "d6784279-5648-4dfb-af46-ec8c22a50b15",
+      "7": "2add13fa-de1b-465d-a010-353c28159c79",
+      "8": "5413ea14-b80b-4f76-bb75-0d883563cadd",
+      "9": "d6784279-5648-4dfb-af46-ec8c22a50b15",
+      "10": "7cd843e2-88d0-4225-a6c5-3333f735af0b",
+      "11": "81b09cec-de5d-4049-aeb9-652d711efbd0",
+      "12": "baca03dd-a08c-49c7-9797-7ec226c43cf5",
+      "13": "31d6a966-29fc-4f0e-bfac-22ce95d32c41",
+      "14": "8fd5f927-8214-4488-b6ae-d9e08828d511",
+      "15": "d6784279-5648-4dfb-af46-ec8c22a50b15",
+      "16": "515a904f-8ad1-4d25-8e48-db8d4362ce3c",
+      "17": "4b705426-a860-4f20-ac8b-d7806341ba83",
+      "18": "4a6bae6d-a43a-42a3-802e-6f888f668434",
+      "19": "d6784279-5648-4dfb-af46-ec8c22a50b15",
+      "20": "4c682962-b23b-4607-90a9-1280db80c307",
+      "21": "a04936e1-83f0-4175-ac59-349e6481200c",
+      "22": "86170426-7ff7-4754-b452-13993c8eef4f",
+      "23": "a8ca8e73-ceff-4a35-be72-a06e16a8b1ef",
+      "24": "32a9c3d7-90fb-4f45-989c-a52fd305b896",
+      "25": "05541d4c-614f-4853-ae4a-bf8eabbf37e9",
+      "26": "ddb5754b-b106-4418-8f77-01bbc50ce082",
+      "27": "cec44b23-2ce6-47e7-b526-e90b0a545345",
+      "28": "64588212-953f-434d-9d0a-0002da3ca5d5",
+      "29": "e1e51e7f-6bca-4f3d-b2f8-849e28a36c96",
+      "30": "99a81574-e067-43fa-922b-59b70baa86d1",
+      "31": "306f9523-88e3-4fbf-971e-197208865706",
+      "32": "b7f763e3-15e8-413c-8c8b-dd422e7b5eaa",
+      "33": "69ca4fd2-f430-480f-8fc4-735e15729164",
+      "34": "52c927fb-34ab-41cc-9662-104341674c2e",
+      "35": "99a81574-e067-43fa-922b-59b70baa86d1",
+      "36": "ed326afe-9915-40bc-bf0d-7be8d8e469d5",
+      "37": "13128417-554a-4bb7-8142-04fd5c168031",
+      "38": "637363f6-0531-4cb5-8650-184ff8681adb",
+      "39": "4a6bae6d-a43a-42a3-802e-6f888f668434",
+      "40": "832ff665-9726-47c5-8a38-ff54439d4d88",
+      "41": "b01b545d-8da2-4bb6-845d-072789e5ee3c",
+      "42": "b4c7856b-5c4e-41b5-a917-246972f4a8f5",
+      "43": "f700e06c-2f60-4d39-b34b-5e03542ef007",
+      "44": "594e2d80-7f87-496e-87c1-d4420ffc882f",
+      "45": "0c18db16-6a86-456f-920c-1c8f55a05ce1",
+      "46": "00578e8b-69bb-4f43-8933-1004871d3e30",
+      "47": "81849ff2-ea02-41d0-8d10-6b441a4c66dc",
+      "48": "ee519115-3165-43ac-8469-edaa12f77213",
+      "49": "32723483-6bbe-49be-b0f8-858c6e3da7d0",
+      "50": "5c252fc1-2394-4529-b01e-f4bf0c9dd024",
+      "51": "bc3fe4c2-3dc8-4278-bd40-50ebdba08581",
+      "52": "e0f28ad7-1bd3-45f9-af59-6212d6dd4cc4",
+      "53": "21158641-e1de-4aa6-aa75-f5a7c32497da",
+      "54": "01e5b084-b2a1-4d5f-b11e-37317de756ea",
+      "55": "5f158a3a-4926-41ef-b321-6aadac2fbc5a",
+      "56": "af1e216f-862b-4ad8-9329-3aa04b890caa",
+      "57": "3d3f52c0-d6ea-4864-bedd-b2739fbd001f",
+      "58": "8fccfa43-792e-4206-8b81-f02ca090586a",
+      "59": "0f451581-cf6c-499e-a520-db0f2afe868f",
+      "60": "2a8f2c4e-64db-49ec-a48e-536dc95f4d9d",
+      "61": "81849ff2-ea02-41d0-8d10-6b441a4c66dc",
+      "62": "891a9594-7b2f-45ea-8cab-10f7f82682bf",
+      "63": "0392d3fe-273f-43c7-868f-6c3168495a22"
+    },
+    "campaignCreator.name": {
+      "0": "PAPAN TULIS OFFICIAL",
+      "1": "PAPAN TULIS OFFICIAL",
+      "2": "PAPAN TULIS OFFICIAL",
+      "3": "Editorial staff",
+      "4": "Tim Kampus Mengajar",
+      "5": "PAPAN TULIS OFFICIAL",
+      "6": "slabsoft.com",
+      "7": "Riza Fuady",
+      "8": "Direktorat SMK",
+      "9": "slabsoft.com",
+      "10": "Denmas Ariefsiswobudoyo",
+      "11": "Pemerintah Kabupaten Cianjur",
+      "12": "Quang D\u01b0\u01a1ng Minh",
+      "13": "Ricardo Briccio Jumawan",
+      "14": "FPT Shop",
+      "15": "slabsoft.com",
+      "16": "LEKXXISS YALLY KOMPASTALAR",
+      "17": "KemenkopUKM",
+      "18": "Ririn Riwayati SPd",
+      "19": "slabsoft.com",
+      "20": "Lutfi-Edukasi Grafis",
+      "21": "OTADAMA UNIVERSITAS TIDAR 2022",
+      "22": "bem poltekkes",
+      "23": "NU Online",
+      "24": "Humas KAI",
+      "25": "JSIT Indonesia",
+      "26": "Liana",
+      "27": "ORANG BIASA",
+      "28": "Brand Sponsorship PLN",
+      "29": "SHE BUMA LATI",
+      "30": "Ruangojol.com",
+      "31": "BTPN Syariah",
+      "32": "TIM MAJALAH MIMBAR MTS BANIN",
+      "33": "Leeanne Dayrit",
+      "34": "Sobat KODEKO",
+      "35": "Ruangojol.com",
+      "36": "hermin eka",
+      "37": "Yamaha Indonesia",
+      "38": "BPK PENABUR Jakarta",
+      "39": "Ririn Riwayati SPd",
+      "40": "Jordy Laning",
+      "41": "KOMIDA | KSP MITRA DHUAFA",
+      "42": "Cousin Dee Dee",
+      "43": "Duta Inspirasi Indonesia",
+      "44": "Hariz Daily",
+      "45": "Publikasi - Biro Komunikasi Publik Kementerian PUPR",
+      "46": "PKSART Designer",
+      "47": "Almira",
+      "48": "Andi Fauzi",
+      "49": "Rifki Riyadi Sihabudin",
+      "50": "rijal alfi",
+      "51": "OSIS MAN 2 Kota Bekasi",
+      "52": "Islahj",
+      "53": "DIGItaxs Studio's",
+      "54": "Naik pangkat",
+      "55": "OSIS SMKN 4 BATAM",
+      "56": "smkn1magelang",
+      "57": "LPT SuperTeam",
+      "58": "KAI Services Marcoom",
+      "59": "pkkmbpolkesmar",
+      "60": "Staff Administrator",
+      "61": "Almira",
+      "62": "Petrokimia Gresik",
+      "63": "OSIS VHS 7 KABTA"
+    },
+    "campaignCreator.avatar": {
+      "0": "3f98a306-6f8a-4117-a327-371416949109.jpg",
+      "1": "3f98a306-6f8a-4117-a327-371416949109.jpg",
+      "2": "3f98a306-6f8a-4117-a327-371416949109.jpg",
+      "3": "6349b5e5-bf35-4c5a-8c4d-cdb58254514c.jpg",
+      "4": "1ce5400b-3bed-434e-8b70-5dfeec1398d9.jpg",
+      "5": "3f98a306-6f8a-4117-a327-371416949109.jpg",
+      "6": "d6784279-5648-4dfb-af46-ec8c22a50b15.jpg",
+      "7": "",
+      "8": "",
+      "9": "d6784279-5648-4dfb-af46-ec8c22a50b15.jpg",
+      "10": "7cd843e2-88d0-4225-a6c5-3333f735af0b.jpg",
+      "11": "81b09cec-de5d-4049-aeb9-652d711efbd0.jpg",
+      "12": "",
+      "13": "",
+      "14": "",
+      "15": "d6784279-5648-4dfb-af46-ec8c22a50b15.jpg",
+      "16": "515a904f-8ad1-4d25-8e48-db8d4362ce3c.jpg",
+      "17": "4b705426-a860-4f20-ac8b-d7806341ba83.jpg",
+      "18": "4a6bae6d-a43a-42a3-802e-6f888f668434.jpg",
+      "19": "d6784279-5648-4dfb-af46-ec8c22a50b15.jpg",
+      "20": "4c682962-b23b-4607-90a9-1280db80c307.png",
+      "21": "a04936e1-83f0-4175-ac59-349e6481200c.jpg",
+      "22": "",
+      "23": "a8ca8e73-ceff-4a35-be72-a06e16a8b1ef.jpg",
+      "24": "",
+      "25": "a9d53370-e5c9-4809-8128-7d4b029f3980.png",
+      "26": "ddb5754b-b106-4418-8f77-01bbc50ce082.jpg",
+      "27": "",
+      "28": "64588212-953f-434d-9d0a-0002da3ca5d5.jpg",
+      "29": "e1e51e7f-6bca-4f3d-b2f8-849e28a36c96.jpg",
+      "30": "43391422-40fe-47b0-92a9-5daf0f4bd7ce.png",
+      "31": "306f9523-88e3-4fbf-971e-197208865706.png",
+      "32": "",
+      "33": "",
+      "34": "52c927fb-34ab-41cc-9662-104341674c2e.jpg",
+      "35": "43391422-40fe-47b0-92a9-5daf0f4bd7ce.png",
+      "36": "ed326afe-9915-40bc-bf0d-7be8d8e469d5.jpg",
+      "37": "",
+      "38": "dbe0c83d-8e6b-4ae5-9b9f-1ceaf1567a39.png",
+      "39": "4a6bae6d-a43a-42a3-802e-6f888f668434.jpg",
+      "40": "",
+      "41": "b01b545d-8da2-4bb6-845d-072789e5ee3c.jpg",
+      "42": "b4c7856b-5c4e-41b5-a917-246972f4a8f5.jpg",
+      "43": "f700e06c-2f60-4d39-b34b-5e03542ef007.jpg",
+      "44": "594e2d80-7f87-496e-87c1-d4420ffc882f.jpg",
+      "45": "",
+      "46": "091c0bb5-d291-4da6-bb58-cb32b2be34c8.png",
+      "47": "81849ff2-ea02-41d0-8d10-6b441a4c66dc.jpg",
+      "48": "ee519115-3165-43ac-8469-edaa12f77213.jpg",
+      "49": "32723483-6bbe-49be-b0f8-858c6e3da7d0.jpg",
+      "50": "",
+      "51": "bc3fe4c2-3dc8-4278-bd40-50ebdba08581.jpg",
+      "52": "",
+      "53": "21158641-e1de-4aa6-aa75-f5a7c32497da.png",
+      "54": "01e5b084-b2a1-4d5f-b11e-37317de756ea.jpg",
+      "55": "5f158a3a-4926-41ef-b321-6aadac2fbc5a.jpg",
+      "56": "",
+      "57": "",
+      "58": "8fccfa43-792e-4206-8b81-f02ca090586a.png",
+      "59": "",
+      "60": "2a8f2c4e-64db-49ec-a48e-536dc95f4d9d.jpg",
+      "61": "81849ff2-ea02-41d0-8d10-6b441a4c66dc.jpg",
+      "62": "",
+      "63": ""
+    },
+    "hits": {
+      "0": "1162546",
+      "1": "393546",
+      "2": "290515",
+      "3": "118838",
+      "4": "21034",
+      "5": "58678",
+      "6": "71068",
+      "7": "140912",
+      "8": "13853",
+      "9": "42320",
+      "10": "28072",
+      "11": "18305",
+      "12": "12035",
+      "13": "10914",
+      "14": "7451",
+      "15": "20076",
+      "16": "8030",
+      "17": "14679",
+      "18": "23505",
+      "19": "27848",
+      "20": "17395",
+      "21": "5299",
+      "22": "4983",
+      "23": "5159",
+      "24": "6504",
+      "25": "8892",
+      "26": "12673",
+      "27": "13913",
+      "28": "9959",
+      "29": "174292",
+      "30": "11951",
+      "31": "5669",
+      "32": "8759",
+      "33": "4638",
+      "34": "4399",
+      "35": "11241",
+      "36": "6110",
+      "37": "30590",
+      "38": "3372",
+      "39": "11410",
+      "40": "3198",
+      "41": "4142",
+      "42": "8307",
+      "43": "60599",
+      "44": "9139",
+      "45": "8709",
+      "46": "2906",
+      "47": "8828",
+      "48": "7838",
+      "49": "7217",
+      "50": "2638",
+      "51": "3382",
+      "52": "6413",
+      "53": "112961",
+      "54": "10780",
+      "55": "2283",
+      "56": "2285",
+      "57": "2318",
+      "58": "2166",
+      "59": "7686",
+      "60": "2313",
+      "61": "6982",
+      "62": "2797",
+      "63": "2020"
+    }
+  }]
+}

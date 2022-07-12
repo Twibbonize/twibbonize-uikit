@@ -2422,6 +2422,17 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/assets\/img\/campaign thumbnails\/default.webp" : {
+      "ft" : 8388608,
+      "iS" : 524,
+      "oA" : 0,
+      "oAP" : "\/assets\/img\/campaign thumbnails\/default.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
     "\/assets\/img\/campaign thumbnails\/DIKLAT NASIONAL BERSERTIFIKAT 40 JP GRATIS.jpg" : {
       "ft" : 16384,
       "iS" : 141720,
@@ -5625,6 +5636,22 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/build\/.gitignore",
+      "oF" : 0
+    },
+    "\/campaign.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/campaign-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/explore.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/explore.html",
       "oF" : 0
     },
     "\/home_alt.html" : {

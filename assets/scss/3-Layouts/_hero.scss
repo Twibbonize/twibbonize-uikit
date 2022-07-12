@@ -321,7 +321,8 @@
 .hero_questions,
 .hero_no_results,
 .hero_privacy,
-.hero_upcoming_projects {
+.hero_upcoming_projects,
+.hero_explore {
   @include hero;
 }
 
@@ -699,4 +700,9 @@
       object-position: center;
     }
   }
+}
+
+
+.hero_explore {
+  margin-top: 80px;
 }

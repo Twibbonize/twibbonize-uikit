@@ -3,7 +3,7 @@
     color: $color_stroke;
 }
 .color_brand {
-    color: $color_brand;
+    color: $color_brand !important;
 }
 .color_brand_light {
     color: $color_brand_light;
@@ -351,4 +351,8 @@
 }
 .w-fit {
     width: fit-content;
+}
+
+.capitalize {
+    text-transform: capitalize;
 }
