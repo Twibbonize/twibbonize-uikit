@@ -5654,28 +5654,12 @@
       "oAP" : "\/explore.html",
       "oF" : 0
     },
-    "\/home_alt.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/home_alt.html",
-      "oF" : 0
-    },
     "\/home.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/home.html",
-      "oF" : 0
-    },
-    "\/home3.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/home3.html",
       "oF" : 0
     },
     "\/index.html" : {
