@@ -580,7 +580,7 @@
         avatarBaseUrl: 'https://di8f64wxtiymb.cloudfront.net/',
         campaigns: [],
         fetchCampaigns: async function () {
-          const response = await fetch('/campaign.json')
+          const response = await fetch('campaign.json')
           const {
             data
           } = await response.json()
