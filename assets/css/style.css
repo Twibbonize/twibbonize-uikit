@@ -11453,6 +11453,7 @@ body.expand-menu--open {
       flex: 1 1 0;
       display: flex;
       justify-content: end;
+      align-items: center;
       gap: 16px; }
       @media screen and (max-width: 768px) {
         .header__explore .header-wrapper .header__menu {
