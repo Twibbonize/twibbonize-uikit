@@ -10,12 +10,8 @@
   align-items: stretch;
   flex-flow: row nowrap;
   position: relative;
-  display: none;
+  display: flex;
   margin-top: 24px;
-
-  @include md_screen {
-    display: flex;
-  }
 
   &> :not(:last-child) {
     margin-right: 16px;

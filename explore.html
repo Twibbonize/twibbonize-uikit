@@ -350,7 +350,7 @@
                           <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
                           <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
                         </svg>
-                        <span class="txt_sm" x-text="`${abbreviateNumber(campaign.hits)} Supports`"></span>
+                        <span x-text="`${abbreviateNumber(campaign.hits)} Supports`"></span>
                       </a>
                     </div>
                     <!-- =============== -->
@@ -537,14 +537,16 @@
     $('#sort-campaign').select2({
       minimumResultsForSearch: Infinity,
       dropdownAutoWidth: true,
-      width: '200px'
+      width: '200px',
+      selectionCssClass: "select2-selection-sm" 
     })
 
 
     $('.category-filter').select2({
       minimumResultsForSearch: Infinity,
       dropdownAutoWidth: true,
-      width: '250px'
+      width: '250px',
+      selectionCssClass: "select2-selection-sm"
     })
 
     dayjs.extend(dayjs_plugin_relativeTime)
