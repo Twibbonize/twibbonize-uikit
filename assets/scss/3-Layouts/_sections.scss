@@ -1474,6 +1474,14 @@
 
 .section__filter-campaigns {
 
+  margin-top: 120px;
+  .section__head {
+    margin-bottom: 24px;
+
+    .section__title {
+      font-size: 32px !important;
+    }
+  }
   .filter_container {
     display: flex;
     align-items: center;

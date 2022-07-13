@@ -11366,20 +11366,87 @@ body.expand-menu--open {
             font-size: 12px;
             column-gap: 4px; }
 
-.header__explore .header-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 80px;
-  gap: 16px; }
-  @media screen and (min-width: 1025px) {
-    .header__explore .header-wrapper .header__logo .header__brand-mobile {
-      display: none; } }
-  .header__explore .header-wrapper .header__logo .header__brand {
-    display: none; }
-    @media screen and (min-width: 769px) {
+.header__explore {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  border-bottom: 1px solid #DDE5E5;
+  background-color: #ffffff; }
+  .header__explore .header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    gap: 16px; }
+    .header__explore .header-wrapper .header__logo {
+      flex: 1 1 0; }
+      @media screen and (max-width: 768px) {
+        .header__explore .header-wrapper .header__logo {
+          flex: 0 1 0; } }
+      @media screen and (min-width: 1025px) {
+        .header__explore .header-wrapper .header__logo .header__brand-mobile {
+          display: none; } }
       .header__explore .header-wrapper .header__logo .header__brand {
-        display: block; } }
+        display: none; }
+        @media screen and (min-width: 769px) {
+          .header__explore .header-wrapper .header__logo .header__brand {
+            display: block; } }
+    .header__explore .header-wrapper .header__center {
+      display: flex;
+      justify-content: center;
+      flex: 0 1 auto; }
+      @media screen and (max-width: 768px) {
+        .header__explore .header-wrapper .header__center {
+          flex: 1 1 auto; } }
+    .header__explore .header-wrapper .header__search {
+      height: 3rem;
+      width: 100%;
+      position: relative;
+      flex-grow: 1;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.08);
+      background: #ffffff;
+      border-radius: 80px;
+      border: 1px solid #DDE5E5;
+      padding-left: 12px;
+      font-size: 14px; }
+      @media screen and (min-width: 1025px) {
+        .header__explore .header-wrapper .header__search {
+          min-width: 348px; } }
+      .header__explore .header-wrapper .header__search input {
+        width: 100%;
+        height: 100%;
+        background: transparent !important;
+        border: 0 !important;
+        margin-left: 8px; }
+        .header__explore .header-wrapper .header__search input:focus {
+          outline: 0 !important; }
+      .header__explore .header-wrapper .header__search .header__filter {
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        right: 14px;
+        top: 7px;
+        background: #F0F0F0;
+        text-align: center;
+        border: 0;
+        position: absolute; }
+    .header__explore .header-wrapper .header__menu {
+      flex: 1 1 0;
+      display: flex;
+      justify-content: end;
+      gap: 16px; }
+      @media screen and (max-width: 768px) {
+        .header__explore .header-wrapper .header__menu {
+          flex: 0 1 0; } }
+    .header__explore .header-wrapper .header__bar-menu {
+      border: 0;
+      background: transparent;
+      height: 3rem;
+      padding: 0 8px;
+      border-radius: 8px; }
+
 .hero__1 {
   overflow: hidden;
   position: relative;
@@ -13116,9 +13183,15 @@ body.expand-menu--open {
         margin: 0 !important; }
       .section__download .marketing__content .marketing__cta a img {
         height: 64px; } }
-.section__filter-campaigns .filter_container {
-  display: flex;
-  align-items: center; }
+.section__filter-campaigns {
+  margin-top: 120px; }
+  .section__filter-campaigns .section__head {
+    margin-bottom: 24px; }
+    .section__filter-campaigns .section__head .section__title {
+      font-size: 32px !important; }
+  .section__filter-campaigns .filter_container {
+    display: flex;
+    align-items: center; }
 
 .bottom-nav__twb {
   position: fixed;
@@ -13161,11 +13234,15 @@ body.expand-menu--open {
   min-width: 0px;
   flex-shrink: 0;
   flex-basis: auto;
-  display: flex;
   -webkit-box-align: stretch;
   align-items: stretch;
   flex-flow: row nowrap;
-  position: relative; }
+  position: relative;
+  display: none;
+  margin-top: 24px; }
+  @media screen and (min-width: 769px) {
+    .filters-sort__container {
+      display: flex; } }
   .filters-sort__container > :not(:last-child) {
     margin-right: 16px; }
   .filters-sort__container .filters {

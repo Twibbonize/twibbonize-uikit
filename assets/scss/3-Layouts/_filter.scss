@@ -6,11 +6,16 @@
   min-width: 0px;
   flex-shrink: 0;
   flex-basis: auto;
-  display: flex;
   -webkit-box-align: stretch;
   align-items: stretch;
   flex-flow: row nowrap;
   position: relative;
+  display: none;
+  margin-top: 24px;
+
+  @include md_screen {
+    display: flex;
+  }
 
   &> :not(:last-child) {
     margin-right: 16px;
