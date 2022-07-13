@@ -91,6 +91,12 @@ textarea,
     border: 1px solid $color_stroke !important;
     box-shadow: $shadow_1;
   }
+
+  &::placeholder {
+    color: $color_placeholder !important;
+    font-size: inherit;
+  }
+
 }
 
 .form-select {

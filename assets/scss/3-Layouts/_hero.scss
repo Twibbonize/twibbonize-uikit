@@ -668,8 +668,8 @@
   #hero__illustration {
     position: absolute;
     right: 0;
-    height: 140%;
-    bottom: 0;
+    // height: 140%;
+    bottom: -110px;
     z-index: 10;
     visibility: hidden;
     // transform: translatey(0px);

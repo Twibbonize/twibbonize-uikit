@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css" />
   <link rel="stylesheet" href="assets/css/style.css?v=0.1" />
   <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
 </head>
 
 <body>
@@ -250,8 +251,9 @@
             </a>
           </div>
 
-          <div class="header__search">
-            <input type="text" placeholder="Search any campaigns" />
+          <div x-data class="header__search">
+            <input type="text" placeholder="Search any campaigns"
+              @input.debounce.300ms="$dispatch('searching', { query: $event.target.value })" />
             <button class="header__result">
               <i data-feather="search" width="16" height="16"></i>
             </button>
@@ -281,7 +283,7 @@
       </div>
     </header>
 
-    <div class="hero_explore bg_white">
+    <!-- <div class="hero_explore bg_white">
       <div class="container">
         <h1 class="text-center">Explore Campaigns</h1>
       </div>
@@ -344,30 +346,35 @@
 
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div class="container">
-      <div class="section section__filter-campaigns mt-50">
-        <div class="section__head">
-          <div class="d-flex justify-content-between align-items-center w-full">
-            <div class="filter_container space-x-10">
-              <span class="color_text txt_sm" style="min-width:
-                max-content">
-                FILTER BY:
-              </span>
-              <div>
-                <input type="text" class="form-control form-control-sm" placeholder="supports range">
+    <div x-data="campaignGrid()" x-init="fetchCampaigns" class="container mt-120">
+      <div class="section section__filter-campaigns">
+        <div class="section__head flex-column">
+          <h2 x-show="!query" class="section__title mb-25"> Explore All Campaigns</h2>
+          <h2 x-show="query" class="section__title mb-25">
+            <span class="color_text">Search results for </span>
+            <span x-text="query"></span>
+          </h2>
+          <div class="filters-sort__container">
+            <div class="filters">
+              <div class="filters-wrapper">
+                <span class="color_text txt_sm" style="min-width:
+              max-content">
+                  FILTER BY:
+                </span>
+                <button class="btn-filter">support range</button>
+                <select class="category-filter" aria-label="default select example"
+                  data-placeholder="filter by category">
+                  <option></option>
+                  <template x-for="category in categories">
+                    <option :value="category" x-text="category"></option>
+                  </template>
+                </select>
               </div>
-              <!-- <select class="module-filter" aria-label="default select example" data-placeholder="Please select">
-                <option>Frame Module</option>
-                <option>Button Module</option>
-                <option>Support</option>
-                <option>Technique</option>
-                <option>Service Request</option>
-              </select> -->
             </div>
-            <div class="">
-              <div class="d-flex space-x-10 align-items-center sm:mt-20">
+            <div class="sort">
+              <div id="sort-desktop" class="d-flex space-x-10 align-items-center justify-content-end">
                 <span class="color_text txt_sm"> SORT BY: </span>
                 <select id="sort-campaign">
                   <option value="">Trending</option>
@@ -375,10 +382,19 @@
                   <option value="">Recently Added</option>
                 </select>
               </div>
+
+              <button id="toggle-sort-campaign" class="d-inline d-md-none btn btn-transparent btn-sm">
+                <i data-feather="sliders" width="24" height="24"></i>
+              </button>
+
+              <div class="sort-dropdown__container">
+
+              </div>
             </div>
           </div>
         </div>
-        <div x-data="campaignGrid()" x-init="fetchCampaigns">
+
+        <div @searching.window="searchForResults($event.detail)">
           <div class="row mb-30_reset">
             <template x-for="campaign in campaigns" :key="campaign.uuid">
               <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
@@ -420,25 +436,7 @@
                           <a href="Profile.html" class="avatars_name txt_xs" x-text="campaign.campaignCreator.name">
                           </a>
                         </div>
-                        <span x-data="{growth: getRandomFloat()}" class="campaign_growth">
-                          <svg x-show="growth >= 0" class="color_green" width="18" height="16" viewBox="0 0 18 16"
-                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M16.3337 4L10.0003 10.3333L6.66699 7L1.66699 12" stroke="#1BAAA0"
-                              stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M12.333 4H16.333V8" stroke="#1BAAA0" stroke-width="2" stroke-linecap="round"
-                              stroke-linejoin="round" />
-                          </svg>
 
-                          <svg x-show="growth < 0" class="color_red" xmlns="http://www.w3.org/2000/svg" width="18"
-                            height="16" viewBox="0 0 18 16" fill="none">
-                            <path d="M16.3337 12L10.0003 5.66667L6.66699 9L1.66699 4" stroke="#E40F0F"
-                              stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M12.333 12H16.333V8" stroke="#E40F0F" stroke-width="2" stroke-linecap="round"
-                              stroke-linejoin="round" />
-                          </svg>
-
-                          <span x-text="`${Math.abs(growth)} %`"></span>
-                        </span>
                       </div>
                       <div class="hr"></div>
                       <div class="d-flex align-items-center space-x-10 justify-content-between">
@@ -554,51 +552,81 @@
   <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/plugin/relativeTime.js"></script>
   <script src="//unpkg.com/alpinejs" defer></script>
 
-  <!-- <script src="https://unpkg.com/moralis/dist/moralis.js"></script> -->
-  <!-- <script src="assets/js/nft.js"></script> -->
-
   <script>
     feather.replace()
     $('#sort-campaign').select2({
       minimumResultsForSearch: Infinity,
-      dropdownAutoWidth: true
+      dropdownAutoWidth: true,
+      width: '200px'
     })
 
 
+    $('.category-filter').select2({
+      minimumResultsForSearch: Infinity,
+      dropdownAutoWidth: true,
+      width: '250px'
+    })
+
     dayjs.extend(dayjs_plugin_relativeTime)
 
-    // $.ajax({
-    //   url: '/campaign.json',
-    //   success: function (response) {
-    //     console.log(response)
-    //   }
-    // })
+    document.addEventListener('alpine:init', () => {
+      Alpine.store('app', {
+        query: null,
+        currentTab: 'campaigns'
+      })
+    })
 
     const campaignGrid = function () {
       return {
         thumbnailBaseUrl: 'https://thumbnail.twibbonize.com/',
         avatarBaseUrl: 'https://di8f64wxtiymb.cloudfront.net/',
         campaigns: [],
+        query: null,
+        categories: ['Arts & Culture', 'Government & Politics', 'Education', 'Environment', 'Social Causes', 'Sports',
+          'Health & Wellness'
+        ],
         fetchCampaigns: async function () {
           const response = await fetch('campaign.json')
           const {
             data
           } = await response.json()
 
-          this.campaigns = Object.values(data[0].uuid).map(function (item, index) {
-            return {
-              uuid: item,
-              campaignCreator: {
-                name: data[0]['campaignCreator.name'][index],
-                uuid: data[0]['campaignCreator.uuid'][index],
-                avatar: data[0]['campaignCreator.avatar'][index]
-              },
-              thumbnail: data[0]['thumbnail'][index],
-              name: data[0]['name'][index],
-              hits: data[0]['hits'][index],
-              firstPublish: data[0]['firstPublish'][index]
+          const $query = this.query
+
+          this.campaigns = Object.values(data[0].uuid).reduce(function (filtered, item, index) {
+            if (!$query || data[0]['name'][index].toLowerCase().includes($query)) {
+              filtered.push({
+                uuid: item,
+                campaignCreator: {
+                  name: data[0]['campaignCreator.name'][index],
+                  uuid: data[0]['campaignCreator.uuid'][index],
+                  avatar: data[0]['campaignCreator.avatar'][index]
+                },
+                thumbnail: data[0]['thumbnail'][index],
+                name: data[0]['name'][index],
+                hits: data[0]['hits'][index],
+                firstPublish: data[0]['firstPublish'][index]
+              })
             }
-          })
+
+            return filtered
+          }, [])
+
+          // this.campaigns = Object.values(data[0].uuid).map(function (item, index) {
+
+          //   return {
+          //     uuid: item,
+          //     campaignCreator: {
+          //       name: data[0]['campaignCreator.name'][index],
+          //       uuid: data[0]['campaignCreator.uuid'][index],
+          //       avatar: data[0]['campaignCreator.avatar'][index]
+          //     },
+          //     thumbnail: data[0]['thumbnail'][index],
+          //     name: data[0]['name'][index],
+          //     hits: data[0]['hits'][index],
+          //     firstPublish: data[0]['firstPublish'][index]
+          //   }
+          // })
         },
         abbreviateNumber: function (num, fixed = 0) {
           num = parseInt(num)
@@ -617,15 +645,31 @@
             e = d + ['', 'K', 'M', 'B', 'T'][k]; // append power
           return e;
         },
-        getRandomFloat: function (min = -40, max = 40, decimals = 2) {
-          const str = (Math.random() * (max - min) + min).toFixed(decimals);
-          return parseFloat(str);
+        searchForResults: function ({
+          query
+        }) {
+          this.query = query
+          this.fetchCampaigns()
         }
       }
     }
 
     $('.toggle-expand-menu').click(function () {
       $('body').toggleClass('expand-menu--open')
+    })
+
+    $('#toggle-sort-campaign').click(function (e) {
+      e.preventDefault()
+        $('#sort-campaign').select2('open')
+
+      // console.log($('#sort-campaign').data('select2').isOpen())
+      // if ($('#sort-campaign').data('select2').isOpen()) {
+      //   console.log('close')
+      //   // $('#sort-campaign').select2('close')
+      // } else {
+      //   console.log('open')
+      //   $('#sort-campaign').select2('open')
+      // }
     })
 
   </script>

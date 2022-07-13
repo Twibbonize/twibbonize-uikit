@@ -3340,6 +3340,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/assets\/img\/items\/hero_alt.png" : {
+      "ft" : 32768,
+      "iS" : 314938,
+      "oA" : 0,
+      "oAP" : "\/assets\/img\/items\/hero_alt.png",
+      "oF" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/assets\/img\/items\/hero_ilustration.png" : {
       "ft" : 32768,
       "iS" : 829323,
@@ -5306,6 +5319,21 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/assets\/scss\/3-Layouts\/_bottom-nav.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/assets\/scss\/3-Layouts\/_filter.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/scss\/3-Layouts\/_filter.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
