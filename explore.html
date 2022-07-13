@@ -688,6 +688,8 @@
       onHide: function (instance) {
         $(instance.reference).toggleClass('active')
       },
+      interactive: true,
+      appendTo: () => document.body,
       trigger: 'click',
       theme: 'twb'
     })
