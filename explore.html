@@ -254,7 +254,8 @@
           <div x-data class="header__center">
             <div class="header__search">
               <i data-feather="search" width="16" style="position: absolute; top: 12px; color: #ababab"></i>
-              <input type="text" placeholder="Search any campaigns" @input.debounce.300ms="$dispatch('searching',{query: $event.target.value})" />
+              <input type="text" placeholder="Search any campaigns"
+                @input.debounce.300ms="$dispatch('searching',{query: $event.target.value})" />
               <button class="header__filter">
                 <i data-feather="sliders" width="16" height="16"></i>
               </button>
@@ -518,6 +519,26 @@
   </div>
 
 
+  <div id="dropdown-support-filter" style="display: ;none">
+    <div class="tippy-body">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="min. supports">
+      </div>
+
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="max. supports">
+      </div>
+    </div>
+
+    <div class="tippy-footer">
+      <div class="d-flex space-x-10 section-wrapper">
+        <button class="btn btn-secondary btn-sm flex-grow-1">Clear</button>
+        <button class="btn btn-primary btn-sm flex-grow-1">Apply</button>
+      </div>
+    </div>
+  </div>
+
+
   <!-- 🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈 SCRIPTS -->
   <script src="assets/js/jquery-3.6.0.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
@@ -531,6 +552,8 @@
   <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/plugin/relativeTime.js"></script>
   <script src="//unpkg.com/alpinejs" defer></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
 
   <script>
     feather.replace()
@@ -538,7 +561,7 @@
       minimumResultsForSearch: Infinity,
       dropdownAutoWidth: true,
       width: '200px',
-      selectionCssClass: "select2-selection-sm" 
+      selectionCssClass: "select2-selection-sm"
     })
 
 
@@ -653,6 +676,17 @@
       //   console.log('open')
       //   $('#sort-campaign').select2('open')
       // }
+    })
+
+    tippy('.btn-filter', {
+      allowHTML: true,
+      arrow: false,
+      content: document.getElementById('dropdown-support-filter').innerHTML,
+      onShow: function (instance) {
+        console.log(instance)
+      },
+      trigger: 'click',
+      theme: 'twb'
     })
 
   </script>
