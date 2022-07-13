@@ -683,7 +683,10 @@
       arrow: false,
       content: document.getElementById('dropdown-support-filter').innerHTML,
       onShow: function (instance) {
-        console.log(instance)
+        $(instance.reference).toggleClass('active')
+      },
+      onHide: function (instance) {
+        $(instance.reference).toggleClass('active')
       },
       trigger: 'click',
       theme: 'twb'
