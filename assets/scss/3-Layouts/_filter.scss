@@ -1,73 +1,67 @@
 .filters-sort__container {
-  z-index: 10;
-  vertical-align: inherit;
-  max-width: 100%;
-  min-height: 0px;
-  min-width: 0px;
-  flex-shrink: 0;
-  flex-basis: auto;
-  -webkit-box-align: stretch;
-  align-items: stretch;
-  flex-flow: row nowrap;
   position: relative;
   display: flex;
+  justify-content: space-between;
   margin-top: 24px;
+  gap: 16px;
 
-  &> :not(:last-child) {
-    margin-right: 16px;
+  @include sm_screen {
+    flex-direction: column;
+
+    .filters {
+      flex-grow: 1;
+    }
   }
+
+
+  .sort, .filters {
+    display: grid;
+    grid-template-columns: 68px auto;
+    align-items: center;
+    gap: 8px;
+  }
+
+  // &> :not(:last-child) {
+  //   margin-right: 16px;
+  // }
 
   .filters {
-    position: relative;
-    width: 100%;
-    height: auto;
-
-    .filters-wrapper {
-      position: absolute;
-      height: 62px;
-      padding-right: 16px;
-      display: flex;
-      max-width: 100%;
-      align-items: center;
-      overflow: scroll hidden;
-
-      &> :not(:last-child) {
-        margin-right: 16px;
-      }
-    }
+    // position: relative;
+    // width: 100%;
+    // height: auto;
   }
 
-  .sort {
-    vertical-align: inherit;
-    max-width: 100%;
-    min-height: 0px;
-    min-width: 0px;
-    flex-shrink: 0;
-    flex-direction: column;
-    flex-basis: auto;
-    display: flex;
-    -webkit-box-align: stretch;
-    align-items: stretch;
-    justify-content: center;
-    height: 62px;
-    position: relative;
+  // .sort {
+  //   vertical-align: inherit;
+  //   max-width: 100%;
+  //   min-height: 0px;
+  //   min-width: 0px;
+  //   flex-shrink: 0;
+  //   flex-direction: column;
+  //   flex-basis: auto;
+  //   display: flex;
+  //   -webkit-box-align: stretch;
+  //   align-items: stretch;
+  //   justify-content: center;
+  //   height: 62px;
+  //   position: relative;
 
-    background: $color_white;
+  //   background: $color_white;
 
-    .sort-dropdown__container {
-      position: absolute;
-      top: auto;
-      right: auto;
-    }
-  }
+  //   .sort-dropdown__container {
+  //     position: absolute;
+  //     top: auto;
+  //     right: auto;
+  //   }
+  // }
 }
 
 
-#sort-desktop {
-  @include md {
-    visibility: hidden;
-    width: 0 !important;
-    height: 0 !important;
-    pointer-events: none;
-  }
-}
+// #sort-desktop {
+//   @include md {
+//     visibility: hidden;
+//     width: 0 !important;
+//     height: 0 !important;
+//     pointer-events: none;
+//   }
+// }

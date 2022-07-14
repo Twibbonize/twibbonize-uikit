@@ -796,19 +796,27 @@
         flex: 0 1 0;
       }
 
-      .header__brand-mobile {
-        @include lg_screen {
+      @include lg_screen {
+        .header__brand {
+          display: block;
+        }
+
+        .header__brand-mobile {
           display: none;
         }
       }
 
-      .header__brand {
-        display: none;
+      @include tablet_vert_screen {
+        .header__brand {
+          display: none;
+        }
 
-        @include md_screen {
+        .header__brand-mobile {
           display: block;
         }
       }
+
+      
     }
 
 
@@ -817,7 +825,7 @@
       justify-content: center;
       flex: 0 1 auto;
 
-      @include sm_screen {
+      @include tablet_vert_screen {
         flex: 1 1 auto;
       }
     }

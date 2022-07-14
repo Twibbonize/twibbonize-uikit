@@ -21,6 +21,13 @@
   <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css" />
   <link rel="stylesheet" href="assets/css/style.css?v=0.1" />
   <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+  <style>
+    .select2-container {
+      min-width: 160px !important;
+    }
+
+  </style>
 </head>
 
 <body>
@@ -56,276 +63,535 @@
       </div>
     </header>
 
-
-    <div class="hero_explore mt-100">
-      <div class="container">
-        <h1 class="search-results-heading">Explore Campaigns</h1>
-        <p class="search-results-description">
-          18,700,000+ campaigns from thousands of inspirational creators
-        </p>
-        <ul class="search-results-hashtags">
-          <li class="search-results-hashtag search-results-hashtag-heading">
-            Suggested:
-          </li>
-          <li class="search-results-hashtag">
-            <a href="#">
-              #IdulAdha
-            </a>
-          </li>
-          <li class="search-results-hashtag">
-            <a href="#">
-              #HariKoperasi
-            </a>
-          </li>
-          <li class="search-results-hashtag">
-            <a href="#">
-              #HutRI77
-            </a>
-          </li>
-          <li class="search-results-hashtag">
-            <a href="#">
-              #AKHLAKCultureJourney
-            </a>
-          </li>
-          <li class="search-results-hashtag">
-            <a href="#">
-              #MPLS2022
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <section class="section section__filter-campaigns pb-100 ">
-      <div x-data="campaignGrid()" x-init="fetchCampaigns">
-        <div class="section__head flex-column bg-white pb-3 border-b">
+    <div id="app" x-data="app()" x-init="fetchCampaigns">
+      <div>
+        <div class="hero_explore mt-100">
           <div class="container">
-            <div class="filters-sort__container">
-              <div class="filters">
-                <div class="filters-wrapper">
-                  <span class="color_text txt_sm" style="min-width: max-content">
-                    FILTER BY:
-                  </span>
-                  <select class="category-filter" aria-label="default select example"
-                    data-placeholder="filter by category">
-                    <option></option>
-                    <template x-for="category in categories">
-                      <option :value="category" x-text="category"></option>
-                    </template>
-                  </select>
-                </div>
-              </div>
-              <div class="sort">
-                <div id="sort-desktop" class="d-flex space-x-10 align-items-center justify-content-end">
-                  <span class="color_text txt_sm"> SORT BY: </span>
-                  <select id="sort-campaign">
-                    <option value="">Trending</option>
-                    <option value="">Most Popular</option>
-                    <option value="">Recently Added</option>
-                  </select>
-                </div>
+            <h1 class="search-results-heading">
+              <template x-if="query">
+                <span>
+                  <span class="color_text">Search results for </span>
+                  <span class="color_black" x-text="query"></span>
+                </span>
+              </template>
+              <template x-if="!query">
+                <span>
+                  Explore Campaigns
+                </span>
+              </template>
+            </h1>
+            <p class="search-results-description">
+              <template x-if="!query">
+                <span>18,700,000+ campaigns from thousands of inspirational creators</span>
+              </template>
 
-                <button id="toggle-sort-campaign" class="d-inline d-md-none btn btn-transparent btn-sm">
-                  <i data-feather="sliders" width="24" height="24"></i>
-                </button>
-
-                <div class="sort-dropdown__container">
-
-                </div>
-              </div>
-            </div>
+              <template x-if="query">
+                <span>
+                  showing
+                  <span x-text="campaigns.length"></span> campaigns
+                </span>
+              </template>
+            </p>
+            <ul x-show="campaigns.length" class="search-results-hashtags">
+              <li class="search-results-hashtag search-results-hashtag-heading">
+                <span x-show="!query">Suggested:</span>
+                <span x-show="query">Related:</span>
+              </li>
+              <li class="search-results-hashtag">
+                <a href="#">
+                  #IdulAdha
+                </a>
+              </li>
+              <li class="search-results-hashtag">
+                <a href="#">
+                  #HariKoperasi
+                </a>
+              </li>
+              <li class="search-results-hashtag">
+                <a href="#">
+                  #HutRI77
+                </a>
+              </li>
+              <li class="search-results-hashtag">
+                <a href="#">
+                  #AKHLAKCultureJourney
+                </a>
+              </li>
+              <li class="search-results-hashtag">
+                <a href="#">
+                  #MPLS2022
+                </a>
+              </li>
+            </ul>
           </div>
-
         </div>
 
-        <div @searching.window="searchForResults($event.detail)">
-          <div class="container">
-            <div class="row mb-30_reset">
-              <template x-for="campaign in campaigns" :key="campaign.uuid">
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                  <div class="card__item four">
-                    <div class="card_body">
-                      <div class="card_head">
-                        <a href="Item-details.html">
-                          <img
-                            :src="(campaign.thumbnail) ? `${thumbnailBaseUrl}${campaign.thumbnail}` : 'assets/img/campaign thumbnails/default.webp'"
-                            alt="item
-                                img" />
-                        </a>
-                        <a href="#" class="likes space-x-10">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="feather feather-users">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                            <circle cx="9" cy="7" r="4"></circle>
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                          </svg>
-                          <span x-text="`${abbreviateNumber(campaign.hits)} Supports`"></span>
-                        </a>
-                      </div>
-                      <!-- =============== -->
+        <section class="section section__filter-campaigns pb-100 ">
+          <div>
+            <div class="section__head flex-column bg-white pb-3 border-b">
+              <div class="container">
+                <div class="filters-sort__container">
+                  <div class="filters">
+                    <span class="color_text txt_sm" style="min-width: max-content">
+                      FILTER BY:
+                    </span>
+                    <div>
+                      <select class="category-filter" aria-label="default select example"
+                        data-placeholder="select a category">
+                        <option></option>
+                        <option value="Arts & Culture">Arts & Culture</option>
+                        <option value="Government & Politics">Government & Politics</option>
+                        <option value="Education">Education</option>
+                        <option value="Environment">Environment</option>
+                        <option value="Social Causes">Social Causes</option>
+                        <option value="Health & Wellness">Health & Wellness</option>
+                        <option value="For Fun Only">For Fun Only</option>
+                        <option value="Sports">Sports</option>
+                        <option value="Business">Business</option>
+                        <option value="Science & Tech">Science & Tech</option>
+                        <option value="Religion & Spirituality">Religion & Spirituality</option>
 
-                      <h6 class="card_title mt-10">
-                        <a class="color_black" href="Item-details.html" x-text="campaign.name">
-                        </a>
-                      </h6>
-                      <div class="card_footer d-block space-y-10">
-                        <div class="card_footer justify-content-between">
-                          <div class="avatars space-x-3">
-                            <a href="Profile.html">
+
+
+                      </select>
+                    </div>
+                  </div>
+                  <div class="sort">
+                    <span class="color_text txt_sm col-auto align-items-center justify-content-center"> SORT BY: </span>
+                    <div>
+                      <select id="sort-campaign" class="col-auto">
+                        <option value="">Trending</option>
+                        <option value="">Most Popular</option>
+                        <option value="">Recently Added</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div @searching.window="searchForResults($event.detail)">
+              <div class="container">
+                <div class="row mb-30_reset">
+                  <template x-for="campaign in campaigns" :key="campaign.uuid">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                      <div class="card__item four">
+                        <div class="card_body">
+                          <div class="card_head">
+                            <a href="Item-details.html">
                               <img
-                                :src="(campaign.campaignCreator.avatar) ? `${avatarBaseUrl}${campaign.campaignCreator.avatar}` : 'assets/img/avatars/twibbonize-avatar.jpg'"
-                                alt="Avatar" class="avatar avatar-sm" />
+                                :src="(campaign.thumbnail) ? `${thumbnailBaseUrl}${campaign.thumbnail}` : 'assets/img/campaign thumbnails/default.webp'"
+                                alt="item
+                                    img" />
                             </a>
-                            <a href="Profile.html" class="avatars_name txt_xs" x-text="campaign.campaignCreator.name">
+                            <a href="#" class="likes space-x-10">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-users">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                              </svg>
+                              <span x-text="`${abbreviateNumber(campaign.hits)} Supports`"></span>
                             </a>
+                          </div>
+                          <!-- =============== -->
+
+                          <h6 class="card_title mt-10">
+                            <a class="color_black" href="Item-details.html" x-text="campaign.name">
+                            </a>
+                          </h6>
+                          <div class="card_footer d-block space-y-10">
+                            <div class="card_footer justify-content-between">
+                              <div class="avatars space-x-3">
+                                <a href="Profile.html">
+                                  <img
+                                    :src="(campaign.campaignCreator.avatar) ? `${avatarBaseUrl}${campaign.campaignCreator.avatar}` : 'assets/img/avatars/twibbonize-avatar.jpg'"
+                                    alt="Avatar" class="avatar avatar-sm" />
+                                </a>
+                                <a href="Profile.html" class="avatars_name txt_xs"
+                                  x-text="campaign.campaignCreator.name">
+                                </a>
+                              </div>
+
+                            </div>
+                            <div class="hr"></div>
+                            <div class="d-flex align-items-center space-x-10 justify-content-between">
+                              <div class="d-flex align-items-center space-x-10">
+                                <i data-feather="clock" width="16" height="16"></i>
+                                <a href="#" data-toggle="modal" data-target="#popup_history">
+                                  <p class="color_text txt_sm capitalize" style="width: auto"
+                                    x-text="dayjs(campaign.firstPublish).fromNow()"> </p>
+                                </a>
+                              </div>
+                              <a class="btn btn-sm btn-primary" href="#" data-toggle="modal"
+                                data-target="#popup_bid">Support</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </template>
+
+                  <div x-show="!campaigns.length">
+                    <div class="container py-50">
+                      <div class="space-y-20">
+                        <h2 class="text-center hero__title">Sorry, we couldn’t find any results
+                          for this search.</h2>
+                        <p class="text-center hero__desc">Maybe give one of these a try?</p>
+                      </div>
+                    </div>
+                    <div class="section">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div class="card__item four">
+                              <div class="card_body">
+                                <div class="card_head">
+                                  <a href="Item-details.html">
+                                    <img src="assets/img/campaign thumbnails/dkijakarta495.png" alt="item
+                                      img" />
+                                  </a>
+                                  <a href="#" class="likes space-x-10">
+                                    <i data-feather="users" width="16" height="16"></i>
+                                    <span>245.2K Supports</span>
+                                  </a>
+                                </div>
+                                <!-- =============== -->
+
+
+
+                                <h6 class="card_title mt-10">
+                                  <a class="color_black" href="Item-details.html">
+                                    Hut DKI Jakarta 495
+                                  </a>
+                                </h6>
+                                <div class="card_footer d-block space-y-10">
+                                  <div class="card_footer justify-content-between">
+                                    <div class="avatars space-x-3">
+                                      <a href="Profile.html">
+                                        <img src="assets/img/avatars/pemprov-dki.jpeg" alt="Avatar"
+                                          class="avatar avatar-sm" />
+                                      </a>
+                                      <a href="Profile.html">
+                                        <p class="avatars_name txt_xs">Pemprov DKI Jakarta</p>
+                                      </a>
+                                    </div>
+                                    
+                                  </div>
+                                  <div class="hr"></div>
+                                  <div class="d-flex align-items-center space-x-10 justify-content-between">
+                                    <div class="d-flex align-items-center space-x-10">
+                                      <i data-feather="clock" width="16" height="16"></i>
+                                      <a href="#" data-toggle="modal" data-target="#popup_history">
+                                        <p class="color_text txt_sm" style="width: auto"> 24 Days Ago </p>
+                                      </a>
+                                    </div>
+                                    <a class="btn btn-sm btn-primary" href="#" data-toggle="modal"
+                                      data-target="#popup_bid">Support</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                           </div>
 
-                        </div>
-                        <div class="hr"></div>
-                        <div class="d-flex align-items-center space-x-10 justify-content-between">
-                          <div class="d-flex align-items-center space-x-10">
-                            <i data-feather="clock" width="16" height="16"></i>
-                            <a href="#" data-toggle="modal" data-target="#popup_history">
-                              <p class="color_text txt_sm capitalize" style="width: auto"
-                                x-text="dayjs(campaign.firstPublish).fromNow()"> </p>
-                            </a>
+                          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div class="card__item four">
+                              <div class="card_body">
+                                <div class="card_head">
+                                  <a href="Item-details.html">
+                                    <img
+                                      src="assets/img/campaign thumbnails/DIKLAT NASIONAL BERSERTIFIKAT 40 JP GRATIS.jpg"
+                                      alt="item
+                                      img" />
+                                  </a>
+                                  <a href="#" class="likes space-x-10">
+                                    <i data-feather="users" width="16" height="16"></i>
+                                    <span>5.2K Supports</span>
+                                  </a>
+                                </div>
+                                <!-- =============== -->
+
+
+
+                                <h6 class="card_title mt-10">
+                                  <a class="color_black" href="Item-details.html">
+                                    DIKLAT NASIONAL BERSERTIFIKAT
+                                  </a>
+                                </h6>
+
+                                <div class="card_footer d-block space-y-10">
+                                  <div class="card_footer justify-content-between">
+                                    <div class="avatars space-x-3">
+                                      <a href="Profile.html">
+                                        <img src="assets/img/avatars/naikpangkat.jpg" alt="Avatar"
+                                          class="avatar avatar-sm" />
+                                      </a>
+                                      <a href="Profile.html">
+                                        <p class="avatars_name txt_xs">Naik Pangkat</p>
+                                      </a>
+                                    </div>
+                                    
+                                  </div>
+                                  <div class="hr"></div>
+                                  <div class="d-flex align-items-center space-x-10 justify-content-between">
+                                    <div class="d-flex align-items-center space-x-10">
+                                      <i data-feather="clock" width="16" height="16"></i>
+                                      <a href="#" data-toggle="modal" data-target="#popup_history">
+                                        <p class="color_text txt_sm" style="width: auto"> 3 Days Ago </p>
+                                      </a>
+                                    </div>
+                                    <a class="btn btn-sm btn-primary" href="#" data-toggle="modal"
+                                      data-target="#popup_bid">Support</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                           </div>
-                          <a class="btn btn-sm btn-primary" href="#" data-toggle="modal"
-                            data-target="#popup_bid">Support</a>
+
+                          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div class="card__item four">
+                              <div class="card_body">
+                                <div class="card_head">
+                                  <a href="Item-details.html">
+                                    <img src="assets/img/campaign thumbnails/iduladha.jpg" alt="item
+                                      img" />
+                                  </a>
+                                  <a href="#" class="likes space-x-10">
+                                    <i data-feather="users" width="16" height="16"></i>
+                                    <span>83.2K Supports</span>
+                                  </a>
+                                </div>
+                                <!-- =============== -->
+
+
+
+                                <h6 class="card_title mt-10">
+                                  <a class="color_black" href="Item-details.html">
+                                    Frame Twibbon Hari Raya Idul Adha 2022
+                                  </a>
+                                </h6>
+
+                                <div class="card_footer d-block space-y-10">
+                                  <div class="card_footer justify-content-between">
+                                    <div class="avatars space-x-3">
+                                      <a href="Profile.html">
+                                        <img src="assets/img/avatars/papan-tulis-official.jpg" alt="Avatar"
+                                          class="avatar avatar-sm" />
+                                      </a>
+                                      <a href="Profile.html">
+                                        <p class="avatars_name txt_xs">Papan Tulis Official</p>
+                                      </a>
+                                    </div>
+                                    
+                                  </div>
+                                  <div class="hr"></div>
+                                  <div class="d-flex align-items-center space-x-10 justify-content-between">
+                                    <div class="d-flex align-items-center space-x-10">
+                                      <i data-feather="clock" width="16" height="16"></i>
+                                      <a href="#" data-toggle="modal" data-target="#popup_history">
+                                        <p class="color_text txt_sm" style="width: auto"> 4 Days Ago </p>
+                                      </a>
+                                    </div>
+                                    <a class="btn btn-sm btn-primary" href="#" data-toggle="modal"
+                                      data-target="#popup_bid">Support</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+
+                          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div class="card__item four">
+                              <div class="card_body">
+                                <div class="card_head">
+                                  <a href="Item-details.html">
+                                    <img src="assets/img/campaign thumbnails/934691bc-4454-40ef-8a1a-b8742f7a0e55.jpg"
+                                      alt="item
+                                      img" />
+                                  </a>
+                                  <a href="#" class="likes space-x-10">
+                                    <i data-feather="users" width="16" height="16"></i>
+                                    <span>5.2K Supports</span>
+                                  </a>
+                                </div>
+                                <!-- =============== -->
+
+
+
+                                <h6 class="card_title mt-10">
+                                  <a class="color_black" href="Item-details.html">
+                                    Hari Keluarga Nasional 2022
+                                  </a>
+                                </h6>
+
+                                <div class="card_footer d-block space-y-10">
+                                  <div class="card_footer justify-content-between">
+                                    <div class="avatars space-x-3">
+                                      <a href="Profile.html">
+                                        <img src="assets/img/avatars/tomy-saputra.jpg" alt="Avatar"
+                                          class="avatar avatar-sm" />
+                                      </a>
+                                      <a href="Profile.html">
+                                        <p class="avatars_name txt_xs">Tomy Saputra</p>
+                                      </a>
+                                    </div>
+                                    
+                                  </div>
+                                  <div class="hr"></div>
+                                  <div class="d-flex align-items-center space-x-10 justify-content-between">
+                                    <div class="d-flex align-items-center space-x-10">
+                                      <i data-feather="clock" width="16" height="16"></i>
+                                      <a href="#" data-toggle="modal" data-target="#popup_history">
+                                        <p class="color_text txt_sm" style="width: auto"> 8 Days Ago </p>
+                                      </a>
+                                    </div>
+                                    <a class="btn btn-sm btn-primary" href="#" data-toggle="modal"
+                                      data-target="#popup_bid">Support</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </template>
+              </div>
             </div>
           </div>
-        </div>
       </div>
-    </section>
+      </section>
+    </div>
+  </div>
 
-    <div class="bottom-nav__twb">
-      <div class="container">
-        <nav class="bottom-nav__wrapper">
-          <a href="#" class="bottom-nav__item">
-            <img class="bottom-nav__icon" class="bottom-nav__icon"
-              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNSAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik0zLjM3NSA5TDEyLjM3NSAyTDIxLjM3NSA5VjIwQzIxLjM3NSAyMC41MzA0IDIxLjE2NDMgMjEuMDM5MSAyMC43ODkyIDIxLjQxNDJDMjAuNDE0MSAyMS43ODkzIDE5LjkwNTQgMjIgMTkuMzc1IDIySDUuMzc1QzQuODQ0NTcgMjIgNC4zMzU4NiAyMS43ODkzIDMuOTYwNzkgMjEuNDE0MkMzLjU4NTcxIDIxLjAzOTEgMy4zNzUgMjAuNTMwNCAzLjM3NSAyMFY5WiIgZmlsbD0iIzFCQUFBMCIvPg0KPHBhdGggZD0iTTkuMzc1IDIyVjEySDE1LjM3NVYyMiIgZmlsbD0id2hpdGUiIGZpbGwtb3BhY2l0eT0iMC42Ii8+DQo8L3N2Zz4NCg=="
-              alt="Home">
 
-            <span class="bottom-nav__text">
-              Home
-            </span>
-          </a>
 
-          <a href="#" class="bottom-nav__item">
-            <img class="bottom-nav__icon"
-              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNSAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik0xMi4xMjUgMjJDMTcuNjQ3OCAyMiAyMi4xMjUgMTcuNTIyOCAyMi4xMjUgMTJDMjIuMTI1IDYuNDc3MTUgMTcuNjQ3OCAyIDEyLjEyNSAyQzYuNjAyMTUgMiAyLjEyNSA2LjQ3NzE1IDIuMTI1IDEyQzIuMTI1IDE3LjUyMjggNi42MDIxNSAyMiAxMi4xMjUgMjJaIiBzdHJva2U9IiM3MDcwNzAiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+DQo8cGF0aCBkPSJNMTYuMzY0OCA3Ljc2MDAxTDE0LjI0NDggMTQuMTJMNy44ODQ3NyAxNi4yNEwxMC4wMDQ4IDkuODgwMDFMMTYuMzY0OCA3Ljc2MDAxWiIgc3Ryb2tlPSIjNzA3MDcwIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPg0KPC9zdmc+DQo="
-              alt="explore">
+  <div class="bottom-nav__twb">
+    <div class="container">
+      <nav class="bottom-nav__wrapper">
+        <a href="#" class="bottom-nav__item">
+          <img class="bottom-nav__icon" class="bottom-nav__icon"
+            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNSAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik0zLjM3NSA5TDEyLjM3NSAyTDIxLjM3NSA5VjIwQzIxLjM3NSAyMC41MzA0IDIxLjE2NDMgMjEuMDM5MSAyMC43ODkyIDIxLjQxNDJDMjAuNDE0MSAyMS43ODkzIDE5LjkwNTQgMjIgMTkuMzc1IDIySDUuMzc1QzQuODQ0NTcgMjIgNC4zMzU4NiAyMS43ODkzIDMuOTYwNzkgMjEuNDE0MkMzLjU4NTcxIDIxLjAzOTEgMy4zNzUgMjAuNTMwNCAzLjM3NSAyMFY5WiIgZmlsbD0iIzFCQUFBMCIvPg0KPHBhdGggZD0iTTkuMzc1IDIyVjEySDE1LjM3NVYyMiIgZmlsbD0id2hpdGUiIGZpbGwtb3BhY2l0eT0iMC42Ii8+DQo8L3N2Zz4NCg=="
+            alt="Home">
 
-            <span class="bottom-nav__text">
-              Explore
-            </span>
-          </a>
+          <span class="bottom-nav__text">
+            Home
+          </span>
+        </a>
 
-          <a href="#" class="bottom-nav__item">
-            <img class="bottom-nav__icon"
-              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNSAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik0xOS44NzUgM0g1Ljg3NUM0Ljc3MDQzIDMgMy44NzUgMy44OTU0MyAzLjg3NSA1VjE5QzMuODc1IDIwLjEwNDYgNC43NzA0MyAyMSA1Ljg3NSAyMUgxOS44NzVDMjAuOTc5NiAyMSAyMS44NzUgMjAuMTA0NiAyMS44NzUgMTlWNUMyMS44NzUgMy44OTU0MyAyMC45Nzk2IDMgMTkuODc1IDNaIiBzdHJva2U9IiM3MDcwNzAiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+DQo8cGF0aCBkPSJNMTIuODc1IDhWMTYiIHN0cm9rZT0iIzcwNzA3MCIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4NCjxwYXRoIGQ9Ik04Ljg3NSAxMkgxNi44NzUiIHN0cm9rZT0iIzcwNzA3MCIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4NCjwvc3ZnPg0K"
-              alt="explore">
+        <a href="#" class="bottom-nav__item">
+          <img class="bottom-nav__icon"
+            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNSAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik0xMi4xMjUgMjJDMTcuNjQ3OCAyMiAyMi4xMjUgMTcuNTIyOCAyMi4xMjUgMTJDMjIuMTI1IDYuNDc3MTUgMTcuNjQ3OCAyIDEyLjEyNSAyQzYuNjAyMTUgMiAyLjEyNSA2LjQ3NzE1IDIuMTI1IDEyQzIuMTI1IDE3LjUyMjggNi42MDIxNSAyMiAxMi4xMjUgMjJaIiBzdHJva2U9IiM3MDcwNzAiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+DQo8cGF0aCBkPSJNMTYuMzY0OCA3Ljc2MDAxTDE0LjI0NDggMTQuMTJMNy44ODQ3NyAxNi4yNEwxMC4wMDQ4IDkuODgwMDFMMTYuMzY0OCA3Ljc2MDAxWiIgc3Ryb2tlPSIjNzA3MDcwIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPg0KPC9zdmc+DQo="
+            alt="explore">
 
-            <span class="bottom-nav__text">
-              New Campaign
-            </span>
-          </a>
+          <span class="bottom-nav__text">
+            Explore
+          </span>
+        </a>
 
-          <a href="#" class="bottom-nav__item toggle-expand-menu">
-            <img class="bottom-nav__icon"
-              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNSAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik0yMC42MjUgMjFWMTlDMjAuNjI1IDE3LjkzOTEgMjAuMjAzNiAxNi45MjE3IDE5LjQ1MzQgMTYuMTcxNkMxOC43MDMzIDE1LjQyMTQgMTcuNjg1OSAxNSAxNi42MjUgMTVIOC42MjVDNy41NjQxMyAxNSA2LjU0NjcyIDE1LjQyMTQgNS43OTY1NyAxNi4xNzE2QzUuMDQ2NDMgMTYuOTIxNyA0LjYyNSAxNy45MzkxIDQuNjI1IDE5VjIxIiBzdHJva2U9IiM3MDcwNzAiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+DQo8cGF0aCBkPSJNMTIuNjI1IDExQzE0LjgzNDEgMTEgMTYuNjI1IDkuMjA5MTQgMTYuNjI1IDdDMTYuNjI1IDQuNzkwODYgMTQuODM0MSAzIDEyLjYyNSAzQzEwLjQxNTkgMyA4LjYyNSA0Ljc5MDg2IDguNjI1IDdDOC42MjUgOS4yMDkxNCAxMC40MTU5IDExIDEyLjYyNSAxMVoiIHN0cm9rZT0iIzcwNzA3MCIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4NCjwvc3ZnPg0K"
-              alt="Account">
+        <a href="#" class="bottom-nav__item">
+          <img class="bottom-nav__icon"
+            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNSAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik0xOS44NzUgM0g1Ljg3NUM0Ljc3MDQzIDMgMy44NzUgMy44OTU0MyAzLjg3NSA1VjE5QzMuODc1IDIwLjEwNDYgNC43NzA0MyAyMSA1Ljg3NSAyMUgxOS44NzVDMjAuOTc5NiAyMSAyMS44NzUgMjAuMTA0NiAyMS44NzUgMTlWNUMyMS44NzUgMy44OTU0MyAyMC45Nzk2IDMgMTkuODc1IDNaIiBzdHJva2U9IiM3MDcwNzAiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+DQo8cGF0aCBkPSJNMTIuODc1IDhWMTYiIHN0cm9rZT0iIzcwNzA3MCIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4NCjxwYXRoIGQ9Ik04Ljg3NSAxMkgxNi44NzUiIHN0cm9rZT0iIzcwNzA3MCIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4NCjwvc3ZnPg0K"
+            alt="explore">
 
-            <span class="bottom-nav__text">
-              Account
-            </span>
-          </a>
-        </nav>
+          <span class="bottom-nav__text">
+            New Campaign
+          </span>
+        </a>
+
+        <a href="#" class="bottom-nav__item toggle-expand-menu">
+          <img class="bottom-nav__icon"
+            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNSAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik0yMC42MjUgMjFWMTlDMjAuNjI1IDE3LjkzOTEgMjAuMjAzNiAxNi45MjE3IDE5LjQ1MzQgMTYuMTcxNkMxOC43MDMzIDE1LjQyMTQgMTcuNjg1OSAxNSAxNi42MjUgMTVIOC42MjVDNy41NjQxMyAxNSA2LjU0NjcyIDE1LjQyMTQgNS43OTY1NyAxNi4xNzE2QzUuMDQ2NDMgMTYuOTIxNyA0LjYyNSAxNy45MzkxIDQuNjI1IDE5VjIxIiBzdHJva2U9IiM3MDcwNzAiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+DQo8cGF0aCBkPSJNMTIuNjI1IDExQzE0LjgzNDEgMTEgMTYuNjI1IDkuMjA5MTQgMTYuNjI1IDdDMTYuNjI1IDQuNzkwODYgMTQuODM0MSAzIDEyLjYyNSAzQzEwLjQxNTkgMyA4LjYyNSA0Ljc5MDg2IDguNjI1IDdDOC42MjUgOS4yMDkxNCAxMC40MTU5IDExIDEyLjYyNSAxMVoiIHN0cm9rZT0iIzcwNzA3MCIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4NCjwvc3ZnPg0K"
+            alt="Account">
+
+          <span class="bottom-nav__text">
+            Account
+          </span>
+        </a>
+      </nav>
+    </div>
+  </div>
+
+  <footer class="footer__1">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 space-y-20">
+          <div class="footer__logo">
+            <a href="/">
+              <img src="assets/img/logos/Logo-twb.svg" height="42" alt="logo" id="logo_js_f">
+            </a>
+          </div>
+          <p class="footer__text">
+            Office 8 Level 18A, Jl. Jend. Sudirman No.1,
+            DKI Jakarta 12190
+          </p>
+
+          <div class="footer_download-app">
+            <a href="#">
+              <img src="assets/img/buttons/App Store.png" alt="app store">
+            </a>
+
+            <a href="#">
+              <img src="assets/img/buttons/Google Play.png" alt="google play">
+            </a>
+          </div>
+
+
+          <div>
+            <ul class="footer__social space-x-10 mb-40">
+              <li> <a href=""> <i data-feather="facebook"></i> </a>
+              </li>
+              <li> <a href=""> <i data-feather="twitter"></i> </a>
+              </li>
+              <li> <a href=""> <i data-feather="linkedin"></i> </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-6">
+          <h6 class="footer__title">Learn</h6>
+          <ul class="footer__list">
+            <li> <a href="Home1.html"> Marketplace </a>
+            </li>
+            <li> <a href="Home2.html"> Help Center
+              </a> </li>
+            <li> <a href="Home3.html"> News </a> </li>
+
+          </ul>
+        </div>
+        <div class="col-lg-3 col-6">
+          <h6 class="footer__title">Company</h6>
+          <ul class="footer__list">
+            <li> <a href="Profile.html"> About </a>
+            </li>
+            <li> <a href="Creators.html"> Career </a>
+            </li>
+            <li>
+              <a href="Collections.html"> Contact Us </a>
+            </li>
+            <li>
+              <a href="#">
+                Intellectual Property Rights
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="copyright text-center">
+        <span>© 2022 Twibbonize.</span>
+        <a href="#" class="color_brand">Terms</a>
+        <span>&</span>
+        <a href="#" class="color_brand">Privacy Policy</a>
       </div>
     </div>
-
-    <footer class="footer__1">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 space-y-20">
-            <div class="footer__logo">
-              <a href="/">
-                <img src="assets/img/logos/Logo-twb.svg" height="42" alt="logo" id="logo_js_f">
-              </a>
-            </div>
-            <p class="footer__text">
-              Office 8 Level 18A, Jl. Jend. Sudirman No.1,
-              DKI Jakarta 12190
-            </p>
-
-            <div class="footer_download-app">
-              <a href="#">
-                <img src="assets/img/buttons/App Store.png" alt="app store">
-              </a>
-
-              <a href="#">
-                <img src="assets/img/buttons/Google Play.png" alt="google play">
-              </a>
-            </div>
-
-
-            <div>
-              <ul class="footer__social space-x-10 mb-40">
-                <li> <a href=""> <i data-feather="facebook"></i> </a>
-                </li>
-                <li> <a href=""> <i data-feather="twitter"></i> </a>
-                </li>
-                <li> <a href=""> <i data-feather="linkedin"></i> </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-2 col-6">
-            <h6 class="footer__title">Learn</h6>
-            <ul class="footer__list">
-              <li> <a href="Home1.html"> Marketplace </a>
-              </li>
-              <li> <a href="Home2.html"> Help Center
-                </a> </li>
-              <li> <a href="Home3.html"> News </a> </li>
-
-            </ul>
-          </div>
-          <div class="col-lg-3 col-6">
-            <h6 class="footer__title">Company</h6>
-            <ul class="footer__list">
-              <li> <a href="Profile.html"> About </a>
-              </li>
-              <li> <a href="Creators.html"> Career </a>
-              </li>
-              <li>
-                <a href="Collections.html"> Contact Us </a>
-              </li>
-              <li>
-                <a href="#">
-                  Intellectual Property Rights
-                </a>
-              </li>
-            </ul>
-          </div>
-
-        </div>
-        <div class="copyright text-center">
-          <span>© 2022 Twibbonize.</span>
-          <a href="#" class="color_brand">Terms</a>
-          <span>&</span>
-          <a href="#" class="color_brand">Privacy Policy</a>
-        </div>
-      </div>
-    </footer>
+  </footer>
 
 
 
@@ -356,30 +622,25 @@
     $('#sort-campaign').select2({
       minimumResultsForSearch: Infinity,
       dropdownAutoWidth: true,
-      width: '200px',
+      width: '100%',
       selectionCssClass: "select2-selection-sm"
     })
 
 
     $('.category-filter').select2({
-      minimumResultsForSearch: Infinity,
       dropdownAutoWidth: true,
-      width: '250px',
+      width: '100%',
       selectionCssClass: "select2-selection-sm"
     })
 
     dayjs.extend(dayjs_plugin_relativeTime)
 
-    const campaignGrid = function () {
+    const app = function () {
       return {
         thumbnailBaseUrl: 'https://thumbnail.twibbonize.com/',
         avatarBaseUrl: 'https://di8f64wxtiymb.cloudfront.net/',
         campaigns: [],
         query: null,
-        categories: ['Arts & Culture', 'Government & Politics', 'Education', 'Environment', 'Social Causes',
-          'Sports',
-          'Health & Wellness'
-        ],
         fetchCampaigns: async function () {
           const response = await fetch('campaign.json')
           const {

@@ -11403,18 +11403,20 @@ body.expand-menu--open {
         .header__explore .header-wrapper .header__logo {
           flex: 0 1 0; } }
       @media screen and (min-width: 1025px) {
+        .header__explore .header-wrapper .header__logo .header__brand {
+          display: block; }
         .header__explore .header-wrapper .header__logo .header__brand-mobile {
           display: none; } }
-      .header__explore .header-wrapper .header__logo .header__brand {
-        display: none; }
-        @media screen and (min-width: 769px) {
-          .header__explore .header-wrapper .header__logo .header__brand {
-            display: block; } }
+      @media screen and (max-width: 991px) {
+        .header__explore .header-wrapper .header__logo .header__brand {
+          display: none; }
+        .header__explore .header-wrapper .header__logo .header__brand-mobile {
+          display: block; } }
     .header__explore .header-wrapper .header__center {
       display: flex;
       justify-content: center;
       flex: 0 1 auto; }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 991px) {
         .header__explore .header-wrapper .header__center {
           flex: 1 1 auto; } }
     .header__explore .header-wrapper .header__search {
@@ -12095,7 +12097,7 @@ body.expand-menu--open {
 
 .section__title {
   font-family: "Plus Jakarta Sans" !important;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 32px;
   line-height: 128%;
   letter-spacing: -4%; }
@@ -13266,61 +13268,21 @@ body.expand-menu--open {
         font-weight: 500; }
 
 .filters-sort__container {
-  z-index: 10;
-  vertical-align: inherit;
-  max-width: 100%;
-  min-height: 0px;
-  min-width: 0px;
-  flex-shrink: 0;
-  flex-basis: auto;
-  -webkit-box-align: stretch;
-  align-items: stretch;
-  flex-flow: row nowrap;
   position: relative;
   display: flex;
-  margin-top: 24px; }
-  .filters-sort__container > :not(:last-child) {
-    margin-right: 16px; }
-  .filters-sort__container .filters {
-    position: relative;
-    width: 100%;
-    height: auto; }
-    .filters-sort__container .filters .filters-wrapper {
-      position: absolute;
-      height: 62px;
-      padding-right: 16px;
-      display: flex;
-      max-width: 100%;
-      align-items: center;
-      overflow: scroll hidden; }
-      .filters-sort__container .filters .filters-wrapper > :not(:last-child) {
-        margin-right: 16px; }
-  .filters-sort__container .sort {
-    vertical-align: inherit;
-    max-width: 100%;
-    min-height: 0px;
-    min-width: 0px;
-    flex-shrink: 0;
-    flex-direction: column;
-    flex-basis: auto;
-    display: flex;
-    -webkit-box-align: stretch;
-    align-items: stretch;
-    justify-content: center;
-    height: 62px;
-    position: relative;
-    background: #ffffff; }
-    .filters-sort__container .sort .sort-dropdown__container {
-      position: absolute;
-      top: auto;
-      right: auto; }
-
-@media screen and (max-width: 768px) {
-  #sort-desktop {
-    visibility: hidden;
-    width: 0 !important;
-    height: 0 !important;
-    pointer-events: none; } }
+  justify-content: space-between;
+  margin-top: 24px;
+  gap: 16px; }
+  @media screen and (max-width: 768px) {
+    .filters-sort__container {
+      flex-direction: column; }
+      .filters-sort__container .filters {
+        flex-grow: 1; } }
+  .filters-sort__container .sort, .filters-sort__container .filters {
+    display: grid;
+    grid-template-columns: 68px auto;
+    align-items: center;
+    gap: 8px; }
 
 /* ===================
 - 5/ Pages
@@ -15158,13 +15120,16 @@ body.expand-menu--open {
       border: solid 1px #eee; }
 
 .hero_explore {
-  padding: 72px 0;
-  background: url("../img/bg/explore.png");
-  background-color: #f3f3f3;
-  background-repeat: no-repeat;
-  background-size: 300px;
-  background-position: top right; }
-
+  padding: 64px 0;
+  background-color: #f3f3f3; }
+  @media screen and (min-width: 769px) {
+    .hero_explore {
+      padding: 72px 0;
+      background: url("../img/bg/explore.png");
+      background-color: #f3f3f3;
+      background-repeat: no-repeat;
+      background-size: 300px;
+      background-position: top right; } }
 h1.search-results-heading {
   font-size: 32px;
   font-weight: 700;

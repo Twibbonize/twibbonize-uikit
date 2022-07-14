@@ -2013,19 +2013,6 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/assets\/img\/bg\/environment.png" : {
-      "ft" : 32768,
-      "iS" : 1442598,
-      "oA" : 0,
-      "oAP" : "\/assets\/img\/bg\/environment.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
     "\/assets\/img\/bg\/explore.png" : {
       "ft" : 32768,
       "iS" : 210972,
@@ -5735,14 +5722,6 @@
       "oF" : 0,
       "oO" : 1,
       "oS" : 1
-    },
-    "\/explore_alt.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/explore_alt.html",
-      "oF" : 0
     },
     "\/explore.html" : {
       "cB" : 0,
