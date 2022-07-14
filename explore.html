@@ -127,7 +127,23 @@
         </div>
 
         <section class="section section__filter-campaigns pb-100 ">
-          <div>
+          <div x-show="query" class="tabs-container border-b" x-transition>
+            <div class="container">
+              <ul class="twb-tabs" role="tablist">
+                <li class="twb-tab" :class="{ 'active': currentTab == 'campaigns' }">
+                  <a @click="switchTab('campaigns')">Campaigns</a>
+                </li>
+
+                <li class="twb-tab" :class="{ 'active': currentTab == 'creators' }">
+                  <a @click="switchTab('creators')">Creators</a>
+                </li>
+
+                <li class="slider" role="presentation"></li>
+              </ul>
+            </div>
+          </div>
+
+          <div x-show="currentTab=='campaigns'" id="campaign-tab">
             <div class="section__head flex-column bg-white pb-3 border-b">
               <div class="container">
                 <div class="filters-sort__container">
@@ -170,7 +186,6 @@
               </div>
 
             </div>
-
             <div @searching.window="searchForResults($event.detail)">
               <div class="container">
                 <div class="row mb-30_reset">
@@ -183,7 +198,7 @@
                               <img
                                 :src="(campaign.thumbnail) ? `${thumbnailBaseUrl}${campaign.thumbnail}` : 'assets/img/campaign thumbnails/default.webp'"
                                 alt="item
-                                    img" />
+                                      img" />
                             </a>
                             <a href="#" class="likes space-x-10">
                               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
@@ -235,7 +250,7 @@
                     </div>
                   </template>
 
-                  <div x-show="!campaigns.length">
+                  <div x-show="!campaigns.length" x-transition>
                     <div class="container py-50">
                       <div class="space-y-20">
                         <h2 class="text-center hero__title">Sorry, we couldn’t find any results
@@ -252,7 +267,7 @@
                                 <div class="card_head">
                                   <a href="Item-details.html">
                                     <img src="assets/img/campaign thumbnails/dkijakarta495.png" alt="item
-                                      img" />
+                                        img" />
                                   </a>
                                   <a href="#" class="likes space-x-10">
                                     <i data-feather="users" width="16" height="16"></i>
@@ -260,8 +275,6 @@
                                   </a>
                                 </div>
                                 <!-- =============== -->
-
-
 
                                 <h6 class="card_title mt-10">
                                   <a class="color_black" href="Item-details.html">
@@ -279,7 +292,7 @@
                                         <p class="avatars_name txt_xs">Pemprov DKI Jakarta</p>
                                       </a>
                                     </div>
-                                    
+
                                   </div>
                                   <div class="hr"></div>
                                   <div class="d-flex align-items-center space-x-10 justify-content-between">
@@ -305,7 +318,7 @@
                                     <img
                                       src="assets/img/campaign thumbnails/DIKLAT NASIONAL BERSERTIFIKAT 40 JP GRATIS.jpg"
                                       alt="item
-                                      img" />
+                                        img" />
                                   </a>
                                   <a href="#" class="likes space-x-10">
                                     <i data-feather="users" width="16" height="16"></i>
@@ -333,7 +346,7 @@
                                         <p class="avatars_name txt_xs">Naik Pangkat</p>
                                       </a>
                                     </div>
-                                    
+
                                   </div>
                                   <div class="hr"></div>
                                   <div class="d-flex align-items-center space-x-10 justify-content-between">
@@ -357,7 +370,7 @@
                                 <div class="card_head">
                                   <a href="Item-details.html">
                                     <img src="assets/img/campaign thumbnails/iduladha.jpg" alt="item
-                                      img" />
+                                        img" />
                                   </a>
                                   <a href="#" class="likes space-x-10">
                                     <i data-feather="users" width="16" height="16"></i>
@@ -385,7 +398,7 @@
                                         <p class="avatars_name txt_xs">Papan Tulis Official</p>
                                       </a>
                                     </div>
-                                    
+
                                   </div>
                                   <div class="hr"></div>
                                   <div class="d-flex align-items-center space-x-10 justify-content-between">
@@ -411,7 +424,7 @@
                                   <a href="Item-details.html">
                                     <img src="assets/img/campaign thumbnails/934691bc-4454-40ef-8a1a-b8742f7a0e55.jpg"
                                       alt="item
-                                      img" />
+                                        img" />
                                   </a>
                                   <a href="#" class="likes space-x-10">
                                     <i data-feather="users" width="16" height="16"></i>
@@ -439,7 +452,7 @@
                                         <p class="avatars_name txt_xs">Tomy Saputra</p>
                                       </a>
                                     </div>
-                                    
+
                                   </div>
                                   <div class="hr"></div>
                                   <div class="d-flex align-items-center space-x-10 justify-content-between">
@@ -465,8 +478,40 @@
               </div>
             </div>
           </div>
+
+
+          <div x-shpw="currentTab=='creators'" id="creators-tab" class="mt-50">
+            <div class="container">
+              <div class="row">
+                <template x-for="creator in creators">
+                  <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                    <div class="creator_item creator_card space-y-10 is_big">
+                      <div class="avatars flex-column space-y-10">
+                        <div class="media">
+                          <a href="Profile.html">
+                            <img :src="(creator.avatar) ? `${avatarBaseUrl}${creator.avatar}` : 'assets/img/avatars/twibbonize-avatar.jpg'" alt="Avatar" class="avatar avatar-md">
+                          </a>
+                        </div>
+                        <div class="text-center creator_bio">
+                          <a href="Profile.html">
+                            <p class="avatars_name large color_black" x-text="creator.name"></p>
+                          </a>
+                          <span class="sales color_text">
+                            <span x-text="abbreviateNumber(creator.total_supports)"></span>
+                            <span> supports with </span>
+                            <span x-text="creator.total_campaigns"></span>
+                            <span> campaigns</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </template>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-      </section>
     </div>
   </div>
 
@@ -640,6 +685,8 @@
         thumbnailBaseUrl: 'https://thumbnail.twibbonize.com/',
         avatarBaseUrl: 'https://di8f64wxtiymb.cloudfront.net/',
         campaigns: [],
+        creators: {},
+        currentTab: 'campaigns',
         query: null,
         fetchCampaigns: async function () {
           const response = await fetch('campaign.json')
@@ -668,7 +715,6 @@
 
             return filtered
           }, [])
-
           // this.campaigns = Object.values(data[0].uuid).map(function (item, index) {
 
           //   return {
@@ -684,6 +730,33 @@
           //     firstPublish: data[0]['firstPublish'][index]
           //   }
           // })
+        },
+        fetchCreators: async function () {
+          const response = await fetch('creators.json')
+          const data = await response.json()
+
+          const $query = this.query
+
+          this.creators = data.reduce(function (filtered, item) {
+            if (!$query || item.Name.toLowerCase().includes($query.toLowerCase())) {
+              filtered.push({
+                name: item.Name,
+                total_campaigns: item.total_campaigns,
+                total_supports: item.total_supports,
+                avatar: item.Avatar
+              })
+            }
+
+            return filtered
+
+          }, [])
+        },
+        switchTab: function (tab) {
+          this.currentTab = tab
+
+          if (tab == 'creators') {
+            this.fetchCreators()
+          }
         },
         abbreviateNumber: function (num, fixed = 0) {
           num = parseInt(num)
@@ -707,7 +780,14 @@
           query
         }) {
           this.query = query
-          this.fetchCampaigns()
+
+          if (!query) {
+            this.currentTab = 'campaigns'
+          } else {
+            this.fetchCampaigns()
+          }
+
+          this.fetchCreators()
         }
       }
     }
