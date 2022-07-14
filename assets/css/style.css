@@ -11426,19 +11426,37 @@ body.expand-menu--open {
       background: #ffffff;
       border-radius: 80px;
       border: 1px solid #DDE5E5;
-      padding-left: 12px;
-      font-size: 14px; }
+      font-size: 16px;
+      display: flex;
+      padding-left: 12px; }
       @media screen and (min-width: 1025px) {
         .header__explore .header-wrapper .header__search {
           min-width: 348px; } }
+      .header__explore .header-wrapper .header__search:hover {
+        background: white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
+        border: solid 1px #DDE5E5; }
       .header__explore .header-wrapper .header__search input {
-        width: 100%;
         height: 100%;
+        flex-grow: 1;
+        margin-left: 24px;
         background: transparent !important;
-        border: 0 !important;
-        margin-left: 8px; }
+        border: 0 !important; }
         .header__explore .header-wrapper .header__search input:focus {
           outline: 0 !important; }
+        .header__explore .header-wrapper .header__search input::placeholder {
+          font-size: 14px; }
+        .header__explore .header-wrapper .header__search input::-webkit-search-cancel-button {
+          -webkit-appearance: none;
+          height: 16px;
+          width: 16px;
+          margin-right: 24px;
+          border-radius: 50%;
+          background: #F0F0F0;
+          background-size: 14px;
+          background-position: center;
+          background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23000'><path d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'/></svg>");
+          cursor: pointer; }
       .header__explore .header-wrapper .header__search .header__filter {
         border-radius: 50%;
         width: 32px;
@@ -11449,6 +11467,18 @@ body.expand-menu--open {
         text-align: center;
         border: 0;
         position: absolute; }
+      .header__explore .header-wrapper .header__search .header__result {
+        border: none;
+        background: #1baaa0;
+        color: #fff;
+        border-radius: 200px;
+        height: 2rem;
+        width: 2rem;
+        position: absolute;
+        padding-bottom: 6px;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%); }
     .header__explore .header-wrapper .header__menu {
       flex: 1 1 0;
       display: flex;
@@ -13202,16 +13232,6 @@ body.expand-menu--open {
         margin: 0 !important; }
       .section__download .marketing__content .marketing__cta a img {
         height: 64px; } }
-.section__filter-campaigns {
-  margin-top: 120px; }
-  .section__filter-campaigns .section__head {
-    margin-bottom: 24px; }
-    .section__filter-campaigns .section__head .section__title {
-      font-size: 32px !important; }
-  .section__filter-campaigns .filter_container {
-    display: flex;
-    align-items: center; }
-
 .bottom-nav__twb {
   position: fixed;
   display: none;
@@ -15136,6 +15156,56 @@ body.expand-menu--open {
       color: #1baaa0;
       box-shadow: 0px 17px 13px 0px #192c4b05;
       border: solid 1px #eee; }
+
+.hero_explore {
+  padding: 64px 0; }
+
+h1.search-results-heading {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+  text-align: center;
+  margin-bottom: 12px; }
+
+p.search-results-description {
+  max-width: 700px;
+  margin-right: auto;
+  margin-bottom: 12px;
+  margin-left: auto;
+  padding-right: 16px;
+  padding-left: 16px;
+  color: #6e6d7a;
+  text-align: center;
+  margin-bottom: 12px; }
+
+ul.search-results-hashtags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 8px; }
+  ul.search-results-hashtags .search-results-suggestion-heading {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #707070; }
+  ul.search-results-hashtags .search-results-hashtag {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-right: 16px;
+    padding-bottom: 4px; }
+
+.section__filter-campaigns .section__head {
+  margin-bottom: 24px; }
+  .section__filter-campaigns .section__head .section__title {
+    font-size: 32px !important; }
+
+.section__filter-campaigns .filter_container {
+  display: flex;
+  align-items: center; }
+
+footer.footer__1 {
+  margin-top: 0 !important; }
 
 .styles_tab {
   display: flex;
