@@ -2013,6 +2013,32 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/assets\/img\/bg\/environment.png" : {
+      "ft" : 32768,
+      "iS" : 1442598,
+      "oA" : 0,
+      "oAP" : "\/assets\/img\/bg\/environment.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/assets\/img\/bg\/explore.png" : {
+      "ft" : 32768,
+      "iS" : 210972,
+      "oA" : 0,
+      "oAP" : "\/assets\/img\/bg\/explore.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/assets\/img\/bg\/forum-post.png" : {
       "ft" : 32768,
       "iS" : 1889,

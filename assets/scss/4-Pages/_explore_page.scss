@@ -1,43 +1,51 @@
 .hero_explore {
-  padding: 64px 0;
+  padding: 72px 0;
+  background:  url('../img/bg/explore.png');
+  background-color: darken($color: $color-grey-light, $amount: 3);
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-position: top right;
 }
 
 h1.search-results-heading {
   font-size: 32px;
   font-weight: 700;
   line-height: 38px;
-  text-align: center;
+//   text-align: center;
   margin-bottom: 12px;
+  color: $color_black;
 }
 
 p.search-results-description {
   max-width: 700px;
-  margin-right: auto;
+  margin: 0;
+//   margin-right: auto;
   margin-bottom: 12px;
-  margin-left: auto;
+//   margin-left: auto;
   padding-right: 16px;
-  padding-left: 16px;
+//   padding-left: 16px;
   color: #6e6d7a;
-  text-align: center;
-  margin-bottom: 12px;
+//   text-align: center;
+  color: $color_black;
+
 }
 
 ul.search-results-hashtags {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+//   justify-content: center;
   margin-bottom: 8px;
 
-  .search-results-suggestion-heading {
+  .search-results-hashtag.search-results-hashtag-heading {
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 20px;
     color: $color_text;
   }
 
   .search-results-hashtag {
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 20px;
     margin-right: 16px;
     padding-bottom: 4px;
