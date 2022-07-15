@@ -32,6 +32,78 @@
 
 <body>
   <div class="overflow-hidden">
+    <div class="expand_menu">
+      <div class="overlay">
+        <div class="menu-wrapper">
+          <div class="menu-container">
+            <div class="darkmode-wrapper">
+              <div class="switch_item toggle-darkmode checked">
+                <input type="checkbox" id="darkmode" checked>
+                <label for="darkmode"></label>
+              </div>
+            </div>
+
+            <button class="btn-close-menu toggle-expand-menu">
+              <i data-feather="x"></i>
+            </button>
+
+            <ul class="menu-list">
+
+              <li class="menu-item">
+                <a href="#">
+                  Explore Campaigns
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  Marketplace
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  Guide
+                </a>
+              </li>
+
+              <li class="menu-item">
+                <a href="#">
+                  News
+                </a>
+              </li>
+
+              <li class="menu-item">
+                <a href="#">
+                  About
+                </a>
+              </li>
+            </ul>
+
+            <a class="btn-change-lang">
+              <i data-feather="globe"></i>
+              <span>English (United States)</span>
+            </a>
+
+            <div class="profile-section">
+              <div class="profile-avatar">
+                <img class="profile-img" src="assets/img/avatars/twibbonize-avatar.jpg" alt="avatar">
+                <div class="profile-name">
+                  <h5>Yoga Altariz</h5>
+                  <a href="#">Manage your profile</a>
+                </div>
+              </div>
+
+              <div>
+                <button class="btn btn-transparent btn-sm">
+                  <i data-feather="log-out"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     <header class="header__explore">
       <div class="container">
         <nav class="header-wrapper">
@@ -55,7 +127,7 @@
               <i data-feather="plus" width="16" height="16"></i>
               New Campaign
             </button>
-            <button class="header__bar-menu">
+            <button class="header__bar-menu toggle-expand-menu">
               <i data-feather="menu" width="24" height="24"></i>
             </button>
           </div>
@@ -153,7 +225,7 @@
                     </span>
                     <div>
                       <select class="category-filter" aria-label="default select example"
-                        data-placeholder="select a category">
+                        data-placeholder="Select a category">
                         <option></option>
                         <option value="Arts & Culture">Arts & Culture</option>
                         <option value="Government & Politics">Government & Politics</option>
@@ -488,7 +560,9 @@
                       <div class="avatars flex-column space-y-10">
                         <div class="media">
                           <a href="Profile.html">
-                            <img :src="(creator.avatar) ? `${avatarBaseUrl}${creator.avatar}` : 'assets/img/avatars/twibbonize-avatar.jpg'" alt="Avatar" class="avatar avatar-md">
+                            <img
+                              :src="(creator.avatar) ? `${avatarBaseUrl}${creator.avatar}` : 'assets/img/avatars/twibbonize-avatar.jpg'"
+                              alt="Avatar" class="avatar avatar-md">
                           </a>
                         </div>
                         <div class="text-center creator_bio">
@@ -531,7 +605,7 @@
 
         <a href="explore.html" class="bottom-nav__item">
           <img class="bottom-nav__icon"
-            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNSAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik0xMi4xMjUgMjJDMTcuNjQ3OCAyMiAyMi4xMjUgMTcuNTIyOCAyMi4xMjUgMTJDMjIuMTI1IDYuNDc3MTUgMTcuNjQ3OCAyIDEyLjEyNSAyQzYuNjAyMTUgMiAyLjEyNSA2LjQ3NzE1IDIuMTI1IDEyQzIuMTI1IDE3LjUyMjggNi42MDIxNSAyMiAxMi4xMjUgMjJaIiBzdHJva2U9IiM3MDcwNzAiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+DQo8cGF0aCBkPSJNMTYuMzY0OCA3Ljc2MDAxTDE0LjI0NDggMTQuMTJMNy44ODQ3NyAxNi4yNEwxMC4wMDQ4IDkuODgwMDFMMTYuMzY0OCA3Ljc2MDAxWiIgc3Ryb2tlPSIjNzA3MDcwIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPg0KPC9zdmc+DQo="
+            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNSAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik0xMi4xMjUgMjJDMTcuNjQ3OCAyMiAyMi4xMjUgMTcuNTIyOCAyMi4xMjUgMTJDMjIuMTI1IDYuNDc3MTUgMTcuNjQ3OCAyIDEyLjEyNSAyQzYuNjAyMTUgMiAyLjEyNSA2LjQ3NzE1IDIuMTI1IDEyQzIuMTI1IDE3LjUyMjggNi42MDIxNSAyMiAxMi4xMjUgMjJaIiBmaWxsPSIjMUJBQUEwIi8+DQo8cGF0aCBkPSJNMTYuMzY1IDcuNzZMMTQuMjQ1IDE0LjEyTDcuODg0OTkgMTYuMjRMMTAuMDA1IDkuODhMMTYuMzY1IDcuNzZaIiBmaWxsPSJ3aGl0ZSIgZmlsbC1vcGFjaXR5PSIwLjYiLz4NCjwvc3ZnPg0K"
             alt="explore">
 
           <span class="bottom-nav__text">
@@ -662,6 +736,10 @@
 
   <script>
     feather.replace()
+
+    $('.toggle-expand-menu').click(function () {
+      $('body').toggleClass('expand-menu--open')
+    })
 
     $('#sort-campaign').select2({
       minimumResultsForSearch: Infinity,
