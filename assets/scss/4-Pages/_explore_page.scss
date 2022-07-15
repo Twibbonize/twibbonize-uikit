@@ -65,6 +65,12 @@ ul.search-results-hashtags {
     line-height: 20px;
     margin-right: 16px;
     padding-bottom: 4px;
+
+    a {
+      &:hover {
+        text-decoration: underline !important;
+      }
+    }
   }
 }
 

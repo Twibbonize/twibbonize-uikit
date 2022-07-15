@@ -15212,6 +15212,8 @@ ul.search-results-hashtags {
     line-height: 20px;
     margin-right: 16px;
     padding-bottom: 4px; }
+    ul.search-results-hashtags .search-results-hashtag a:hover {
+      text-decoration: underline !important; }
 
 .section__filter-campaigns .section__head {
   margin-bottom: 24px; }
