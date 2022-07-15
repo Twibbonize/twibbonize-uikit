@@ -48,31 +48,30 @@
             </button>
 
             <ul class="menu-list">
-
               <li class="menu-item">
-                <a href="#">
-                  Explore Campaigns
+                <a href="explore.html">
+                  Explore
                 </a>
               </li>
               <li class="menu-item">
-                <a href="#">
+                <a href="//marketplace.twibbonize.com">
                   Marketplace
                 </a>
               </li>
               <li class="menu-item">
-                <a href="#">
+                <a href="//guide.twibbonize.com">
                   Guide
                 </a>
               </li>
 
               <li class="menu-item">
-                <a href="#">
+                <a href="//news.twibbonize.com">
                   News
                 </a>
               </li>
 
               <li class="menu-item">
-                <a href="#">
+                <a href="//about.twibbonize.com">
                   About
                 </a>
               </li>
@@ -147,20 +146,23 @@
                 </span>
               </template>
               <template x-if="!query">
-                <span>
-                  Explore Campaigns & Creators
-                </span>
+                <div class="page-title">
+                  <span>Explore </span>
+                  <span>Campaigns & Creators</span>
+                </div>
               </template>
             </h1>
             <p class="search-results-description">
               <template x-if="!query">
-                <span><strong>18,721,187</strong> campaigns from <strong>2,186,494</strong> of creators around the world</span>
+                <span> <strong id="campaign-numbers">18,721,187</strong> campaigns from <strong id="creator-numbers">2,186,494</strong> of
+                  creators around the
+                  world</span>
               </template>
 
               <template x-if="query">
                 <span>
-                  showing
-                  <span x-text="campaigns.length"></span> campaigns
+                  showing about
+                  <span x-text="campaigns.length + creators.length"></span> results
                 </span>
               </template>
             </p>
@@ -236,7 +238,7 @@
                         <option value="Education">
                           📚 Education
                         </option>
-                        <option value="Environment">    
+                        <option value="Environment">
                           🧜🏻‍♀️ Environment
                         </option>
                         <option value="Social Causes">
@@ -581,7 +583,9 @@
                     <div class="creator_item creator_card space-y-20 mb-20">
                       <div class="avatars flex-column space-y-10">
                         <div class="cover">
-                          <img :src="(creator.banner) ? `assets/img/profile-banner/${creator.banner}` : 'assets/img/bg/banner-default.svg'" alt="Avatar" class="img-fluid">
+                          <img
+                            :src="(creator.banner) ? `assets/img/profile-banner/${creator.banner}` : 'assets/img/bg/banner-default.svg'"
+                            alt="Avatar" class="img-fluid">
                         </div>
                         <div class="media">
                           <a href="Profile.html">
@@ -608,6 +612,16 @@
                   </div>
                 </template>
               </div>
+
+              <template x-if="!creators.length">
+                <div class="container py-50">
+                  <div class="space-y-20">
+                    <h2 class="text-center hero__title">Sorry, we couldn’t find any creators
+                      for this search.</h2>
+                    <p class="text-center hero__desc">Maybe give one of these a try?</p>
+                  </div>
+                </div>
+              </template>
             </div>
           </div>
         </section>
@@ -896,6 +910,27 @@
         }
       }
     }
+
+
+    function numberWithCommas(x) {
+      return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
+
+    const incrementCampaignNumbers = function () {
+      const newValue = parseInt($('#campaign-numbers').text().replaceAll(',', '')) + 1
+      $('#campaign-numbers').text(numberWithCommas(newValue))
+      setTimeout(incrementCampaignNumbers, 1000)
+    }
+
+
+    const incrementCreatorNumbers = function () {
+      const newValue = parseInt($('#creator-numbers').text().replaceAll(',', '')) + 1
+      $('#creator-numbers').text(numberWithCommas(newValue))
+      setTimeout(incrementCreatorNumbers, 5000)
+    }
+
+    incrementCampaignNumbers()
+    incrementCreatorNumbers()
 
   </script>
 </body>

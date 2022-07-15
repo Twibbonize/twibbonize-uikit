@@ -101,6 +101,10 @@
           border-top: 1px solid $color_stroke;
           flex-shrink: 0;
 
+          @include sm_screen {
+            margin-bottom: 48px;
+          }
+
 
           .profile-avatar {
             display: flex;

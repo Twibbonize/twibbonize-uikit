@@ -10853,6 +10853,9 @@ label:active:after {
           padding-top: 8px;
           border-top: 1px solid #DDE5E5;
           flex-shrink: 0; }
+          @media screen and (max-width: 768px) {
+            .expand_menu .overlay .menu-wrapper .menu-container .profile-section {
+              margin-bottom: 48px; } }
           .expand_menu .overlay .menu-wrapper .menu-container .profile-section .profile-avatar {
             display: flex;
             align-items: center;
@@ -15172,6 +15175,13 @@ body.expand-menu--open {
       background-repeat: no-repeat;
       background-size: 300px;
       background-position: top right; } }
+.page-title {
+  display: flex;
+  flex-direction: row;
+  gap: 8px; }
+  @media screen and (max-width: 768px) {
+    .page-title {
+      flex-direction: column; } }
 h1.search-results-heading {
   font-size: 32px;
   font-weight: 700;

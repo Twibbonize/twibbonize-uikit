@@ -13,6 +13,16 @@
   }
 }
 
+.page-title {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+
+  @include sm_screen {
+    flex-direction: column;
+  }
+}
+
 h1.search-results-heading {
   font-size: 32px;
   font-weight: 700;
