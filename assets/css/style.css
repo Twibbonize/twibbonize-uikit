@@ -9988,7 +9988,7 @@ label:active:after {
     white-space: nowrap; }
   .avatars .details {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     background: #e6edf0;
     padding: 20px;
     border-radius: 10px;
@@ -10001,7 +10001,8 @@ label:active:after {
     border-radius: 50% !important;
     border: 3px solid #fff;
     object-fit: cover;
-    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1); }
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: #fff; }
     .avatars .avatar.avatar-sm {
       width: 2rem;
       height: 2rem; }
@@ -10619,6 +10620,16 @@ label:active:after {
     overflow: hidden; }
     .creator_item .cover img {
       width: 100%; }
+  .creator_item a.creator_name {
+    color: #121213 !important;
+    font-size: 16px;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    font-weight: 700;
+    transition: 0.3s; }
 
 @media screen and (max-width: 768px) {
   .collections {

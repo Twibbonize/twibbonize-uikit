@@ -123,7 +123,7 @@
           </div>
 
           <div class="header__menu">
-            <button class="d-none d-lg-inline header__action-item btn btn-primary btn-sm">
+            <button class="d-none d-lg-inline header__action-item btn btn-grad btn-sm">
               <i data-feather="plus" width="16" height="16"></i>
               New Campaign
             </button>
@@ -148,13 +148,13 @@
               </template>
               <template x-if="!query">
                 <span>
-                  Explore Campaigns
+                  Explore Campaigns & Creators
                 </span>
               </template>
             </h1>
             <p class="search-results-description">
               <template x-if="!query">
-                <span>18,700,000+ campaigns from thousands of inspirational creators</span>
+                <span><strong>18,721,187</strong> campaigns from <strong>2,186,494</strong> of creators around the world</span>
               </template>
 
               <template x-if="query">
@@ -199,7 +199,7 @@
         </div>
 
         <section class="section section__filter-campaigns pb-100 ">
-          <div x-show="query" class="tabs-container border-b" x-transition>
+          <div class="tabs-container border-b" x-transition>
             <div class="container">
               <ul class="twb-tabs" role="tablist">
                 <li class="twb-tab" :class="{ 'active': currentTab == 'campaigns' }">
@@ -227,17 +227,39 @@
                       <select class="category-filter" aria-label="default select example"
                         data-placeholder="Select a category">
                         <option></option>
-                        <option value="Arts & Culture">Arts & Culture</option>
-                        <option value="Government & Politics">Government & Politics</option>
-                        <option value="Education">Education</option>
-                        <option value="Environment">Environment</option>
-                        <option value="Social Causes">Social Causes</option>
-                        <option value="Health & Wellness">Health & Wellness</option>
-                        <option value="For Fun Only">For Fun Only</option>
-                        <option value="Sports">Sports</option>
-                        <option value="Business">Business</option>
-                        <option value="Science & Tech">Science & Tech</option>
-                        <option value="Religion & Spirituality">Religion & Spirituality</option>
+                        <option value="Arts & Culture">
+                          🎨 Arts & Culture
+                        </option>
+                        <option value="Government & Politics">
+                          🗳 Government & Politics
+                        </option>
+                        <option value="Education">
+                          📚 Education
+                        </option>
+                        <option value="Environment">    
+                          🧜🏻‍♀️ Environment
+                        </option>
+                        <option value="Social Causes">
+                          🙅🏽‍♂️ Social Causes
+                        </option>
+                        <option value="Health & Wellness">
+                          🏩 Health & Wellness
+                        </option>
+                        <option value="For Fun Only">
+                          😂 For Fun Only
+                        </option>
+                        <option value="Sports">
+                          ⚽️ Sports
+                        </option>
+                        <option value="Business">
+                          💼 Business
+                        </option>
+                        <option value="Science & Tech">
+                          🧬 Science & Tech
+                        </option>
+                        <option value="Religion & Spirituality">
+                          📿 Religion & Spirituality
+                        </option>
 
 
 
@@ -556,25 +578,30 @@
               <div class="row">
                 <template x-for="creator in creators">
                   <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                    <div class="creator_item creator_card space-y-10 is_big">
+                    <div class="creator_item creator_card space-y-20 mb-20">
                       <div class="avatars flex-column space-y-10">
+                        <div class="cover">
+                          <img :src="(creator.banner) ? `assets/img/profile-banner/${creator.banner}` : 'assets/img/bg/banner-default.svg'" alt="Avatar" class="img-fluid">
+                        </div>
                         <div class="media">
                           <a href="Profile.html">
                             <img
                               :src="(creator.avatar) ? `${avatarBaseUrl}${creator.avatar}` : 'assets/img/avatars/twibbonize-avatar.jpg'"
-                              alt="Avatar" class="avatar avatar-md">
+                              alt="Avatar" class="avatar
+                              avatar-md">
                           </a>
                         </div>
-                        <div class="text-center creator_bio">
-                          <a href="Profile.html">
-                            <p class="avatars_name large color_black" x-text="creator.name"></p>
-                          </a>
-                          <span class="sales color_text">
-                            <span x-text="abbreviateNumber(creator.total_supports)"></span>
-                            <span> supports with </span>
-                            <span x-text="creator.total_campaigns"></span>
-                            <span> campaigns</span>
-                          </span>
+
+                        <a href="#" class="creator_name" x-text="creator.name"></a>
+                        <div class="details text-center">
+                          <div>
+                            <p class="color_black txt_lg" x-text="abbreviateNumber(creator.total_supports)"></p>
+                            <p class="color_black txt_sm">Supports</p>
+                          </div>
+                          <div>
+                            <p class="color_black txt_lg" x-text="creator.total_campaigns"></p>
+                            <p class="color_black txt_sm">Campaigns</p>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -820,7 +847,8 @@
                 name: item.Name,
                 total_campaigns: item.total_campaigns,
                 total_supports: item.total_supports,
-                avatar: item.Avatar
+                avatar: item.Avatar,
+                banner: item.banner
               })
             }
 

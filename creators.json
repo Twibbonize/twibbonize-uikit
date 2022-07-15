@@ -1,202 +1,1413 @@
-[
-{"total_campaigns":1,"CampaignCreatorUuid":"2bf2d9c3-4ba4-4c67-96ef-25b7e3443ba5","total_supports":108164,"Name":"freepik desain","Avatar":""},
-{"total_campaigns":4,"CampaignCreatorUuid":"8b19476f-cd7c-43f2-856d-9ea922e1c669","total_supports":40293,"Name":"Universitas Indonesia","Avatar":null},
-{"total_campaigns":12,"CampaignCreatorUuid":"87da4854-6dd1-4e6d-948d-06c4384887da","total_supports":38607,"Name":"Insan Ceria Gemilang","Avatar":"87da4854-6dd1-4e6d-948d-06c4384887da.jpg"},
-{"total_campaigns":1,"CampaignCreatorUuid":"d5187387-4678-49be-863b-e78f6cc40293","total_supports":25864,"Name":"Bulukumba","Avatar":"d5187387-4678-49be-863b-e78f6cc40293.jpg"},
-{"total_campaigns":1,"CampaignCreatorUuid":"202920a8-ce84-408d-8c79-8d2ff30ecafe","total_supports":22181,"Name":"Inna Ppni","Avatar":""},
-{"total_campaigns":2,"CampaignCreatorUuid":"1deb5dc6-4441-4c69-acd5-23870011664a","total_supports":16241,"Name":"Bank Syariah Indonesia","Avatar":"3b25799b-2abd-442a-9a20-6f1e993bd9d4.png"},
-{"total_campaigns":2,"CampaignCreatorUuid":"7270b199-2525-4386-8113-e7bead8a0ec1","total_supports":14366,"Name":"Kezia Patricia Jonathan","Avatar":"7270b199-2525-4386-8113-e7bead8a0ec1.jpg"},
-{"total_campaigns":1,"CampaignCreatorUuid":"a438b1cc-02c7-4891-833f-5dbba5433123","total_supports":11841,"Name":"PB HMI 2021-2023","Avatar":"ecd3d861-979f-49ff-a87a-84b452f6b37e.png"},
-{"total_campaigns":11,"CampaignCreatorUuid":"6aa6d5c7-0236-4d4d-9257-27382e255c05","total_supports":8672,"Name":"reviewsteknologiku.tech","Avatar":"944311bd-8595-4fba-9df4-9ef8661c3110.png"},
-{"total_campaigns":4,"CampaignCreatorUuid":"b4c7856b-5c4e-41b5-a917-246972f4a8f5","total_supports":8310,"Name":"Cousin Dee Dee","Avatar":"b4c7856b-5c4e-41b5-a917-246972f4a8f5.jpg"},
-{"total_campaigns":3,"CampaignCreatorUuid":"69ab7aba-e9a3-450e-9d2b-2e0f3d8b66d7","total_supports":8088,"Name":"Stephiana Ari Rita","Avatar":""},
-{"total_campaigns":3,"CampaignCreatorUuid":"89fe577a-c72d-4982-b3e5-eb25318a531f","total_supports":7582,"Name":"liputan60detik.com","Avatar":""},
-{"total_campaigns":56,"CampaignCreatorUuid":"9672bab2-dab4-4202-ad55-d1e2ad9cbaa0","total_supports":7244,"Name":"Twibboniz.com | Share Link Twibbon","Avatar":"9672bab2-dab4-4202-ad55-d1e2ad9cbaa0.jpg"},
-{"total_campaigns":2,"CampaignCreatorUuid":"e7f7c873-585d-4a41-958b-a8d1061d11dc","total_supports":6897,"Name":"Suhari Ete","Avatar":"e7f7c873-585d-4a41-958b-a8d1061d11dc.jpg"},
-{"total_campaigns":2,"CampaignCreatorUuid":"d7bf804d-020f-4649-a474-ba64cc6ff06c","total_supports":6390,"Name":"Avina","Avatar":""},
-{"total_campaigns":3,"CampaignCreatorUuid":"7b570103-0a43-4e99-9586-2cede8aa9e77","total_supports":5895,"Name":"Hasan Madano Iswal","Avatar":""},
-{"total_campaigns":21,"CampaignCreatorUuid":"31c88ee9-e070-44d5-affd-463df5415c2e","total_supports":5516,"Name":"Design VSN","Avatar":"31c88ee9-e070-44d5-affd-463df5415c2e.jpg"},
-{"total_campaigns":1,"CampaignCreatorUuid":"c216e711-4e26-4bdc-9ad1-9a76b8f33928","total_supports":5404,"Name":"Fraksi Partai Gerindra DPR RI","Avatar":"c216e711-4e26-4bdc-9ad1-9a76b8f33928.jpg"},
-{"total_campaigns":1,"CampaignCreatorUuid":"108b63c0-eff0-4455-b5dc-b6fb6be5a5b5","total_supports":5316,"Name":"Hafidh Yurits","Avatar":""},
-{"total_campaigns":8,"CampaignCreatorUuid":"43af06dc-12eb-4d77-bbb1-ae602a914e51","total_supports":4669,"Name":"Wahibul Minan","Avatar":"43af06dc-12eb-4d77-bbb1-ae602a914e51.jpg"},
-{"total_campaigns":6,"CampaignCreatorUuid":"9659e6e2-1fe0-48be-b433-c86f0e0d9148","total_supports":4121,"Name":"Abdur Rofik","Avatar":"9659e6e2-1fe0-48be-b433-c86f0e0d9148.jpg"},
-{"total_campaigns":2,"CampaignCreatorUuid":"ae849450-ab38-4f81-b4fd-e874a8dd153c","total_supports":3811,"Name":"Abu Haqqi","Avatar":"ca5a7b4f-dbdc-46bb-96c8-fc7a14521730.png"},
-{"total_campaigns":7,"CampaignCreatorUuid":"2abfbebd-480f-4334-b7a9-b9b3654fc53d","total_supports":3641,"Name":"Sosial Media","Avatar":""},
-{"total_campaigns":2,"CampaignCreatorUuid":"502bf771-3d9c-483c-9c0e-5ae610cb88c4","total_supports":3391,"Name":"prioritas group official","Avatar":"502bf771-3d9c-483c-9c0e-5ae610cb88c4.jpg"},
-{"total_campaigns":2,"CampaignCreatorUuid":"043f07b3-b79c-492b-a40d-b2ee8544af09","total_supports":3282,"Name":"@F_Design085640996467","Avatar":"043f07b3-b79c-492b-a40d-b2ee8544af09.jpg"},
-{"total_campaigns":11,"CampaignCreatorUuid":"355aa4fc-7737-4067-be47-bda37a2d05f5","total_supports":3204,"Name":"AMINUDIN ,S.S.","Avatar":"355aa4fc-7737-4067-be47-bda37a2d05f5.jpg"},
-{"total_campaigns":1,"CampaignCreatorUuid":"63372a32-daab-4438-aa02-ba4815a54c58","total_supports":3188,"Name":"nanang maryono","Avatar":""},
-{"total_campaigns":41,"CampaignCreatorUuid":"ecd80d88-86f8-4d94-9be8-3b4d38bb0fcb","total_supports":2959,"Name":"GML-Tech","Avatar":"ecd80d88-86f8-4d94-9be8-3b4d38bb0fcb.jpg"},
-{"total_campaigns":1,"CampaignCreatorUuid":"ed5a1474-1846-452b-9d47-cb8618519320","total_supports":2924,"Name":"Reno Apriansyah","Avatar":""},
-{"total_campaigns":2,"CampaignCreatorUuid":"ab0095e1-79a1-46c9-ad9c-8e1679f8d74f","total_supports":2772,"Name":"Pong Giez","Avatar":""},
-{"total_campaigns":1,"CampaignCreatorUuid":"6255dc78-b935-4869-9762-08c70e439f92","total_supports":2680,"Name":"NCCA","Avatar":"6255dc78-b935-4869-9762-08c70e439f92.jpg"},
-{"total_campaigns":1,"CampaignCreatorUuid":"3791ff6a-67fd-4fb0-bc7a-066b5bb14fb5","total_supports":2533,"Name":"Kyle Francine Bolo","Avatar":""},
-{"total_campaigns":2,"CampaignCreatorUuid":"bcaf21ee-444e-4408-b2c7-bdd99f353b9b","total_supports":2265,"Name":"SMA TARUNA TERPADU BOASH","Avatar":""},
-{"total_campaigns":1,"CampaignCreatorUuid":"cd6e1be5-b5b3-4fe2-b818-635fe021af26","total_supports":2130,"Name":"Dirgho Kaimudin","Avatar":"cd6e1be5-b5b3-4fe2-b818-635fe021af26.jpg"},
-{"total_campaigns":4,"CampaignCreatorUuid":"09fd5b83-80ba-4e80-9738-ea3099b7e9c9","total_supports":1924,"Name":"Fauzan Zada","Avatar":"8b604fb3-6b1a-401e-b443-5c0eee1a75c0.png"},
-{"total_campaigns":3,"CampaignCreatorUuid":"f79651c2-a614-49f0-9c0a-76e1e581d1a9","total_supports":1916,"Name":"Jordy Kurniawan","Avatar":""},
-{"total_campaigns":16,"CampaignCreatorUuid":"928ed3f2-ca99-4002-b8f2-aa53940070d6","total_supports":1885,"Name":"Pusat Kajian Politik Universitas Indonesia","Avatar":"928ed3f2-ca99-4002-b8f2-aa53940070d6.jpg"},
-{"total_campaigns":1,"CampaignCreatorUuid":"14546f6a-3edb-4267-a792-90be141dd78a","total_supports":1856,"Name":"mustafa","Avatar":"14546f6a-3edb-4267-a792-90be141dd78a.jpg"},
-{"total_campaigns":1,"CampaignCreatorUuid":"0adfaac6-00d0-4724-a5b6-46e9e39dba14","total_supports":1855,"Name":"Universitas Singaperbangsa Karawang","Avatar":"10f9885b-36c9-4c9a-b89c-590f52fecb8f.png"},
-{"total_campaigns":1,"CampaignCreatorUuid":"b0dea742-adc0-4f03-915e-c57cd4d78163","total_supports":1822,"Name":"Carl Jevsen Macaraeg","Avatar":""},
-{"total_campaigns":8,"CampaignCreatorUuid":"d72b538c-6607-4637-81d8-a3d54f9c7864","total_supports":1789,"Name":"Yayasan Syech Ali Jaber","Avatar":""},
-{"total_campaigns":9,"CampaignCreatorUuid":"2e67953d-9b3e-4e17-b14d-eae0b40e73ec","total_supports":1777,"Name":"Sertifikat Kesehatan","Avatar":""},
-{"total_campaigns":1,"CampaignCreatorUuid":"b0feff3b-efd6-4c9f-996a-c8f7a4aaeeb1","total_supports":1731,"Name":"BUDDHY","Avatar":"b0feff3b-efd6-4c9f-996a-c8f7a4aaeeb1.jpg"},
-{"total_campaigns":1,"CampaignCreatorUuid":"dba09e68-6b5e-47c1-a2bd-27dd05ec43ef","total_supports":1653,"Name":"City of Malabon University","Avatar":"dba09e68-6b5e-47c1-a2bd-27dd05ec43ef.jpg"},
-{"total_campaigns":1,"CampaignCreatorUuid":"9e5dd003-6d45-49b7-9d2a-57b99150105b","total_supports":1650,"Name":"Dinesh R","Avatar":""},
-{"total_campaigns":1,"CampaignCreatorUuid":"053ee7b5-fff7-4336-b85a-c5583b8cdda7","total_supports":1650,"Name":"IAI BUNGA BANGSA CIREBON","Avatar":""},
-{"total_campaigns":3,"CampaignCreatorUuid":"74e00671-99e0-4179-a19f-a0002c759968","total_supports":1647,"Name":"SATRIA BANTEN Kec Mauk","Avatar":"74e00671-99e0-4179-a19f-a0002c759968.jpg"},
-{"total_campaigns":2,"CampaignCreatorUuid":"683241f1-99e9-4759-84a2-0ec4d6e8eb65","total_supports":1629,"Name":"PT Amerta Indah Otsuka","Avatar":"683241f1-99e9-4759-84a2-0ec4d6e8eb65.jpg"},
-{"total_campaigns":4,"CampaignCreatorUuid":"5139a584-5df9-4238-9724-4974b93d20e9","total_supports":1622,"Name":"مَازِلْتُ طَالِبًا","Avatar":"50d6486b-6749-46c5-b783-8572ee65f5cc.png"},
-{"total_campaigns":2,"CampaignCreatorUuid":"cecf5b31-3cc6-44c6-8a7f-9e75460e1622","total_supports":1607,"Name":"Yulita Irine","Avatar":""},
-{"total_campaigns":12,"CampaignCreatorUuid":"f5a7574e-3bea-48e5-8b48-e4319eaaca94","total_supports":1579,"Name":"Darna Dewi","Avatar":""},
-{"total_campaigns":11,"CampaignCreatorUuid":"b3267db3-6480-4932-8eb5-ee1fb2339929","total_supports":1567,"Name":"Putri Tinambunan","Avatar":""},
-{"total_campaigns":2,"CampaignCreatorUuid":"e2a6c2df-00d8-426b-8e31-6462f3d80901","total_supports":1539,"Name":"Raden Praja","Avatar":"e2a6c2df-00d8-426b-8e31-6462f3d80901.jpg"},
-{"total_campaigns":1,"CampaignCreatorUuid":"e766c131-ab79-41f7-9894-84ec15dc04a8","total_supports":1522,"Name":"Gaby Clarissa","Avatar":"e766c131-ab79-41f7-9894-84ec15dc04a8.jpg"},
-{"total_campaigns":1,"CampaignCreatorUuid":"ccf5cfad-a699-4538-af47-74baef39470c","total_supports":1503,"Name":"Kacyleen Santos","Avatar":""},
-{"total_campaigns":1,"CampaignCreatorUuid":"11b33497-6afe-49c1-ab51-92f21cb30f4c","total_supports":1468,"Name":"RACHAU","Avatar":""},
-{"total_campaigns":6,"CampaignCreatorUuid":"32c85245-fca8-420d-ab32-e0c67583953e","total_supports":1400,"Name":"Andri aqew","Avatar":"32c85245-fca8-420d-ab32-e0c67583953e.jpg"},
-{"total_campaigns":1,"CampaignCreatorUuid":"672d1f15-1a64-4f24-bd47-d7974d58893a","total_supports":1396,"Name":"alfian","Avatar":"672d1f15-1a64-4f24-bd47-d7974d58893a.jpg"},
-{"total_campaigns":1,"CampaignCreatorUuid":"d6ac6f39-aa32-474c-85c4-fa914b6f0d99","total_supports":1376,"Name":"Jamshaid Munir Sandhu","Avatar":""},
-{"total_campaigns":1,"CampaignCreatorUuid":"d2257ba2-afb3-4534-b286-d4ed0cd7808a","total_supports":1365,"Name":"VIP Events Management","Avatar":null},
-{"total_campaigns":2,"CampaignCreatorUuid":"85a162bf-e4da-478e-9a35-de0f294f8617","total_supports":1364,"Name":"University ID","Avatar":""},
-{"total_campaigns":1,"CampaignCreatorUuid":"5bc75749-66ea-4172-bd07-7067fcf5dd70","total_supports":1361,"Name":"Direktorat Sekolah Dasar","Avatar":""},
-{"total_campaigns":1,"CampaignCreatorUuid":"7aa368d0-5d61-4df3-bc47-d0c5cdeaee39","total_supports":1350,"Name":"CHRISTINE ANNE CASTRO","Avatar":""},
-{"total_campaigns":8,"CampaignCreatorUuid":"7e4ee948-fba2-456f-b746-58bd3d9ab7d2","total_supports":1339,"Name":"Ki Djatiluhung","Avatar":null},
-{"total_campaigns":2,"CampaignCreatorUuid":"9ffdaf53-c04c-41a1-8e23-490f7a7b6354","total_supports":1330,"Name":"Ardiliansyah","Avatar":"093cb613-cccd-4344-87d4-e057c0a46257.png"},
-{"total_campaigns":2,"CampaignCreatorUuid":"3956e1b6-d305-4601-9e55-b54ca0c3b5ca","total_supports":1316,"Name":"Rahayu Ramadanti","Avatar":""},
-{"total_campaigns":5,"CampaignCreatorUuid":"6006dc2a-194f-49fc-8539-48edd1d4bc3b","total_supports":1299,"Name":"Yolanda Shinta","Avatar":""},
-{"total_campaigns":2,"CampaignCreatorUuid":"c5682923-c7c5-4a9f-bc21-57710d212d3e","total_supports":1245,"Name":"SJ Millan","Avatar":""},
-{"total_campaigns":1,"CampaignCreatorUuid":"383a5261-031f-4cc2-a960-961d2433fdf9","total_supports":1243,"Name":"Lâm BKT","Avatar":""},
-{"total_campaigns":8,"CampaignCreatorUuid":"e4d8914b-f5ba-49dc-9e4c-742a0185dad1","total_supports":1233,"Name":"J-Lo Suguitan","Avatar":""},
-{"total_campaigns":4,"CampaignCreatorUuid":"ae591e20-e31a-41c5-97a9-3134daf9a901","total_supports":1232,"Name":"NU CARE-LAZISNU","Avatar":"8fee2430-8f21-4ef0-9bac-0a51d0abd125.png"},
-{"total_campaigns":1,"CampaignCreatorUuid":"810163e9-2454-496c-a171-6be085a4b32f","total_supports":1217,"Name":"Miyako 123","Avatar":""},
-{"total_campaigns":2,"CampaignCreatorUuid":"38a0fca5-345a-43ff-b369-6c0ff78d0295","total_supports":1212,"Name":"Olimpiade ","Avatar":""},
-{"total_campaigns":1,"CampaignCreatorUuid":"af24ff4f-d46f-4fc9-974e-195f705e2070","total_supports":1197,"Name":"Roberto Gustam","Avatar":"af24ff4f-d46f-4fc9-974e-195f705e2070.jpg"},
-{"total_campaigns":1,"CampaignCreatorUuid":"a9508684-00f9-4166-b70f-183d3acda731","total_supports":1195,"Name":"Aki Awan","Avatar":""},
-{"total_campaigns":2,"CampaignCreatorUuid":"358d5259-fa0f-4fee-a719-216836ca0d7b","total_supports":1191,"Name":"Van Samorn","Avatar":""},
-{"total_campaigns":3,"CampaignCreatorUuid":"1d59b78b-a87e-4292-8f0b-0730ef8be57d","total_supports":1174,"Name":"Lavern Marie","Avatar":""},
-{"total_campaigns":1,"CampaignCreatorUuid":"ab40ad15-8a93-4889-8468-e706c33f3397","total_supports":1165,"Name":"Nurina Wijaba","Avatar":""},
-{"total_campaigns":1,"CampaignCreatorUuid":"8287539c-bf67-4edc-9ad5-9a81f29ecfcb","total_supports":1155,"Name":"JUDIMER JOHN ZARATE","Avatar":"8287539c-bf67-4edc-9ad5-9a81f29ecfcb.jpg"},
-{"total_campaigns":2,"CampaignCreatorUuid":"9337a001-6e21-41c4-b5a8-b0d4b54095b4","total_supports":1152,"Name":"PT Jenius Sains Indonesia","Avatar":""},
-{"total_campaigns":3,"CampaignCreatorUuid":"59b381dd-73ca-42c3-951f-e9585c7918b0","total_supports":1149,"Name":"Yan Yan Studio","Avatar":"59b381dd-73ca-42c3-951f-e9585c7918b0.jpg"},
-{"total_campaigns":3,"CampaignCreatorUuid":"a92b1dc2-e8ab-46df-8146-670aff88b197","total_supports":1143,"Name":"Kota Tangerang","Avatar":"46a585d7-d902-45fb-946c-865a67282b7d.png"},
-{"total_campaigns":1,"CampaignCreatorUuid":"448c9205-1048-484b-9019-0f06597601a2","total_supports":1111,"Name":"CU Lantang Tipo","Avatar":"448c9205-1048-484b-9019-0f06597601a2.jpg"},
-{"total_campaigns":1,"CampaignCreatorUuid":"fb5485db-1d80-4cbc-99e8-d3cf091fd59e","total_supports":1105,"Name":"INHS","Avatar":"fb5485db-1d80-4cbc-99e8-d3cf091fd59e.jpg"},
-{"total_campaigns":3,"CampaignCreatorUuid":"aa70a2c0-eb18-4955-9f3a-ddf9d6f80e8a","total_supports":1090,"Name":"Twibbon","Avatar":"aa70a2c0-eb18-4955-9f3a-ddf9d6f80e8a.jpg"},
-{"total_campaigns":1,"CampaignCreatorUuid":"70c40bb0-91ca-4524-bab1-32ff266be1d8","total_supports":1085,"Name":"Almahdireja Arma","Avatar":""},
-{"total_campaigns":2,"CampaignCreatorUuid":"0a4043a8-bd2b-40be-afa6-deb2d2ee301b","total_supports":1085,"Name":"digitalmarketing sehatigroup","Avatar":""},
-{"total_campaigns":1,"CampaignCreatorUuid":"00217317-90fc-4e0a-ae1d-0e57237c9b92","total_supports":1084,"Name":"hermands.id","Avatar":"00217317-90fc-4e0a-ae1d-0e57237c9b92.jpg"},
-{"total_campaigns":3,"CampaignCreatorUuid":"d516cdf1-d944-405a-9011-642cddbafeb8","total_supports":1078,"Name":"Waode Yuli","Avatar":""},
-{"total_campaigns":6,"CampaignCreatorUuid":"bab9e0e2-dab8-4a80-9dd6-c166c0091476","total_supports":1061,"Name":"goodscoop.id","Avatar":""},
-{"total_campaigns":1,"CampaignCreatorUuid":"606b49d5-4896-4675-bba8-0511165264e3","total_supports":1061,"Name":"OUR JOURNEY","Avatar":""},
-{"total_campaigns":1,"CampaignCreatorUuid":"113cd765-fa37-4f2a-bbcf-d7da106c9c84","total_supports":1023,"Name":"CIMB Niaga Finance","Avatar":"113cd765-fa37-4f2a-bbcf-d7da106c9c84.jpg"},
-{"total_campaigns":1,"CampaignCreatorUuid":"46454e7e-1804-47b7-970e-9ccb063633e1","total_supports":1012,"Name":"Muhammad Sarwo Edi","Avatar":"2dd2481e-1e62-4788-bd4b-c1f3a28a75cb.png"},
-{"total_campaigns":3,"CampaignCreatorUuid":"4f5e628b-d4b0-4199-a808-ef602b381abc","total_supports":1007,"Name":"bhara shakti","Avatar":""},
-{"total_campaigns":3,"CampaignCreatorUuid":"9ad59531-b467-4b3d-9ee4-e8a25467bf29","total_supports":997,"Name":"Moch Saiful Bachri","Avatar":"9ad59531-b467-4b3d-9ee4-e8a25467bf29.jpg"},
-{"total_campaigns":1,"CampaignCreatorUuid":"65cf3afe-67d5-4436-8bce-610be7eaf4f5","total_supports":990,"Name":"Ahmed Fahim","Avatar":"65cf3afe-67d5-4436-8bce-610be7eaf4f5.jpg"},
-{"total_campaigns":1,"CampaignCreatorUuid":"cb12983a-cab6-41aa-9cd9-9527e845527c","total_supports":989,"Name":"Carl Jason Yap","Avatar":""},
-{"total_campaigns":1,"CampaignCreatorUuid":"a573b457-0b19-4a54-8716-99b26787b576","total_supports":982,"Name":"R. Irwan Kurniawan","Avatar":"a573b457-0b19-4a54-8716-99b26787b576.jpg"},
-{"total_campaigns":3,"CampaignCreatorUuid":"9be55001-9fe8-4833-b68b-22df221c7314","total_supports":958,"Name":"tik fkipuntad","Avatar":""},
-{"total_campaigns":1,"CampaignCreatorUuid":"7c8e30d5-c47c-4e10-9ec9-d362024a4b00","total_supports":955,"Name":"SPC COMMUNICATION ARTS CLUB","Avatar":""},
-{"total_campaigns":1,"CampaignCreatorUuid":"6e17807b-18cc-4e95-8631-e80aa94510d3","total_supports":939,"Name":"Suandi Yusuf","Avatar":""},
-{"total_campaigns":2,"CampaignCreatorUuid":"39c01966-6894-4a29-b537-937a369a4ece","total_supports":939,"Name":"Swabawa SwahaBali","Avatar":""},
-{"total_campaigns":1,"CampaignCreatorUuid":"b05cca07-93b2-4956-840c-f8ac7ecfeb28","total_supports":934,"Name":"Rome Cakep","Avatar":""},
-{"total_campaigns":1,"CampaignCreatorUuid":"b3840367-6e8f-4911-b83c-fbb10cd6ba66","total_supports":918,"Name":"@ridzwan_rh","Avatar":""},
-{"total_campaigns":1,"CampaignCreatorUuid":"892e04e0-efd9-4f7b-8e00-d26946558991","total_supports":913,"Name":"Suyono,S.Pd","Avatar":"892e04e0-efd9-4f7b-8e00-d26946558991.jpg"},
-{"total_campaigns":1,"CampaignCreatorUuid":"ef3bd55a-7767-4aa1-bd34-ee896000a7e2","total_supports":912,"Name":"Ekawati Setyaningrum","Avatar":""},
-{"total_campaigns":3,"CampaignCreatorUuid":"844521e2-2ea0-407b-812a-31d9144b0b3a","total_supports":905,"Name":"Majelis Tinggi Agama Khonghucu Indonesia","Avatar":""},
-{"total_campaigns":1,"CampaignCreatorUuid":"b2279658-fd4f-4e5b-9cf8-b62f87eb45f5","total_supports":905,"Name":"humaskwarda jatim","Avatar":""},
-{"total_campaigns":2,"CampaignCreatorUuid":"d92822f1-00f5-486e-8b1a-3ca6069320cf","total_supports":900,"Name":"Garuda SAINS Indonesia","Avatar":""},
-{"total_campaigns":1,"CampaignCreatorUuid":"f14c97f9-777a-45b5-9c30-073cafa41e68","total_supports":899,"Name":"Hendrik Muslim","Avatar":"f14c97f9-777a-45b5-9c30-073cafa41e68.jpg"},
-{"total_campaigns":1,"CampaignCreatorUuid":"7159f8a7-1a6a-4dcb-b583-9cf92834cf9b","total_supports":895,"Name":"Agus Susanto","Avatar":"7159f8a7-1a6a-4dcb-b583-9cf92834cf9b.jpg"},
-{"total_campaigns":4,"CampaignCreatorUuid":"27f3cd91-2221-48a4-a46b-3da8df1e7831","total_supports":892,"Name":"Olimpiade Insight","Avatar":""},
-{"total_campaigns":1,"CampaignCreatorUuid":"edd2a900-2490-4054-9dd4-fb90ba97bbab","total_supports":883,"Name":"Wira Rizki Pratama","Avatar":"edd2a900-2490-4054-9dd4-fb90ba97bbab.jpg"},
-{"total_campaigns":13,"CampaignCreatorUuid":"a5148618-fed9-400e-94ca-2682786e2112","total_supports":874,"Name":"anung widyasmoro","Avatar":"a5148618-fed9-400e-94ca-2682786e2112.jpg"},
-{"total_campaigns":1,"CampaignCreatorUuid":"8425895a-e2a1-41cd-a55f-f8b74798b04d","total_supports":871,"Name":"Bulan Bahasa Bali","Avatar":"8425895a-e2a1-41cd-a55f-f8b74798b04d.jpg"},
-{"total_campaigns":2,"CampaignCreatorUuid":"0bccb44f-6f44-4f1f-a382-8568df09d798","total_supports":865,"Name":"Cell Tn","Avatar":""},
-{"total_campaigns":2,"CampaignCreatorUuid":"8f7f1172-4cc4-48cb-b75f-210668d1ba9a","total_supports":859,"Name":"Talaat Mostafa","Avatar":""},
-{"total_campaigns":1,"CampaignCreatorUuid":"780716ac-f0c2-4bfe-bf67-58b35bd50ed0","total_supports":858,"Name":"PAC FATAYAT NU Beji","Avatar":"780716ac-f0c2-4bfe-bf67-58b35bd50ed0.jpg"},
-{"total_campaigns":8,"CampaignCreatorUuid":"8e9c7de6-c091-4e22-929e-7fd356b8239d","total_supports":851,"Name":"CAK ARA REALITY","Avatar":"8e9c7de6-c091-4e22-929e-7fd356b8239d.jpg"},
-{"total_campaigns":1,"CampaignCreatorUuid":"e1ebe239-a58a-456a-bd3c-5d8a41fe5dbf","total_supports":847,"Name":"Oprec Raya FK Undip 2022","Avatar":""},
-{"total_campaigns":3,"CampaignCreatorUuid":"049bcb71-351c-4f47-a5a2-8cd2d4ec013c","total_supports":846,"Name":"Chacha Media","Avatar":"13f7d4a7-453f-4399-be6d-dc53b6f3fb0a.png"},
-{"total_campaigns":1,"CampaignCreatorUuid":"eee9f517-2112-4fac-a96e-dd5166753c0b","total_supports":840,"Name":"Matrasi SH","Avatar":"3e2df33f-1675-4172-b017-ac9000e6a930.png"},
-{"total_campaigns":1,"CampaignCreatorUuid":"7485d1f4-16f3-4350-b6af-79880bbca573","total_supports":840,"Name":"Benhur Fmedia","Avatar":"7485d1f4-16f3-4350-b6af-79880bbca573.jpg"},
-{"total_campaigns":10,"CampaignCreatorUuid":"29879c61-87ef-48a7-8d0d-2bfcd4571c05","total_supports":838,"Name":"rri pro1kendari","Avatar":""},
-{"total_campaigns":1,"CampaignCreatorUuid":"a47125d6-0818-49ad-9b50-432f62072285","total_supports":834,"Name":"Taryono Adiwijaya","Avatar":""},
-{"total_campaigns":15,"CampaignCreatorUuid":"1d991024-4522-4064-8081-144701e9576d","total_supports":833,"Name":"Adel Md. Edgardo Salvador","Avatar":""},
-{"total_campaigns":1,"CampaignCreatorUuid":"a5ef6795-e62e-463b-a472-d9f0aeadf6db","total_supports":831,"Name":"Alfhia Parma","Avatar":"0866d4ee-c423-451e-a7d1-75a69eb36dae.png"},
-{"total_campaigns":1,"CampaignCreatorUuid":"c96faf76-a58e-4cc8-b5be-058f86334333","total_supports":830,"Name":"Jonard Quizzagan Batang","Avatar":""},
-{"total_campaigns":1,"CampaignCreatorUuid":"5dd51966-152c-4092-bf52-ea1f5e7d795f","total_supports":812,"Name":"Program Unggulan SMAI ALMAARIF SINGOSARI","Avatar":"5dd51966-152c-4092-bf52-ea1f5e7d795f.jpg"},
-{"total_campaigns":1,"CampaignCreatorUuid":"27fd6470-c5f3-4a92-a71f-0b56309a1442","total_supports":783,"Name":"Al-Fath School Indonesia","Avatar":"27fd6470-c5f3-4a92-a71f-0b56309a1442.jpg"},
-{"total_campaigns":7,"CampaignCreatorUuid":"130ea6bf-11ed-42e6-b216-eecbfd027b64","total_supports":776,"Name":"Didik  Pictures || 082338042814","Avatar":"130ea6bf-11ed-42e6-b216-eecbfd027b64.jpg"},
-{"total_campaigns":2,"CampaignCreatorUuid":"eee02e16-03c5-4533-8acf-b4459f206acd","total_supports":770,"Name":"Ziqry Official_","Avatar":""},
-{"total_campaigns":1,"CampaignCreatorUuid":"349ffca3-791a-4296-8bc8-14a38faa4f89","total_supports":765,"Name":"Hua Siong College of Iloilo","Avatar":"349ffca3-791a-4296-8bc8-14a38faa4f89.jpg"},
-{"total_campaigns":2,"CampaignCreatorUuid":"bdf75d6f-7ee6-4f67-bb5d-c1bdd68241eb","total_supports":764,"Name":"KK Indonesia","Avatar":null},
-{"total_campaigns":1,"CampaignCreatorUuid":"cf31fcff-d038-4da7-b61b-a3102502adbf","total_supports":763,"Name":"Rifqi Fauzan Syafi'i","Avatar":""},
-{"total_campaigns":2,"CampaignCreatorUuid":"553212c2-2e58-46d0-ad90-07abfaf16453","total_supports":762,"Name":"62 Tahun Takalar","Avatar":""},
-{"total_campaigns":2,"CampaignCreatorUuid":"6715ca50-dda4-448c-b229-a9ed97fb50ba","total_supports":753,"Name":"Yayasan Al Azhar Lampung","Avatar":"6715ca50-dda4-448c-b229-a9ed97fb50ba.jpg"},
-{"total_campaigns":1,"CampaignCreatorUuid":"290ca75d-f43d-43ef-ac5c-ee4b733971b0","total_supports":740,"Name":"PSMS Rejuvenate","Avatar":""},
-{"total_campaigns":1,"CampaignCreatorUuid":"01d9ad04-e2c1-4cce-815e-ef1d8242cd26","total_supports":738,"Name":"CorComm AdMedika","Avatar":""},
-{"total_campaigns":2,"CampaignCreatorUuid":"75bab4e5-a6a4-4ebc-af3e-4b9c1df8e2fe","total_supports":735,"Name":"Lidya 1","Avatar":""},
-{"total_campaigns":1,"CampaignCreatorUuid":"82cd80b6-e7c9-4c8b-b2df-073520c7a345","total_supports":729,"Name":"I Komang Agus Tama","Avatar":""},
-{"total_campaigns":1,"CampaignCreatorUuid":"e1fe4e71-bde3-4594-b466-4e20312bdcf8","total_supports":724,"Name":"Abdullah M. Gamea","Avatar":"e1fe4e71-bde3-4594-b466-4e20312bdcf8.jpg"},
-{"total_campaigns":1,"CampaignCreatorUuid":"78382118-ea8f-4161-8e91-28f7934df8ee","total_supports":718,"Name":"Ali Asy'ari","Avatar":"78382118-ea8f-4161-8e91-28f7934df8ee.jpg"},
-{"total_campaigns":20,"CampaignCreatorUuid":"b8502969-b13f-461b-a6da-5151c78f7730","total_supports":707,"Name":"www.twibboniz.net","Avatar":"b8502969-b13f-461b-a6da-5151c78f7730.jpg"},
-{"total_campaigns":1,"CampaignCreatorUuid":"b5742125-189a-46c6-9a5e-8c3c62d79fe0","total_supports":706,"Name":"CHITRA SINTARANI","Avatar":""},
-{"total_campaigns":3,"CampaignCreatorUuid":"292a2d39-2fcb-4694-805e-574326ac5ccd","total_supports":703,"Name":"Hubby Ali","Avatar":""},
-{"total_campaigns":2,"CampaignCreatorUuid":"aa0f8afc-4a36-47be-a53f-d4e498d2eee2","total_supports":702,"Name":"adilpratama96","Avatar":null},
-{"total_campaigns":3,"CampaignCreatorUuid":"a9c26f89-141e-4aca-983b-2e00af42510a","total_supports":700,"Name":"Nurdyantoro ( Mas Nur ) DPRa PKS Cibabat - Kota Cimahi","Avatar":"a9c26f89-141e-4aca-983b-2e00af42510a.jpg"},
-{"total_campaigns":3,"CampaignCreatorUuid":"b158f7c2-1bb7-4b19-98ee-a07dc7016aaa","total_supports":694,"Name":"Sri Rejeki","Avatar":"fe59d896-8dcf-4cbf-9bda-6a205f50e687.png"},
-{"total_campaigns":1,"CampaignCreatorUuid":"8f0b5cf9-a8a0-4268-be29-399484ef862e","total_supports":691,"Name":"I Made Ari Kamanjaya","Avatar":""},
-{"total_campaigns":1,"CampaignCreatorUuid":"48c756cf-8cc8-4fbc-a95d-7db9c9a74f56","total_supports":679,"Name":"Darul Arifin Jambi","Avatar":"48c756cf-8cc8-4fbc-a95d-7db9c9a74f56.jpg"},
-{"total_campaigns":4,"CampaignCreatorUuid":"9b42f157-12e2-4d40-af80-44f1c36f7230","total_supports":678,"Name":"kreatif ibrohimiyah","Avatar":""},
-{"total_campaigns":1,"CampaignCreatorUuid":"87703197-3df2-475a-a869-c9e79410de42","total_supports":675,"Name":"Eko_27","Avatar":"87703197-3df2-475a-a869-c9e79410de42.jpg"},
-{"total_campaigns":2,"CampaignCreatorUuid":"194880a3-1a3c-4917-8015-ea2b2d5c5e6c","total_supports":670,"Name":"Kawan Lama Group","Avatar":"e42584b3-acb3-454f-9abf-c0f5e44e105f.png"},
-{"total_campaigns":1,"CampaignCreatorUuid":"0a14241c-6118-4e5a-83eb-c0f47263d285","total_supports":666,"Name":"ToGie Siahaan Full","Avatar":""},
-{"total_campaigns":15,"CampaignCreatorUuid":"05fbf14a-dd40-443d-8a91-32181f2286ce","total_supports":661,"Name":"Amrizal Ch","Avatar":"8cb3dc30-6466-4091-9406-e8df31864f49.png"},
-{"total_campaigns":3,"CampaignCreatorUuid":"591923c3-2c52-43c2-a898-f65096606b8f","total_supports":652,"Name":"SD PL Santo Yusup","Avatar":null},
-{"total_campaigns":3,"CampaignCreatorUuid":"02c1705a-72b2-465c-8bf3-11d9aab0a9e5","total_supports":644,"Name":"SATU Indonesia","Avatar":""},
-{"total_campaigns":1,"CampaignCreatorUuid":"f9d6c7ac-b2a2-4f24-8ede-cbba32a3a4c9","total_supports":643,"Name":"Stefen Fen","Avatar":""},
-{"total_campaigns":1,"CampaignCreatorUuid":"7dc1e61f-54df-4c69-9f67-38e587f5b99c","total_supports":636,"Name":"ABU ABDILLAH MUHAMMAD","Avatar":""},
-{"total_campaigns":1,"CampaignCreatorUuid":"e013fc91-d4dd-4117-9e81-afa74df70f2b","total_supports":632,"Name":"Eflien Yu","Avatar":""},
-{"total_campaigns":1,"CampaignCreatorUuid":"22278c57-cbce-45d6-953a-77969ae42225","total_supports":632,"Name":"Christopher Salon Indonesia","Avatar":""},
-{"total_campaigns":1,"CampaignCreatorUuid":"d7b9dda6-09e6-481d-96c6-403276476652","total_supports":630,"Name":"Mohamed Azmy","Avatar":"d7b9dda6-09e6-481d-96c6-403276476652.jpg"},
-{"total_campaigns":3,"CampaignCreatorUuid":"64cb46c8-ac8a-4968-8e32-480677cadd67","total_supports":630,"Name":"Kumon Indonesia","Avatar":""},
-{"total_campaigns":1,"CampaignCreatorUuid":"33c60e5d-de62-459f-a82a-81d040fe51e5","total_supports":620,"Name":"Ozhi Phriatzna","Avatar":"33c60e5d-de62-459f-a82a-81d040fe51e5.jpg"},
-{"total_campaigns":1,"CampaignCreatorUuid":"e828308f-13de-432e-89fe-ce5e9be492df","total_supports":620,"Name":"it admin","Avatar":""},
-{"total_campaigns":3,"CampaignCreatorUuid":"8d63b9e7-a775-4e7e-9a2e-64f1eec59ef8","total_supports":620,"Name":"Ilham Ilham","Avatar":""},
-{"total_campaigns":2,"CampaignCreatorUuid":"2d8ef432-dbc5-4890-83c4-9a4ba418967e","total_supports":618,"Name":"Kang Nanang MS","Avatar":"2d8ef432-dbc5-4890-83c4-9a4ba418967e.jpg"},
-{"total_campaigns":2,"CampaignCreatorUuid":"c9927dba-5304-43b5-b99c-944f4e4c732d","total_supports":616,"Name":"kelas harmoni","Avatar":""},
-{"total_campaigns":2,"CampaignCreatorUuid":"0cfd56e6-7426-4165-a7f0-231409498819","total_supports":615,"Name":"Ratnawiyah Usman","Avatar":"0cfd56e6-7426-4165-a7f0-231409498819.jpg"},
-{"total_campaigns":2,"CampaignCreatorUuid":"e9bef68e-4f9b-45b9-9df5-361fea265ed3","total_supports":614,"Name":"Rahmat Slamet","Avatar":""},
-{"total_campaigns":1,"CampaignCreatorUuid":"0ce187c1-d06c-4261-8c64-df324d84e7ee","total_supports":609,"Name":"IT RN MEDIKA","Avatar":""},
-{"total_campaigns":3,"CampaignCreatorUuid":"bac70b53-755c-40c4-88f1-0e27e8e4c308","total_supports":607,"Name":"Rachellika Dwi","Avatar":""},
-{"total_campaigns":1,"CampaignCreatorUuid":"ee114faa-e34f-4256-8011-3cc625a1f04e","total_supports":606,"Name":"MI Miftahul Huda Jatiroto","Avatar":""},
-{"total_campaigns":1,"CampaignCreatorUuid":"b0c5cb99-cf89-4ee4-b3cd-f8efc7333d3b","total_supports":606,"Name":"Indodax","Avatar":"b0c5cb99-cf89-4ee4-b3cd-f8efc7333d3b.jpg"},
-{"total_campaigns":1,"CampaignCreatorUuid":"2a268487-1c2b-45e4-b748-dd28be370bdd","total_supports":602,"Name":"Atep Wahyudin","Avatar":"026d2eee-ae8d-4983-9f7e-2b827176be33.png"},
-{"total_campaigns":1,"CampaignCreatorUuid":"55df11f7-a419-4127-99b4-ac90d37e42d2","total_supports":592,"Name":"TEST USU","Avatar":""},
-{"total_campaigns":1,"CampaignCreatorUuid":"3c8749c7-217a-459a-8080-3b93356acf77","total_supports":592,"Name":"Suheryanti Cirebon","Avatar":"7769129b-4e25-4dd1-adfe-cc048622255b.png"},
-{"total_campaigns":1,"CampaignCreatorUuid":"1a50743a-2b97-446a-859a-8e085954668d","total_supports":592,"Name":"PMB","Avatar":null},
-{"total_campaigns":1,"CampaignCreatorUuid":"feb14773-86e1-435d-a50a-96cf136dc9fe","total_supports":590,"Name":"Zainal Mufidz","Avatar":""},
-{"total_campaigns":3,"CampaignCreatorUuid":"eca95f91-6744-4880-8a6e-3e094a9dfcfc","total_supports":590,"Name":"ALDZI ART & DESIGN","Avatar":"eca95f91-6744-4880-8a6e-3e094a9dfcfc.jpg"},
-{"total_campaigns":1,"CampaignCreatorUuid":"72548d9b-7e20-4327-a0cb-60cc731f0322","total_supports":589,"Name":"ask olympic","Avatar":""},
-{"total_campaigns":1,"CampaignCreatorUuid":"16622c42-9602-4e51-a1aa-a0efb4680867","total_supports":587,"Name":"Ruhi Nisa","Avatar":""},
-{"total_campaigns":1,"CampaignCreatorUuid":"979e0a63-b8dd-4109-97b8-916e10c2ee46","total_supports":581,"Name":"Benedict Hornido","Avatar":""},
-{"total_campaigns":2,"CampaignCreatorUuid":"632fc638-dc2b-45a1-b1bd-188578f0ab73","total_supports":575,"Name":"Rasidi Bin Darmin Bin Romodikromo","Avatar":"26aea6f1-4412-4041-acc5-b7286c4c8b57.png"},
-{"total_campaigns":6,"CampaignCreatorUuid":"a5958c0c-ab85-489b-8d6f-de58c19751bd","total_supports":569,"Name":"Endung  EduApaadanya","Avatar":"a5958c0c-ab85-489b-8d6f-de58c19751bd.jpg"},
-{"total_campaigns":4,"CampaignCreatorUuid":"0ef4bd96-9025-4d96-9619-d885bd5e3101","total_supports":564,"Name":"July Kurniawan","Avatar":"0ef4bd96-9025-4d96-9619-d885bd5e3101.jpg"},
-{"total_campaigns":1,"CampaignCreatorUuid":"dd7a330b-74fd-443e-8293-1b1af5ca3916","total_supports":562,"Name":"Rizki Aris","Avatar":""},
-{"total_campaigns":10,"CampaignCreatorUuid":"dc1f3921-750b-4cf6-bfda-98cbef131e53","total_supports":557,"Name":"Lutfi Sabani","Avatar":""},
-{"total_campaigns":1,"CampaignCreatorUuid":"ba60e9b3-31f7-44fc-a066-f55a67190833","total_supports":554,"Name":"Jet Mendoza","Avatar":""},
-{"total_campaigns":1,"CampaignCreatorUuid":"a5e94767-a3ed-4454-a296-c09e13b57e2a","total_supports":551,"Name":"Danica Suarnaba","Avatar":"a5e94767-a3ed-4454-a296-c09e13b57e2a.jpg"},
-{"total_campaigns":4,"CampaignCreatorUuid":"5e5d8e29-208e-4eff-85c0-90a691832a63","total_supports":547,"Name":"R. Karyagunadi","Avatar":"fe88e7d4-a167-4297-93f5-af79f629e43d.png"},
-{"total_campaigns":1,"CampaignCreatorUuid":"c9100c18-9f6c-4580-97d4-1da076615d43","total_supports":542,"Name":"আলোক চিত্ৰকর","Avatar":""},
-{"total_campaigns":30,"CampaignCreatorUuid":"55677f62-2293-4e77-a743-b91f632a1dba","total_supports":539,"Name":"Franzine Mesina","Avatar":"55677f62-2293-4e77-a743-b91f632a1dba.jpg"},
-{"total_campaigns":2,"CampaignCreatorUuid":"f183f919-2f64-4c54-9a9c-5e39eda3b353","total_supports":538,"Name":"Fikram Januardi","Avatar":""},
-{"total_campaigns":1,"CampaignCreatorUuid":"ab7a3f57-1bd4-4ec2-acde-50cd3f22029d","total_supports":534,"Name":"Juli kei","Avatar":"ab7a3f57-1bd4-4ec2-acde-50cd3f22029d.jpg"},
-{"total_campaigns":2,"CampaignCreatorUuid":"5de17f3a-1b28-432d-89f1-865297796c29","total_supports":533,"Name":"Sekolah Sentosa Perdana","Avatar":"5de17f3a-1b28-432d-89f1-865297796c29.jpg"},
-{"total_campaigns":3,"CampaignCreatorUuid":"408217bb-bd37-43c5-9122-c8ce8a3be19f","total_supports":532,"Name":"yantonoveight","Avatar":"b8953a22-d52f-4aca-b1e8-1b61be6ca055.png"},
-{"total_campaigns":38,"CampaignCreatorUuid":"93b72542-5a57-4f1d-a9a2-02a791c2ada8","total_supports":531,"Name":"Media HNI Unofficial","Avatar":"9b433ae1-205c-4848-be8e-00aae0304932.png"},
-{"total_campaigns":2,"CampaignCreatorUuid":"ba2b46c0-8354-4d33-bc8a-e4d97daccbcf","total_supports":516,"Name":"SD Insan Amanah","Avatar":""}
+[{
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "2bf2d9c3-4ba4-4c67-96ef-25b7e3443ba5",
+    "total_supports": 108164,
+    "Name": "freepik desain",
+    "Avatar": "",
+    "banner": "faizur-rehman-pHPzdEHN6Os-unsplash.jpg"
+  },
+  {
+    "total_campaigns": 4,
+    "CampaignCreatorUuid": "8b19476f-cd7c-43f2-856d-9ea922e1c669",
+    "total_supports": 40293,
+    "Name": "Universitas Indonesia",
+    "Avatar": null,
+    "banner": "michael-marsh-U0dBV_QeiYk-unsplash.jpg"
+  },
+  {
+    "total_campaigns": 12,
+    "CampaignCreatorUuid": "87da4854-6dd1-4e6d-948d-06c4384887da",
+    "total_supports": 38607,
+    "Name": "Insan Ceria Gemilang",
+    "Avatar": "87da4854-6dd1-4e6d-948d-06c4384887da.jpg",
+    "banner": "etienne-girardet-Xh6BpT-1tXo-unsplash.jpg"
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "d5187387-4678-49be-863b-e78f6cc40293",
+    "total_supports": 25864,
+    "Name": "Bulukumba",
+    "Avatar": "d5187387-4678-49be-863b-e78f6cc40293.jpg"
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "202920a8-ce84-408d-8c79-8d2ff30ecafe",
+    "total_supports": 22181,
+    "Name": "Inna Ppni",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 2,
+    "CampaignCreatorUuid": "1deb5dc6-4441-4c69-acd5-23870011664a",
+    "total_supports": 16241,
+    "Name": "Bank Syariah Indonesia",
+    "Avatar": "3b25799b-2abd-442a-9a20-6f1e993bd9d4.png",
+    "banner": "lilzidesigns-uRkBByhpv3g-unsplash.jpg"
+  },
+  {
+    "total_campaigns": 2,
+    "CampaignCreatorUuid": "7270b199-2525-4386-8113-e7bead8a0ec1",
+    "total_supports": 14366,
+    "Name": "Kezia Patricia Jonathan",
+    "Avatar": "7270b199-2525-4386-8113-e7bead8a0ec1.jpg",
+    "banner": "adam-jang-8pOTAtyd_Mc-unsplash.jpg"
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "a438b1cc-02c7-4891-833f-5dbba5433123",
+    "total_supports": 11841,
+    "Name": "PB HMI 2021-2023",
+    "Avatar": "ecd3d861-979f-49ff-a87a-84b452f6b37e.png"
+  },
+  {
+    "total_campaigns": 11,
+    "CampaignCreatorUuid": "6aa6d5c7-0236-4d4d-9257-27382e255c05",
+    "total_supports": 8672,
+    "Name": "reviewsteknologiku.tech",
+    "Avatar": "944311bd-8595-4fba-9df4-9ef8661c3110.png"
+  },
+  {
+    "total_campaigns": 4,
+    "CampaignCreatorUuid": "b4c7856b-5c4e-41b5-a917-246972f4a8f5",
+    "total_supports": 8310,
+    "Name": "Cousin Dee Dee",
+    "Avatar": "b4c7856b-5c4e-41b5-a917-246972f4a8f5.jpg"
+  },
+  {
+    "total_campaigns": 3,
+    "CampaignCreatorUuid": "69ab7aba-e9a3-450e-9d2b-2e0f3d8b66d7",
+    "total_supports": 8088,
+    "Name": "Stephiana Ari Rita",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 3,
+    "CampaignCreatorUuid": "89fe577a-c72d-4982-b3e5-eb25318a531f",
+    "total_supports": 7582,
+    "Name": "liputan60detik.com",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 56,
+    "CampaignCreatorUuid": "9672bab2-dab4-4202-ad55-d1e2ad9cbaa0",
+    "total_supports": 7244,
+    "Name": "Twibboniz.com | Share Link Twibbon",
+    "Avatar": "9672bab2-dab4-4202-ad55-d1e2ad9cbaa0.jpg"
+  },
+  {
+    "total_campaigns": 2,
+    "CampaignCreatorUuid": "e7f7c873-585d-4a41-958b-a8d1061d11dc",
+    "total_supports": 6897,
+    "Name": "Suhari Ete",
+    "Avatar": "e7f7c873-585d-4a41-958b-a8d1061d11dc.jpg"
+  },
+  {
+    "total_campaigns": 2,
+    "CampaignCreatorUuid": "d7bf804d-020f-4649-a474-ba64cc6ff06c",
+    "total_supports": 6390,
+    "Name": "Avina",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 3,
+    "CampaignCreatorUuid": "7b570103-0a43-4e99-9586-2cede8aa9e77",
+    "total_supports": 5895,
+    "Name": "Hasan Madano Iswal",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 21,
+    "CampaignCreatorUuid": "31c88ee9-e070-44d5-affd-463df5415c2e",
+    "total_supports": 5516,
+    "Name": "Design VSN",
+    "Avatar": "31c88ee9-e070-44d5-affd-463df5415c2e.jpg"
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "c216e711-4e26-4bdc-9ad1-9a76b8f33928",
+    "total_supports": 5404,
+    "Name": "Fraksi Partai Gerindra DPR RI",
+    "Avatar": "c216e711-4e26-4bdc-9ad1-9a76b8f33928.jpg"
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "108b63c0-eff0-4455-b5dc-b6fb6be5a5b5",
+    "total_supports": 5316,
+    "Name": "Hafidh Yurits",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 8,
+    "CampaignCreatorUuid": "43af06dc-12eb-4d77-bbb1-ae602a914e51",
+    "total_supports": 4669,
+    "Name": "Wahibul Minan",
+    "Avatar": "43af06dc-12eb-4d77-bbb1-ae602a914e51.jpg"
+  },
+  {
+    "total_campaigns": 6,
+    "CampaignCreatorUuid": "9659e6e2-1fe0-48be-b433-c86f0e0d9148",
+    "total_supports": 4121,
+    "Name": "Abdur Rofik",
+    "Avatar": "9659e6e2-1fe0-48be-b433-c86f0e0d9148.jpg",
+    "banner": "teemu-paananen-bzdhc5b3Bxs-unsplash.jpg"
+  },
+  {
+    "total_campaigns": 2,
+    "CampaignCreatorUuid": "ae849450-ab38-4f81-b4fd-e874a8dd153c",
+    "total_supports": 3811,
+    "Name": "Abu Haqqi",
+    "Avatar": "ca5a7b4f-dbdc-46bb-96c8-fc7a14521730.png"
+  },
+  {
+    "total_campaigns": 7,
+    "CampaignCreatorUuid": "2abfbebd-480f-4334-b7a9-b9b3654fc53d",
+    "total_supports": 3641,
+    "Name": "Sosial Media",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 2,
+    "CampaignCreatorUuid": "502bf771-3d9c-483c-9c0e-5ae610cb88c4",
+    "total_supports": 3391,
+    "Name": "prioritas group official",
+    "Avatar": "502bf771-3d9c-483c-9c0e-5ae610cb88c4.jpg",
+    "banner": "filip-mishevski-c5QdMcuFlgY-unsplash.jpg"
+  },
+  {
+    "total_campaigns": 2,
+    "CampaignCreatorUuid": "043f07b3-b79c-492b-a40d-b2ee8544af09",
+    "total_supports": 3282,
+    "Name": "@F_Design085640996467",
+    "Avatar": "043f07b3-b79c-492b-a40d-b2ee8544af09.jpg"
+  },
+  {
+    "total_campaigns": 11,
+    "CampaignCreatorUuid": "355aa4fc-7737-4067-be47-bda37a2d05f5",
+    "total_supports": 3204,
+    "Name": "AMINUDIN ,S.S.",
+    "Avatar": "355aa4fc-7737-4067-be47-bda37a2d05f5.jpg",
+    "banner": "kelly-sikkema-gcHFXsdcmJE-unsplash.jpg"
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "63372a32-daab-4438-aa02-ba4815a54c58",
+    "total_supports": 3188,
+    "Name": "nanang maryono",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 41,
+    "CampaignCreatorUuid": "ecd80d88-86f8-4d94-9be8-3b4d38bb0fcb",
+    "total_supports": 2959,
+    "Name": "GML-Tech",
+    "Avatar": "ecd80d88-86f8-4d94-9be8-3b4d38bb0fcb.jpg"
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "ed5a1474-1846-452b-9d47-cb8618519320",
+    "total_supports": 2924,
+    "Name": "Reno Apriansyah",
+    "Avatar": "",
+    "banner": "clark-tibbs-oqStl2L5oxI-unsplash.jpg"
+  },
+  {
+    "total_campaigns": 2,
+    "CampaignCreatorUuid": "ab0095e1-79a1-46c9-ad9c-8e1679f8d74f",
+    "total_supports": 2772,
+    "Name": "Pong Giez",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "6255dc78-b935-4869-9762-08c70e439f92",
+    "total_supports": 2680,
+    "Name": "NCCA",
+    "Avatar": "6255dc78-b935-4869-9762-08c70e439f92.jpg"
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "3791ff6a-67fd-4fb0-bc7a-066b5bb14fb5",
+    "total_supports": 2533,
+    "Name": "Kyle Francine Bolo",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 2,
+    "CampaignCreatorUuid": "bcaf21ee-444e-4408-b2c7-bdd99f353b9b",
+    "total_supports": 2265,
+    "Name": "SMA TARUNA TERPADU BOASH",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "cd6e1be5-b5b3-4fe2-b818-635fe021af26",
+    "total_supports": 2130,
+    "Name": "Dirgho Kaimudin",
+    "Avatar": "cd6e1be5-b5b3-4fe2-b818-635fe021af26.jpg"
+  },
+  {
+    "total_campaigns": 4,
+    "CampaignCreatorUuid": "09fd5b83-80ba-4e80-9738-ea3099b7e9c9",
+    "total_supports": 1924,
+    "Name": "Fauzan Zada",
+    "Avatar": "8b604fb3-6b1a-401e-b443-5c0eee1a75c0.png"
+  },
+  {
+    "total_campaigns": 3,
+    "CampaignCreatorUuid": "f79651c2-a614-49f0-9c0a-76e1e581d1a9",
+    "total_supports": 1916,
+    "Name": "Jordy Kurniawan",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 16,
+    "CampaignCreatorUuid": "928ed3f2-ca99-4002-b8f2-aa53940070d6",
+    "total_supports": 1885,
+    "Name": "Pusat Kajian Politik Universitas Indonesia",
+    "Avatar": "928ed3f2-ca99-4002-b8f2-aa53940070d6.jpg"
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "14546f6a-3edb-4267-a792-90be141dd78a",
+    "total_supports": 1856,
+    "Name": "mustafa",
+    "Avatar": "14546f6a-3edb-4267-a792-90be141dd78a.jpg"
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "0adfaac6-00d0-4724-a5b6-46e9e39dba14",
+    "total_supports": 1855,
+    "Name": "Universitas Singaperbangsa Karawang",
+    "Avatar": "10f9885b-36c9-4c9a-b89c-590f52fecb8f.png"
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "b0dea742-adc0-4f03-915e-c57cd4d78163",
+    "total_supports": 1822,
+    "Name": "Carl Jevsen Macaraeg",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 8,
+    "CampaignCreatorUuid": "d72b538c-6607-4637-81d8-a3d54f9c7864",
+    "total_supports": 1789,
+    "Name": "Yayasan Syech Ali Jaber",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 9,
+    "CampaignCreatorUuid": "2e67953d-9b3e-4e17-b14d-eae0b40e73ec",
+    "total_supports": 1777,
+    "Name": "Sertifikat Kesehatan",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "b0feff3b-efd6-4c9f-996a-c8f7a4aaeeb1",
+    "total_supports": 1731,
+    "Name": "BUDDHY",
+    "Avatar": "b0feff3b-efd6-4c9f-996a-c8f7a4aaeeb1.jpg"
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "dba09e68-6b5e-47c1-a2bd-27dd05ec43ef",
+    "total_supports": 1653,
+    "Name": "City of Malabon University",
+    "Avatar": "dba09e68-6b5e-47c1-a2bd-27dd05ec43ef.jpg"
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "9e5dd003-6d45-49b7-9d2a-57b99150105b",
+    "total_supports": 1650,
+    "Name": "Dinesh R",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "053ee7b5-fff7-4336-b85a-c5583b8cdda7",
+    "total_supports": 1650,
+    "Name": "IAI BUNGA BANGSA CIREBON",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 3,
+    "CampaignCreatorUuid": "74e00671-99e0-4179-a19f-a0002c759968",
+    "total_supports": 1647,
+    "Name": "SATRIA BANTEN Kec Mauk",
+    "Avatar": "74e00671-99e0-4179-a19f-a0002c759968.jpg"
+  },
+  {
+    "total_campaigns": 2,
+    "CampaignCreatorUuid": "683241f1-99e9-4759-84a2-0ec4d6e8eb65",
+    "total_supports": 1629,
+    "Name": "PT Amerta Indah Otsuka",
+    "Avatar": "683241f1-99e9-4759-84a2-0ec4d6e8eb65.jpg"
+  },
+  {
+    "total_campaigns": 4,
+    "CampaignCreatorUuid": "5139a584-5df9-4238-9724-4974b93d20e9",
+    "total_supports": 1622,
+    "Name": "مَازِلْتُ طَالِبًا",
+    "Avatar": "50d6486b-6749-46c5-b783-8572ee65f5cc.png"
+  },
+  {
+    "total_campaigns": 2,
+    "CampaignCreatorUuid": "cecf5b31-3cc6-44c6-8a7f-9e75460e1622",
+    "total_supports": 1607,
+    "Name": "Yulita Irine",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 12,
+    "CampaignCreatorUuid": "f5a7574e-3bea-48e5-8b48-e4319eaaca94",
+    "total_supports": 1579,
+    "Name": "Darna Dewi",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 11,
+    "CampaignCreatorUuid": "b3267db3-6480-4932-8eb5-ee1fb2339929",
+    "total_supports": 1567,
+    "Name": "Putri Tinambunan",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 2,
+    "CampaignCreatorUuid": "e2a6c2df-00d8-426b-8e31-6462f3d80901",
+    "total_supports": 1539,
+    "Name": "Raden Praja",
+    "Avatar": "e2a6c2df-00d8-426b-8e31-6462f3d80901.jpg"
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "e766c131-ab79-41f7-9894-84ec15dc04a8",
+    "total_supports": 1522,
+    "Name": "Gaby Clarissa",
+    "Avatar": "e766c131-ab79-41f7-9894-84ec15dc04a8.jpg"
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "ccf5cfad-a699-4538-af47-74baef39470c",
+    "total_supports": 1503,
+    "Name": "Kacyleen Santos",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "11b33497-6afe-49c1-ab51-92f21cb30f4c",
+    "total_supports": 1468,
+    "Name": "RACHAU",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 6,
+    "CampaignCreatorUuid": "32c85245-fca8-420d-ab32-e0c67583953e",
+    "total_supports": 1400,
+    "Name": "Andri aqew",
+    "Avatar": "32c85245-fca8-420d-ab32-e0c67583953e.jpg"
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "672d1f15-1a64-4f24-bd47-d7974d58893a",
+    "total_supports": 1396,
+    "Name": "alfian",
+    "Avatar": "672d1f15-1a64-4f24-bd47-d7974d58893a.jpg"
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "d6ac6f39-aa32-474c-85c4-fa914b6f0d99",
+    "total_supports": 1376,
+    "Name": "Jamshaid Munir Sandhu",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "d2257ba2-afb3-4534-b286-d4ed0cd7808a",
+    "total_supports": 1365,
+    "Name": "VIP Events Management",
+    "Avatar": null
+  },
+  {
+    "total_campaigns": 2,
+    "CampaignCreatorUuid": "85a162bf-e4da-478e-9a35-de0f294f8617",
+    "total_supports": 1364,
+    "Name": "University ID",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "5bc75749-66ea-4172-bd07-7067fcf5dd70",
+    "total_supports": 1361,
+    "Name": "Direktorat Sekolah Dasar",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "7aa368d0-5d61-4df3-bc47-d0c5cdeaee39",
+    "total_supports": 1350,
+    "Name": "CHRISTINE ANNE CASTRO",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 8,
+    "CampaignCreatorUuid": "7e4ee948-fba2-456f-b746-58bd3d9ab7d2",
+    "total_supports": 1339,
+    "Name": "Ki Djatiluhung",
+    "Avatar": null
+  },
+  {
+    "total_campaigns": 2,
+    "CampaignCreatorUuid": "9ffdaf53-c04c-41a1-8e23-490f7a7b6354",
+    "total_supports": 1330,
+    "Name": "Ardiliansyah",
+    "Avatar": "093cb613-cccd-4344-87d4-e057c0a46257.png"
+  },
+  {
+    "total_campaigns": 2,
+    "CampaignCreatorUuid": "3956e1b6-d305-4601-9e55-b54ca0c3b5ca",
+    "total_supports": 1316,
+    "Name": "Rahayu Ramadanti",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 5,
+    "CampaignCreatorUuid": "6006dc2a-194f-49fc-8539-48edd1d4bc3b",
+    "total_supports": 1299,
+    "Name": "Yolanda Shinta",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 2,
+    "CampaignCreatorUuid": "c5682923-c7c5-4a9f-bc21-57710d212d3e",
+    "total_supports": 1245,
+    "Name": "SJ Millan",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "383a5261-031f-4cc2-a960-961d2433fdf9",
+    "total_supports": 1243,
+    "Name": "Lâm BKT",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 8,
+    "CampaignCreatorUuid": "e4d8914b-f5ba-49dc-9e4c-742a0185dad1",
+    "total_supports": 1233,
+    "Name": "J-Lo Suguitan",
+    "Avatar": "",
+    "banner": "john-jennings-fg7J6NnebBc-unsplash.jpg"
+  },
+  {
+    "total_campaigns": 4,
+    "CampaignCreatorUuid": "ae591e20-e31a-41c5-97a9-3134daf9a901",
+    "total_supports": 1232,
+    "Name": "NU CARE-LAZISNU",
+    "Avatar": "8fee2430-8f21-4ef0-9bac-0a51d0abd125.png"
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "810163e9-2454-496c-a171-6be085a4b32f",
+    "total_supports": 1217,
+    "Name": "Miyako 123",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 2,
+    "CampaignCreatorUuid": "38a0fca5-345a-43ff-b369-6c0ff78d0295",
+    "total_supports": 1212,
+    "Name": "Olimpiade ",
+    "Avatar": "",
+    "banner": "clark-tibbs-oqStl2L5oxI-unsplash.jpg"
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "af24ff4f-d46f-4fc9-974e-195f705e2070",
+    "total_supports": 1197,
+    "Name": "Roberto Gustam",
+    "Avatar": "af24ff4f-d46f-4fc9-974e-195f705e2070.jpg"
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "a9508684-00f9-4166-b70f-183d3acda731",
+    "total_supports": 1195,
+    "Name": "Aki Awan",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 2,
+    "CampaignCreatorUuid": "358d5259-fa0f-4fee-a719-216836ca0d7b",
+    "total_supports": 1191,
+    "Name": "Van Samorn",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 3,
+    "CampaignCreatorUuid": "1d59b78b-a87e-4292-8f0b-0730ef8be57d",
+    "total_supports": 1174,
+    "Name": "Lavern Marie",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "ab40ad15-8a93-4889-8468-e706c33f3397",
+    "total_supports": 1165,
+    "Name": "Nurina Wijaba",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "8287539c-bf67-4edc-9ad5-9a81f29ecfcb",
+    "total_supports": 1155,
+    "Name": "JUDIMER JOHN ZARATE",
+    "Avatar": "8287539c-bf67-4edc-9ad5-9a81f29ecfcb.jpg"
+  },
+  {
+    "total_campaigns": 2,
+    "CampaignCreatorUuid": "9337a001-6e21-41c4-b5a8-b0d4b54095b4",
+    "total_supports": 1152,
+    "Name": "PT Jenius Sains Indonesia",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 3,
+    "CampaignCreatorUuid": "59b381dd-73ca-42c3-951f-e9585c7918b0",
+    "total_supports": 1149,
+    "Name": "Yan Yan Studio",
+    "Avatar": "59b381dd-73ca-42c3-951f-e9585c7918b0.jpg",
+    "banner": "faizur-rehman-yapBRdPWxik-unsplash.jpg"
+  },
+  {
+    "total_campaigns": 3,
+    "CampaignCreatorUuid": "a92b1dc2-e8ab-46df-8146-670aff88b197",
+    "total_supports": 1143,
+    "Name": "Kota Tangerang",
+    "Avatar": "46a585d7-d902-45fb-946c-865a67282b7d.png"
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "448c9205-1048-484b-9019-0f06597601a2",
+    "total_supports": 1111,
+    "Name": "CU Lantang Tipo",
+    "Avatar": "448c9205-1048-484b-9019-0f06597601a2.jpg"
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "fb5485db-1d80-4cbc-99e8-d3cf091fd59e",
+    "total_supports": 1105,
+    "Name": "INHS",
+    "Avatar": "fb5485db-1d80-4cbc-99e8-d3cf091fd59e.jpg"
+  },
+  {
+    "total_campaigns": 3,
+    "CampaignCreatorUuid": "aa70a2c0-eb18-4955-9f3a-ddf9d6f80e8a",
+    "total_supports": 1090,
+    "Name": "Twibbon",
+    "Avatar": "aa70a2c0-eb18-4955-9f3a-ddf9d6f80e8a.jpg"
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "70c40bb0-91ca-4524-bab1-32ff266be1d8",
+    "total_supports": 1085,
+    "Name": "Almahdireja Arma",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 2,
+    "CampaignCreatorUuid": "0a4043a8-bd2b-40be-afa6-deb2d2ee301b",
+    "total_supports": 1085,
+    "Name": "digitalmarketing sehatigroup",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "00217317-90fc-4e0a-ae1d-0e57237c9b92",
+    "total_supports": 1084,
+    "Name": "hermands.id",
+    "Avatar": "00217317-90fc-4e0a-ae1d-0e57237c9b92.jpg"
+  },
+  {
+    "total_campaigns": 3,
+    "CampaignCreatorUuid": "d516cdf1-d944-405a-9011-642cddbafeb8",
+    "total_supports": 1078,
+    "Name": "Waode Yuli",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 6,
+    "CampaignCreatorUuid": "bab9e0e2-dab8-4a80-9dd6-c166c0091476",
+    "total_supports": 1061,
+    "Name": "goodscoop.id",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "606b49d5-4896-4675-bba8-0511165264e3",
+    "total_supports": 1061,
+    "Name": "OUR JOURNEY",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "113cd765-fa37-4f2a-bbcf-d7da106c9c84",
+    "total_supports": 1023,
+    "Name": "CIMB Niaga Finance",
+    "Avatar": "113cd765-fa37-4f2a-bbcf-d7da106c9c84.jpg"
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "46454e7e-1804-47b7-970e-9ccb063633e1",
+    "total_supports": 1012,
+    "Name": "Muhammad Sarwo Edi",
+    "Avatar": "2dd2481e-1e62-4788-bd4b-c1f3a28a75cb.png"
+  },
+  {
+    "total_campaigns": 3,
+    "CampaignCreatorUuid": "4f5e628b-d4b0-4199-a808-ef602b381abc",
+    "total_supports": 1007,
+    "Name": "bhara shakti",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 3,
+    "CampaignCreatorUuid": "9ad59531-b467-4b3d-9ee4-e8a25467bf29",
+    "total_supports": 997,
+    "Name": "Moch Saiful Bachri",
+    "Avatar": "9ad59531-b467-4b3d-9ee4-e8a25467bf29.jpg"
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "65cf3afe-67d5-4436-8bce-610be7eaf4f5",
+    "total_supports": 990,
+    "Name": "Ahmed Fahim",
+    "Avatar": "65cf3afe-67d5-4436-8bce-610be7eaf4f5.jpg"
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "cb12983a-cab6-41aa-9cd9-9527e845527c",
+    "total_supports": 989,
+    "Name": "Carl Jason Yap",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "a573b457-0b19-4a54-8716-99b26787b576",
+    "total_supports": 982,
+    "Name": "R. Irwan Kurniawan",
+    "Avatar": "a573b457-0b19-4a54-8716-99b26787b576.jpg"
+  },
+  {
+    "total_campaigns": 3,
+    "CampaignCreatorUuid": "9be55001-9fe8-4833-b68b-22df221c7314",
+    "total_supports": 958,
+    "Name": "tik fkipuntad",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "7c8e30d5-c47c-4e10-9ec9-d362024a4b00",
+    "total_supports": 955,
+    "Name": "SPC COMMUNICATION ARTS CLUB",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "6e17807b-18cc-4e95-8631-e80aa94510d3",
+    "total_supports": 939,
+    "Name": "Suandi Yusuf",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 2,
+    "CampaignCreatorUuid": "39c01966-6894-4a29-b537-937a369a4ece",
+    "total_supports": 939,
+    "Name": "Swabawa SwahaBali",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "b05cca07-93b2-4956-840c-f8ac7ecfeb28",
+    "total_supports": 934,
+    "Name": "Rome Cakep",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "b3840367-6e8f-4911-b83c-fbb10cd6ba66",
+    "total_supports": 918,
+    "Name": "@ridzwan_rh",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "892e04e0-efd9-4f7b-8e00-d26946558991",
+    "total_supports": 913,
+    "Name": "Suyono,S.Pd",
+    "Avatar": "892e04e0-efd9-4f7b-8e00-d26946558991.jpg"
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "ef3bd55a-7767-4aa1-bd34-ee896000a7e2",
+    "total_supports": 912,
+    "Name": "Ekawati Setyaningrum",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 3,
+    "CampaignCreatorUuid": "844521e2-2ea0-407b-812a-31d9144b0b3a",
+    "total_supports": 905,
+    "Name": "Majelis Tinggi Agama Khonghucu Indonesia",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "b2279658-fd4f-4e5b-9cf8-b62f87eb45f5",
+    "total_supports": 905,
+    "Name": "humaskwarda jatim",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 2,
+    "CampaignCreatorUuid": "d92822f1-00f5-486e-8b1a-3ca6069320cf",
+    "total_supports": 900,
+    "Name": "Garuda SAINS Indonesia",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "f14c97f9-777a-45b5-9c30-073cafa41e68",
+    "total_supports": 899,
+    "Name": "Hendrik Muslim",
+    "Avatar": "f14c97f9-777a-45b5-9c30-073cafa41e68.jpg"
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "7159f8a7-1a6a-4dcb-b583-9cf92834cf9b",
+    "total_supports": 895,
+    "Name": "Agus Susanto",
+    "Avatar": "7159f8a7-1a6a-4dcb-b583-9cf92834cf9b.jpg"
+  },
+  {
+    "total_campaigns": 4,
+    "CampaignCreatorUuid": "27f3cd91-2221-48a4-a46b-3da8df1e7831",
+    "total_supports": 892,
+    "Name": "Olimpiade Insight",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "edd2a900-2490-4054-9dd4-fb90ba97bbab",
+    "total_supports": 883,
+    "Name": "Wira Rizki Pratama",
+    "Avatar": "edd2a900-2490-4054-9dd4-fb90ba97bbab.jpg"
+  },
+  {
+    "total_campaigns": 13,
+    "CampaignCreatorUuid": "a5148618-fed9-400e-94ca-2682786e2112",
+    "total_supports": 874,
+    "Name": "anung widyasmoro",
+    "Avatar": "a5148618-fed9-400e-94ca-2682786e2112.jpg"
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "8425895a-e2a1-41cd-a55f-f8b74798b04d",
+    "total_supports": 871,
+    "Name": "Bulan Bahasa Bali",
+    "Avatar": "8425895a-e2a1-41cd-a55f-f8b74798b04d.jpg"
+  },
+  {
+    "total_campaigns": 2,
+    "CampaignCreatorUuid": "0bccb44f-6f44-4f1f-a382-8568df09d798",
+    "total_supports": 865,
+    "Name": "Cell Tn",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 2,
+    "CampaignCreatorUuid": "8f7f1172-4cc4-48cb-b75f-210668d1ba9a",
+    "total_supports": 859,
+    "Name": "Talaat Mostafa",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "780716ac-f0c2-4bfe-bf67-58b35bd50ed0",
+    "total_supports": 858,
+    "Name": "PAC FATAYAT NU Beji",
+    "Avatar": "780716ac-f0c2-4bfe-bf67-58b35bd50ed0.jpg"
+  },
+  {
+    "total_campaigns": 8,
+    "CampaignCreatorUuid": "8e9c7de6-c091-4e22-929e-7fd356b8239d",
+    "total_supports": 851,
+    "Name": "CAK ARA REALITY",
+    "Avatar": "8e9c7de6-c091-4e22-929e-7fd356b8239d.jpg"
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "e1ebe239-a58a-456a-bd3c-5d8a41fe5dbf",
+    "total_supports": 847,
+    "Name": "Oprec Raya FK Undip 2022",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 3,
+    "CampaignCreatorUuid": "049bcb71-351c-4f47-a5a2-8cd2d4ec013c",
+    "total_supports": 846,
+    "Name": "Chacha Media",
+    "Avatar": "13f7d4a7-453f-4399-be6d-dc53b6f3fb0a.png"
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "eee9f517-2112-4fac-a96e-dd5166753c0b",
+    "total_supports": 840,
+    "Name": "Matrasi SH",
+    "Avatar": "3e2df33f-1675-4172-b017-ac9000e6a930.png"
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "7485d1f4-16f3-4350-b6af-79880bbca573",
+    "total_supports": 840,
+    "Name": "Benhur Fmedia",
+    "Avatar": "7485d1f4-16f3-4350-b6af-79880bbca573.jpg"
+  },
+  {
+    "total_campaigns": 10,
+    "CampaignCreatorUuid": "29879c61-87ef-48a7-8d0d-2bfcd4571c05",
+    "total_supports": 838,
+    "Name": "rri pro1kendari",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "a47125d6-0818-49ad-9b50-432f62072285",
+    "total_supports": 834,
+    "Name": "Taryono Adiwijaya",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 15,
+    "CampaignCreatorUuid": "1d991024-4522-4064-8081-144701e9576d",
+    "total_supports": 833,
+    "Name": "Adel Md. Edgardo Salvador",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "a5ef6795-e62e-463b-a472-d9f0aeadf6db",
+    "total_supports": 831,
+    "Name": "Alfhia Parma",
+    "Avatar": "0866d4ee-c423-451e-a7d1-75a69eb36dae.png"
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "c96faf76-a58e-4cc8-b5be-058f86334333",
+    "total_supports": 830,
+    "Name": "Jonard Quizzagan Batang",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "5dd51966-152c-4092-bf52-ea1f5e7d795f",
+    "total_supports": 812,
+    "Name": "Program Unggulan SMAI ALMAARIF SINGOSARI",
+    "Avatar": "5dd51966-152c-4092-bf52-ea1f5e7d795f.jpg"
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "27fd6470-c5f3-4a92-a71f-0b56309a1442",
+    "total_supports": 783,
+    "Name": "Al-Fath School Indonesia",
+    "Avatar": "27fd6470-c5f3-4a92-a71f-0b56309a1442.jpg"
+  },
+  {
+    "total_campaigns": 7,
+    "CampaignCreatorUuid": "130ea6bf-11ed-42e6-b216-eecbfd027b64",
+    "total_supports": 776,
+    "Name": "Didik  Pictures || 082338042814",
+    "Avatar": "130ea6bf-11ed-42e6-b216-eecbfd027b64.jpg"
+  },
+  {
+    "total_campaigns": 2,
+    "CampaignCreatorUuid": "eee02e16-03c5-4533-8acf-b4459f206acd",
+    "total_supports": 770,
+    "Name": "Ziqry Official_",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "349ffca3-791a-4296-8bc8-14a38faa4f89",
+    "total_supports": 765,
+    "Name": "Hua Siong College of Iloilo",
+    "Avatar": "349ffca3-791a-4296-8bc8-14a38faa4f89.jpg"
+  },
+  {
+    "total_campaigns": 2,
+    "CampaignCreatorUuid": "bdf75d6f-7ee6-4f67-bb5d-c1bdd68241eb",
+    "total_supports": 764,
+    "Name": "KK Indonesia",
+    "Avatar": null
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "cf31fcff-d038-4da7-b61b-a3102502adbf",
+    "total_supports": 763,
+    "Name": "Rifqi Fauzan Syafi'i",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 2,
+    "CampaignCreatorUuid": "553212c2-2e58-46d0-ad90-07abfaf16453",
+    "total_supports": 762,
+    "Name": "62 Tahun Takalar",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 2,
+    "CampaignCreatorUuid": "6715ca50-dda4-448c-b229-a9ed97fb50ba",
+    "total_supports": 753,
+    "Name": "Yayasan Al Azhar Lampung",
+    "Avatar": "6715ca50-dda4-448c-b229-a9ed97fb50ba.jpg"
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "290ca75d-f43d-43ef-ac5c-ee4b733971b0",
+    "total_supports": 740,
+    "Name": "PSMS Rejuvenate",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "01d9ad04-e2c1-4cce-815e-ef1d8242cd26",
+    "total_supports": 738,
+    "Name": "CorComm AdMedika",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 2,
+    "CampaignCreatorUuid": "75bab4e5-a6a4-4ebc-af3e-4b9c1df8e2fe",
+    "total_supports": 735,
+    "Name": "Lidya 1",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "82cd80b6-e7c9-4c8b-b2df-073520c7a345",
+    "total_supports": 729,
+    "Name": "I Komang Agus Tama",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "e1fe4e71-bde3-4594-b466-4e20312bdcf8",
+    "total_supports": 724,
+    "Name": "Abdullah M. Gamea",
+    "Avatar": "e1fe4e71-bde3-4594-b466-4e20312bdcf8.jpg"
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "78382118-ea8f-4161-8e91-28f7934df8ee",
+    "total_supports": 718,
+    "Name": "Ali Asy'ari",
+    "Avatar": "78382118-ea8f-4161-8e91-28f7934df8ee.jpg"
+  },
+  {
+    "total_campaigns": 20,
+    "CampaignCreatorUuid": "b8502969-b13f-461b-a6da-5151c78f7730",
+    "total_supports": 707,
+    "Name": "www.twibboniz.net",
+    "Avatar": "b8502969-b13f-461b-a6da-5151c78f7730.jpg"
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "b5742125-189a-46c6-9a5e-8c3c62d79fe0",
+    "total_supports": 706,
+    "Name": "CHITRA SINTARANI",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 3,
+    "CampaignCreatorUuid": "292a2d39-2fcb-4694-805e-574326ac5ccd",
+    "total_supports": 703,
+    "Name": "Hubby Ali",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 2,
+    "CampaignCreatorUuid": "aa0f8afc-4a36-47be-a53f-d4e498d2eee2",
+    "total_supports": 702,
+    "Name": "adilpratama96",
+    "Avatar": null
+  },
+  {
+    "total_campaigns": 3,
+    "CampaignCreatorUuid": "a9c26f89-141e-4aca-983b-2e00af42510a",
+    "total_supports": 700,
+    "Name": "Nurdyantoro ( Mas Nur ) DPRa PKS Cibabat - Kota Cimahi",
+    "Avatar": "a9c26f89-141e-4aca-983b-2e00af42510a.jpg"
+  },
+  {
+    "total_campaigns": 3,
+    "CampaignCreatorUuid": "b158f7c2-1bb7-4b19-98ee-a07dc7016aaa",
+    "total_supports": 694,
+    "Name": "Sri Rejeki",
+    "Avatar": "fe59d896-8dcf-4cbf-9bda-6a205f50e687.png"
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "8f0b5cf9-a8a0-4268-be29-399484ef862e",
+    "total_supports": 691,
+    "Name": "I Made Ari Kamanjaya",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "48c756cf-8cc8-4fbc-a95d-7db9c9a74f56",
+    "total_supports": 679,
+    "Name": "Darul Arifin Jambi",
+    "Avatar": "48c756cf-8cc8-4fbc-a95d-7db9c9a74f56.jpg"
+  },
+  {
+    "total_campaigns": 4,
+    "CampaignCreatorUuid": "9b42f157-12e2-4d40-af80-44f1c36f7230",
+    "total_supports": 678,
+    "Name": "kreatif ibrohimiyah",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "87703197-3df2-475a-a869-c9e79410de42",
+    "total_supports": 675,
+    "Name": "Eko_27",
+    "Avatar": "87703197-3df2-475a-a869-c9e79410de42.jpg"
+  },
+  {
+    "total_campaigns": 2,
+    "CampaignCreatorUuid": "194880a3-1a3c-4917-8015-ea2b2d5c5e6c",
+    "total_supports": 670,
+    "Name": "Kawan Lama Group",
+    "Avatar": "e42584b3-acb3-454f-9abf-c0f5e44e105f.png"
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "0a14241c-6118-4e5a-83eb-c0f47263d285",
+    "total_supports": 666,
+    "Name": "ToGie Siahaan Full",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 15,
+    "CampaignCreatorUuid": "05fbf14a-dd40-443d-8a91-32181f2286ce",
+    "total_supports": 661,
+    "Name": "Amrizal Ch",
+    "Avatar": "8cb3dc30-6466-4091-9406-e8df31864f49.png"
+  },
+  {
+    "total_campaigns": 3,
+    "CampaignCreatorUuid": "591923c3-2c52-43c2-a898-f65096606b8f",
+    "total_supports": 652,
+    "Name": "SD PL Santo Yusup",
+    "Avatar": null
+  },
+  {
+    "total_campaigns": 3,
+    "CampaignCreatorUuid": "02c1705a-72b2-465c-8bf3-11d9aab0a9e5",
+    "total_supports": 644,
+    "Name": "SATU Indonesia",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "f9d6c7ac-b2a2-4f24-8ede-cbba32a3a4c9",
+    "total_supports": 643,
+    "Name": "Stefen Fen",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "7dc1e61f-54df-4c69-9f67-38e587f5b99c",
+    "total_supports": 636,
+    "Name": "ABU ABDILLAH MUHAMMAD",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "e013fc91-d4dd-4117-9e81-afa74df70f2b",
+    "total_supports": 632,
+    "Name": "Eflien Yu",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "22278c57-cbce-45d6-953a-77969ae42225",
+    "total_supports": 632,
+    "Name": "Christopher Salon Indonesia",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "d7b9dda6-09e6-481d-96c6-403276476652",
+    "total_supports": 630,
+    "Name": "Mohamed Azmy",
+    "Avatar": "d7b9dda6-09e6-481d-96c6-403276476652.jpg"
+  },
+  {
+    "total_campaigns": 3,
+    "CampaignCreatorUuid": "64cb46c8-ac8a-4968-8e32-480677cadd67",
+    "total_supports": 630,
+    "Name": "Kumon Indonesia",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "33c60e5d-de62-459f-a82a-81d040fe51e5",
+    "total_supports": 620,
+    "Name": "Ozhi Phriatzna",
+    "Avatar": "33c60e5d-de62-459f-a82a-81d040fe51e5.jpg"
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "e828308f-13de-432e-89fe-ce5e9be492df",
+    "total_supports": 620,
+    "Name": "it admin",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 3,
+    "CampaignCreatorUuid": "8d63b9e7-a775-4e7e-9a2e-64f1eec59ef8",
+    "total_supports": 620,
+    "Name": "Ilham Ilham",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 2,
+    "CampaignCreatorUuid": "2d8ef432-dbc5-4890-83c4-9a4ba418967e",
+    "total_supports": 618,
+    "Name": "Kang Nanang MS",
+    "Avatar": "2d8ef432-dbc5-4890-83c4-9a4ba418967e.jpg"
+  },
+  {
+    "total_campaigns": 2,
+    "CampaignCreatorUuid": "c9927dba-5304-43b5-b99c-944f4e4c732d",
+    "total_supports": 616,
+    "Name": "kelas harmoni",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 2,
+    "CampaignCreatorUuid": "0cfd56e6-7426-4165-a7f0-231409498819",
+    "total_supports": 615,
+    "Name": "Ratnawiyah Usman",
+    "Avatar": "0cfd56e6-7426-4165-a7f0-231409498819.jpg"
+  },
+  {
+    "total_campaigns": 2,
+    "CampaignCreatorUuid": "e9bef68e-4f9b-45b9-9df5-361fea265ed3",
+    "total_supports": 614,
+    "Name": "Rahmat Slamet",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "0ce187c1-d06c-4261-8c64-df324d84e7ee",
+    "total_supports": 609,
+    "Name": "IT RN MEDIKA",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 3,
+    "CampaignCreatorUuid": "bac70b53-755c-40c4-88f1-0e27e8e4c308",
+    "total_supports": 607,
+    "Name": "Rachellika Dwi",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "ee114faa-e34f-4256-8011-3cc625a1f04e",
+    "total_supports": 606,
+    "Name": "MI Miftahul Huda Jatiroto",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "b0c5cb99-cf89-4ee4-b3cd-f8efc7333d3b",
+    "total_supports": 606,
+    "Name": "Indodax",
+    "Avatar": "b0c5cb99-cf89-4ee4-b3cd-f8efc7333d3b.jpg"
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "2a268487-1c2b-45e4-b748-dd28be370bdd",
+    "total_supports": 602,
+    "Name": "Atep Wahyudin",
+    "Avatar": "026d2eee-ae8d-4983-9f7e-2b827176be33.png"
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "55df11f7-a419-4127-99b4-ac90d37e42d2",
+    "total_supports": 592,
+    "Name": "TEST USU",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "3c8749c7-217a-459a-8080-3b93356acf77",
+    "total_supports": 592,
+    "Name": "Suheryanti Cirebon",
+    "Avatar": "7769129b-4e25-4dd1-adfe-cc048622255b.png"
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "1a50743a-2b97-446a-859a-8e085954668d",
+    "total_supports": 592,
+    "Name": "PMB",
+    "Avatar": null
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "feb14773-86e1-435d-a50a-96cf136dc9fe",
+    "total_supports": 590,
+    "Name": "Zainal Mufidz",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 3,
+    "CampaignCreatorUuid": "eca95f91-6744-4880-8a6e-3e094a9dfcfc",
+    "total_supports": 590,
+    "Name": "ALDZI ART & DESIGN",
+    "Avatar": "eca95f91-6744-4880-8a6e-3e094a9dfcfc.jpg"
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "72548d9b-7e20-4327-a0cb-60cc731f0322",
+    "total_supports": 589,
+    "Name": "ask olympic",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "16622c42-9602-4e51-a1aa-a0efb4680867",
+    "total_supports": 587,
+    "Name": "Ruhi Nisa",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "979e0a63-b8dd-4109-97b8-916e10c2ee46",
+    "total_supports": 581,
+    "Name": "Benedict Hornido",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 2,
+    "CampaignCreatorUuid": "632fc638-dc2b-45a1-b1bd-188578f0ab73",
+    "total_supports": 575,
+    "Name": "Rasidi Bin Darmin Bin Romodikromo",
+    "Avatar": "26aea6f1-4412-4041-acc5-b7286c4c8b57.png"
+  },
+  {
+    "total_campaigns": 6,
+    "CampaignCreatorUuid": "a5958c0c-ab85-489b-8d6f-de58c19751bd",
+    "total_supports": 569,
+    "Name": "Endung  EduApaadanya",
+    "Avatar": "a5958c0c-ab85-489b-8d6f-de58c19751bd.jpg"
+  },
+  {
+    "total_campaigns": 4,
+    "CampaignCreatorUuid": "0ef4bd96-9025-4d96-9619-d885bd5e3101",
+    "total_supports": 564,
+    "Name": "July Kurniawan",
+    "Avatar": "0ef4bd96-9025-4d96-9619-d885bd5e3101.jpg"
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "dd7a330b-74fd-443e-8293-1b1af5ca3916",
+    "total_supports": 562,
+    "Name": "Rizki Aris",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 10,
+    "CampaignCreatorUuid": "dc1f3921-750b-4cf6-bfda-98cbef131e53",
+    "total_supports": 557,
+    "Name": "Lutfi Sabani",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "ba60e9b3-31f7-44fc-a066-f55a67190833",
+    "total_supports": 554,
+    "Name": "Jet Mendoza",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "a5e94767-a3ed-4454-a296-c09e13b57e2a",
+    "total_supports": 551,
+    "Name": "Danica Suarnaba",
+    "Avatar": "a5e94767-a3ed-4454-a296-c09e13b57e2a.jpg"
+  },
+  {
+    "total_campaigns": 4,
+    "CampaignCreatorUuid": "5e5d8e29-208e-4eff-85c0-90a691832a63",
+    "total_supports": 547,
+    "Name": "R. Karyagunadi",
+    "Avatar": "fe88e7d4-a167-4297-93f5-af79f629e43d.png"
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "c9100c18-9f6c-4580-97d4-1da076615d43",
+    "total_supports": 542,
+    "Name": "আলোক চিত্ৰকর",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 30,
+    "CampaignCreatorUuid": "55677f62-2293-4e77-a743-b91f632a1dba",
+    "total_supports": 539,
+    "Name": "Franzine Mesina",
+    "Avatar": "55677f62-2293-4e77-a743-b91f632a1dba.jpg"
+  },
+  {
+    "total_campaigns": 2,
+    "CampaignCreatorUuid": "f183f919-2f64-4c54-9a9c-5e39eda3b353",
+    "total_supports": 538,
+    "Name": "Fikram Januardi",
+    "Avatar": ""
+  },
+  {
+    "total_campaigns": 1,
+    "CampaignCreatorUuid": "ab7a3f57-1bd4-4ec2-acde-50cd3f22029d",
+    "total_supports": 534,
+    "Name": "Juli kei",
+    "Avatar": "ab7a3f57-1bd4-4ec2-acde-50cd3f22029d.jpg"
+  },
+  {
+    "total_campaigns": 2,
+    "CampaignCreatorUuid": "5de17f3a-1b28-432d-89f1-865297796c29",
+    "total_supports": 533,
+    "Name": "Sekolah Sentosa Perdana",
+    "Avatar": "5de17f3a-1b28-432d-89f1-865297796c29.jpg"
+  },
+  {
+    "total_campaigns": 3,
+    "CampaignCreatorUuid": "408217bb-bd37-43c5-9122-c8ce8a3be19f",
+    "total_supports": 532,
+    "Name": "yantonoveight",
+    "Avatar": "b8953a22-d52f-4aca-b1e8-1b61be6ca055.png"
+  },
+  {
+    "total_campaigns": 38,
+    "CampaignCreatorUuid": "93b72542-5a57-4f1d-a9a2-02a791c2ada8",
+    "total_supports": 531,
+    "Name": "Media HNI Unofficial",
+    "Avatar": "9b433ae1-205c-4848-be8e-00aae0304932.png"
+  },
+  {
+    "total_campaigns": 2,
+    "CampaignCreatorUuid": "ba2b46c0-8354-4d33-bc8a-e4d97daccbcf",
+    "total_supports": 516,
+    "Name": "SD Insan Amanah",
+    "Avatar": ""
+  }
 ]
