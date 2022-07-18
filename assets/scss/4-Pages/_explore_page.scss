@@ -67,6 +67,8 @@ ul.search-results-hashtags {
     padding-bottom: 4px;
 
     a {
+      font-family: $font-primary !important;
+
       &:hover {
         text-decoration: underline !important;
       }
