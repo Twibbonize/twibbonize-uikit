@@ -933,6 +933,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/assets\/img\/avatars\/bca.png" : {
+      "ft" : 32768,
+      "iS" : 13781,
+      "oA" : 0,
+      "oAP" : "\/assets\/img\/avatars\/bca.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/assets\/img\/avatars\/Benhur Fmedia.jpg" : {
       "ft" : 16384,
       "iS" : 23737,
@@ -4163,6 +4176,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/assets\/img\/profile-banner\/banner-bca.png" : {
+      "ft" : 32768,
+      "iS" : 400976,
+      "oA" : 0,
+      "oAP" : "\/assets\/img\/profile-banner\/banner-bca.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/assets\/img\/profile-banner\/clark-tibbs-oqStl2L5oxI-unsplash.jpg" : {
       "ft" : 16384,
       "iS" : 258613,
@@ -5878,6 +5904,14 @@
       "pg" : 2,
       "sct" : 1
     },
+    "\/bca.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/bca-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
     "\/blank.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -5925,6 +5959,14 @@
       "oA" : 0,
       "oAP" : "\/home.html",
       "oF" : 0
+    },
+    "\/hutri.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/hutri-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
     },
     "\/index.html" : {
       "cB" : 0,

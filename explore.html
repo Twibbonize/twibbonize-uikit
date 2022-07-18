@@ -204,11 +204,11 @@
           <div class="tabs-container border-b" x-transition>
             <div class="container">
               <ul class="twb-tabs" role="tablist">
-                <li class="twb-tab" :class="{ 'active': currentTab == 'campaigns' }">
+                <li class="twb-tab" :class="{ 'is-active': currentTab == 'campaigns' }">
                   <a @click="switchTab('campaigns')">Campaigns</a>
                 </li>
 
-                <li class="twb-tab" :class="{ 'active': currentTab == 'creators' }">
+                <li class="twb-tab" :class="{ 'is-active': currentTab == 'creators' }">
                   <a @click="switchTab('creators')">Creators</a>
                 </li>
 

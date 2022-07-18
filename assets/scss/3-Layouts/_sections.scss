@@ -17,16 +17,31 @@
 .section__text {
   font-size: 18px;
   line-height: 128%;
+  margin-top: 8px;
 
   @include sm {
     font-size: 14px;
   }
 }
 
+
+.section__header-link {
+  font-size: 14px;
+  font-weight: 700;
+
+  &:hover {
+    text-decoration: underline !important;
+  }
+
+  @include sm {
+    font-size: 12px;
+  }
+}
+
 .section__head {
   margin-bottom: 30px;
-  display: flex;
-  justify-content: space-between;
+  // display: flex;
+  // justify-content: space-between;
 }
 
 .logos__wrap {

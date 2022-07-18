@@ -1,0 +1,73 @@
+{
+  "data": [{
+      "uuid": "d9c352e4-038a-4af2-afa6-2151b0060765",
+      "name": "Selfie Bareng Lea Yuk!",
+      "description": "",
+      "thumbnail": "350-732fd11c-cdac-4373-9f03-efac46567d0d.jpg",
+      "url": "selfie-bareng-lea",
+      "createdAt": 1634296903000,
+      "hits": 6900,
+      "campaignCreator": {
+        "uuid": "8f5c01e2-6b01-4c30-a3b9-d8ff8e38cc6e",
+        "name": "blu by BCA Digital",
+        "avatar": null
+      }
+    },
+    {
+      "uuid": "abdaa520-d517-40a0-812b-4b605d969dec",
+      "name": "BCA Finance 5M",
+      "description": "Lindungi kamu dan aku dengan saling mengingatkan 5M",
+      "thumbnail": "350-d51af665-78cc-4eb6-8a47-d0bfebb3515a.jpg",
+      "url": "bcafcampaign5m",
+      "createdAt": 1611376675000,
+      "hits": 15000,
+      "campaignCreator": {
+        "uuid": "3c1df9df-3a77-40e0-b235-4b11bb9d5620",
+        "name": "BCA Finance",
+        "avatar": "17198bac-7ca8-469c-a1dc-965466eff5bc.png"
+      }
+    },
+    {
+      "uuid": "876b3824-93d1-48f5-8518-efaac46cad14",
+      "name": "BCA Finance 40 Th Anniversary",
+      "description": "Hi Guys,..\nTak kerasa, tepat pada tanggal 7 Maret ini, \nBCA Finance sudah 40 tahun menemani langkah masyarakat Indonesia. \n#40ThBCAFinance",
+      "thumbnail": "350-19e42655-4687-46a4-90de-b01dbb5e4603.jpg",
+      "url": "bcaf40th",
+      "createdAt": 1614668051000,
+      "hits": 2800,
+      "campaignCreator": {
+        "uuid": "3c1df9df-3a77-40e0-b235-4b11bb9d5620",
+        "name": "BCA Finance",
+        "avatar": "17198bac-7ca8-469c-a1dc-965466eff5bc.png"
+      }
+    },
+    {
+      "uuid": "f361b38b-b2cb-43d3-a9ba-8e797029c600",
+      "name": "TUMBUH BERKUALITAS",
+      "description": "11 tahun BCA Multi Finance\r\nTumbuh Berkualitas",
+      "thumbnail": "350-a6615446-a3a6-4d75-a3ff-a16adc0470ea.jpg",
+      "url": "11tahunbcamultifinance",
+      "createdAt": 1631704325000,
+      "hits": 5400,
+      "campaignCreator": {
+        "uuid": "86e0b677-8524-4714-9fe9-636d7198a608",
+        "name": "BCA Multi Finance",
+        "avatar": "86e0b677-8524-4714-9fe9-636d7198a608.jpg"
+      }
+    },
+    {
+      "uuid": "f4212467-8f60-4299-adfc-7123f52cf399",
+      "name": "Rayakan Hari Kemerdekaan RI Bersama BCA",
+      "description": "Hi, Insan BCA :) Yuk ramaikan Hari Kemerdekaan Republik Indonesia dengan menggunakan Twibbon berikut!",
+      "thumbnail": "350-e9bc4117-99af-484d-bd4b-e9a0955fb2ef.jpg",
+      "url": "twibbonbca17an2",
+      "createdAt": 1628217889000,
+      "hits": 26000,
+      "campaignCreator": {
+        "uuid": "46a95360-42f9-4e69-a033-fad2ce673af3",
+        "name": "Corcomm BCA",
+        "avatar": "46a95360-42f9-4e69-a033-fad2ce673af3.jpg"
+      }
+    }
+  ]
+}
