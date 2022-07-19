@@ -2732,6 +2732,19 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/assets\/img\/icons\/key.png" : {
+      "ft" : 32768,
+      "iS" : 230235,
+      "oA" : 0,
+      "oAP" : "\/assets\/img\/icons\/key.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/assets\/img\/icons\/light.svg" : {
       "ft" : 2097152,
       "miP" : 0,

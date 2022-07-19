@@ -142,11 +142,14 @@
 }
 
 .twb-tab {
+  padding-bottom: 22px;
   color: inherit;
-  padding: 20px;
   text-decoration: none;
   white-space: nowrap;
   line-height: 1;
+
+  margin-right: 24px;
+  cursor: pointer;
 
   a {
     color: $color_text;
@@ -165,4 +168,9 @@
   a {
     color: $color_black !important;
   }
+}
+
+
+.tab-content {
+  min-height: 400px;
 }

@@ -154,7 +154,8 @@
             </h1>
             <p class="search-results-description">
               <template x-if="!query">
-                <span> <strong id="campaign-numbers">18,721,187</strong> campaigns from <strong id="creator-numbers">2,186,494</strong> of
+                <span> <strong id="campaign-numbers">18,721,187</strong> campaigns from <strong
+                    id="creator-numbers">2,186,494</strong> of
                   creators around the
                   world</span>
               </template>
@@ -201,7 +202,7 @@
         </div>
 
         <section class="section section__filter-campaigns pb-100 ">
-          <div class="tabs-container border-b" x-transition>
+          <div class="tabs-container border-b pt-3" x-transition>
             <div class="container">
               <ul class="twb-tabs" role="tablist">
                 <li class="twb-tab" :class="{ 'is-active': currentTab == 'campaigns' }">
@@ -754,10 +755,6 @@
 
 
 
-  </div>
-
-
-
 
   <!-- 🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈 SCRIPTS -->
   <script src="assets/js/jquery-3.6.0.js"></script>
@@ -931,6 +928,7 @@
 
     incrementCampaignNumbers()
     incrementCreatorNumbers()
+
   </script>
 </body>
 

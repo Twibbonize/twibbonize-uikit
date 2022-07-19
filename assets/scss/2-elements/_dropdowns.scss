@@ -11,8 +11,8 @@
     cursor: pointer;
     background: $color_white;
 
-    height: 3rem;
-    width: 3rem;
+    height: 2.3rem;
+    width: 2.3rem;
     box-shadow: $shadow_2;
     border: solid 1px $color_stroke;
     border-radius: $border_radius * 100;
@@ -27,6 +27,10 @@
     i {
       color: $color_black;
       font-size: 18px;
+    }
+
+    a {
+      line-height: 0;
     }
   }
 
@@ -73,8 +77,8 @@
 
   .icon {
     cursor: pointer;
-    height: 3rem;
-    width: 3rem;
+    height: 2.3rem;
+    width: 2.3rem;
     box-shadow: $shadow_2;
     border: solid 1px $color_stroke;
     border-radius: $border_radius * 100;
@@ -91,12 +95,17 @@
       color: $color_black;
       font-size: 18px;
     }
+
+    a {
+      line-height: 0;
+    }
   }
 
   .more_box,
   .dropdown__popup {
     z-index: 99;
     @include card_item;
+    border-radius: 8px;
     padding: 10px 20px;
     transition: all 0.25s $transition_function;
 
@@ -118,11 +127,54 @@
 
   .dropdown__popup {
     position: absolute;
-    top: 60px;
+    top: 50px;
     right: 0;
     visibility: hidden;
     opacity: 0;
     z-index: -1;
+    transform: translateY(-1rem);
+
+    &.visible {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+
+.profile-option {
+
+
+  .dropdown__popup {
+    @include card_item;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: all 0.25s $transition_function;
+
+    a {
+      color: $color_black;
+      display: block;
+      align-items: center;
+
+      &:hover {
+        color: $color_brand;
+      }
+    }
+
+    i {
+      font-size: 20px;
+      color: $color_red;
+    }
+  }
+
+  .dropdown__popup {
+    position: absolute;
+    top: 60px;
+    right: 12px;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 5;
     transform: translateY(-1rem);
 
     &.visible {
