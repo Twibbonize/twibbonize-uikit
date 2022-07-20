@@ -5917,6 +5917,14 @@
       "pg" : 2,
       "sct" : 1
     },
+    "\/bca_supported.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/bca_supported-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
     "\/bca.json" : {
       "ft" : 524288,
       "oA" : 1,

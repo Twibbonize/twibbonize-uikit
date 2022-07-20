@@ -1,0 +1,48 @@
+{
+  "data": [{
+      "uuid": "942488ae-67b7-421d-9144-046997404f95",
+      "name": "Photo profil HBD Pak arman hartono",
+      "description": "Halo sahabat BCA, Yuk ramaikan hari ulang tahun Pak Armand dengan memasang foto profil ini.",
+      "thumbnail": "350-04138c15-6d82-44c4-85f7-248fba22d5bd.jpg",
+      "url": "photoprofilhbdpakarmandhartono",
+      "createdAt": 1621395723000,
+      "updatedAt": 1621395723000,
+      "hits": 15000,
+      "campaignCreator": {
+        "uuid": "44019f11-0170-43f4-bdfb-909ccbcb4195",
+        "name": "Edhu Fabz",
+        "avatar": "424e835f-a853-446a-bf4c-6be1d46e3f33.png"
+      }
+    },
+    {
+      "uuid": "35f63fb4-99d8-4f83-a3cc-f650ad2f7717",
+      "name": "Rise Up!",
+      "description": "Bakti BCA",
+      "thumbnail": "823b5619-b4e6-4c92-97f5-91cb8dd6c8a3.jpg",
+      "url": "riseupbaktibca",
+      "createdAt": 1651804303000,
+      "updatedAt": 1651812265000,
+      "hits": 1000,
+      "campaignCreator": {
+        "uuid": "b5e166e0-7a1e-4b73-8962-4b6c6523a0ea",
+        "name": "Eric Steven",
+        "avatar": ""
+      }
+    },
+    {
+      "uuid": "e15de866-f525-45e6-9079-38cdb49e611f",
+      "name": "BCA GO BI6 5TEP",
+      "description": "",
+      "thumbnail": "350-c55c1ce9-6e41-4068-bb94-81fada3ea870.jpg",
+      "url": "bcagobigstep",
+      "createdAt": 1641529670000,
+      "updatedAt": 1641529670000,
+      "hits": 929,
+      "campaignCreator": {
+        "uuid": "78d59671-162e-483f-aea0-426ce154730b",
+        "name": "99 Virtual Race",
+        "avatar": "6d4687c7-0c04-47b9-a1f7-6182aa9c190e.png"
+      }
+    }
+  ]
+}
