@@ -576,7 +576,24 @@
             </div>
           </div>
 
-          <div x-show="currentTab=='creators'" id="creators-tab" class="mt-50">
+          <div x-show="currentTab=='creators'" id="creators-tab">
+
+            <div class="section__head flex-column bg-white pb-3 border-b">
+              <div class="container">
+                <div class="filters-sort__container justify-content-end">
+                  <div class="sort">
+                    <span class="color_text txt_sm col-auto align-items-center justify-content-center"> SORT BY: </span>
+                    <div>
+                      <select id="sort-creators" class="col-auto">
+                        <option value="">Most Supports</option>
+                        <option value="">Name A-Z</option>
+                        <option value="">Name Z-A</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="container">
               <div class="row">
                 <template x-for="creator in creators">
@@ -780,6 +797,13 @@
     })
 
     $('#sort-campaign').select2({
+      minimumResultsForSearch: Infinity,
+      dropdownAutoWidth: true,
+      width: '100%',
+      selectionCssClass: "select2-selection-sm"
+    })
+
+    $('#sort-creators').select2({
       minimumResultsForSearch: Infinity,
       dropdownAutoWidth: true,
       width: '100%',
