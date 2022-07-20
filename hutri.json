@@ -1,0 +1,84 @@
+{
+    "statusCode": 200,
+    "message": "ok",
+    "data" : [
+        {
+            "uuid": "214c9b68-9cfb-4c9a-88e4-c558fba21d5d",
+            "name": "HUT RI ke-76",
+            "description": "Dirgahayu Kemerdekaan Indonesia! \nBersama, kita sebagai warga negara yang bersatu, siap untuk menghadapi segala tantangan dengan menjaga semangat pantang menyerah. \nIndonesia Tangguh, Indonesia Tumbuh!",
+            "thumbnail": "350-6b44e291-14a0-4060-1c41-5e9d54ba2642.jpg",
+            "url": "hutri76",
+            "createdAt": 1625946061000,
+            "campaignCreator": {
+                "uuid": "0e906d0e-1bf3-4f49-a243-a0b86a241691",
+                "name": "Kemensetneg RI",
+                "avatar": "0e906d0e-1bf3-4f49-a243-a0b86a241691.jpg"
+            }
+        },
+        {
+            "uuid": "a65c3c80-8796-4130-84f9-2966adda2e69",
+            "name": "Official Frame Photo HUT Kemerdekaan RI 77 Tahun",
+            "description": "Official Frame Photo HUT Kemerdekaan RI 77 Tahun || Pulih Lebih Cepat Bangkit Lebih Kuat",
+            "thumbnail": "f9eda2c4-fd58-49d6-acac-abddc4d09b85.jpg",
+            "url": "hutkemerdekaanri77tahun",
+            "createdAt": 1657571952000,
+            "campaignCreator": {
+                "uuid": "c206cb18-14f8-44e6-8ebb-65be05107bd1",
+                "name": "Arief Imam Poero Palilingan",
+                "avatar": "c206cb18-14f8-44e6-8ebb-65be05107bd1.jpg"
+            }
+        },
+        {
+            "uuid": "0ce166bf-cd2b-42a2-a649-f6ac601f9f99",
+            "name": "Twibbon HUT RI 2022 - Rayakan Hari Kemerdekaan Republik Indonesia ke 77",
+            "description": "Rayakan hari kemerdekaan Republik Indonesia yang ke 77, tanggal 17 Agustus 1945 - 2022. Yuk pasang frame alias  Twibbon HUT RI 2022 ini, lalu bagikan link-nya ke jejaring sosial Kamu. Dirgahayu...",
+            "thumbnail": "e6fe59dc-c2f3-4963-a5dc-62b2209e7885.jpg",
+            "url": "twibbon-hut-ri-2022",
+            "createdAt": 1652555599000,
+            "campaignCreator": {
+                "uuid": "bd649318-33d8-433f-aa78-44278f8b0b37",
+                "name": "Mlipir.id",
+                "avatar": "bd649318-33d8-433f-aa78-44278f8b0b37.jpg"
+            }
+        },
+        {
+            "uuid": "33004bc6-6555-4773-b912-821a9e6b8c77",
+            "name": "Twibon HUT RI Ke 77 Tahun 2022",
+            "description": "Twibon Dirgahayu Republik Indonesia yang ke 77 Tahun 2022, 17 Agustus 1945 - 17 Agustus 2022, Indonesia Hebat, Indonesia Kuat",
+            "thumbnail": "39a42bf8-ae4a-46ac-b7b2-97269eb75988.jpg",
+            "url": "dirgahayurike77tahun2022",
+            "createdAt": 1654828534000,
+            "campaignCreator": {
+                "uuid": "3f98a306-6f8a-4117-a327-371416949109",
+                "name": "PAPAN TULIS OFFICIAL",
+                "avatar": "3f98a306-6f8a-4117-a327-371416949109.jpg"
+            }
+        },
+        {
+            "uuid": "3f3eab85-15ee-45c6-b076-22714197362e",
+            "name": "Peringatan Ulang Tahun ke - 76 Republik Indonesia",
+            "description": "Insan BUMN siap terus semangat dan berkarya untuk Indonesia Tangguh, Indonesia Tumbuh dengan berpijak pada AKHLAK\n#IndonesiaTangguh\n#IndonesiaTumbuh\n#BUMNuntukIndonesia",
+            "thumbnail": "350-20b6c5c2-c7a0-48df-afab-b7c92e3d5a40.jpg",
+            "url": "hutri76bumn",
+            "createdAt": 1629006424000,
+            "campaignCreator": {
+                "uuid": "8e767d89-582b-477c-9c40-598f0581b513",
+                "name": "HUT 76 ",
+                "avatar": "8e767d89-582b-477c-9c40-598f0581b513.jpg"
+            }
+        },
+        {
+            "uuid": "f4212467-8f60-4299-adfc-7123f52cf399",
+            "name": "Rayakan Hari Kemerdekaan RI Bersama BCA",
+            "description": "Hi, Insan BCA :) Yuk ramaikan Hari Kemerdekaan Republik Indonesia dengan menggunakan Twibbon berikut!",
+            "thumbnail": "350-e9bc4117-99af-484d-bd4b-e9a0955fb2ef.jpg",
+            "url": "twibbonbca17an2",
+            "createdAt": 1628217889000,
+            "campaignCreator": {
+                "uuid": "46a95360-42f9-4e69-a033-fad2ce673af3",
+                "name": "Corcomm BCA",
+                "avatar": "46a95360-42f9-4e69-a033-fad2ce673af3.jpg"
+            }
+        }
+    ]
+}

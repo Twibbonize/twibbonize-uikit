@@ -407,15 +407,14 @@
     <div data-aos="fade-up" class="section mt-100">
       <div class="container">
         <div class="section__head">
-          <div class="d-flex flex-column space-y-10">
+          <div class="d-flex justify-content-between align-items-end">
             <h2 class="section__title">Trending Campaigns</h2>
-            <p class="section__text">
-              Campaigns that gained the most supports in the last 24 hours.
-            </p>
+
+            <a href="explore.html" class="section__header-link">VIEW ALL</a>
           </div>
-          <a href="/Collections.html" class="btn btn-ghost">
-            VIEW ALL
-          </a>
+          <p class="section__text">
+            Campaigns that gained the most supports in the last 24 hours.
+          </p>
         </div>
         <section class="swiper twb-swiper">
           <div class="swiper-wrapper">
@@ -434,7 +433,7 @@
                   </div>
                   <!-- =============== -->
 
-                 
+
 
                   <h6 class="card_title mt-10">
                     <a class="color_black" href="Item-details.html">
@@ -451,7 +450,7 @@
                           <p class="avatars_name txt_xs">Pemprov DKI Jakarta</p>
                         </a>
                       </div>
-                      
+
                     </div>
                     <div class="hr"></div>
                     <div class="d-flex align-items-center space-x-10 justify-content-between">
@@ -483,7 +482,7 @@
                   </div>
                   <!-- =============== -->
 
-                
+
 
                   <h6 class="card_title mt-10">
                     <a class="color_black" href="Item-details.html">
@@ -501,7 +500,7 @@
                           <p class="avatars_name txt_xs">Naik Pangkat</p>
                         </a>
                       </div>
-                      
+
                     </div>
                     <div class="hr"></div>
                     <div class="d-flex align-items-center space-x-10 justify-content-between">
@@ -534,7 +533,7 @@
                   </div>
                   <!-- =============== -->
 
-                 
+
 
                   <h6 class="card_title mt-10">
                     <a class="color_black" href="Item-details.html">
@@ -553,7 +552,7 @@
                           <p class="avatars_name txt_xs">Papan Tulis Official</p>
                         </a>
                       </div>
-                      
+
                     </div>
                     <div class="hr"></div>
                     <div class="d-flex align-items-center space-x-10 justify-content-between">
@@ -585,7 +584,7 @@
                   </div>
                   <!-- =============== -->
 
-                  
+
 
                   <h6 class="card_title mt-10">
                     <a class="color_black" href="Item-details.html">
@@ -603,7 +602,7 @@
                           <p class="avatars_name txt_xs">Tomy Saputra</p>
                         </a>
                       </div>
-                      
+
                     </div>
                     <div class="hr"></div>
                     <div class="d-flex align-items-center space-x-10 justify-content-between">
@@ -652,7 +651,7 @@
                           <p class="avatars_name txt_xs">BNI Menyapa</p>
                         </a>
                       </div>
-                      
+
                     </div>
                     <div class="hr"></div>
                     <div class="d-flex align-items-center space-x-10 justify-content-between">
@@ -672,8 +671,73 @@
 
           </div>
         </section>
+
       </div>
     </div>
+
+
+    <!-- <div data-aos="fade-up" class="section mt-100">
+      <div class="container">
+        <div class="section__head">
+          <div class="d-flex justify-content-between align-items-end">
+            <h2 class="section__title">77 Tahun Indonesia</h2>
+            <a href="explore.html" class="section__header-link">VIEW ALL</a>
+          </div>
+        </div>
+        <section x-data="hutri()" x-init="fetchCampaigns" class="swiper twb-swiper">
+          <div class="swiper-wrapper">
+            <template x-for="campaign in campaigns">
+              <div class="swiper-slide">
+                <div class="card__item four">
+                  <div class="card_body">
+                    <div class="card_head">
+                      <a href="Item-details.html">
+                        <img :src="`${thumbnailBaseUrl}${campaign.thumbnail}`" alt="item
+                          img" />
+                      </a>
+                      <a href="#" class="likes space-x-10">
+                        <i data-feather="users" width="16" height="16"></i>
+                        <span>245.2K Supports</span>
+                      </a>
+                    </div>
+
+                    <h6 class="card_title mt-10">
+                      <a class="color_black" href="Item-details.html">
+                        Hut DKI Jakarta 495
+                      </a>
+                    </h6>
+                    <div class="card_footer d-block space-y-10">
+                      <div class="card_footer justify-content-between">
+                        <div class="avatars space-x-3">
+                          <a href="Profile.html">
+                            <img src="assets/img/avatars/pemprov-dki.jpeg" alt="Avatar" class="avatar avatar-sm" />
+                          </a>
+                          <a href="Profile.html">
+                            <p class="avatars_name txt_xs">Pemprov DKI Jakarta</p>
+                          </a>
+                        </div>
+
+                      </div>
+                      <div class="hr"></div>
+                      <div class="d-flex align-items-center space-x-10 justify-content-between">
+                        <div class="d-flex align-items-center space-x-10">
+                          <i data-feather="clock" width="16" height="16"></i>
+                          <a href="#" data-toggle="modal" data-target="#popup_history">
+                            <p class="color_text txt_sm" style="width: auto"> 24 Days Ago </p>
+                          </a>
+                        </div>
+                        <a class="btn btn-sm btn-primary" href="#" data-toggle="modal"
+                          data-target="#popup_bid">Support</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </template>
+          </div>
+        </section>
+      </div>
+    </div> -->
 
 
     <div data-aos="fade-up" class="section__creators mt-100">
@@ -1677,6 +1741,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
     integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="//unpkg.com/alpinejs" defer></script>
   <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
 
   <script>
@@ -1687,10 +1752,29 @@
     });
 
 
+    const hutri = function () {
+      return {
+        thumbnailBaseUrl: 'https://thumbnail.twibbonize.com/',
+        avatarBaseUrl: 'https://di8f64wxtiymb.cloudfront.net/',
+        campaigns: [],
+        fetchCampaigns: async function () {
+          const response = await fetch('hutri.json')
+          const {
+            data
+          } = await response.json()
+
+          this.campaigns = Array.from(data)
+        },
+      }
+    }
+
+
     const swiper = new Swiper(".swiper", {
       direction: "horizontal",
       slidesPerView: 1.2,
       spaceBetween: 24,
+      observer: true,
+      observeParents: true,
       watchSlidesVisibility: true,
       mousewheel: {
         forceToAxis: true
