@@ -12034,6 +12034,28 @@ body.expand-menu--open {
       .hero__profile .cover .banner_change-icon:hover {
         background: #F0F0F0;
         color: #707070; }
+    .hero__profile .cover .social-media_links {
+      display: flex;
+      align-items: stretch;
+      max-width: 100%;
+      vertical-align: inherit;
+      position: absolute;
+      bottom: 16px;
+      right: 16px; }
+      .hero__profile .cover .social-media_links .social-media_wrapper {
+        backdrop-filter: blur(20px);
+        background: rgba(22, 22, 26, 0.2);
+        border-radius: 12px;
+        padding: 0px 6px;
+        width: fit-content;
+        flex: row nowrap;
+        display: flex;
+        align-items: stretch; }
+        .hero__profile .cover .social-media_links .social-media_wrapper a.social-media_icon {
+          display: flex;
+          align-items: center;
+          padding: 10px;
+          color: #ffffff !important; }
   .hero__profile .avatar_wrap {
     position: relative;
     width: 6rem; }
