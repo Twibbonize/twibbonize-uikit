@@ -496,6 +496,7 @@
   }
 
   .cover {
+    position: relative;
     height: 12rem;
 
     @include lg_screen {
@@ -506,6 +507,12 @@
       height: 100%;
       width: 100%;
       object-fit: cover;
+    }
+
+    .btn-edit-banner {
+      position: absolute;
+      bottom: 24px;
+      right: 2%;
     }
   }
 
@@ -526,6 +533,31 @@
         top: 50%;
         transform: translate(-50%, -50%);
         border: solid 5px $color_white;
+      }
+    }
+
+
+    .avatar_change-icon {
+      position: absolute;
+      z-index: 1;
+      bottom: -60px;
+      right: -5px;
+
+      background: $color-grey-light;
+      border: 1px solid $color_stroke;
+      color: $color-grey-icon;
+      height: 36px;
+      width: 36px;
+      border-radius: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+
+      &:hover {
+        background: $color-grey;
+        color: $color_text;
       }
     }
   }
