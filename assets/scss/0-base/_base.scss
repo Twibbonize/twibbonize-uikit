@@ -1,65 +1,67 @@
 /*--------------------------------------------------------------
 ## Include Fonts
 --------------------------------------------------------------*/
-@font-face {
-  font-family: "circular";
-  src: url("../fonts/CircularStd-Regular.woff") format("woff"),
-    url("../fonts/CircularStd-Regular.woff2") format("woff2"), url("../fonts/CircularStd-Regular.svg") format("svg"),
-    url("../fonts/circular.ttf") format("truetype");
-}
+// @font-face {
+//   font-family: "circular";
+//   src: url("../fonts/CircularStd-Regular.woff") format("woff"),
+//     url("../fonts/CircularStd-Regular.woff2") format("woff2"), url("../fonts/CircularStd-Regular.svg") format("svg"),
+//     url("../fonts/circular.ttf") format("truetype");
+// }
 
-@font-face {
-  font-family: "circular_bold";
-  src: url("../fonts/CircularStd-Bold.svg") format("svg"), url("../fonts/CircularStd-Bold.woff") format("woff"),
-    url("../fonts/CircularStd-Bold.woff2") format("woff2"), url("../fonts/Circular-Bold.ttf") format("truetype");
-  font-weight: normal;
-}
+// @font-face {
+//   font-family: "circular_bold";
+//   src: url("../fonts/CircularStd-Bold.svg") format("svg"), url("../fonts/CircularStd-Bold.woff") format("woff"),
+//     url("../fonts/CircularStd-Bold.woff2") format("woff2"), url("../fonts/Circular-Bold.ttf") format("truetype");
+//   font-weight: normal;
+// }
 
-@font-face {
-  font-family: "Plus Jakarta Sans";
-  src: url("../fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Regular.ttf") format('truetype');
-  font-weight: normal;
-}
+// @font-face {
+//   font-family: "Plus Jakarta Sans";
+//   src: url("../fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Regular.ttf") format('truetype');
+//   font-weight: normal;
+// }
 
-@font-face {
-  font-family: "Plus Jakarta Sans";
-  src: url("../fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Light.ttf") format('truetype');
-  font-weight: 300;
-}
+// @font-face {
+//   font-family: "Plus Jakarta Sans";
+//   src: url("../fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Light.ttf") format('truetype');
+//   font-weight: 300;
+// }
 
-@font-face {
-  font-family: "Plus Jakarta Sans";
-  src: url("../fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Italic.ttf") format('truetype');
-  font-weight: normal;
-  font-style: italic;
-}
-
-
-@font-face {
-  font-family: "Plus Jakarta Sans";
-  src: url("../fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Semibold.ttf") format('truetype');
-  font-weight: 600;
-}
+// @font-face {
+//   font-family: "Plus Jakarta Sans";
+//   src: url("../fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Italic.ttf") format('truetype');
+//   font-weight: normal;
+//   font-style: italic;
+// }
 
 
-@font-face {
-  font-family: "Plus Jakarta Sans";
-  src: url("../fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Bold.ttf") format('truetype');
-  font-weight: 700;
-}
+// @font-face {
+//   font-family: "Plus Jakarta Sans";
+//   src: url("../fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Semibold.ttf") format('truetype');
+//   font-weight: 600;
+// }
 
 
-@font-face {
-  font-family: "Plus Jakarta Sans";
-  src: url("../fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Medium.ttf") format('truetype');
-  font-weight: 500;
-}
+// @font-face {
+//   font-family: "Plus Jakarta Sans";
+//   src: url("../fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Bold.ttf") format('truetype');
+//   font-weight: 700;
+// }
 
-@font-face {
-  font-family: "Plus Jakarta Sans";
-  src: url("../fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-ExtraBold.ttf") format('truetype');
-  font-weight: 800;
-}
+
+// @font-face {
+//   font-family: "Plus Jakarta Sans";
+//   src: url("../fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Medium.ttf") format('truetype');
+//   font-weight: 500;
+// }
+
+// @font-face {
+//   font-family: "Plus Jakarta Sans";
+//   src: url("../fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-ExtraBold.ttf") format('truetype');
+//   font-weight: 800;
+// }
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 
 @font-face {
