@@ -1,4 +1,13 @@
-[{
+[
+  {
+    "total_campaigns": 5,
+    "CampaignCreatorUuid": "asd9122-sda9-adap-928j-kasndkal1123as",
+    "total_supports": 1124322,
+    "Name": "Bank BCA",
+    "Avatar": "46a95360-42f9-4e69-a033-fad2ce673af3.jpg",
+    "banner": "banner-bca.png"
+  },
+  {
     "total_campaigns": 1,
     "CampaignCreatorUuid": "2bf2d9c3-4ba4-4c67-96ef-25b7e3443ba5",
     "total_supports": 108164,

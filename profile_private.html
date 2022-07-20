@@ -162,10 +162,13 @@
       <div class="hero__profile">
         <div class="cover">
           <img src="assets/img/profile-banner/banner-bca.png" alt="">
-
-          <button class="btn btn-secondary btn-sm btn-edit-banner">
+          <button class="btn btn-secondary btn-sm btn-edit-banner d-none d-md-inline">
             <i data-feather="image" width="16" height="16"></i>
             Edit Banner
+          </button>
+
+          <button class="banner_change-icon d-md-none">
+            <i data-feather="camera" width="16" height="16"></i>
           </button>
         </div>
         <div class="infos">
@@ -219,9 +222,12 @@
 
 
             <div class="d-md-none">
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="avatars d-flex flex-column space-y-20">
+              <div class="d-flex justify-content-between">
+                <div class="avatars d-flex flex-column space-y-30">
                   <div class="avatar_wrap">
+                    <button class="avatar_change-icon">
+                      <i data-feather="camera" width="16" height="16"></i>
+                    </button>
                     <img class="avatar avatar-md" src="assets/img/avatars/bca.png" alt="avatar">
                   </div>
                   <div class="avatar_profile">
@@ -233,26 +239,17 @@
                   </div>
                 </div>
 
-                <div class="d-flex flex-wrap align-items-center space-x-10">
+                <div class="d-flex flex-wrap space-x-10">
                   <div class="mb-3">
-                    <button class="btn btn-sm btn-primary">
-                      Follow
+                    <button class="btn btn-sm btn-secondary">
+                      <i data-feather="edit-3" width="16" height="16"></i>
+                      Edit Profile
                     </button>
-                  </div>
-
-                  <div class="mb-3">
-                    <div class="share">
-                      <div class="icon">
-                        <a href="#" class="color_text">
-                          <i data-feather="share-2" width="16" height="16"></i>
-                        </a>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
 
-              <ul class="meta-campaigns mt-3">
+              <ul class="meta-campaigns mt-2">
                 <li>
                   <span class="meta-number">5</span>
                   <span class="meta-title">Campaigns</span>

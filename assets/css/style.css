@@ -10070,10 +10070,6 @@ label:active:after {
       width: 5rem;
       height: 5rem;
       border: 3px solid #DDE5E5 !important; }
-      @media screen and (max-width: 576px) {
-        .avatars .avatar.avatar-md {
-          width: 4.3rem;
-          height: 4.3rem; } }
     .avatars .avatar.avatar-lg {
       width: 7rem;
       height: 7rem;
@@ -12020,6 +12016,24 @@ body.expand-menu--open {
       position: absolute;
       bottom: 24px;
       right: 2%; }
+    .hero__profile .cover .banner_change-icon {
+      position: absolute;
+      z-index: 1;
+      bottom: 12px;
+      right: 3%;
+      background: #fbfbfb;
+      border: 1px solid #DDE5E5;
+      color: #707070;
+      height: 36px;
+      width: 36px;
+      border-radius: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .hero__profile .cover .banner_change-icon:hover {
+        background: #F0F0F0;
+        color: #707070; }
   .hero__profile .avatar_wrap {
     position: relative;
     width: 6rem; }
@@ -12037,8 +12051,8 @@ body.expand-menu--open {
     .hero__profile .avatar_wrap .avatar_change-icon {
       position: absolute;
       z-index: 1;
-      bottom: -60px;
-      right: -5px;
+      bottom: -24px;
+      right: 10px;
       background: #fbfbfb;
       border: 1px solid #DDE5E5;
       color: #707070;
@@ -12049,6 +12063,10 @@ body.expand-menu--open {
       flex-direction: column;
       align-items: center;
       justify-content: center; }
+      @media screen and (min-width: 1025px) {
+        .hero__profile .avatar_wrap .avatar_change-icon {
+          bottom: -60px;
+          right: -5px; } }
       .hero__profile .avatar_wrap .avatar_change-icon:hover {
         background: #F0F0F0;
         color: #707070; }
