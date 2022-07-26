@@ -8579,9 +8579,6 @@ a.btn-outline {
     border: 1px solid #1baaa0 !important;
     background: #ffffff !important;
     border: 1px solid #DDE5E5 !important; }
-    .btn-secondary.btn-outline:hover {
-      background-color: #1baaa0 !important;
-      color: #ffffff; }
 
 .btn-module {
   color: #1baaa0;
@@ -9059,8 +9056,7 @@ textarea,
       top: 50%;
       transform: translateY(-50%); }
   .form-group .nameInput {
-    font-size: 18px;
-    font-weight: bold; }
+    font-weight: 700; }
 
 .search {
   background: #ffffff;
@@ -10062,7 +10058,8 @@ label:active:after {
     border: 3px solid #fff;
     object-fit: cover;
     transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-    background-color: #fff; }
+    background-color: #fff;
+    border: 3px solid #DDE5E5 !important; }
     .avatars .avatar.avatar-sm {
       width: 2rem;
       height: 2rem; }
@@ -11997,7 +11994,9 @@ body.expand-menu--open {
     margin-right: auto; }
 
 .hero__profile {
-  position: relative; }
+  position: relative;
+  margin-top: 80px;
+  margin-bottom: 20px; }
   .hero__profile .tabs {
     position: absolute;
     top: 20px;
@@ -13543,7 +13542,7 @@ body.expand-menu--open {
       position: absolute;
       height: calc(100% + 10px);
       width: calc(100% + 12px);
-      background: radial-gradient(100% 100% at 53.13% 0%, #31e7fa 0%, #4477ff 52.6%, #db74ff 100%);
+      background: radial-gradient(100% 100% at 53.13% 0%, #31e7fa 0%, #1baaa0 52.6%, #158880 100%);
       border-radius: 12px;
       left: 50%;
       top: 50%;
@@ -15415,6 +15414,169 @@ footer.footer__1 {
   margin-bottom: 30px; }
   .creator_item .creator_bio {
     max-width: 100%; }
+
+.ads {
+  width: auto;
+  max-height: 120px; }
+
+.potrait-ads img {
+  width: 160px; }
+
+.campaign__title {
+  font-size: 34px;
+  font-weight: 700;
+  margin-top: 32px;
+  line-height: 44px; }
+
+.more {
+  display: none; }
+
+.main-section {
+  width: 430px; }
+
+.frame-module {
+  padding: 5%;
+  padding-top: 0;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1; }
+  .frame-module .chosen-frame img {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    max-width: 430px; }
+  .frame-module .frame-options {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    height: 430px;
+    padding: 24px;
+    border: 1px solid #DDE5E5;
+    align-items: center;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px; }
+    .frame-module .frame-options li.active {
+      outline: #1baaa0 1px solid; }
+    .frame-module .frame-options li {
+      border-radius: 5px;
+      padding: 8px;
+      background-color: #F0F0F0; }
+    .frame-module .frame-options li:not(:last-child) {
+      margin-bottom: 16px; }
+    .frame-module .frame-options img {
+      width: 64px;
+      border-radius: 5px; }
+
+.campaign-wrapper {
+  max-width: 1056px;
+  margin: auto; }
+
+.icon_plus-wrapper {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F0F0F0; }
+
+.photo {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid #DDE5E5; }
+
+.profile-name {
+  font-size: 18px;
+  font-weight: 500; }
+  .profile-name .separator {
+    color: #DDE5E5; }
+
+.menu-subtitle {
+  font-size: 14px; }
+
+.account-upgrade {
+  padding: 12px 10px;
+  border-radius: 5px;
+  background: #ffffff;
+  border: 1px solid #DDE5E5;
+  width: 260px;
+  text-align: center;
+  position: relative;
+  color: #707070;
+  font-size: 14px;
+  cursor: pointer; }
+  .account-upgrade:hover {
+    background: linear-gradient(90deg, #1baaa0 26%, #158880 93%);
+    color: #ffffff !important; }
+    .account-upgrade:hover .txt_brand {
+      color: #ffffff !important; }
+  .account-upgrade strong {
+    display: block; }
+  .account-upgrade .desc {
+    font-size: 12px; }
+  .account-upgrade .txt_brand {
+    color: #1baaa0; }
+
+.account-profile {
+  padding: 16px 24px;
+  border-bottom: 1px solid #DDE5E5;
+  margin-bottom: 8px; }
+
+.account-menu li {
+  position: relative; }
+  .account-menu li a {
+    color: #707070;
+    font-size: 15px;
+    padding: 16px 24px;
+    display: block; }
+    .account-menu li a:hover {
+      color: #121213;
+      font-weight: bold; }
+
+.account-menu li.active a {
+  color: #121213;
+  font-weight: bold; }
+
+.account-menu li.separator {
+  margin: 16px 0;
+  border-top: 1px solid #DDE5E5; }
+
+.account-menu li.warning a {
+  color: #E40F0F; }
+
+.upgrade-card {
+  padding: 16px 24px;
+  border-top: 1px solid #DDE5E5;
+  margin-top: 8px; }
+
+.account-plan {
+  border: 1px solid #DDE5E5;
+  padding: 16px;
+  border-radius: 8px; }
+  .account-plan .account-plan--icon {
+    width: 24px;
+    height: 24px; }
+  .account-plan .account-plan--title {
+    font-size: 22px;
+    font-weight: bold; }
+
+.setting-title {
+  font-size: 48px;
+  letter-spacing: -1;
+  line-height: 56px;
+  font-weight: 900;
+  padding-bottom: 0.67em; }
+
+.profile-banner {
+  width: 100%;
+  border-radius: 4px; }
+
+.form-field {
+  margin-bottom: 32px; }
+  .form-field .section {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 15px; }
 
 .styles_tab {
   display: flex;

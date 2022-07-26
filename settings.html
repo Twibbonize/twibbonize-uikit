@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="title" content="Raroin" />
+  <meta name="description" content="where campaigns meet you" />
+  <meta name="keywords" content="twibbonize, twibbon, campaign, bingkai, frame" />
+  <meta name="robots" content="index, follow" />
+  <meta name="language" content="English" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Twibbonize - Where Campaigns Meet You!</title>
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="shortcut icon" href="/assets/img/icons/favicon-32x32.png" sizes="32x32" type="image/x-icon">
+  <link rel="shortcut icon" href="/assets/img/icons/favicon-16x16.png" sizes="16x16" type="image/x-icon">
+
+  <!-- 🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈 STYLES -->
+  <link rel="stylesheet" href="assets/css/plugins/remixicon.css" />
+  <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css?v=0.1" />
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+
+<body>
+
+  <div class="overflow-hidden">
+    <div class="expand_menu">
+      <div class="overlay">
+        <div class="menu-wrapper">
+          <div class="menu-container">
+            <div class="darkmode-wrapper">
+              <div class="switch_item toggle-darkmode checked">
+                <input type="checkbox" id="darkmode" checked>
+                <label for="darkmode"></label>
+              </div>
+            </div>
+
+            <button class="btn-close-menu toggle-expand-menu">
+              <i data-feather="x"></i>
+            </button>
+
+            <ul class="menu-list">
+              <li class="menu-item">
+                <a href="explore.html">
+                  Explore
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="//marketplace.twibbonize.com">
+                  Marketplace
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="//guide.twibbonize.com">
+                  Guide
+                </a>
+              </li>
+
+              <li class="menu-item">
+                <a href="//news.twibbonize.com">
+                  News
+                </a>
+              </li>
+
+              <li class="menu-item">
+                <a href="//about.twibbonize.com">
+                  About
+                </a>
+              </li>
+            </ul>
+
+            <a class="btn-change-lang">
+              <i data-feather="globe"></i>
+              <span>English (United States)</span>
+            </a>
+
+            <div class="profile-section">
+              <div class="profile-avatar">
+                <img class="profile-img" src="assets/img/avatars/twibbonize-avatar.jpg" alt="avatar">
+                <div class="profile-name">
+                  <h5>Yoga Altariz</h5>
+                  <a href="#">Manage your profile</a>
+                </div>
+              </div>
+
+              <div>
+                <button class="btn btn-transparent btn-sm">
+                  <i data-feather="log-out"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="header__explore">
+      <div class="container">
+        <nav class="header-wrapper">
+          <div class="header__logo">
+
+            <a href="home.html" class="d-none d-md-inline">
+              <img class="header__brand" src="assets/img/logos/Logo-twb.svg" alt="logo" />
+              <img class="header__brand-mobile" src="assets/img/logos/logo-twb-icon.svg" alt="logo" />
+            </a>
+
+
+            <a href="home.html" class="d-inline d-md-none color_text">
+              <i data-feather="chevron-left" width="24" height="24"></i>
+            </a>
+          </div>
+
+          <div class="header__center">
+            <div class="header__search">
+              <i data-feather="search" width="16" style="position: absolute; top: 12px; color: #ababab"></i>
+              <input type="search" placeholder="Search any campaigns" />
+            </div>
+          </div>
+
+          <div class="d-none d-md-flex header__menu">
+            <button class="d-none d-lg-inline header__action-item btn btn-grad btn-sm">
+              <i data-feather="plus" width="16" height="16"></i>
+              New Campaign
+            </button>
+            <button class="header__bar-menu toggle-expand-menu">
+              <i data-feather="menu" width="24" height="24"></i>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div x-data="app()" class="container mt-100 mb-30">
+      <div class="row">
+        <div class="col-3">
+          <div class="border rounded">
+            <div class="d-flex align-items-center space-x-10 account-profile">
+              <img class="photo" src="assets/img/avatars/bca.png" alt="Bank BCA">
+              <div class="d-flex flex-column">
+                <span class="fw-bold">Bank BCA</span>
+                <span class="txt_sm">@bank_bca</span>
+              </div>
+            </div>
+            <ul class="account-menu">
+              <li :class="{ 'active': currentSetting == 'account' }" @click="switchSetting('account')">
+                <a href="#" class="d-flex align-items-center justify-content-between">
+                  <div class="d-flex align-items-center">
+                    <i data-feather="user" width="16" height="16"></i>
+                    <span class="ml-2">Account & Profile</span>
+                  </div>
+                  <i data-feather="chevron-right" width="16" height="16"></i>
+                </a>
+              </li>
+
+              <li :class="{ 'active': currentSetting == 'social' }" @click="switchSetting('social')">
+                <a href="#" class="d-flex align-items-center justify-content-between">
+                  <div class="d-flex align-items-center">
+                    <i data-feather="link" width="16" height="16"></i>
+                    <span class="ml-2">Social Profiles</span>
+                  </div>
+                  <i data-feather="chevron-right" width="16" height="16"></i>
+                </a>
+              </li>
+
+              <li :class="{ 'active': currentSetting == 'security' }" @click="switchSetting('security')">
+                <a href="#" class="d-flex align-items-center justify-content-between">
+                  <div class="d-flex align-items-center">
+                    <i data-feather="lock" width="16" height="16"></i>
+                    <span class="ml-2">Security & Privacy</span>
+                  </div>
+                  <i data-feather="chevron-right" width="16" height="16"></i>
+                </a>
+              </li>
+
+
+              <li :class="{ 'active': currentSetting == 'notification' }" @click="switchSetting('notification')">
+                <a href="#" class="d-flex align-items-center justify-content-between">
+                  <div class="d-flex align-items-center">
+                    <i data-feather="bell" width="16" height="16"></i>
+                    <span class="ml-2">Notifications</span>
+                  </div>
+                  <i data-feather="chevron-right" width="16" height="16"></i>
+                </a>
+              </li>
+
+              <li :class="{ 'active': currentSetting == 'billing' }" @click="switchSetting('billing')">
+                <a href="#" class="d-flex align-items-center justify-content-between">
+                  <div class="d-flex align-items-center">
+                    <i data-feather="credit-card" width="16" height="16"></i>
+                    <span class="ml-2">Billing</span>
+                  </div>
+                  <i data-feather="chevron-right" width="16" height="16"></i>
+                </a>
+              </li>
+
+
+              <li>
+                <div class="upgrade-card">
+                  <div class="account-plan bg-light">
+                    <div class="d-flex align-items-center space-x-3">
+                      <img class="account-plan--icon" src="assets/img/icons/sphere.svg" alt="">
+                      <span class="account-plan--title">
+                        Starter
+                      </span>
+                    </div>
+
+                    <p class="txt_sm">Twibbonize Starter Plan is free but with limited features. </p>
+
+                    <button class="btn btn-primary btn-sm mt-3">Upgrade</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="col-9">
+          <div x-show="currentSetting == 'account'" x-transition>
+            <h1 class="setting-title">Account & Profile</h1>
+            <div class="row">
+              <div class="col-8">
+                <div class="form-group">
+                  <div class="space-y-40">
+                    <div class="space-y-10">
+                      <span class="nameInput">Username</span>
+                      <input type="text" class="form-control input_white" value="bank_bca" />
+                      <small class="txt_xs color_text">Your Twibbonize URL: https://twb.nz/@bank_bca</small>
+                    </div>
+
+
+                    <div class="space-y-10">
+                      <span class="nameInput">Email</span>
+                      <div class="confirm">
+                        <input type="text" class="form-control" placeholder="Enter your email"
+                          value="twibbonize@bca.co.id" disabled>
+                        <a href="#" class="confirm-btn btn btn-ghost btn-sm">Change</a>
+                      </div>
+
+                    </div>
+
+                    <div class="space-y-10">
+                      <span class="nameInput">Display name</span>
+                      <input type="text" class="form-control input_white" value="Bank BCA" />
+                      <small class="txt_xs color_text">Use your real name, nickname, organization, or institution. It’s
+                        all up to you!</small>
+                    </div>
+
+
+
+                    <div class="space-y-10">
+                      <span class="nameInput">Website</span>
+                      <input type="text" class="form-control input_white" value="bca.co.id/social-media/" />
+                    </div>
+
+                    <div class="space-y-10">
+                      <div class="d-flex  justify-content-between">
+                        <span class="nameInput">Bio</span>
+
+                        <span class="txt_xs color_text">50/80</span>
+                      </div>
+                      <textarea style="min-height: 110px" class="input_white"
+                        placeholder="Add your bio">Akun resmi dari PT Bank Central Asia Tbk. | BCA Terdaftar dan Diawasi oleh Otoritas Jasa Keuangan.</textarea>
+                      <small class="txt_xs color_text">Brief description for your profile.</small>
+                    </div>
+                  </div>
+                </div>
+
+                <hr>
+                <div class="mt-20">
+                  <button class="btn btn-primary float-right">Save Changes</button>
+                </div>
+              </div>
+
+              <div class="col-4">
+                <div class="form-group">
+                  <div class="space-y-40">
+                    <div class="avatars align-items-start space-x-20 mb-30">
+                      <div id="profile-container">
+                        <img id="profileImage" src="assets/img/avatars/bca.png" alt="Avatar" class="avatar border" />
+                      </div>
+                      <div class="d-flex flex-column">
+                        <div id="boxUpload">
+                          <a href="#" class="btn btn-secondary btn-sm mb-2">Edit Profile Photo</a>
+                          <input id="imageUpload" type="file" name="profile_photo" placeholder="Photo" required=""
+                            capture>
+                        </div>
+                        <p class="txt_xs fw-light">Recommended size: 400x400px</p>
+                      </div>
+                    </div>
+
+                    <div class="space-y-10">
+                      <img class="profile-banner" src="assets/img/profile-banner/banner-bca.png" alt="bca">
+                      <button class="btn btn-secondary btn-sm mb-2">Upload New Banner</button>
+                      <p class="txt_xs fw-light">Recommended size: 1500x500px</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div x-show="currentSetting == 'social'" x-transition>
+            <h1 class="setting-title">Social Profiles</h1>
+            <div class="row">
+              <div class="col-8">
+                <div class="form-group">
+                  <div class="space-y-40">
+                    <div class="space-y-10">
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div x-show="currentSetting == 'security'" x-transition>
+            <h1 class="setting-title">Security & Privacy</h1>
+            <div class="row">
+              <div class="col-8">
+                <div class="form-group">
+                  <div class="space-y-40">
+                    <div class="space-y-10">
+                      <span class="nameInput">Who can see your supported campaigns?</span>
+                      <select class="form-select custom-select input_white">
+                        <option value="">Only me</option>
+                        <option value="">Everyone</option>
+                      </select>
+                    </div>
+                    <button class="btn btn-primary" disabled>Change</button>
+
+                    <hr>
+                    <div class="space-y-10">
+                      <span class="nameInput">Current Password</span>
+                      <input type="password" class="form-control input_white"
+                        placeholder="Enter your current password" />
+                    </div>
+
+                    <div class="space-y-10">
+                      <span class="nameInput">New Password</span>
+                      <input type="password" class="form-control input_white" placeholder="Enter your new password" />
+                      <small class="txt_xs color_text">Minimum 6 characters</small>
+                    </div>
+
+                    <button class="btn btn-primary" disabled>Change Password</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="footer__1">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 space-y-20">
+          <div class="footer__logo">
+            <a href="/">
+              <img src="assets/img/logos/Logo-twb.svg" height="42" alt="logo" id="logo_js_f">
+            </a>
+          </div>
+          <p class="footer__text">
+            Office 8 Level 18A, Jl. Jend. Sudirman No.1,
+            DKI Jakarta 12190
+          </p>
+
+          <div class="footer_download-app">
+            <a href="#">
+              <img src="assets/img/buttons/App Store.png" alt="app store">
+            </a>
+
+            <a href="#">
+              <img src="assets/img/buttons/Google Play.png" alt="google play">
+            </a>
+          </div>
+
+
+          <div>
+            <ul class="footer__social space-x-10 mb-40">
+              <li> <a href=""> <i data-feather="facebook"></i> </a>
+              </li>
+              <li> <a href=""> <i data-feather="twitter"></i> </a>
+              </li>
+              <li> <a href=""> <i data-feather="linkedin"></i> </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-6">
+          <h6 class="footer__title">Learn</h6>
+          <ul class="footer__list">
+            <li> <a href="Home1.html"> Marketplace </a>
+            </li>
+            <li> <a href="Home2.html"> Help Center
+              </a> </li>
+            <li> <a href="Home3.html"> News </a> </li>
+
+          </ul>
+        </div>
+        <div class="col-lg-3 col-6">
+          <h6 class="footer__title">Company</h6>
+          <ul class="footer__list">
+            <li> <a href="Profile.html"> About </a>
+            </li>
+            <li> <a href="Creators.html"> Career </a>
+            </li>
+            <li>
+              <a href="Collections.html"> Contact Us </a>
+            </li>
+            <li>
+              <a href="#">
+                Intellectual Property Rights
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="copyright text-center">
+        <span>© 2022 Twibbonize.</span>
+        <a href="#" class="color_brand">Terms</a>
+        <span>&</span>
+        <a href="#" class="color_brand">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+  </div>
+
+
+  <!-- 🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈 SCRIPTS -->
+  <script src="assets/js/jquery-3.6.0.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/gsap.min.js"></script>
+  <script src="assets/js/ScrollTrigger.min.js"></script>
+  <script src="assets/js/sticky-sidebar.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/plugin/relativeTime.js"></script>
+  <script src="//unpkg.com/alpinejs" defer></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+
+  <script>
+    feather.replace()
+
+
+    $('.toggle-expand-menu').click(function () {
+      $('body').toggleClass('expand-menu--open')
+    })
+
+    
+    const app = function () {
+      return {
+        currentSetting: 'account',
+        switchSetting: function (setting) {
+          this.currentSetting = setting
+        }
+      }
+    }
+
+  </script>
+</body>
+
+</html>

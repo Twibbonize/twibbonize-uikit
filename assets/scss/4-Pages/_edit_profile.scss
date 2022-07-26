@@ -1,0 +1,163 @@
+.icon_plus-wrapper {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-grey;
+}
+
+
+.photo {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid $color_stroke;
+}
+
+
+.profile-name {
+  font-size: 18px;
+  font-weight: 500;
+
+  .separator {
+    color: $color_stroke;
+  }
+}
+
+.menu-subtitle {
+  font-size: 14px;
+}
+
+
+.account-upgrade {
+  padding: 12px 10px;
+  border-radius: 5px;
+  background: $color_white;
+  border: 1px solid $color_stroke;
+  width: 260px;
+  text-align: center;
+  position: relative;
+  color: $color_text;
+  font-size: 14px;
+  cursor: pointer;
+
+
+  &:hover {
+    background: $color_grad;
+    color: $color_white !important;
+
+    .txt_brand {
+      color: $color_white !important;
+    }
+  }
+
+
+  strong {
+    display: block;
+  }
+
+  .desc {
+    font-size: 12px;
+  }
+
+
+  .txt_brand {
+    color: $color_brand;
+  }
+}
+
+
+
+.account-profile {
+  padding: 16px 24px;
+  border-bottom: 1px solid $color_stroke;
+  margin-bottom: 8px;
+}
+
+.account-menu {
+  li {
+    position: relative;
+
+    a {
+      color: $color_text;
+      font-size: 15px;
+      padding: 16px 24px;
+      display: block;
+
+      &:hover {
+        color: $color_black;
+        font-weight: bold;
+      }
+    }
+  }
+
+  li.active {
+
+    a {
+      color: $color_black;
+      font-weight: bold;
+    }
+  }
+
+  li.separator {
+    margin: 16px 0;
+    border-top: 1px solid $color_stroke;
+  }
+
+  li.warning {
+    a {
+      color: $color-red;
+    }
+  }
+}
+
+
+.upgrade-card {
+  padding: 16px 24px;
+  border-top: 1px solid $color_stroke;
+  margin-top: 8px;
+}
+
+.account-plan {
+  border: 1px solid $color_stroke;
+  padding: 16px;
+  border-radius: 8px;
+
+
+  .account-plan--icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .account-plan--title {
+    font-size: 22px;
+    font-weight: bold;
+  }
+}
+
+.setting-title {
+  font-size: 48px;
+  letter-spacing: -1;
+  line-height: 56px;
+  font-weight: 900;
+  padding-bottom: 0.67em;
+}
+
+
+.profile-banner {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.form-field {
+  margin-bottom: 32px;
+
+  .section {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 15px;
+    // border-bottom: 1px solid $color_stroke;
+  }
+}
