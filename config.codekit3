@@ -9,6 +9,14 @@
   ],
   "creatorBuild" : "34365",
   "files" : {
+    "\/account_settings.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/account_settings.html",
+      "oF" : 0
+    },
     "\/assets\/css\/plugins\/bootstrap.min-min.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -6191,14 +6199,6 @@
       "pME" : 1,
       "rFN" : 0,
       "uCM" : 0
-    },
-    "\/settings.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/settings.html",
-      "oF" : 0
     }
   },
   "hooks" : [
