@@ -2749,6 +2749,16 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/assets\/img\/icons\/facebook-box.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/img\/icons\/facebook-box.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/assets\/img\/icons\/favicon-16x16.png" : {
       "ft" : 32768,
       "iS" : 664,
@@ -2790,6 +2800,16 @@
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/assets\/img\/icons\/github.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/assets\/img\/icons\/google.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/img\/icons\/google.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,

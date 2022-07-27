@@ -31,6 +31,117 @@
 }
 
 
+
+#min-tablet-view {
+  display: none;
+
+  @include lg_screen {
+    display: block;
+  }
+
+
+  .app {
+    margin-top: 8rem;
+  }
+}
+
+#mobile-view {
+  display: none;
+  padding-top: 44px;
+
+  @include tablet_screen {
+    display: block;
+  }
+
+
+  .mobile-wrapper {
+    padding: 0 16px;
+    width: 100%;
+  }
+
+  .account-profile {
+    padding: 16px;
+  }
+
+  .mobile-header {
+    position: fixed;
+    top: 0;
+    background: $color_white;
+    width: 100%;
+    z-index: 10;
+    text-align: center;
+    font-size: 17px;
+    line-height: 44px;
+    padding: 0 16px;
+    display: flex;
+    height: 44px;
+    font-weight: 700;
+    color: $color_black;
+
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      // width: 60px;
+    }
+
+    h1.header-center {
+      flex: 1 1 0%;
+      font-size: 16px;
+      padding: 0 12px;
+      height: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      // justify-content: center;
+    }
+
+
+    .header-right {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 64px;
+    }
+  }
+
+
+  .account-plan {
+    padding: 16px;
+    border: 0;
+    background: $color-grey;
+    margin-top: -8px;
+    border-radius: 0 !important;
+
+    .account-plan--card {
+      background: $color_white;
+      padding: 8px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .account-plan--title {
+      font-size: 14px;
+    }
+  }
+
+  .action-area {
+    position: fixed;
+    z-index: 10;
+    background: $color_white;
+    bottom: 0;
+    display: flex;
+    padding: 16px 0;
+    width: 100%;
+    border-top: 1px solid $color_stroke;
+  }
+}
+
 .account-upgrade {
   padding: 12px 10px;
   border-radius: 5px;
@@ -113,6 +224,12 @@
   }
 }
 
+.account-menu {
+  li a {
+    color: $color_black;
+  }
+}
+
 
 .upgrade-card {
   padding: 16px 24px;
@@ -159,5 +276,58 @@
     line-height: 32px;
     margin-bottom: 15px;
     // border-bottom: 1px solid $color_stroke;
+  }
+}
+
+
+.google-connect {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid $color_black;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+
+  .disconnect {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    color: $color_text;
+    border-radius: 100%;
+    margin-left: 24px;
+  }
+}
+
+
+
+.twitter-connect {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  background: #1da1f2;
+  color: $color_white;
+
+
+  .disconnect {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    color: $color_text;
+    border-radius: 100%;
+    margin-left: 24px;
+    color: $color_white;
+    background: rgba($color: $color-grey, $alpha: .20);
   }
 }

@@ -23,9 +23,8 @@
   <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 </head>
 
-<body>
-
-  <div class="overflow-hidden">
+<body x-data="app()">
+  <div id="min-tablet-view" class="overflow-hidden">
     <div class="expand_menu">
       <div class="overlay">
         <div class="menu-wrapper">
@@ -81,14 +80,8 @@
                 <img class="profile-img" src="assets/img/avatars/twibbonize-avatar.jpg" alt="avatar">
                 <div class="profile-name">
                   <h5>Yoga Altariz</h5>
-                  <a href="#">Manage your profile</a>
+                  <a href="account_settings.html">Manage your account</a>
                 </div>
-              </div>
-
-              <div>
-                <button class="btn btn-transparent btn-sm">
-                  <i data-feather="log-out"></i>
-                </button>
               </div>
             </div>
           </div>
@@ -132,7 +125,7 @@
       </div>
     </header>
 
-    <div x-data="app()" class="container mt-100 mb-30">
+    <div class="app container mb-30">
       <div class="row">
         <div class="col-3">
           <div class="border rounded">
@@ -144,7 +137,8 @@
               </div>
             </div>
             <ul class="account-menu">
-              <li :class="{ 'active': currentSetting == 'account' }" @click="switchSetting('account')">
+              <li :class="{ 'active': currentSetting == 'Account & Profile' }"
+                @click="switchSetting('Account & Profile')">
                 <a href="#" class="d-flex align-items-center justify-content-between">
                   <div class="d-flex align-items-center">
                     <i data-feather="user" width="16" height="16"></i>
@@ -154,7 +148,7 @@
                 </a>
               </li>
 
-              <li :class="{ 'active': currentSetting == 'social' }" @click="switchSetting('social')">
+              <li :class="{ 'active':  currentSetting == 'Social Profiles' }" @click="switchSetting('Social Profiles')">
                 <a href="#" class="d-flex align-items-center justify-content-between">
                   <div class="d-flex align-items-center">
                     <i data-feather="link" width="16" height="16"></i>
@@ -164,7 +158,8 @@
                 </a>
               </li>
 
-              <li :class="{ 'active': currentSetting == 'security' }" @click="switchSetting('security')">
+              <li :class="{ 'active': currentSetting == 'Security & Privacy' }"
+                @click="switchSetting('Security & Privacy')">
                 <a href="#" class="d-flex align-items-center justify-content-between">
                   <div class="d-flex align-items-center">
                     <i data-feather="lock" width="16" height="16"></i>
@@ -175,7 +170,7 @@
               </li>
 
 
-              <li :class="{ 'active': currentSetting == 'notification' }" @click="switchSetting('notification')">
+              <li :class="{ 'active': currentSetting == 'Notifications' }" @click="switchSetting('Notifications')">
                 <a href="#" class="d-flex align-items-center justify-content-between">
                   <div class="d-flex align-items-center">
                     <i data-feather="bell" width="16" height="16"></i>
@@ -185,7 +180,7 @@
                 </a>
               </li>
 
-              <li :class="{ 'active': currentSetting == 'billing' }" @click="switchSetting('billing')">
+              <li :class="{ 'active': currentSetting == 'Billing' }" @click="switchSetting('Billing')">
                 <a href="#" class="d-flex align-items-center justify-content-between">
                   <div class="d-flex align-items-center">
                     <i data-feather="credit-card" width="16" height="16"></i>
@@ -195,6 +190,14 @@
                 </a>
               </li>
 
+              <li>
+                <a href="#" class="d-flex align-items-center justify-content-between">
+                  <div class="d-flex align-items-center">
+                    <i data-feather="log-out" width="16" height="16"></i>
+                    <span class="ml-2">Logout</span>
+                  </div>
+                </a>
+              </li>
 
               <li>
                 <div class="upgrade-card">
@@ -218,7 +221,7 @@
 
 
         <div class="col-9">
-          <div x-show="currentSetting == 'account'" x-transition>
+          <div x-show="currentSetting == 'Account & Profile'" x-transition>
             <h1 class="setting-title">Account & Profile</h1>
             <div class="row">
               <div class="col-8">
@@ -265,13 +268,31 @@
                         placeholder="Add your bio">Akun resmi dari PT Bank Central Asia Tbk. | BCA Terdaftar dan Diawasi oleh Otoritas Jasa Keuangan.</textarea>
                       <small class="txt_xs color_text">Brief description for your profile.</small>
                     </div>
+
+                    <hr class="d-block">
+                    <div class="d-flex">
+                      <button class="btn btn-primary ml-auto">Save Changes</button>
+                    </div>
+
+                    <hr class="d-block">
+
+                    <div class="space-y-10">
+                      <span class="nameInput">
+                        Delete Account?
+                      </span>
+
+                      <p class="color_text">
+                        You can delete your account if it’s no longer in use. Please note that the account will be
+                        permanently deleted.
+                      </p>
+
+
+                      <button class="btn btn-danger btn-outline btn-sm mt-3">Delete Account</button>
+                    </div>
                   </div>
                 </div>
 
-                <hr>
-                <div class="mt-20">
-                  <button class="btn btn-primary float-right">Save Changes</button>
-                </div>
+
               </div>
 
               <div class="col-4">
@@ -302,15 +323,110 @@
             </div>
           </div>
 
-          <div x-show="currentSetting == 'social'" x-transition>
+          <div x-show=" currentSetting == 'Social Profiles'" x-transition>
             <h1 class="setting-title">Social Profiles</h1>
             <div class="row">
               <div class="col-8">
                 <div class="form-group">
                   <div class="space-y-40">
                     <div class="space-y-10">
+                      <span class="nameInput d-block">Google</span>
+                      <div class="google-connect">
+                        <div class="d-flex align-items-center space-x-4">
+                          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16"
+                            height="16" viewBox="0 0 32 32" fill="none">
+                            <rect width="32" height="32" fill="url(#pattern0)" />
+                            <defs>
+                              <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0" transform="scale(0.0025)" />
+                              </pattern>
+                              <image id="image0" width="400" height="400"
+                                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAgAElEQVR4Ae2dbWhs21nHB5IDoqBHKZQWKgcLFqFgvJnU6vVlzpyLIK1tmFyRFpXoB1/wSxSUoh8M9OQefMEREdsiGoSrya1tU221L8llRPBDQci3fo34rTm3puXMvVdvAiPPntnJJLNnZu2911r7WWv9DoTJmey99lr//aznt5+1nrV2q8U/FEABFEABFEABFEABFEABFEABFEABFEABFEABFEABFEABFEABFEABFEABFEABFEABFEABFEABFEABFEABFEABFEABFEABFEABFEABFEABFEABFEABFEABFEABFEABFEABFEABFEABFEABFEABFEABFEABFEABFEABFECBeBQYjUb3n77Q7kz/vLn/iQfxtJCWoAAKoAAKzChw0Vl7kDv+b3Tbu/nP+aP24PbPxuj8kdWf01vld9v9/NqvPVrflDqddzbWZirMFyiAAiiAAn4UuAZEt70jDvrGaVuFgW24FJQ3BloOGQDjx364CgqgQAIKyNO6PLmLg336qH10/mjj1HLEUODUlUCou34mYMwA2d3YJnJJwOBpIgqgQDUFxEGei6PstvvjiEKJI7c7xGUDWKevdTf2n3bbOxKxVFObs1AABVAgUAUuOmv3JbIAFtYgeSpaXvzqz2/L8F6gZkG1UQAFUGBWAQGGRBfy5JzUMFRT0Ut3/SzTursBUGbNkW9QAAW0K3ATYSQ0b9EUMJZdV+ZTuu2+3BOBuXbboX4ogAKJKZBlRsm4/Hiy28ZYP2UsA0Plv7cHMofCcFdinZTmooAmBWTie5xGS5QRbHbYJDohy0tTz6IuKBCpAuNsqXb/PEsztTYJTLRROZqweA+ASaS9lmahQIMK5MNTQMOis9YAjEV16K6fPf2FD/QZ5mqw43FpFAhVgTxziqyphKAxHyinkkXHBHyovZl6o4AnBWRx2iTdlmGl+Q41WW2yRYwsYPTUG7kMCgSggDxZSlYOQ1REG8bJADLENc7kIi04gD5OFVHAugIyIU60ATSMoVEUkXXbF2JDzJVY754UiAI6Fcj2nMq2Nsd51nKeRQ416e/aA/bn0tnnqRUK1FKAYSpg6Q2WWTrwxnYtg+VkFECB5hUQcIy3BG9feHMgST+FA6prOwMkzTsAaoACVRSQMelst9su4Lh2aICtmewxQFKlC3MOCvhXQMDBxDhRgEpoAhL/DoErooCJAvlQ1dMPd5t5yuTpHt1NbQCQmHRpjkEB9wrk4DhnqAoHburAtRwna0lYlOjeSXAFFChSYLz4jzkOlcM1Wpx0EPVoD9gNuKiH8x0KOFBg/LKm9TMcJ3MdMdnAZEEiK9sd+AyKRIFWtpU6CwAZqgoiqqgI9277QiJrujsKoIAlBWSeI0vJjdlx0DbAeNsGTpkfseRAKCZdBbJtR5ggx7nedq7J6MGwVrq+j5bXUIDhqopDIIk62pjmQmbaIg9QXbZGqeFOODUlBSbvGU/mKXPGYQAB7n2hDbQH7PqbkiekraUUkDFf3slB5AFQF9gAk+ylfAoHJ6AAk+QLHEbhkyjHAxmikQRcI01cpgBRBzAABhVtgGhkmXvh77EqQNRR0WkQkTA/cscGnj5qH0l/itVX0C4UuKXAOMNq45QnTyCCDViyAYlG2Ffrlp/hPxEqkO1fdecJCidiyYmgK9FJt92P0G3QpNQVyIas2IYEBwfkfNjAKem+qXvciNo/nihn11wiLSItbzbQbV/IpqMRuRGakqICLArEaXpzmkQ3M9GN9L8U/Q5tDlwBhqwAB+DQYgPZmhGytAL3qclUP8uyktd28kQ480SIJlqcamL1kP7Y2VhLxgnR0DAVyHbPBRyAAxvQZwNsyhimU02l1ryzI7GnWiChDxIG94R5kVQ8ciDtZL4DcDA0F5YN8J6RQJxr7NVkVXlYjgNHz/2asgFZL8LkeuxOWmv7xpPlrO+Y6pBBDmlQ/4ShwuS6Vvcad72YLE/Y6RiMswOlgOxDJtfJ0IrbYWtqHftZBeQccPZEhSY2QIaWJhcbb11k8o2nSwCCDURqA7x7PV7n3XTLgEekTsPkCZVj0ohkuu0LJtab9rSRXX+cpsv7O3jqBqCx2wAbMEbmvJtuDvDAacbuNGnfxMYZvmra3cZ1feABPHCuidgA8IjLeTfdGuCRiONgbiONuY1F9xl4NO1u47o+8AAeRB6J2ADwiMt5N90a4JGI41j0RMrf0ohKgEfT7jau6wMP4EHkkYgNAI+4nHfTrQEeiTgOoos0ootF9xl4NO1u47o+8AAeRB6J2ADwiMt5N90a4JGI41j0RMrf0ohKgEfT7jau6wMP4EHkkYgNAI+4nLeG1jx91D7CgSTiQIgy0ogyiu4z8NDgbuOqAxsjAg4eHhKwAeARl+PW0JrzbruP80jAeRQ9jfJdOpEI8NDgbuOqA28SBBw8PCRgA8AjLsetoTWyVTPOIwHnQZSRTpRRdK+BhwZ3G1cd5J3H5/LayiKD47u0HQ73P577DzzictwaWpOl6wKPeJwEDp97WWQDwEODu42rDqPR6P75I94mSOTF0F3UNgA84nLcWlpDui6OM2rHWfQkntp3wEOLu42rHk+77R2cBwDBBiK2AeARl9PW0pqnL7Q7OI6IHUdqT9m0d3beB3hocbdx1eOis/aAjCvgwQNExDYAPOJy2ppaw6R5xI7D9ZN4lq3XHpw/WvBDRt9sNOD6vkyXDzw0udu46sI2JcBjJvKYQEESKr7Rbe/K3JgMccqPRKt1e4CUkZcnZcs1xskb7cF5d/1spj7TzpDfy8EIeNQ1V86fpwArzROHxwQU4sBlyxpx6vNsxff3UhepU1Y3iW6IYsqBQ0ALPHybbTrXY94jSXicZhFnd2PbRiThu7dInbOHnvHmnqdEKgtsGHj4Ns+0rse8x4LOF8swiQwHddt9cbqyu0BsFi5tAigFdgw8YjN1Xe1h3qOg08UCjUcbpzKvEGKEUbeXSJuz+ZqUX3wGPOqaEecvUiAbW47HWZYfF46z7clCY56tj/dz29hO6i2awGOeOfC9DQXGnYoslyjGzrvrZ6lGGmX7Qh6ZRJ3hBTzKmgXHl1UgqaexOCONkaS7asqWKmuDTR8v2kW33xvwaNqs4r8+KbsBz3t0188knTXGifCmep5oOU5fDvydN8CjKRNK57rjoavAO0qkEcWS4bRTcvnd91PROMjhLeDh3ji4QqvF0FVo0Ud7wDCV/54bFEiAh38DSfGKDF2FBA/AoaGPqgcJ8NBgJvHXgaGrYOBxSsShrz+qnCMBHvoMJdYaRZdtEts8SLZSfGM7VvuLoV2Th7D+krkqP+uRgEcMJhVGG+SJVoXRx+b0bbSn274gqyqMfpTX8ryzsTbesr6hqBZ45LeCTx8KBJlVYsM5Ky9DEhpS3GbEh837uIYs3vS+MzDw8HFruUauQDZ2q9yRJhcdddfPJKEhv0d8hquADGt5y2wEHuEaSog1l6db709IwGrxGHi33RenE6I9Uef5Ckx2Ar5w9jAEPOaLz1/cKODtyQhoLIaG6CP7VSl6SZMbi0u71OyBLXudr+W5EeCRtmE10Xomzi134jqQJOpoogs0dk2rw8bAo7H7mPSFeUmUAoB02xfMdaTZDbMHuLqv3gUeaRpP063OVs/WeWLm3OVDUks1ag/IsGq6JzR7/WzdSNUhLeDR7M1L9eqTxU7uJvOWOk4FT/5N17Hb7qdqf7R7VoHSi3iBx6yIfONHAavjr0074tCuz5CVHyMP8CrGowLAI8C7G0mViT4ajX5OZYVyJKZEMxwosHReBHg4UJ0ijRUoHSqH9oSvtr7ZfAdrO4wtNd0Ds21QiibXgUe6RqGh5eMc9EafwC1MPIdXf4G2hvtPHcJRYDy5vnF6vegQeIRz82KtKdGHf/jIXkix2hPtcqvANUSAh1uhKX25AkQf/uEhk6LL7wxHoAAKoIByBV7/5PftP/3Ac0kOIV0PA3iaH3n64e4IeCjvEFQPBVDATIHRoPXg8uTe6K0vfsfomx99LxBxCRKZ/CTTyswwOQoFUEC/AlcnK/sCkPzn2x97AERcQAR46O8M1BAFUMBcgTz6yOGRf77ef/uIIS2L8yLAw9woORIFUCAMBe5GHzlA5PN///67GdKyEYkAjzA6A7VEARQwV2Be9DENEZkX+dbOuxnSqgMS5jzMjZIjUQAFwlDg8nh1dxoWi34fPnknEKkCEVJ1w+gM1BIFUMBcgdGgdf/yZPViETTu/k2GtJgXKTEvAjzMDZIjUQAFwlHgreN7O3cBYfJ/GdL6n1/5IaKRJdEIK8zD6QvUFAVQoKQCVycrZybAmHcMqb7zIxH2tippjByOAigQjgJXJyub88BQ5vs3/uptDGnNRCLtQTiWQE1RAAVQoKQClyergzKgWHQsqb63IpFT2eCu5O3gcBRAARQIQwGT1N1FwCj6G6m+G6Nz1nqE0QGoJQqgQHUFFi0cLIJDme9STvV97dH6ZvW7wpkogAIooFyBKqm7ZQAix8qQ1mu9H04qS0veIa/81lM9FEABFKinwNWrK9tlgVDl+LRSfZk0r2eVnI0CKBCEApf/9vbTKkCoes6z3XfFHYl02xdMmgdh+lQSBVCgjgIuJs9NwBJzqi/zHnUsknNRAAWCUeDyeLVv4vBdHPN/n/2u+Hb17bb7wdx8KooCKIACdRSou/K8LliiSvXtrp8xdFXHGjkXBVAgGAVsrTyvCxE5X15U5fsd5Navx/bswdg+FUUBFKipgMu1H1WgEnKqLym7NY2R01EABcJSoOy27VWgUPacIFN9GboKy/CpLQqgQD0FfK39KAuQ/PiQUn2fvtDu1LsbnI0CKIACASlwebJ6lDtrrZ8hpPqyRXtARk9VUQAF6isw3rrk3kgrOKbrpTrVlwWD9Y2RElAABcJSQPvw1TRA8t+/tfNudVlavF0wLLuntiiAAhYU0JZ9lUNi2aek+qp593p3/czCraAIFEABFAhLAY3ZV8vgkf9dS6ovE+dh2Ty1RQEUsKCApsWDORTKfkqq78Vv/mCDQ1rstGvBFCkCBVAgNAVCHb4qgkxjqb6sOA/N7KkvCqCADQWa3vuqCAR1vnvzb7/X67wIabs2rJAyUAAFglNg9NXWWh1nrfVcn6m+F521B8HdeCqMAiiAAnUVeOv43o5WCNiol+tUX6KPuhbI+SiAAsEqcHmyOrDhqDWX4TLVl+gjWNOn4iiAAnUV0Oz4bdbNRaov0Udd6+N8FECBYBWIIX23DGSsp/qSeRWs7VNxFECBmgo0+eraMo7f9rF2Un1Z91HT/DgdBVAgZAUuj1dPbTvnUMqrm+r72qP1zZDvPXVHARRAgcoKhLT7risoyZDWNz/63vKr19nzqrLdcSIKoEAEClwer3ZcOebQyv32xx6Uggg77kbQAWgCCqBAdQUuj1d3Q3P0LutrnOrL+z6qGx1nogAKxKFACus/ygJHUn2XDWmRuhuH/dMKFECBGgqUda6pHL8s1Zct22sYHaeiAAqEr0Cs+1/ZhNzwyTtn50WYPA/f+GkBCqBAPQVi3//KFkjupvoyeV7P7jgbBVAgAgViev+HLVjMK2c61Zd9ryIwfpqAAihQT4GUFxDOA8Wy77/9+99/Wk91zkYBFECBCBRY5iz5+73RXQ1k2C+CW08TUAAFUKC6AiwgnIXDXVgU/X80aPHSqOpm5+XM7t6z3e7ecMQPGoRoA146Sd2LMIFeASDHqwxf1TU8D+cDEMARIjjyOnf2hmseukm9S6S6A29RVGH6HcNX9WzO19kABIDkzjjEz85Lr+vfoJUV6OUjEFk348sJcp3qCgAQABIiOG7q/Gy3uvV7OvPyZPXC9Mmb4+6Nrk5WzjzdGi5TUwEAAkBunHGQWuzX7AJuT2cL9/LRh6yZcXtXKN2WAgAkSKdJ0sMk8ePh4zcGtvqCk3LIwKoEEP3jkk6sJbxCAQgACTwCGanudWRglQeIRG2qbyqVu1YAgACQ0AHS2R3p9Te8A6QkQEjfvXbOIfwCQABI8AD5+LOO2r5GBlZpgPTV3kwqNqMAAAEgoQOkuzfcnjFsLV8AkHIAuXp1Re/N1GJUiuoBQABI+ABRnMpLWm45gLB9iSI6GFQFgACQ8AEy1Jv1CUDKAGT1wsBncYgiBQAIAAkdIGpTeUnhLQMPOXZVd062IsetpSoABIAED5C9oc6FywCkJECOV/VvK6DFcyupBwABIKEDROqvpDvdrgZrQMoB5OpkhQWEt01I/f8ACACJASAq14KwBqQcQNhAUT0vZioIQABIFADRuBaEbdzLAWTGO/GFegUACAABII66KWtAzAHCDryOjNBxsQAEgMQAkO7job7XZwMQc4CQgeXY0zsqHoAAkCgAsqdwMeHl8eop60AMIXK8yhYmjpy8y2IBCAABII56GPAwhMfJvZEkHDi6DRTrUAEAAkBiAIjKxYQAxBwgpPA69PIOiwYgAASAOOpgAMQcILLo0tFtoFiHCgAQAAJAHHQw2RQQgJgDhE0UHRihhyIBCACJAyBDXfvwsY2JOTwEtB58HZdwoAAAASAxAETa4KB7VC8SgACQ6tYTzpkABIAAEAf9FYCUAQjbuDswQS9FAhAAAkAcdDUAUgogbOPuwAZ9FAlAAEgsAOk8efOBjz5jdA0AAkCMDCXwgwAIAIkGIJo2VAQgACRwNhhVH4AAEABi1FXKHcS7QABIOYsJ82gAAkAAiIO+y7tAAIgDs1JXJAABIADEQbcEIADEgVmpKxKAABAA4qBbAhAA4sCs1BUJQAAIAHHQLQEIAHFgVuqKBCAABIA46JYABIA4MCt1RQIQABILQMSW1XQwAAJA1Bijw4oAEAACQBx0sKtXV7bZjdcUIqusRHdggz6KBCAABIA46GksJDSFhxwHQByYoJciAQgAASAOuhoAASAOzEpdkQAEgAAQB90SgAAQB2alrkgAAkAAiINuCUBKAUTX28Ac2EOsRQIQAAJAHPRuAFIGILyR0IEJeikSgACQaADyeLjjpdOYXASAABATOwn9GAACQGIBSEfTdu6jQes+abzmEBkNWnpe5hK6V/dYfwACQACIow4HQMwBIhGbo9tAsQ4VACAABIA46mAAxBwgVycrm45uA8U6VACAABAA4qiDARBzgMjWL45uA8U6VACAABAA4qiDyQprIGIIkePVvqPbQLEOFQAgAASAOOpgAMQQHidyHNuZODJDp8UCEAACQBx1MQBiDpCrk5UzR7eBYh0qAEAASCwAcdhNqhXNlu7mAJGhvmoqc1aTCgAQAAJAHPVAAFIOIKOvttYc3QqKdaQAAAEgAMRR5+KdIOUAQiqvI0N0WCwAASAAxFEHYzuTcgAhldeRITosFoAAkBgA8nBveOqwm1QrWoZkSOMtAxEysapZWnNnARAAEgVAHr+h862oAKQUQNjWvTkWVLoyAAEgAKRS1zE7CYCUAci9EZsqmtmVlqMACACJASDdveG+lj51qx6sBSkHECbSb5mP+v8AEAASB0Ce6dxK6fJk9YgopARE2NJEPTSmKwhAAAgAme4Rln9nLUgJeMiWJser+rIhLNtETMUBEAASA0A6L72uczdw1oKUBMhJNg9yPyYnG3NbAAgAiQIgmt5GOO0wWAtSHiDMg0xbkO7fAQgAiQIge0Odu2CMRiNebZvttlsCJMyD6KbGVO0ACACJASBTJq3v18uT1Qsm0s0Bws68+mx4Xo0ACAAJHSAPHw91rz8jldccHjloWQ8yz2Xr+h6AAJDwAaJ0FXre1S+PV/u5Y+TTDCZvHd/byfXjU68CAASAhA6Q7t6zI709rNVqkYllBo3bcGVfLNVGPakcAAEgEQBE5yLC3AGQiVUFIKTz5vaj+ROAAJDgAfJ4qH+04/bTdTWHmloZErlpdp7UrdUCIAAkdIB0tK4BmXYwssI6NQDUae/XvvSO0c+88kHdY5PTNzjR3wEIAAkeIE/efKC++16drOzXcagpnfvyF94zah9uZT9rB5v6b65663NXwe7ecPvh4zcG/OjSIHSn7rP+7nqHxZIlqyglCFRp68Xxd45+53PPX8NDIPLcYU//+KRFO6EoFKirQGdvuObTAYd8LZVvIiwyAN5OuHje5+tfftvoI5954RY8BCDrh1tsrlhkUHyHAnMUkKgwZKfut+7KU3in73GVp/IUzvn8v/zAqPPKh2bgcT2M9elNnfvUTN9cfkcBJQp0Hw/7fp1wyPNASt8DUmRLrEifjUL+8PPvmwuOHCDrhz2dbwsrusl8hwINKyDzUQDEDGpqt3EvsiHeDXIDkP/+6vcUDlnl0Jj+XD/sXawdbbLFe5FR8R0K3FEAeJjBQ3SS+aI78un9LwsKxwCRFN1FQ1bT8Mh/f+6gx5oQvaZNzZQoIGsaAIg5QJTcNrNqjAat5Ld2/+Q/v3fpkFUOjelPJtPNbIyj0laAdTnm8JChvuCsJdUFhUUputOAMPr94MVOcDecCqOARwWY/zAHiCQbeLw1di6V4s68kqL7c//4s5Uij2mwrB9usTLdjhlSSoQKdHZH9xm+KgWQ8NaYyetaU0jNzdu4LEV3GhAmv7MyPULPR5OsKCAZRQDEHCBB7IFVZBm5c4390yRF1wQa08eQ0ltkUXyHArKx5XAfgJgDJFibiX09SJkU3Wk4mP5OFBKs6VNxhwrIq1kBiBlAgpxAz20n5n2xqqTomoIjP44oJLckPlFgrADDV2bguAZsiBPoubHHui9W1RTdHAxlPolCcmviEwUYvroGw54xSMJeV3Z1snIWyxyIlRTdyfbtphAhCsFtosCNAgxfGYNjJLDphPAOkJvbO/tbLO8HsZWiawqO6eOIQmbtim/SU4Ddd8vBQ2AbvJXEkM5rO0V3Gg6Gv4e3kjR4y6UB2hRg8WA5gHT3AtrCfZGxXZ6sXoQ6jOUiRdcQGrcXJLI6fZGJ8bfIFZChmArj/9kwTrLnPR6Gt4CwyI4vT1aPQgOI6xTdshBhj6wiy+K7VBTg3R9lo4/AduBdZMhXr65shwQQHym6ZQEix/Pa20VWxt9iVUC2LmHyvBxAopj/yA06pN15faboloUI7wvJLYrPlBRg8rwcPMZDdpHMf+SGrn0YS1J0f+2zndvzDiVTbssCocrxpPXmFsVnKgo83BueJTuPYb7e4/Z8TyzzH7mRax7GajJFtwpE2kyo52bFZ+QKEH1UiT4iWP9x1661DmNJim4lJ95gdLJ+2Du7qy//R4EYFSD6KA8Q0SxGW2hpWlQoQ1ZqUnSrwOigtxulkdAoFJgoQPRRHh6Tob79KI1Iy6JCbSm6VSOgtU9vrkVpKDQKBVqtFtFHNYDIhpPRGlDTiwpf/dd3jTqvfCi4YasiyMjakLWjzfvRGgsNS1YBoo9q8JAIRNKeozWcJl91qzlFtwgQZt/1wnvfcbTWTcNsKMC6j+rwiGb7knmG1MQW76Gk6JoBY2s2eiIra5658X2ACnT3nu2StlsRIrGl7xbZ7+Xx6qmvlenBpehWmFBngWGRlfFdiAqw51VFcEzWiwS/fbuJ0fpaExJiim7lKORwix17TYyPY1QrwI671QHycG94qvrm2qrceE2Iux16g0/RrRCFZOAhtdeWiVJOAwowcV4dHtmQXwrDV7lduloTEkuKbtVIZP2VrXhT+HLj4TM6BZg4rwmPGN4+WMaqXUymx5SiWxkgh70L1oeUsUSO1aCAZA8xcV4dIskMX00b6+XJ6sDWZPqf/NOPzGYnVR0KCvw81odMWxm/a1eAoavq4LiGbkrDV7lB25hMjz5FtzrMmFTPDY1PtQpI1hDv+qgPkCSyr4qs+Opk5axqFCIpurGsKq86ZLXoPLZ+L7I4vtOkgAy9XD9FV926PPHzkhy+yo348nh1twpAXv7CexiyMohOeIthbml8alOA19TWjzwm8N3Wdm+91adsSm+yKboGsJgXjTx30EvXwLxZMhcqo4Bs+EfkYQcgUe99ZWJUpim9MmT1kc+8QORRASak95pYIsf4UKCzN1xj3sMOPLp7wzi3bi9jiKNB68GyYSxSdAv2wCoBkmy7E7Z/L2OWHOtAgWy9B/Met18/W2MOJ+qt28vY36IohBTdevDIh7aASBmL5FgXCjBpbi3yGEX75sEqhlcUhch8B0NWduABRKpYJefYVECGW5j3sAcQ2bXY5v0JvqzpKORrX3oHKbolhqhyQJh8EokE31WCawDwsAmOcVnJrv2YZ/15FEKKrt2oowgqQGSeFfK9bQVYaW4fHkyez7HSnc8+v1/k8PjOPlQEImRnzTFEvraiAPBwAo9R5+PPOlZuUGyFrB1sPgAW9mGxSFPWicTWi3S0B3i4gQeT50vsW7bgWOTw+Jt9wLBifYlR8udSCgAPN/BIfuW5iRUShdgHhAl02TvLxDo5ZpkCwMMdPGQB5jL9+Xur1SIKaQYi7cOtwdrR5n2MEAWqKEC2lTt4jKMPUneN7FKiEJnkNXly5hi7sMneJ8KqdSM75aAbBYCHa3gMR8nve3Vjbst/ax/0doGDXTiY6kmG1nL75IixAmxP4h4ck7kP9r0q0+lkKIUopBmAXIPmoMdq1zJGm9ix2caIe8MzVpi7hwgLByt0LkkxvXZmjlZmU/5SSDEvUsF2Yz9FJsvZVdc9OIg+avYkGZPHyS918k63uWdIq6YRR3S6DFkx3+ENHNnOvUQfNTpQ++DFDgBpFiA3+vf6ZGnVMObAT50MWfEa2hpbsFcY7mPuo26/WT/cOrpxYlqcaZr1WD/snQnU695Tzg9Lge7j4U4F52ft3RepXpvow0I/Ia1XI6yIRiyYtvoiJgt7Bz/+qU8BA7+Rh+hN9GGrh5DWqw8iRCO2rFtnOdLnpjMh37//B6OHT84BiSeQEH1Y7hdMqOuDiAwtyhCjPKlavt0U15ACMkQ5r69t/MMvjX76T78ORNxDhOjDtv0zoa4TIGOI9C7kidX2Pac8fwpMhoqNNjP9iYAGyvEAAAo/SURBVL/8HBBxCBGiD0d23z7s9ZlQVw2SM7aId2T8joqVzLq7w1UmfezH/rrPkJYTiLDnlSNTb7VYoa4XHneczoBsLWfdwFrBspX/9DzHnXu4dH3Rj/7db486f/RfRCOWQCKLM9nzypp5Fxckb9Ira+gc3xh4AEmxGTf6rUSJWRKEhR0eZF7kp/7834GIDYg8Hu40ahipXJy1IY0BYelT6RxYA5KGO+fUUNXZnHtU9d5m5z3/iZeBSA2I8LZBjx2EoazgAJI5GcnuYY7EY0dptVrZWo47KbkuACJlkupbfZsT3nXut1+0GMoKEyLiaMZrSHq78iDg2WySudw4Hdf/K6Lf9/Kvk+pbOhJ5dpSMYWpqKENZ4UIkfwrO3kDJ9ihWupVEG5OJcSfDVPk9M/kk1dcsGskmzp+8yToqKz2gZCGToazGO4tJh+KYxbCTqEScH4sSy3UC6QPjSXF9e8aR6msCEdJ2y1m85aNZYLjYMYcIrnyuBJgUdxbN0Lhrb5Lqy+r1YpAwcV5s396/Za+s+CCSO6IMJkQmrbVPb65JhNY+3Brk2oTySapvMUCYOPeOivkXnLd/TyidjHouh+B47UKvLwkUsU/AZ/MZ4/Ua+7bWbDRtY+zqOwWSx8P+fG/GX7wrIB2uzqrapjsX118OkLsajR8aen2ZAwh5uEtgmA3FZum2W0cx2zGpvsMRK86948HsgqT2lnfCd51yyP+fON6BDGkKVLRtp5KDYly33q4MR8USXZSxm9R39e289PqmmUfjKO8KsOFi2hApcmQPP/fLFxNnvZ/BReYS5HXJBy92bEUuUk5e5uYXf2tnPC+Xbf45YHi12CbTTPVlzYd3KJS9IB22uMMWOVe+u63VdRQznqyWCet5P7W2/kD3se4ppfoydFXWkzd0PPMht50izgo9NNtAKqm+DF01BIQql82GEyzsNqq541E3wBCLDUSf6kvWVRU33uw5k7x5hhoAKTYQiA3EmOr7cG94yns+mmVB5atney0F0nlieZqkHURGdWwgtlTfzt5wrbID48TmFWBSHYdWx6Fxrn/7iSbVl5dENQ+AujWQ/PuYF2fh4Pw7ODT3o3nYqb6k7Nb13WrOl72EgIifTo9zRWebNvD+v9kbPXxyHtQbD2WjROY91Lh/OxVhpTqOzaZjoyx/9hRaqi/zHnZ8trpSsm0kmFQnKwkbCM4GZF7kJ//iyyFEItvqHB8VsqcA2534e3LkKR2tbduA8lTffXueipLUKkB6L47NtmOjPH82JUNa2uZFZL2HWodHxewrwDvV/XV4nCta27aBLNX3z/5TxZAW+1zZ98/qSxyn926d2jZsysNZYgP+bKDpVN8MHiwWVO/vnVQQiPjr6DhVtHZlAw2n+jJp7sQ7B1IoEMGxuXJslOvPthpJ9WWleSBe3nE1gYi/jo5TRWtXNuA51ZeMK8d+OajieY8Ijs2VY6Ncv7blIdUXeATl3T1Vli1P/HZ0HCt6u7IBV6m+bM/uyRmHehkgglNz5dQo169t2U71BR6henXP9R4PZ5Hii8Pz6/DQ243eNlJ9gYdnJxz65ZhYd9OZcZLo2oQN1En1BR6he/OG6g9EcHZNODuu6cbuqqT6slCwIecby2WBiJvOjJNE1yZsoEyqL/CIxYs33I4JRI6aMHiuiaPFBuzbwLJUX+DRsNON8fLs4mu/I+Mc0bQpG5iX6pvNebC/VYwuvPk28T4RHF5TDo/r2re9u6m+TJg372OjrwFvNrTfkXGOaNqkDUiqL/CI3nXraWD74MXO+mHvokmj59o4XWzAjg2sH26ddnZH9/V4GGoSvQKTVetndGI7nRgd0bEJG5C5TUmUid5h0UB9CpDmi9NrwulxTTt2J/DQ51WoUXIKkKFlp0PjGNHRlw08d9jbSc5R0WC9CjC5jvPz5fy4TnVbk7lL6at6PQk1S1YBdvOt3rFximjn2gYEHtJHk3VQNFy/AjIv0j7cGrjuDJSPw8UGzG1AMq2YLNfvP6nhRIH2QW+XDm7ewdEKrVzZAJPluOUgFVh/ZWuT9SI4RleOkXKX2xbzHUG6TiqdK8CQ1vJOjiNEI9s2sH7YO2O+I/dCfAavAENaOEnbTpLyim1q/XDriPmO4F0mDbirAKvXizs8jhBdbNkA6zvueh3+H5UC4yGtXt9Wh6EcnC82sDXKsqxI0Y3KV9KYBQpMNmRkL61DAAAA6tpAr8+Q1QJnw5/iVIBopK7j4PyU4ZNlOB682InTO9AqFDBUgGgEEKQMgiptZ6Lc0LlwWBoKZNEIiw9HVZwJ56QDYEnPlfVVaXgFWokCJRWQTC22QknHIQK/MveauY6S7oTDU1VAVtCyir2Mc+HYWGEkGVYyzJuqL6DdKFBJASbZgUKsUDBplzxAffALv7FbqfNwEgqgwFgBhrUAiYnDjemY7FWzB5sP8AEogAKWFJhszsjaEdaOxJxsMGC4ypLDoBgUKFKA+REikpiiDWmLZFexc25Rb+c7FHCgQJ72y0Q7MAkZJuPFgD3mORz4CIpEgaUKABIAEiJAcnCI/S41cg5AARRwqwAgASQhgARwuPUDlI4CtRQAJIBEI0gAR61uzcko4FcBQAJINIAEcPjt91wNBawqICCZZG2R/kv6r7f03yyr6rC3I/Zn1aApDAVQoBkFBCTss0Vk4jIykW1HSMdtpn9zVRTwosDk1br7Lh0JZacFKlk5zgJAL92Xi6CADgWy4a3D3o4MN+Dw03L4Nu53ZjcHvV2GqXT0Z2qBAo0pMHmpFVEJ8yRL50kk2uCdHI11VS6MAnoVuJl03zq18ZRKGXFENvncBtGG3r5LzVBAlQJrB5sP2ge9XYa44oBAWZhfD1GxK66qfkllUCA4BcZbyvf6wCRumIzvb68v9zs4I6XCKIAC+hXIYJJFJgxzlX2q13h8NjwlazaAhv7ORw1RICYFZJjruSyTa+tIo3OkTrMRk6wOXz/cOpL1GsxpxNQbaQsKBK6AZOe0D2Woi+hEGbwGMp9FlBF4B6P6KJCKAll0ctDbztI+WWuyND3WMnAyYLC4L5XeRjtRIHIFBCh5hMKWKrNDS1UBItGeQFqGEokwIu9ENA8FUOBGAXlCHs+h9PYZ9jKCyiCHBdHFjR3xGwqgAApkCshTdBapHPR2JVJJFCwZKGTeQkAh0RvmgQIogAIoUFEBAYs407FTHcMl1KGwCRQHknCQLdaU5AMBBdufV7QOTkMBFECBGgrIU/oYMFOQmUQxE9AMxhFN76LqfEPRedlLkw63srKvr5NFDhI99HZ/8Su/N4YD6yxq3F1ORQEUQIEAFLiJdAREL3Z+9z/+mFXZAdw3qogCKIACKIACKIACKIACKIACKIACKIACKIACKIACKIACKIACKIACKIACKIACKIACKIACKIACKIACKIACKIACKIACKIACKIACKIACKIACKIACKIACKIACKIACKIACKIACKIACKIACKIACKIACKIACKIACKIACKIACKIAC1wr8P/aP5tI+HlffAAAAAElFTkSuQmCC" />
+                            </defs>
+                          </svg>
+                          <span class="color_black fw-bold">Google</span>
+                          <span class="color_text">Bank BCA</span>
+                        </div>
 
+                        <button class="disconnect">
+                          <i data-feather="x" width="16" height="16"></i>
+                        </button>
+                      </div>
+
+                      <p class="txt_xs color_text">One-click sign in (not shown on profile)</p>
                     </div>
+
+
+                    <div class="space-y-10">
+                      <div class="d-flex  justify-content-between">
+                        <span class="nameInput">Facebook</span>
+                        <span class="txt_xs color_text">this will be shown on your profile</span>
+                      </div>
+                      <input type="text" class="form-control input_white" />
+
+                      <button class="btn facebook-btn btn-sm">
+                        <img class="mr-2" src="assets/img/icons/facebook-box.svg" width="16" height="16" alt="">
+                        Connect to Facebook
+                      </button>
+
+                      <p class="txt_xs color_text">One-click sign in</p>
+                    </div>
+
+
+                    <div class="space-y-10">
+                      <div class="d-flex  justify-content-between">
+                        <span class="nameInput">Twitter</span>
+                        <span class="txt_xs color_text">this will be shown on your profile</span>
+                      </div>
+                      <input type="text" class="form-control input_white" value="BankBCA"
+                        placeholder="Twitter username" />
+
+                      <div class="twitter-connect">
+                        <div class="d-flex align-items-center space-x-4">
+                          <img class="mr-2" src="assets/img/icons/twitter.svg" height="10" alt="">
+                          <span class="fw-bold">Twitter</span>
+                          <span class="color-grey-light fw-normal">BankBCA</span>
+                        </div>
+
+
+                        <button class="disconnect">
+                          <i data-feather="x" width="16" height="16"></i>
+                        </button>
+                      </div>
+
+                      <p class="txt_xs color_text">One-click sign in</p>
+                    </div>
+
+
+                    <div class="space-y-10">
+                      <span class="nameInput">Linkedin</span>
+                      <input type="text" class="form-control input_white"
+                        placeholder="Linkedin profile link or username" />
+                    </div>
+
+
+                    <div class="space-y-10">
+                      <span class="nameInput">Youtube</span>
+                      <input type="text" class="form-control input_white"
+                        placeholder="Youtube channel link or username" />
+                    </div>
+
+
+                    <div class="space-y-10">
+                      <span class="nameInput">Instagram</span>
+                      <input type="text" class="form-control input_white" placeholder="Instagram link or username" />
+                    </div>
+
+                    <div class="space-y-10">
+                      <span class="nameInput">Tiktok</span>
+                      <input type="text" class="form-control input_white" placeholder="Tiktok link or username" />
+                    </div>
+
+                    <hr>
+                    <div class="mt-20">
+                      <button class="btn btn-primary float-right">Update Social Profiles</button>
+                    </div>
+
                   </div>
                 </div>
               </div>
@@ -318,7 +434,7 @@
           </div>
 
 
-          <div x-show="currentSetting == 'security'" x-transition>
+          <div x-show="currentSetting == 'Security & Privacy'" x-transition>
             <h1 class="setting-title">Security & Privacy</h1>
             <div class="row">
               <div class="col-8">
@@ -350,93 +466,438 @@
                   </div>
                 </div>
               </div>
-
             </div>
-
-
           </div>
         </div>
 
 
       </div>
     </div>
-  </div>
 
 
-  <footer class="footer__1">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 space-y-20">
-          <div class="footer__logo">
-            <a href="/">
-              <img src="assets/img/logos/Logo-twb.svg" height="42" alt="logo" id="logo_js_f">
-            </a>
+    <footer class="footer__1">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 space-y-20">
+            <div class="footer__logo">
+              <a href="/">
+                <img src="assets/img/logos/Logo-twb.svg" height="42" alt="logo" id="logo_js_f">
+              </a>
+            </div>
+            <p class="footer__text">
+              Office 8 Level 18A, Jl. Jend. Sudirman No.1,
+              DKI Jakarta 12190
+            </p>
+
+            <div class="footer_download-app">
+              <a href="#">
+                <img src="assets/img/buttons/App Store.png" alt="app store">
+              </a>
+
+              <a href="#">
+                <img src="assets/img/buttons/Google Play.png" alt="google play">
+              </a>
+            </div>
+
+
+            <div>
+              <ul class="footer__social space-x-10 mb-40">
+                <li> <a href=""> <i data-feather="facebook"></i> </a>
+                </li>
+                <li> <a href=""> <i data-feather="twitter"></i> </a>
+                </li>
+                <li> <a href=""> <i data-feather="linkedin"></i> </a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <p class="footer__text">
-            Office 8 Level 18A, Jl. Jend. Sudirman No.1,
-            DKI Jakarta 12190
-          </p>
+          <div class="col-lg-2 col-6">
+            <h6 class="footer__title">Learn</h6>
+            <ul class="footer__list">
+              <li> <a href="Home1.html"> Marketplace </a>
+              </li>
+              <li> <a href="Home2.html"> Help Center
+                </a> </li>
+              <li> <a href="Home3.html"> News </a> </li>
 
-          <div class="footer_download-app">
-            <a href="#">
-              <img src="assets/img/buttons/App Store.png" alt="app store">
-            </a>
-
-            <a href="#">
-              <img src="assets/img/buttons/Google Play.png" alt="google play">
-            </a>
+            </ul>
           </div>
-
-
-          <div>
-            <ul class="footer__social space-x-10 mb-40">
-              <li> <a href=""> <i data-feather="facebook"></i> </a>
+          <div class="col-lg-3 col-6">
+            <h6 class="footer__title">Company</h6>
+            <ul class="footer__list">
+              <li> <a href="Profile.html"> About </a>
               </li>
-              <li> <a href=""> <i data-feather="twitter"></i> </a>
+              <li> <a href="Creators.html"> Career </a>
               </li>
-              <li> <a href=""> <i data-feather="linkedin"></i> </a>
+              <li>
+                <a href="Collections.html"> Contact Us </a>
+              </li>
+              <li>
+                <a href="#">
+                  Intellectual Property Rights
+                </a>
               </li>
             </ul>
           </div>
         </div>
-        <div class="col-lg-2 col-6">
-          <h6 class="footer__title">Learn</h6>
-          <ul class="footer__list">
-            <li> <a href="Home1.html"> Marketplace </a>
-            </li>
-            <li> <a href="Home2.html"> Help Center
-              </a> </li>
-            <li> <a href="Home3.html"> News </a> </li>
 
-          </ul>
-        </div>
-        <div class="col-lg-3 col-6">
-          <h6 class="footer__title">Company</h6>
-          <ul class="footer__list">
-            <li> <a href="Profile.html"> About </a>
-            </li>
-            <li> <a href="Creators.html"> Career </a>
-            </li>
-            <li>
-              <a href="Collections.html"> Contact Us </a>
-            </li>
-            <li>
-              <a href="#">
-                Intellectual Property Rights
-              </a>
-            </li>
-          </ul>
+        <div class="copyright text-center">
+          <span>© 2022 Twibbonize.</span>
+          <a href="#" class="color_brand">Terms</a>
+          <span>&</span>
+          <a href="#" class="color_brand">Privacy Policy</a>
         </div>
 
       </div>
-      <div class="copyright text-center">
-        <span>© 2022 Twibbonize.</span>
-        <a href="#" class="color_brand">Terms</a>
-        <span>&</span>
-        <a href="#" class="color_brand">Privacy Policy</a>
+    </footer>
+  </div>
+
+  <div id="mobile-view" class="overflow-hidden">
+    <header class="mobile-header">
+
+      <div class="header-left">
+        <div x-show="!settingIsOpen">
+          <a href="profile_private.html" class="color_black">
+            <i data-feather="chevron-left" width="24" height="24"></i>
+          </a>
+        </div>
+
+        <div x-show="settingIsOpen">
+          <span @click="settingIsOpen = false" class="color_black">
+            <i data-feather="chevron-left" width="24" height="24"></i>
+          </span>
+        </div>
+      </div>
+
+
+      <h1 class="header-center">
+        <span x-show="!settingIsOpen">Settings</span>
+        <span x-show="settingIsOpen" x-text="currentSetting"></span>
+      </h1>
+
+
+      <div class="header-right">
+      </div>
+    </header>
+
+    <div x-show="settingIsOpen === false" class="mobile-body">
+      <div class="d-flex align-items-center space-x-10 account-profile">
+        <img class="photo" src="assets/img/avatars/bca.png" alt="Bank BCA">
+        <div class="d-flex flex-column">
+          <span class="fw-bold">Bank BCA</span>
+          <span class="txt_sm">@bank_bca</span>
+        </div>
+      </div>
+
+      <div class="account-plan">
+        <div class="account-plan--card">
+          <div class="d-flex align-items-center space-x-3">
+            <img class="account-plan--icon" src="assets/img/icons/sphere.svg" alt="">
+            <span class="account-plan--title">
+              Starter Plan
+            </span>
+          </div>
+
+          <div class="d-flex align-items-center space-x-3">
+            <span class="txt_sm color_brand">
+              Upgrade
+            </span>
+
+            <i data-feather="chevron-right" width="16" height="16"></i>
+          </div>
+        </div>
+      </div>
+
+      <ul class="account-menu">
+        <li :class="{ 'active': settingIsOpen && currentSetting == 'Account & Profile' }"
+          @click="switchSetting('Account & Profile')">
+          <a href="#" class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+              <i data-feather="user" width="16" height="16"></i>
+              <span class="ml-2">Account & Profile</span>
+            </div>
+            <i data-feather="chevron-right" width="16" height="16"></i>
+          </a>
+        </li>
+
+        <li :class="{ 'active': settingIsOpen &&  currentSetting == 'Social Profiles' }"
+          @click="switchSetting('Social Profiles')">
+          <a href="#" class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+              <i data-feather="link" width="16" height="16"></i>
+              <span class="ml-2">Social Profiles</span>
+            </div>
+            <i data-feather="chevron-right" width="16" height="16"></i>
+          </a>
+        </li>
+
+        <li :class="{ 'active': settingIsOpen && currentSetting == 'Security & Privacy' }"
+          @click="switchSetting('Security & Privacy')">
+          <a href="#" class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+              <i data-feather="lock" width="16" height="16"></i>
+              <span class="ml-2">Security & Privacy</span>
+            </div>
+            <i data-feather="chevron-right" width="16" height="16"></i>
+          </a>
+        </li>
+
+
+        <li :class="{ 'active': settingIsOpen && currentSetting == 'Notifications' }"
+          @click="switchSetting('Notifications')">
+          <a href="#" class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+              <i data-feather="bell" width="16" height="16"></i>
+              <span class="ml-2">Notifications</span>
+            </div>
+            <i data-feather="chevron-right" width="16" height="16"></i>
+          </a>
+        </li>
+
+        <li :class="{ 'active': settingIsOpen && currentSetting == 'Billing' }" @click="switchSetting('Billing')">
+          <a href="#" class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+              <i data-feather="credit-card" width="16" height="16"></i>
+              <span class="ml-2">Billing</span>
+            </div>
+            <i data-feather="chevron-right" width="16" height="16"></i>
+          </a>
+        </li>
+
+
+        <li>
+          <a href="#" class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+              <i data-feather="log-out" width="16" height="16"></i>
+              <span class="ml-2">Logout</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+
+    <div x-transition x-show="settingIsOpen && currentSetting == 'Account & Profile'" class="mt-15">
+      <div class="mobile-wrapper" style="padding-bottom: 64px;">
+        <div class="form-group">
+          <div class="space-y-40">
+
+            <div class="avatars align-items-start space-x-20 mb-30">
+              <div id="profile-container">
+                <img id="profileImage" src="assets/img/avatars/bca.png" alt="Avatar" class="avatar border" />
+              </div>
+              <div class="d-flex flex-column">
+                <div id="boxUpload">
+                  <a href="#" class="btn btn-secondary btn-sm mb-2">Edit Profile Photo</a>
+                  <input id="imageUpload" type="file" name="profile_photo" placeholder="Photo" required="" capture>
+                </div>
+                <p class="txt_xs fw-light">Recommended size: 400x400px</p>
+              </div>
+            </div>
+
+            <div class="space-y-10">
+              <img class="profile-banner" src="assets/img/profile-banner/banner-bca.png" alt="bca">
+              <button class="btn btn-secondary btn-sm mb-2">Upload New Banner</button>
+              <p class="txt_xs fw-light">Recommended size: 1500x500px</p>
+            </div>
+
+            <hr>
+
+            <div class="space-y-10">
+              <span class="nameInput">Username</span>
+              <input type="text" class="form-control input_white" value="bank_bca" />
+              <small class="txt_xs color_text">Your Twibbonize URL: https://twb.nz/@bank_bca</small>
+            </div>
+
+
+            <div class="space-y-10">
+              <span class="nameInput">Email</span>
+              <div class="confirm">
+                <input type="text" class="form-control" placeholder="Enter your email" value="twibbonize@bca.co.id"
+                  disabled>
+                <a href="#" class="confirm-btn btn btn-ghost btn-sm">Change</a>
+              </div>
+
+            </div>
+
+            <div class="space-y-10">
+              <span class="nameInput">Display name</span>
+              <input type="text" class="form-control input_white" value="Bank BCA" />
+              <small class="txt_xs color_text">Use your real name, nickname, organization, or institution. It’s
+                all up to you!</small>
+            </div>
+
+
+
+            <div class="space-y-10">
+              <span class="nameInput">Website</span>
+              <input type="text" class="form-control input_white" value="bca.co.id/social-media/" />
+            </div>
+
+            <div class="space-y-10">
+              <div class="d-flex  justify-content-between">
+                <span class="nameInput">Bio</span>
+
+                <span class="txt_xs color_text">50/80</span>
+              </div>
+              <textarea style="min-height: 110px" class="input_white"
+                placeholder="Add your bio">Akun resmi dari PT Bank Central Asia Tbk. | BCA Terdaftar dan Diawasi oleh Otoritas Jasa Keuangan.</textarea>
+              <small class="txt_xs color_text">Brief description for your profile.</small>
+            </div>
+
+            <hr class="d-block">
+
+            <div class="space-y-10">
+              <span class="nameInput">
+                Delete Account
+              </span>
+
+              <p class="color_text">
+                You can delete your account if it’s no longer in use. Please note that the account will be permanently
+                deleted.
+              </p>
+
+
+              <button class="btn btn-danger btn-outline btn-sm mt-3">Delete Account</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="action-area">
+        <div class="mobile-wrapper">
+          <button class="btn btn-primary btn-sm d-block w-100">
+            Save
+          </button>
+        </div>
       </div>
     </div>
-  </footer>
+
+    <div x-transition x-show="settingIsOpen && currentSetting == 'Social Profiles'" class="mt-15">
+      <div class="mobile-wrapper" style="padding-bottom: 64px;">
+        <div class="form-group">
+          <div class="space-y-40">
+            <div class="space-y-10">
+              <span class="nameInput d-block">Google</span>
+              <div class="google-connect">
+                <div class="d-flex align-items-center space-x-4">
+                  <img src="assets/img/icons/google.svg" alt="">
+                  <span class="color_black fw-bold">Google</span>
+                  <span class="color_text">Bank BCA</span>
+                </div>
+
+                <button class="disconnect">
+                  <i data-feather="x" width="16" height="16"></i>
+                </button>
+              </div>
+
+              <p class="txt_xs color_text">One-click sign in (not shown on profile)</p>
+            </div>
+
+
+            <div class="space-y-10">
+              <div class="d-flex  justify-content-between">
+                <span class="nameInput">Facebook</span>
+                <span class="txt_xs color_text">this will be shown on your profile</span>
+              </div>
+              <input type="text" class="form-control input_white" />
+
+              <button class="btn facebook-btn btn-sm">
+                <img class="mr-2" src="assets/img/icons/facebook-box.svg" width="16" height="16" alt="">
+                Connect to Facebook
+              </button>
+
+              <p class="txt_xs color_text">One-click sign in</p>
+            </div>
+
+
+            <div class="space-y-10">
+              <div class="d-flex  justify-content-between">
+                <span class="nameInput">Twitter</span>
+                <span class="txt_xs color_text">this will be shown on your profile</span>
+              </div>
+              <input type="text" class="form-control input_white" value="BankBCA" placeholder="Twitter username" />
+
+              <div class="twitter-connect">
+                <div class="d-flex align-items-center space-x-4">
+                  <img class="mr-2" src="assets/img/icons/twitter.svg" height="10" alt="">
+                  <span class="fw-bold">Twitter</span>
+                  <span class="color-grey-light fw-normal">BankBCA</span>
+                </div>
+
+
+                <button class="disconnect">
+                  <i data-feather="x" width="16" height="16"></i>
+                </button>
+              </div>
+
+              <p class="txt_xs color_text">One-click sign in</p>
+            </div>
+
+
+            <div class="space-y-10">
+              <span class="nameInput">Linkedin</span>
+              <input type="text" class="form-control input_white" placeholder="Linkedin profile link or username" />
+            </div>
+
+
+            <div class="space-y-10">
+              <span class="nameInput">Youtube</span>
+              <input type="text" class="form-control input_white" placeholder="Youtube channel link or username" />
+            </div>
+
+
+            <div class="space-y-10">
+              <span class="nameInput">Instagram</span>
+              <input type="text" class="form-control input_white" placeholder="Instagram link or username" />
+            </div>
+
+            <div class="space-y-10">
+              <span class="nameInput">Tiktok</span>
+              <input type="text" class="form-control input_white" placeholder="Tiktok link or username" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="action-area">
+        <div class="mobile-wrapper">
+          <button class="btn btn-primary btn-sm d-block w-100">
+            Update Social Profiles
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div x-transition x-show="settingIsOpen && currentSetting == 'Security & Privacy'" class="mt-15">
+      <div class="mobile-wrapper">
+        <div class="form-group">
+          <div class="space-y-40">
+            <div class="space-y-10">
+              <span class="nameInput">Who can see your supported campaigns?</span>
+              <select class="form-select custom-select input_white">
+                <option value="">Only me</option>
+                <option value="">Everyone</option>
+              </select>
+
+              <button class="btn btn-primary btn-sm" disabled>Update</button>
+            </div>
+            <hr>
+            <div class="space-y-10">
+              <span class="nameInput">Current Password</span>
+              <input type="password" class="form-control input_white" placeholder="Enter your current password" />
+            </div>
+
+            <div class="space-y-10">
+              <span class="nameInput">New Password</span>
+              <input type="password" class="form-control input_white" placeholder="Enter your new password" />
+              <button class="btn btn-primary btn-sm" disabled>Change Password</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
 
@@ -467,9 +928,11 @@
 
     const app = function () {
       return {
-        currentSetting: 'account',
+        currentSetting: 'Account & Profile',
+        settingIsOpen: false,
         switchSetting: function (setting) {
           this.currentSetting = setting
+          this.settingIsOpen = true
         }
       }
     }
