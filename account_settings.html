@@ -468,9 +468,327 @@
               </div>
             </div>
           </div>
+
+          <div x-show="currentSetting == 'Notifications'" x-transition>
+            <h1 class="setting-title">Notifications</h1>
+
+            <div class="form-group">
+              <div class="form-column-wrapper">
+                <div class="form-column--header">
+                  <h3 class="form-column--title">
+                    Campaign Related Notifications
+                  </h3>
+
+                  <div class="text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="feather feather-mail">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                      <polyline points="22,6 12,13 2,6" />
+                    </svg>
+
+                    <p class="notification-check--header">
+                      EMAIL
+                    </p>
+                  </div>
+
+                  <div class="text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="feather feather-smartphone">
+                      <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
+                      <line x1="12" y1="18" x2="12.01" y2="18" />
+                    </svg>
+
+                    <p class="notification-check--header">
+                      PUSH
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="space-y-20">
+                <div class="form-notify">
+                  <div class="form-notify--title">
+                    Module and Replies
+                  </div>
+                  <div class="form-notify--desc">
+                    Get info related to supporter interactions with your campaign.
+                  </div>
+                  <div class="form-notify--email">
+                    <div class="d-flex justify-content-center switch_item">
+                      <input type="checkbox" id="module_replies_email">
+                      <label for="module_replies_email">Toggle</label>
+                    </div>
+                  </div>
+                  <div class="form-notify--push">
+                    <div class="d-flex justify-content-center switch_item">
+                      <input type="checkbox" id="module_replies_push">
+                      <label for="module_replies_push">Toggle</label>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="form-notify">
+                  <div class="form-notify--title">
+                    Campaign Achievements
+                  </div>
+                  <div class="form-notify--desc">
+                    You will receive the progress of each level in the achievement of the campaign.
+                  </div>
+                  <div class="form-notify--email">
+                    <div class="d-flex justify-content-center switch_item">
+                      <input type="checkbox" id="campaign_achievement_email">
+                      <label for="campaign_achievement_email">Toggle</label>
+                    </div>
+                  </div>
+                  <div class="form-notify--push">
+                    <div class="d-flex justify-content-center switch_item">
+                      <input type="checkbox" id="campaign_achievement_push">
+                      <label for="campaign_achievement_push">Toggle</label>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="form-notify">
+                  <div class="form-notify--title">
+                    Campaign Summary
+                  </div>
+                  <div class="form-notify--desc">
+                    The latest update about your campaign within 1 month after the campaign started.
+                  </div>
+                  <div class="form-notify--email">
+                    <div class="d-flex justify-content-center switch_item">
+                      <input type="checkbox" id="campaign_summary_email">
+                      <label for="campaign_summary_email">Toggle</label>
+                    </div>
+                  </div>
+
+                </div>
+
+
+                <div class="form-notify">
+                  <div class="form-notify--title">
+                    Tips & Tricks
+                  </div>
+                  <div class="form-notify--desc">
+                    Make sure you always get interesting tips & tricks to increase the number of supporters.
+                  </div>
+                  <div class="form-notify--email">
+                    <div class="d-flex justify-content-center switch_item">
+                      <input type="checkbox" id="tips_trick_email">
+                      <label for="tips_trick_email">Toggle</label>
+                    </div>
+                  </div>
+
+                </div>
+
+
+              </div>
+            </div>
+
+
+            <div class="form-group">
+              <div class="form-column-wrapper">
+                <div class="form-column--header">
+                  <h3 class="form-column--title">
+                    From the Twibbonize
+                  </h3>
+                </div>
+              </div>
+
+
+              <div class="space-y-20">
+                <div class="form-notify">
+                  <div class="form-notify--title">
+                    New Product & Features
+                  </div>
+                  <div class="form-notify--desc">
+                    Get news and info about Twibbonize along with the latest feature updates
+                  </div>
+                  <div class="form-notify--email">
+                    <div class="d-flex justify-content-center switch_item">
+                      <input type="checkbox" id="product_features_email">
+                      <label for="product_features_email">Toggle</label>
+                    </div>
+                  </div>
+
+                </div>
+
+
+                <div class="form-notify">
+                  <div class="form-notify--title">
+                    Trending Campaigns
+                  </div>
+                  <div class="form-notify--desc">
+                    Always update about the current trending campaign
+                  </div>
+                  <div class="form-notify--email">
+                    <div class="d-flex justify-content-center switch_item">
+                      <input type="checkbox" id="trending_email">
+                      <label for="trending_email">Toggle</label>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+
+          </div>
+
+
+          <div x-show="currentSetting == 'Billing'" x-transition>
+            <h1 class="setting-title">Billing</h1>
+
+            <div class="row">
+              <div class="col-8">
+                <div class="space-y-40">
+                  <div class="badge-plan starter">
+                    <img class="badge-plan--mask" src="assets/img/items/badge-pattern.svg" alt="">
+                    <div class="d-flex align-items-center">
+                      <img class="badge-plan--icon" src="assets/img/icons/sphere.svg" alt="">
+
+                      <div class="badge-plan--identity">
+                        <h5 class="title">
+                          Starter Plan
+                        </h5>
+                        <span class="type">Free</span>
+                      </div>
+
+                      <div class="space-x-3">
+                        <span>Upgrade your plan</span>
+                        <i data-feather="chevron-right"></i>
+                      </div>
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <section class="transaction">
+                    <h4 class="transaction--title">
+                      Transaction History
+                    </h4>
+
+                    <ul class="transaction--chips">
+                      <li class="active">
+                        All
+                      </li>
+
+                      <li>
+                        Waiting for Payment
+                      </li>
+
+                      <li>Active</li>
+
+                      <li>
+                        Expired
+                      </li>
+
+                      <li>
+                        Cancelled
+                      </li>
+                    </ul>
+
+
+                    <div class="transaction-history space-y-10">
+                      <div class="transaction-card">
+                        <div class="transaction-card--header">
+                          <div class="d-flex space-x-3 align-items-center">
+                            <img src="assets/img/icons/premium-icons/gold.png" alt="gold">
+                            Gold Monthly
+                          </div>
+
+                          <span class="status expired">
+                            Expired
+                          </span>
+                        </div>
+                        <div class="transaction-card--body">
+                          <div class="row space-y-4">
+                            <div class="col-4">
+                              <p class="meta-title">Order ID</p>
+                              <p class="meta-value">INV-0905-GLD-002</p>
+                            </div>
+                            <div class="col-4">
+                              <p class="meta-title">
+                                Order Date
+                              </p>
+                              <p class="meta-value">
+                                Jum, 29 Jun 2022
+                              </p>
+                            </div>
+                            <div class="col-4">
+                              <p class="meta-title">
+                                Total
+                              </p>
+
+                              <p class="meta-value">
+                                Rp 90.000
+                              </p>
+                            </div>
+                            <div class="col-4">
+                              <a class="d-flex align-items-center space-x-3">
+                                <i data-feather="download" width="16" height="16"></i>
+                                <span>Download Invoice</span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="transaction-card">
+                        <div class="transaction-card--header">
+                          <div class="d-flex space-x-3 align-items-center">
+                            <img src="assets/img/icons/premium-icons/silver.png" alt="gold">
+                            <span>Silver Monthly</span>
+                          </div>
+
+                          <span class="status cancelled">
+                            Cancelled
+                          </span>
+                        </div>
+                        <div class="transaction-card--body">
+                          <div class="row space-y-4">
+                            <div class="col-4">
+                              <p class="meta-title">Order ID</p>
+                              <p class="meta-value">INV-0201-SLV-001</p>
+                            </div>
+                            <div class="col-4">
+                              <p class="meta-title">
+                                Order Date
+                              </p>
+                              <p class="meta-value">
+                                Jum, 29 Jun 2022
+                              </p>
+                            </div>
+                            <div class="col-4">
+                              <p class="meta-title">
+                                Total
+                              </p>
+
+                              <p class="meta-value">
+                                Rp 36.000
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+
+
+
+                </div>
+              </div>
+            </div>
+
+
+          </div>
         </div>
-
-
       </div>
     </div>
 
@@ -928,7 +1246,7 @@
 
     const app = function () {
       return {
-        currentSetting: 'Account & Profile',
+        currentSetting: 'Billing',
         settingIsOpen: false,
         switchSetting: function (setting) {
           this.currentSetting = setting

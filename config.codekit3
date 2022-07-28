@@ -2984,6 +2984,45 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/assets\/img\/icons\/premium-icons\/enterprise.png" : {
+      "ft" : 32768,
+      "iS" : 825,
+      "oA" : 0,
+      "oAP" : "\/assets\/img\/icons\/premium-icons\/enterprise.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/assets\/img\/icons\/premium-icons\/gold.png" : {
+      "ft" : 32768,
+      "iS" : 930,
+      "oA" : 0,
+      "oAP" : "\/assets\/img\/icons\/premium-icons\/gold.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/assets\/img\/icons\/premium-icons\/silver.png" : {
+      "ft" : 32768,
+      "iS" : 690,
+      "oA" : 0,
+      "oAP" : "\/assets\/img\/icons\/premium-icons\/silver.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/assets\/img\/icons\/raroin_icon.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -3179,6 +3218,16 @@
       "oA" : 0,
       "oAP" : "\/assets\/img\/items\/[Quantum] Homepage Exploration.zip",
       "oF" : 0
+    },
+    "\/assets\/img\/items\/badge-pattern.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/img\/items\/badge-pattern.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
     },
     "\/assets\/img\/items\/campaigns.png" : {
       "ft" : 32768,
