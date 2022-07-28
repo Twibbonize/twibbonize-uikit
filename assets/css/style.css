@@ -15836,6 +15836,9 @@ ul.transaction--chips {
         color: #121213;
         letter-spacing: 0; }
 
+.form-notify--desc-mobile {
+  line-height: 21px; }
+
 .styles_tab {
   display: flex;
   justify-content: center; }

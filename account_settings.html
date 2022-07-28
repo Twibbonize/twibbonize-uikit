@@ -1356,6 +1356,166 @@
         </div>
       </div>
     </div>
+
+
+    <div x-transition x-show="settingIsOpen && currentSetting == 'Notifications'" class="mt-15">
+      <div class="form-group">
+
+        <div class="space-y-40">
+          <!-- <div class="mobile-wrapper">
+            <div class="alert alert-warning">
+              All settings will change to all website, mobile web, and application devices.
+            </div>
+          </div> -->
+
+          <div class="space-y-15">
+            <div class="mobile-wrapper">
+              <h3>
+                Campaign Related
+              </h3>
+            </div>
+
+            <div class="space-y-10">
+              <div class="space-y-3 bg-light">
+                <div class="mobile-wrapper py-3">
+                  <span class="nameInput">
+                    Module & Replies
+                  </span>
+                  <p class="form-notify--desc-mobile">
+                    Get info related to supporter interactions with your campaign.
+                  </p>
+                </div>
+              </div>
+
+              <div class="mobile-wrapper space-y-10">
+                <div class="d-flex justify-content-between switch_item align-items-center">
+                  <span> Notification Push </span>
+                  <input type="checkbox" id="module_replies_push_mb">
+                  <label for="module_replies_push_mb">Toggle</label>
+                </div>
+                <hr class="color_text">
+                <div class="d-flex justify-content-between switch_item align-items-center">
+                  <span> Notification Email </span>
+                  <input type="checkbox" id="module_replies_email_mb" >
+                  <label for="module_replies_email_mb">Toggle</label>
+                </div>
+                <hr class="color_text">
+              </div>
+            </div>
+
+            <div class="space-y-10">
+              <div class="space-y-3 bg-light">
+                <div class="mobile-wrapper py-3">
+                  <span class="nameInput">
+                    Campaign Achievements
+                  </span>
+                  <p class="form-notify--desc-mobile">
+                    You will receive the progress of each level in the achievement of the campaign.
+                  </p>
+                </div>
+              </div>
+
+              <div class="mobile-wrapper space-y-10">
+                <div class="d-flex justify-content-between switch_item align-items-center">
+                  <span> Notification Push </span>
+                  <input type="checkbox" id="campaign_achievement_push_mb" ><label
+                    for="campaign_achievement_push_mb">Toggle</label>
+                </div>
+                <hr class="color_text">
+                <div class="d-flex justify-content-between switch_item align-items-center">
+                  <span> Notification Email </span>
+                  <input type="checkbox" id="campaign_achievement_email_mb" ><label
+                    for="campaign_achievement_email_mb">Toggle</label>
+                </div>
+                <hr class="color_text">
+              </div>
+            </div>
+
+            <div class="space-y-10">
+              <div class="space-y-3 bg-light">
+                <div class="mobile-wrapper py-3">
+                  <span class="nameInput">
+                    Campaign Summary
+                  </span>
+                  <p class="form-notify--desc-mobile">
+                    The latest update about your campaign within 1 month after the campaign started.
+                  </p>
+                </div>
+              </div>
+
+              <div class="mobile-wrapper space-y-10">
+                <div class="d-flex justify-content-between switch_item align-items-center">
+                  <span> Notification Push </span>
+                  <input type="checkbox" id="campaign_summary_push_mb" ><label
+                    for="campaign_summary_push_mb">Toggle</label>
+                </div>
+                <hr class="color_text">
+                <div class="d-flex justify-content-between switch_item align-items-center">
+                  <span> Notification Email </span>
+                  <input type="checkbox" id="campaign_summary_email_mb" ><label
+                    for="campaign_summary_email_mb">Toggle</label>
+                </div>
+                <hr class="color_text">
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-15">
+            <div class="mobile-wrapper">
+              <h3>
+                From the Twibbonize
+              </h3>
+            </div>
+
+            <div class="space-y-10">
+              <div class="space-y-3 bg-light">
+                <div class="mobile-wrapper py-3">
+                  <span class="nameInput">
+                    New Product & Features
+                  </span>
+                  <p class="form-notify--desc-mobile">
+                    Get news and info about Twibbonize along with the latest feature updates
+                  </p>
+                </div>
+              </div>
+
+              <div class="mobile-wrapper space-y-10">
+                <div class="d-flex justify-content-between switch_item align-items-center">
+                  <span> Notification Email </span>
+                  <input type="checkbox" id="product_feature_email_mb" ><label
+                    for="product_feature_email_mb">Toggle</label>
+                </div>
+                <hr class="color_text">
+              </div>
+            </div>
+
+            <div class="space-y-10">
+              <div class="space-y-3 bg-light">
+                <div class="mobile-wrapper py-3">
+                  <span class="nameInput">
+                    Trending Campaigns
+                  </span>
+                  <p class="form-notify--desc-mobile">
+                    Always update about the current trending campaign
+                  </p>
+                </div>
+              </div>
+
+              <div class="mobile-wrapper space-y-10">
+                <div class="d-flex justify-content-between switch_item align-items-center">
+                  <span> Notification Email </span>
+                  <input type="checkbox" id="trending_email_mb" ><label
+                    for="trending_email_mb">Toggle</label>
+                </div>
+                <hr class="color_text">
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
   </div>
 
 
@@ -1386,8 +1546,8 @@
 
     const app = function () {
       return {
-        currentSetting: 'Billing',
-        settingIsOpen: false,
+        currentSetting: 'Notifications',
+        settingIsOpen: true,
         switchSetting: function (setting) {
           this.currentSetting = setting
           this.settingIsOpen = true
