@@ -15744,7 +15744,8 @@ footer.footer__1 {
 .badge-plan {
   position: relative;
   padding: 24px 12px;
-  border-radius: 8px; }
+  border-radius: 8px;
+  overflow: hidden; }
   .badge-plan--icon {
     width: 48px;
     height: 48px; }
@@ -15752,18 +15753,27 @@ footer.footer__1 {
     flex-grow: 1;
     padding-left: 8px; }
     .badge-plan--identity .title {
-      font-size: 24px !important;
+      font-size: 16px !important;
       line-height: 20px;
       font-weight: 700;
       color: #ffffff; }
+      @media screen and (min-width: 1025px) {
+        .badge-plan--identity .title {
+          font-size: 24px !important; } }
     .badge-plan--identity .type {
-      font-size: 16px !important;
+      font-size: 14px !important;
       font-weight: 400; }
+      @media screen and (min-width: 1025px) {
+        .badge-plan--identity .type {
+          font-size: 16px !important; } }
   .badge-plan--mask {
     position: absolute;
     height: 100%;
-    right: 0;
+    right: -192px;
     top: 0; }
+    @media screen and (min-width: 1025px) {
+      .badge-plan--mask {
+        right: 0; } }
   .badge-plan.starter {
     background: linear-gradient(272.67deg, #414345 0%, #232526 58.99%);
     color: #ffffff; }
@@ -15772,8 +15782,12 @@ footer.footer__1 {
   font-size: 24px; }
 
 ul.transaction--chips {
+  align-items: center;
   display: flex;
   margin-top: 16px;
+  overflow: scroll;
+  width: 100%;
+  justify-content: flex-start;
   margin-bottom: 24px; }
   ul.transaction--chips li {
     padding: 8px 24px;
@@ -15781,7 +15795,8 @@ ul.transaction--chips {
     background: #F0F0F0;
     font-size: 14px;
     border: 1px solid #DDE5E5;
-    cursor: pointer; }
+    cursor: pointer;
+    flex-shrink: 0; }
     ul.transaction--chips li.active {
       background: #1baaa0;
       border: 0;

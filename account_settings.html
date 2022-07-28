@@ -1216,6 +1216,146 @@
         </div>
       </div>
     </div>
+
+
+    <div x-transition x-show="settingIsOpen && currentSetting == 'Billing'" class="mt-15">
+      <div class="mobile-wrapper">
+        <div class="space-y-40">
+          <div class="badge-plan starter">
+            <img class="badge-plan--mask" src="assets/img/items/badge-pattern.svg" alt="">
+            <div class="d-flex align-items-center">
+              <img class="badge-plan--icon" src="assets/img/icons/sphere.svg" alt="">
+
+              <div class="badge-plan--identity">
+                <h5 class="title">
+                  Starter Plan
+                </h5>
+                <span class="type">Free</span>
+              </div>
+
+              <div class="space-x-3">
+                <span>Upgrade your plan</span>
+                <i data-feather="chevron-right"></i>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <section class="transaction">
+            <h4 class="transaction--title">
+              Transaction History
+            </h4>
+
+            <ul class="transaction--chips">
+              <li class="active">
+                All
+              </li>
+
+              <li>
+                Waiting for Payment
+              </li>
+
+              <li>Active</li>
+
+              <li>
+                Expired
+              </li>
+
+              <li>
+                Cancelled
+              </li>
+            </ul>
+
+
+            <div class="transaction-history space-y-10">
+              <div class="transaction-card">
+                <div class="transaction-card--header">
+                  <div class="d-flex space-x-3 align-items-center">
+                    <img src="assets/img/icons/premium-icons/gold.png" alt="gold">
+                    Gold Monthly
+                  </div>
+
+                  <span class="status expired">
+                    Expired
+                  </span>
+                </div>
+                <div class="transaction-card--body">
+                  <div class="row space-y-4">
+                    <div class="col-12 col-lg-4">
+                      <p class="meta-title">Order ID</p>
+                      <p class="meta-value">INV-0905-GLD-002</p>
+                    </div>
+                    <div class="col-6 col-lg-4">
+                      <p class="meta-title">
+                        Order Date
+                      </p>
+                      <p class="meta-value">
+                        Jum, 29 Jun 2022
+                      </p>
+                    </div>
+                    <div class="col-6 col-lg-4">
+                      <p class="meta-title">
+                        Total
+                      </p>
+
+                      <p class="meta-value">
+                        Rp 90.000
+                      </p>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                      <a class="align-items-center d-flex mt-3 mt-lg-0 space-x-3">
+                        <i data-feather="download" width="16" height="16"></i>
+                        <span>Download Invoice</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="transaction-card">
+                <div class="transaction-card--header">
+                  <div class="d-flex space-x-3 align-items-center">
+                    <img src="assets/img/icons/premium-icons/silver.png" alt="gold">
+                    <span>Silver Monthly</span>
+                  </div>
+
+                  <span class="status cancelled">
+                    Cancelled
+                  </span>
+                </div>
+                <div class="transaction-card--body">
+                  <div class="row space-y-4">
+                    <div class="col-12 col-lg-4">
+                      <p class="meta-title">Order ID</p>
+                      <p class="meta-value">INV-0201-SLV-001</p>
+                    </div>
+                    <div class="col-6 col-lg-4">
+                      <p class="meta-title">
+                        Order Date
+                      </p>
+                      <p class="meta-value">
+                        Jum, 29 Jun 2022
+                      </p>
+                    </div>
+                    <div class="col-6 col-lg-4">
+                      <p class="meta-title">
+                        Total
+                      </p>
+
+                      <p class="meta-value">
+                        Rp 36.000
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
   </div>
 
 

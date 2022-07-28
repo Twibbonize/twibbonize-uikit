@@ -400,6 +400,7 @@
   // background-repeat: no-repeat;
   // background-position: right;
   border-radius: 8px;
+  overflow: hidden;
 
 
   &--icon {
@@ -413,15 +414,23 @@
     padding-left: 8px;
 
     .title {
-      font-size: 24px !important;
+      font-size: 16px !important;
       line-height: 20px;
       font-weight: 700;
       color: $color_white;
+
+      @include lg_screen {
+        font-size: 24px !important;
+      }
     }
 
     .type {
-      font-size: 16px !important;
+      font-size: 14px !important;
       font-weight: 400;
+
+      @include lg_screen {
+        font-size: 16px !important;
+      }
     }
   }
 
@@ -429,8 +438,12 @@
   &--mask {
     position: absolute;
     height: 100%;
-    right: 0;
+    right: -192px;
     top: 0;
+
+    @include lg_screen {
+      right: 0;
+    }
 
   }
 
@@ -447,8 +460,12 @@
 
 
 ul.transaction--chips {
+  align-items: center;
   display: flex;
   margin-top: 16px;
+  overflow: scroll;
+  width: 100%;
+  justify-content: flex-start;
   margin-bottom: 24px;
 
 
@@ -459,6 +476,7 @@ ul.transaction--chips {
     font-size: 14px;
     border: 1px solid $color_stroke;
     cursor: pointer;
+    flex-shrink: 0;
 
     &.active {
       background: $color_brand;
