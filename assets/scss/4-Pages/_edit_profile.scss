@@ -10,8 +10,8 @@
 
 
 .photo {
-  width: 48px;
-  height: 48px;
+  width: 64px;
+  height: 64px;
   border-radius: 50%;
   border: 2px solid $color_stroke;
 }
@@ -60,7 +60,10 @@
   }
 
   .account-profile {
-    padding: 16px;
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 48px;
   }
 
   .mobile-header {
@@ -116,6 +119,7 @@
     margin-top: -8px;
     border-radius: 0 !important;
 
+  
     .account-plan--card {
       background: $color_white;
       padding: 8px;
@@ -243,6 +247,12 @@
   border-radius: 8px;
 
 
+  &.starter {
+    background: linear-gradient(272.67deg, #414345 0%, #232526 58.99%);
+    color: $color_white;
+  }
+
+
   .account-plan--icon {
     width: 24px;
     height: 24px;
@@ -281,11 +291,11 @@
 
 
 .google-connect {
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   border: 1px solid $color_black;
-  padding: 8px 14px;
+  padding: 16px;
   border-radius: 8px;
   font-size: 14px;
 
@@ -303,13 +313,28 @@
   }
 }
 
+.facebook-connect {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #4267b2;
+  color: $color_white;
+
+  &.unlinked {
+    cursor: pointer;
+  }
+}
+
 
 
 .twitter-connect {
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 14px;
+  padding: 16px;
   border-radius: 8px;
   font-size: 14px;
   background: #1da1f2;
@@ -396,11 +421,13 @@
 .badge-plan {
   position: relative;
   padding: 24px 12px;
-  // background: url('../img/items/badge-pattern.svg');
-  // background-repeat: no-repeat;
-  // background-position: right;
   border-radius: 8px;
   overflow: hidden;
+
+
+  &.compact {
+    padding: 8px 12px;
+  }
 
 
   &--icon {
@@ -434,6 +461,10 @@
     }
   }
 
+  &--upgrade a {
+    color: $color_white !important;
+  }
+
 
   &--mask {
     position: absolute;
@@ -448,14 +479,26 @@
   }
 
   &.starter {
-    background: linear-gradient(272.67deg, #414345 0%, #232526 58.99%);
+    background: url('../img/items/badge-pattern-mb.svg'), linear-gradient(272.67deg, #414345 0%, #232526 58.99%);
+    background-repeat: no-repeat;
+    background-position: right;
     color: $color_white;
+    background-size: contain;
+
+    @include lg_screen {
+      background: url('../img/items/badge-pattern.svg'), linear-gradient(272.67deg, #414345 0%, #232526 58.99%);
+    }
+
   }
 }
 
 
 .transaction--title {
-  font-size: 24px;
+  font-size: 20px;
+
+  @include lg_screen {
+    font-size: 24px;
+  }
 }
 
 
@@ -467,6 +510,18 @@ ul.transaction--chips {
   width: 100%;
   justify-content: flex-start;
   margin-bottom: 24px;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  & {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
 
 
   li {

@@ -3219,6 +3219,16 @@
       "oAP" : "\/assets\/img\/items\/[Quantum] Homepage Exploration.zip",
       "oF" : 0
     },
+    "\/assets\/img\/items\/badge-pattern-mb.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/img\/items\/badge-pattern-mb.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/assets\/img\/items\/badge-pattern.svg" : {
       "ft" : 2097152,
       "miP" : 0,

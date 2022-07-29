@@ -137,26 +137,26 @@
               </div>
             </div>
             <ul class="account-menu">
-              <li :class="{ 'active': currentSetting == 'Account & Profile' }"
-                @click="switchSetting('Account & Profile')">
+              <li :class="{ 'active': currentSetting == 'Account' }" @click="switchSetting('Account')">
                 <a href="#" class="d-flex align-items-center justify-content-between">
                   <div class="d-flex align-items-center">
                     <i data-feather="user" width="16" height="16"></i>
-                    <span class="ml-2">Account & Profile</span>
+                    <span class="ml-2">Account</span>
                   </div>
                   <i data-feather="chevron-right" width="16" height="16"></i>
                 </a>
               </li>
 
-              <li :class="{ 'active':  currentSetting == 'Social Profiles' }" @click="switchSetting('Social Profiles')">
+              <li :class="{ 'active': currentSetting == 'Profile' }" @click="switchSetting('Profile')">
                 <a href="#" class="d-flex align-items-center justify-content-between">
                   <div class="d-flex align-items-center">
-                    <i data-feather="link" width="16" height="16"></i>
-                    <span class="ml-2">Social Profiles</span>
+                    <i data-feather="edit" width="16" height="16"></i>
+                    <span class="ml-2">Profile</span>
                   </div>
                   <i data-feather="chevron-right" width="16" height="16"></i>
                 </a>
               </li>
+
 
               <li :class="{ 'active': currentSetting == 'Security & Privacy' }"
                 @click="switchSetting('Security & Privacy')">
@@ -201,7 +201,7 @@
 
               <li>
                 <div class="upgrade-card">
-                  <div class="account-plan bg-light">
+                  <div class="account-plan starter">
                     <div class="d-flex align-items-center space-x-3">
                       <img class="account-plan--icon" src="assets/img/icons/sphere.svg" alt="">
                       <span class="account-plan--title">
@@ -209,9 +209,8 @@
                       </span>
                     </div>
 
-                    <p class="txt_sm">Twibbonize Starter Plan is free but with limited features. </p>
-
-                    <button class="btn btn-primary btn-sm mt-3">Upgrade</button>
+                    <p class="txt_sm color_white">Twibbonize Starter Plan is free but with limited features. </p>
+                    <button class="btn btn-white btn-sm mt-3">Upgrade</button>
                   </div>
                 </div>
               </li>
@@ -221,8 +220,8 @@
 
 
         <div class="col-9">
-          <div x-show="currentSetting == 'Account & Profile'" x-transition>
-            <h1 class="setting-title">Account & Profile</h1>
+          <div x-show="currentSetting == 'Account'" x-transition>
+            <h1 class="setting-title">Account</h1>
             <div class="row">
               <div class="col-8">
                 <div class="form-group">
@@ -230,7 +229,11 @@
                     <div class="space-y-10">
                       <span class="nameInput">Username</span>
                       <input type="text" class="form-control input_white" value="bank_bca" />
-                      <small class="txt_xs color_text">Your Twibbonize URL: https://twb.nz/@bank_bca</small>
+                      <span class="txt_xs color_text">Your Twibbonize URL: https://twb.nz/@bank_bca</span>
+
+                      <div>
+                        <button class="btn btn-primary btn-sm">Save Changes</button>
+                      </div>
                     </div>
 
 
@@ -241,96 +244,12 @@
                           value="twibbonize@bca.co.id" disabled>
                         <a href="#" class="confirm-btn btn btn-ghost btn-sm">Change</a>
                       </div>
-
                     </div>
 
+
+                    <hr>
                     <div class="space-y-10">
-                      <span class="nameInput">Display name</span>
-                      <input type="text" class="form-control input_white" value="Bank BCA" />
-                      <small class="txt_xs color_text">Use your real name, nickname, organization, or institution. It’s
-                        all up to you!</small>
-                    </div>
-
-
-
-                    <div class="space-y-10">
-                      <span class="nameInput">Website</span>
-                      <input type="text" class="form-control input_white" value="bca.co.id/social-media/" />
-                    </div>
-
-                    <div class="space-y-10">
-                      <div class="d-flex  justify-content-between">
-                        <span class="nameInput">Bio</span>
-
-                        <span class="txt_xs color_text">50/80</span>
-                      </div>
-                      <textarea style="min-height: 110px" class="input_white"
-                        placeholder="Add your bio">Akun resmi dari PT Bank Central Asia Tbk. | BCA Terdaftar dan Diawasi oleh Otoritas Jasa Keuangan.</textarea>
-                      <small class="txt_xs color_text">Brief description for your profile.</small>
-                    </div>
-
-                    <hr class="d-block">
-                    <div class="d-flex">
-                      <button class="btn btn-primary ml-auto">Save Changes</button>
-                    </div>
-
-                    <hr class="d-block">
-
-                    <div class="space-y-10">
-                      <span class="nameInput">
-                        Delete Account?
-                      </span>
-
-                      <p class="color_text">
-                        You can delete your account if it’s no longer in use. Please note that the account will be
-                        permanently deleted.
-                      </p>
-
-
-                      <button class="btn btn-danger btn-outline btn-sm mt-3">Delete Account</button>
-                    </div>
-                  </div>
-                </div>
-
-
-              </div>
-
-              <div class="col-4">
-                <div class="form-group">
-                  <div class="space-y-40">
-                    <div class="avatars align-items-start space-x-20 mb-30">
-                      <div id="profile-container">
-                        <img id="profileImage" src="assets/img/avatars/bca.png" alt="Avatar" class="avatar border" />
-                      </div>
-                      <div class="d-flex flex-column">
-                        <div id="boxUpload">
-                          <a href="#" class="btn btn-secondary btn-sm mb-2">Edit Profile Photo</a>
-                          <input id="imageUpload" type="file" name="profile_photo" placeholder="Photo" required=""
-                            capture>
-                        </div>
-                        <p class="txt_xs fw-light">Recommended size: 400x400px</p>
-                      </div>
-                    </div>
-
-                    <div class="space-y-10">
-                      <img class="profile-banner" src="assets/img/profile-banner/banner-bca.png" alt="bca">
-                      <button class="btn btn-secondary btn-sm mb-2">Upload New Banner</button>
-                      <p class="txt_xs fw-light">Recommended size: 1500x500px</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div x-show=" currentSetting == 'Social Profiles'" x-transition>
-            <h1 class="setting-title">Social Profiles</h1>
-            <div class="row">
-              <div class="col-8">
-                <div class="form-group">
-                  <div class="space-y-40">
-                    <div class="space-y-10">
-                      <span class="nameInput d-block">Google</span>
+                      <span class="nameInput d-block">Connect with your social media</span>
                       <div class="google-connect">
                         <div class="d-flex align-items-center space-x-4">
                           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16"
@@ -352,35 +271,14 @@
                           <i data-feather="x" width="16" height="16"></i>
                         </button>
                       </div>
-
-                      <p class="txt_xs color_text">One-click sign in (not shown on profile)</p>
-                    </div>
-
-
-                    <div class="space-y-10">
-                      <div class="d-flex  justify-content-between">
-                        <span class="nameInput">Facebook</span>
-                        <span class="txt_xs color_text">this will be shown on your profile</span>
+                      <div class="facebook-connect unlinked">
+                        <div class="d-flex">
+                          <img class="mr-2" src="assets/img/icons/facebook-box.svg" width="16" height="16" alt="">
+                          <span class="fw-bold">
+                            Connect to Facebook
+                          </span>
+                        </div>
                       </div>
-                      <input type="text" class="form-control input_white" />
-
-                      <button class="btn facebook-btn btn-sm">
-                        <img class="mr-2" src="assets/img/icons/facebook-box.svg" width="16" height="16" alt="">
-                        Connect to Facebook
-                      </button>
-
-                      <p class="txt_xs color_text">One-click sign in</p>
-                    </div>
-
-
-                    <div class="space-y-10">
-                      <div class="d-flex  justify-content-between">
-                        <span class="nameInput">Twitter</span>
-                        <span class="txt_xs color_text">this will be shown on your profile</span>
-                      </div>
-                      <input type="text" class="form-control input_white" value="BankBCA"
-                        placeholder="Twitter username" />
-
                       <div class="twitter-connect">
                         <div class="d-flex align-items-center space-x-4">
                           <img class="mr-2" src="assets/img/icons/twitter.svg" height="10" alt="">
@@ -393,8 +291,82 @@
                           <i data-feather="x" width="16" height="16"></i>
                         </button>
                       </div>
+                    </div>
 
-                      <p class="txt_xs color_text">One-click sign in</p>
+                    <hr class="d-block">
+
+                    <div class="space-y-10">
+                      <span class="nameInput">
+                        Delete Account?
+                      </span>
+
+                      <p class="color_text">
+                        You can delete your account if it’s no longer in use. Please note that the account will be
+                        permanently deleted.
+                      </p>
+
+                      <button class="btn btn-danger btn-outline btn-sm mt-3">Delete Account</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div x-show=" currentSetting == 'Profile'" x-transition>
+            <h1 class="setting-title">Profile</h1>
+            <div class="row">
+              <div class="col-8">
+                <div class="form-group">
+                  <div class="space-y-40">
+
+                    <div class="space-y-10">
+                      <span class="nameInput">Display name</span>
+                      <input type="text" class="form-control input_white" value="Bank BCA" />
+                      <small class="txt_xs color_text">Use your real name, nickname, organization, or institution. It’s
+                        all up to you!</small>
+                    </div>
+
+
+                    <div class="space-y-10">
+                      <div class="d-flex  justify-content-between">
+                        <span class="nameInput">Bio</span>
+
+                        <span class="txt_xs color_text">50/80</span>
+                      </div>
+                      <textarea style="min-height: 110px" class="input_white"
+                        placeholder="Add your bio">Akun resmi dari PT Bank Central Asia Tbk. | BCA Terdaftar dan Diawasi oleh Otoritas Jasa Keuangan.</textarea>
+                      <small class="txt_xs color_text">Brief description for your profile.</small>
+                    </div>
+
+                    <div class="space-y-10">
+                      <span class="nameInput">Website</span>
+                      <input type="text" class="form-control input_white" value="bca.co.id/social-media/" />
+                    </div>
+
+                    <div class="space-y-10">
+                      <span class="nameInput">Facebook</span>
+
+                      <div class="d-flex  justify-content-between">
+                        <!-- <span class="txt_xs color_text">this will be shown on your profile</span> -->
+                      </div>
+                      <input type="text" class="form-control input_white" />
+
+                      <!-- <button class="btn facebook-btn btn-sm">
+                        <img class="mr-2" src="assets/img/icons/facebook-box.svg" width="16" height="16" alt="">
+                        Connect to Facebook
+                      </button> -->
+
+                      <!-- <p class="txt_xs color_text">One-click sign in</p> -->
+                    </div>
+
+
+                    <div class="space-y-10">
+                      <span class="nameInput">Twitter</span>
+
+                      <input type="text" class="form-control input_white" value="BankBCA"
+                        placeholder="Twitter username" />
                     </div>
 
 
@@ -430,6 +402,32 @@
                   </div>
                 </div>
               </div>
+
+              <div class="col-4">
+                <div class="form-group">
+                  <div class="space-y-40">
+                    <div class="avatars align-items-start space-x-20 mb-30">
+                      <div id="profile-container">
+                        <img id="profileImage" src="assets/img/avatars/bca.png" alt="Avatar" class="avatar border" />
+                      </div>
+                      <div class="d-flex flex-column">
+                        <div id="boxUpload">
+                          <a href="#" class="btn btn-secondary btn-sm mb-2">Edit Profile Photo</a>
+                          <input id="imageUpload" type="file" name="profile_photo" placeholder="Photo" required=""
+                            capture>
+                        </div>
+                        <p class="txt_xs fw-light">Recommended size: 400x400px</p>
+                      </div>
+                    </div>
+
+                    <div class="space-y-10">
+                      <img class="profile-banner" src="assets/img/profile-banner/banner-bca.png" alt="bca">
+                      <button class="btn btn-secondary btn-sm mb-2">Upload New Banner</button>
+                      <p class="txt_xs fw-light">Recommended size: 1500x500px</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -450,6 +448,8 @@
                     <button class="btn btn-primary" disabled>Change</button>
 
                     <hr>
+                    <h3 class="mb-20">Change Password</h3>
+
                     <div class="space-y-10">
                       <span class="nameInput">Current Password</span>
                       <input type="password" class="form-control input_white"
@@ -462,7 +462,7 @@
                       <small class="txt_xs color_text">Minimum 6 characters</small>
                     </div>
 
-                    <button class="btn btn-primary" disabled>Change Password</button>
+                    <button class="btn btn-primary" disabled>Update Password</button>
                   </div>
                 </div>
               </div>
@@ -648,7 +648,7 @@
               <div class="col-8">
                 <div class="space-y-40">
                   <div class="badge-plan starter">
-                    <img class="badge-plan--mask" src="assets/img/items/badge-pattern.svg" alt="">
+                    <!-- <img class="badge-plan--mask" src="assets/img/items/badge-pattern.svg" alt=""> -->
                     <div class="d-flex align-items-center">
                       <img class="badge-plan--icon" src="assets/img/icons/sphere.svg" alt="">
 
@@ -659,8 +659,8 @@
                         <span class="type">Free</span>
                       </div>
 
-                      <div class="space-x-3">
-                        <span>Upgrade your plan</span>
+                      <div class="space-x-3 badge-plan--upgrade">
+                        <a href="#">Upgrade your plan</a>
                         <i data-feather="chevron-right"></i>
                       </div>
                     </div>
@@ -730,7 +730,7 @@
                               </p>
                             </div>
                             <div class="col-4">
-                              <a class="d-flex align-items-center space-x-3">
+                              <a href="#" class="d-flex align-items-center space-x-3">
                                 <i data-feather="download" width="16" height="16"></i>
                                 <span>Download Invoice</span>
                               </a>
@@ -899,51 +899,51 @@
     </header>
 
     <div x-show="settingIsOpen === false" class="mobile-body">
-      <div class="d-flex align-items-center space-x-10 account-profile">
+      <div
+        class="d-flex flex-column justify-content-center align-items-center space-x-10 account-profile bg-light pb-60">
         <img class="photo" src="assets/img/avatars/bca.png" alt="Bank BCA">
         <div class="d-flex flex-column">
-          <span class="fw-bold">Bank BCA</span>
-          <span class="txt_sm">@bank_bca</span>
+          <span class="fw-bold txt_lg text-center mt-2">Bank BCA</span>
+          <span class="text-center">@bank_bca</span>
         </div>
       </div>
 
-      <div class="account-plan">
-        <div class="account-plan--card">
-          <div class="d-flex align-items-center space-x-3">
-            <img class="account-plan--icon" src="assets/img/icons/sphere.svg" alt="">
-            <span class="account-plan--title">
-              Starter Plan
-            </span>
-          </div>
+      <div class="mobile-wrapper">
+        <div class="badge-plan compact starter -mt-35 mb-15">
+          <!-- <img class="badge-plan--mask" src="assets/img/items/badge-pattern.svg" alt=""> -->
+          <div class="d-flex align-items-center">
+            <img class="badge-plan--icon" src="assets/img/icons/sphere.svg" alt="">
 
-          <div class="d-flex align-items-center space-x-3">
-            <span class="txt_sm color_brand">
-              Upgrade
-            </span>
+            <div class="badge-plan--identity">
+              <h5 class="title">
+                Starter Plan
+              </h5>
+              <span class="type">Free</span>
+            </div>
 
-            <i data-feather="chevron-right" width="16" height="16"></i>
+            <div class="space-x-3 badge-plan--upgrade">
+              <i data-feather="chevron-right"></i>
+            </div>
           </div>
         </div>
       </div>
 
       <ul class="account-menu">
-        <li :class="{ 'active': settingIsOpen && currentSetting == 'Account & Profile' }"
-          @click="switchSetting('Account & Profile')">
+        <li :class="{ 'active': settingIsOpen && currentSetting == 'Account' }" @click="switchSetting('Account')">
           <a href="#" class="d-flex align-items-center justify-content-between">
             <div class="d-flex align-items-center">
               <i data-feather="user" width="16" height="16"></i>
-              <span class="ml-2">Account & Profile</span>
+              <span class="ml-2">Account</span>
             </div>
             <i data-feather="chevron-right" width="16" height="16"></i>
           </a>
         </li>
 
-        <li :class="{ 'active': settingIsOpen &&  currentSetting == 'Social Profiles' }"
-          @click="switchSetting('Social Profiles')">
+        <li :class="{ 'active': settingIsOpen &&  currentSetting == 'Profile' }" @click="switchSetting('Profile')">
           <a href="#" class="d-flex align-items-center justify-content-between">
             <div class="d-flex align-items-center">
               <i data-feather="link" width="16" height="16"></i>
-              <span class="ml-2">Social Profiles</span>
+              <span class="ml-2">Profile</span>
             </div>
             <i data-feather="chevron-right" width="16" height="16"></i>
           </a>
@@ -995,11 +995,89 @@
     </div>
 
 
-    <div x-transition x-show="settingIsOpen && currentSetting == 'Account & Profile'" class="mt-15">
+    <div x-transition x-show="settingIsOpen && currentSetting == 'Account'" class="mt-15">
+      <div class="mobile-wrapper">
+        <div class="form-group">
+          <div class="space-y-30">
+            <div class="space-y-10">
+              <span class="nameInput">Username</span>
+              <input type="text" class="form-control input_white" value="bank_bca" />
+              <button class="btn btn-primary btn-sm" disabled>Save Changes</button>
+            </div>
+
+
+            <div class="space-y-10">
+              <span class="nameInput">Email</span>
+              <div class="confirm">
+                <input type="text" class="form-control" placeholder="Enter your email" value="twibbonize@bca.co.id"
+                  disabled>
+                <a href="#" class="confirm-btn btn btn-ghost btn-sm">Change</a>
+              </div>
+
+            </div>
+
+
+            <div class="space-y-10">
+              <span class="nameInput">Connect with your Social Media</span>
+              <div class="google-connect">
+                <div class="d-flex align-items-center space-x-4">
+                  <img src="assets/img/icons/google.svg" alt="">
+                  <span class="color_black fw-bold">Google</span>
+                  <span class="color_text">Bank BCA</span>
+                </div>
+
+                <button class="disconnect">
+                  <i data-feather="x" width="16" height="16"></i>
+                </button>
+              </div>
+
+              <div class="facebook-connect unlinked">
+                <div class="d-flex">
+                  <img class="mr-2" src="assets/img/icons/facebook-box.svg" width="16" height="16" alt="">
+                  <span class="fw-bold">
+                    Connect to Facebook
+                  </span>
+                </div>
+              </div>
+
+              <div class="twitter-connect">
+                <div class="d-flex align-items-center space-x-4">
+                  <img class="mr-2" src="assets/img/icons/twitter.svg" height="10" alt="">
+                  <span class="fw-bold">Twitter</span>
+                  <span class="color-grey-light fw-normal">BankBCA</span>
+                </div>
+
+
+                <button class="disconnect">
+                  <i data-feather="x" width="16" height="16"></i>
+                </button>
+              </div>
+            </div>
+
+
+            <hr class="d-block">
+
+            <div class="space-y-10">
+              <span class="nameInput">
+                Delete Account
+              </span>
+
+              <p class="color_text">
+                You can delete your account if it’s no longer in use. Please note that the account will be permanently
+                deleted.
+              </p>
+              <button class="btn btn-danger btn-outline btn-sm mt-3">Delete Account</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div x-transition x-show="settingIsOpen && currentSetting == 'Profile'" class="mt-15">
       <div class="mobile-wrapper" style="padding-bottom: 64px;">
         <div class="form-group">
-          <div class="space-y-40">
-
+          <div class="space-y-30">
             <div class="avatars align-items-start space-x-20 mb-30">
               <div id="profile-container">
                 <img id="profileImage" src="assets/img/avatars/bca.png" alt="Avatar" class="avatar border" />
@@ -1019,37 +1097,11 @@
               <p class="txt_xs fw-light">Recommended size: 1500x500px</p>
             </div>
 
-            <hr>
-
-            <div class="space-y-10">
-              <span class="nameInput">Username</span>
-              <input type="text" class="form-control input_white" value="bank_bca" />
-              <small class="txt_xs color_text">Your Twibbonize URL: https://twb.nz/@bank_bca</small>
-            </div>
-
-
-            <div class="space-y-10">
-              <span class="nameInput">Email</span>
-              <div class="confirm">
-                <input type="text" class="form-control" placeholder="Enter your email" value="twibbonize@bca.co.id"
-                  disabled>
-                <a href="#" class="confirm-btn btn btn-ghost btn-sm">Change</a>
-              </div>
-
-            </div>
-
             <div class="space-y-10">
               <span class="nameInput">Display name</span>
               <input type="text" class="form-control input_white" value="Bank BCA" />
               <small class="txt_xs color_text">Use your real name, nickname, organization, or institution. It’s
                 all up to you!</small>
-            </div>
-
-
-
-            <div class="space-y-10">
-              <span class="nameInput">Website</span>
-              <input type="text" class="form-control input_white" value="bca.co.id/social-media/" />
             </div>
 
             <div class="space-y-10">
@@ -1063,94 +1115,20 @@
               <small class="txt_xs color_text">Brief description for your profile.</small>
             </div>
 
-            <hr class="d-block">
-
             <div class="space-y-10">
-              <span class="nameInput">
-                Delete Account
-              </span>
-
-              <p class="color_text">
-                You can delete your account if it’s no longer in use. Please note that the account will be permanently
-                deleted.
-              </p>
-
-
-              <button class="btn btn-danger btn-outline btn-sm mt-3">Delete Account</button>
+              <span class="nameInput">Website</span>
+              <input type="text" class="form-control input_white" value="bca.co.id/social-media/" />
             </div>
 
-          </div>
-        </div>
-      </div>
-
-      <div class="action-area">
-        <div class="mobile-wrapper">
-          <button class="btn btn-primary btn-sm d-block w-100">
-            Save
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div x-transition x-show="settingIsOpen && currentSetting == 'Social Profiles'" class="mt-15">
-      <div class="mobile-wrapper" style="padding-bottom: 64px;">
-        <div class="form-group">
-          <div class="space-y-40">
             <div class="space-y-10">
-              <span class="nameInput d-block">Google</span>
-              <div class="google-connect">
-                <div class="d-flex align-items-center space-x-4">
-                  <img src="assets/img/icons/google.svg" alt="">
-                  <span class="color_black fw-bold">Google</span>
-                  <span class="color_text">Bank BCA</span>
-                </div>
-
-                <button class="disconnect">
-                  <i data-feather="x" width="16" height="16"></i>
-                </button>
-              </div>
-
-              <p class="txt_xs color_text">One-click sign in (not shown on profile)</p>
-            </div>
-
-
-            <div class="space-y-10">
-              <div class="d-flex  justify-content-between">
-                <span class="nameInput">Facebook</span>
-                <span class="txt_xs color_text">this will be shown on your profile</span>
-              </div>
+              <span class="nameInput">Facebook</span>
               <input type="text" class="form-control input_white" />
-
-              <button class="btn facebook-btn btn-sm">
-                <img class="mr-2" src="assets/img/icons/facebook-box.svg" width="16" height="16" alt="">
-                Connect to Facebook
-              </button>
-
-              <p class="txt_xs color_text">One-click sign in</p>
             </div>
 
 
             <div class="space-y-10">
-              <div class="d-flex  justify-content-between">
-                <span class="nameInput">Twitter</span>
-                <span class="txt_xs color_text">this will be shown on your profile</span>
-              </div>
+              <span class="nameInput">Twitter</span>
               <input type="text" class="form-control input_white" value="BankBCA" placeholder="Twitter username" />
-
-              <div class="twitter-connect">
-                <div class="d-flex align-items-center space-x-4">
-                  <img class="mr-2" src="assets/img/icons/twitter.svg" height="10" alt="">
-                  <span class="fw-bold">Twitter</span>
-                  <span class="color-grey-light fw-normal">BankBCA</span>
-                </div>
-
-
-                <button class="disconnect">
-                  <i data-feather="x" width="16" height="16"></i>
-                </button>
-              </div>
-
-              <p class="txt_xs color_text">One-click sign in</p>
             </div>
 
 
@@ -1191,7 +1169,7 @@
     <div x-transition x-show="settingIsOpen && currentSetting == 'Security & Privacy'" class="mt-15">
       <div class="mobile-wrapper">
         <div class="form-group">
-          <div class="space-y-40">
+          <div class="space-y-30">
             <div class="space-y-10">
               <span class="nameInput">Who can see your supported campaigns?</span>
               <select class="form-select custom-select input_white">
@@ -1202,6 +1180,10 @@
               <button class="btn btn-primary btn-sm" disabled>Update</button>
             </div>
             <hr>
+
+            <h3>
+              Change Password
+            </h3>
             <div class="space-y-10">
               <span class="nameInput">Current Password</span>
               <input type="password" class="form-control input_white" placeholder="Enter your current password" />
@@ -1220,9 +1202,9 @@
 
     <div x-transition x-show="settingIsOpen && currentSetting == 'Billing'" class="mt-15">
       <div class="mobile-wrapper">
-        <div class="space-y-40">
+        <div class="space-y-30">
           <div class="badge-plan starter">
-            <img class="badge-plan--mask" src="assets/img/items/badge-pattern.svg" alt="">
+            <!-- <img class="badge-plan--mask" src="assets/img/items/badge-pattern.svg" alt=""> -->
             <div class="d-flex align-items-center">
               <img class="badge-plan--icon" src="assets/img/icons/sphere.svg" alt="">
 
@@ -1233,8 +1215,8 @@
                 <span class="type">Free</span>
               </div>
 
-              <div class="space-x-3">
-                <span>Upgrade your plan</span>
+              <div class="space-x-3 badge-plan--upgrade">
+                <a href="#">Upgrade</a>
                 <i data-feather="chevron-right"></i>
               </div>
             </div>
@@ -1304,7 +1286,7 @@
                       </p>
                     </div>
                     <div class="col-12 col-lg-4">
-                      <a class="align-items-center d-flex mt-3 mt-lg-0 space-x-3">
+                      <a href="#" class="align-items-center d-flex mt-3 mt-lg-0 space-x-3">
                         <i data-feather="download" width="16" height="16"></i>
                         <span>Download Invoice</span>
                       </a>
@@ -1389,14 +1371,14 @@
 
               <div class="mobile-wrapper space-y-10">
                 <div class="d-flex justify-content-between switch_item align-items-center">
-                  <span> Notification Push </span>
+                  <span> Push Notification </span>
                   <input type="checkbox" id="module_replies_push_mb">
                   <label for="module_replies_push_mb">Toggle</label>
                 </div>
                 <hr class="color_text">
                 <div class="d-flex justify-content-between switch_item align-items-center">
-                  <span> Notification Email </span>
-                  <input type="checkbox" id="module_replies_email_mb" >
+                  <span> Email </span>
+                  <input type="checkbox" id="module_replies_email_mb">
                   <label for="module_replies_email_mb">Toggle</label>
                 </div>
                 <hr class="color_text">
@@ -1417,14 +1399,14 @@
 
               <div class="mobile-wrapper space-y-10">
                 <div class="d-flex justify-content-between switch_item align-items-center">
-                  <span> Notification Push </span>
-                  <input type="checkbox" id="campaign_achievement_push_mb" ><label
+                  <span> Push Notification </span>
+                  <input type="checkbox" id="campaign_achievement_push_mb"><label
                     for="campaign_achievement_push_mb">Toggle</label>
                 </div>
                 <hr class="color_text">
                 <div class="d-flex justify-content-between switch_item align-items-center">
-                  <span> Notification Email </span>
-                  <input type="checkbox" id="campaign_achievement_email_mb" ><label
+                  <span> Email </span>
+                  <input type="checkbox" id="campaign_achievement_email_mb"><label
                     for="campaign_achievement_email_mb">Toggle</label>
                 </div>
                 <hr class="color_text">
@@ -1445,14 +1427,14 @@
 
               <div class="mobile-wrapper space-y-10">
                 <div class="d-flex justify-content-between switch_item align-items-center">
-                  <span> Notification Push </span>
-                  <input type="checkbox" id="campaign_summary_push_mb" ><label
+                  <span> Push Notification </span>
+                  <input type="checkbox" id="campaign_summary_push_mb"><label
                     for="campaign_summary_push_mb">Toggle</label>
                 </div>
                 <hr class="color_text">
                 <div class="d-flex justify-content-between switch_item align-items-center">
-                  <span> Notification Email </span>
-                  <input type="checkbox" id="campaign_summary_email_mb" ><label
+                  <span> Email </span>
+                  <input type="checkbox" id="campaign_summary_email_mb"><label
                     for="campaign_summary_email_mb">Toggle</label>
                 </div>
                 <hr class="color_text">
@@ -1481,8 +1463,8 @@
 
               <div class="mobile-wrapper space-y-10">
                 <div class="d-flex justify-content-between switch_item align-items-center">
-                  <span> Notification Email </span>
-                  <input type="checkbox" id="product_feature_email_mb" ><label
+                  <span> Email </span>
+                  <input type="checkbox" id="product_feature_email_mb"><label
                     for="product_feature_email_mb">Toggle</label>
                 </div>
                 <hr class="color_text">
@@ -1503,9 +1485,8 @@
 
               <div class="mobile-wrapper space-y-10">
                 <div class="d-flex justify-content-between switch_item align-items-center">
-                  <span> Notification Email </span>
-                  <input type="checkbox" id="trending_email_mb" ><label
-                    for="trending_email_mb">Toggle</label>
+                  <span> Email </span>
+                  <input type="checkbox" id="trending_email_mb"><label for="trending_email_mb">Toggle</label>
                 </div>
                 <hr class="color_text">
               </div>
@@ -1546,8 +1527,8 @@
 
     const app = function () {
       return {
-        currentSetting: 'Notifications',
-        settingIsOpen: true,
+        currentSetting: 'Account',
+        settingIsOpen: false,
         switchSetting: function (setting) {
           this.currentSetting = setting
           this.settingIsOpen = true
