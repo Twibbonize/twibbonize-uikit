@@ -2614,6 +2614,45 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/assets\/img\/icons\/account-icons\/email.png" : {
+      "ft" : 32768,
+      "iS" : 29524,
+      "oA" : 0,
+      "oAP" : "\/assets\/img\/icons\/account-icons\/email.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/assets\/img\/icons\/account-icons\/language.png" : {
+      "ft" : 32768,
+      "iS" : 28507,
+      "oA" : 0,
+      "oAP" : "\/assets\/img\/icons\/account-icons\/language.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/assets\/img\/icons\/account-icons\/password.png" : {
+      "ft" : 32768,
+      "iS" : 41222,
+      "oA" : 0,
+      "oAP" : "\/assets\/img\/icons\/account-icons\/password.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/assets\/img\/icons\/Badge.svg" : {
       "ft" : 2097152,
       "miP" : 0,
