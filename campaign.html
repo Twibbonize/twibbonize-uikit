@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="title" content="Raroin" />
+  <meta name="description" content="where campaigns meet you" />
+  <meta name="keywords" content="twibbonize, twibbon, campaign, bingkai, frame" />
+  <meta name="robots" content="index, follow" />
+  <meta name="language" content="English" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Twibbonize - Where Campaigns Meet You!</title>
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="shortcut icon" href="/assets/img/icons/favicon-32x32.png" sizes="32x32" type="image/x-icon">
+  <link rel="shortcut icon" href="/assets/img/icons/favicon-16x16.png" sizes="16x16" type="image/x-icon">
+
+  <!-- 🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈 STYLES -->
+  <link rel="stylesheet" href="assets/css/plugins/remixicon.css" />
+  <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css?v=0.1" />
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+
+<body>
+  <div class="overflow-hidden">
+
+
+    <!-- SIDEBAR -->
+    <div class="expand_menu">
+      <div class="overlay">
+        <div class="menu-wrapper">
+          <div class="menu-container">
+            <div class="darkmode-wrapper">
+              <div class="switch_item toggle-darkmode checked">
+                <input type="checkbox" id="darkmode" checked>
+                <label for="darkmode"></label>
+              </div>
+            </div>
+
+            <button class="btn-close-menu toggle-expand-menu">
+              <i data-feather="x"></i>
+            </button>
+
+            <ul class="menu-list">
+              <li class="menu-item">
+                <a href="explore.html">
+                  Explore
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="//marketplace.twibbonize.com">
+                  Marketplace
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="//guide.twibbonize.com">
+                  Guide
+                </a>
+              </li>
+
+              <li class="menu-item">
+                <a href="//news.twibbonize.com">
+                  News
+                </a>
+              </li>
+
+              <li class="menu-item">
+                <a href="//about.twibbonize.com">
+                  About
+                </a>
+              </li>
+            </ul>
+
+            <a class="btn-change-lang">
+              <i data-feather="globe"></i>
+              <span>English (United States)</span>
+            </a>
+
+            <div class="profile-section">
+              <div class="profile-avatar">
+                <img class="profile-img" src="assets/img/avatars/twibbonize-avatar.jpg" alt="avatar">
+                <div class="profile-name">
+                  <h5>Yoga Altariz</h5>
+                  <a href="account_settings.html">Manage your account</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END OF SIDEBAR -->
+
+    <!-- NAVBAR -->
+    <header class="header__explore">
+      <div class="container">
+        <nav class="header-wrapper">
+          <div class="header__logo">
+            <a href="home.html">
+              <img class="header__brand" src="assets/img/logos/Logo-twb.svg" alt="logo" />
+              <img class="header__brand-mobile" src="assets/img/logos/logo-twb-icon.svg" alt="logo" />
+            </a>
+          </div>
+
+          <div x-data class="header__center">
+            <div class="header__search">
+              <i data-feather="search" width="16" style="position: absolute; top: 12px; color: #ababab"></i>
+              <input type="search" placeholder="Search any campaigns"
+                @input.debounce.300ms="$dispatch('searching',{query: $event.target.value})" />
+            </div>
+          </div>
+
+          <div class="header__menu">
+
+            <button class="header__bar-menu toggle-expand-menu">
+              <i data-feather="menu" width="24" height="24"></i>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- END OF NAVBAR -->
+
+    <div class="main-wrapper">
+      <div class="frame-module bg-light">
+        <div class="frame-module--content space-x-10">
+          <div class="frame-module--chosen">
+            <img src="assets/img/national-woman-day/11f42fb8-f5c8-4e09-a0b2-ed8e34b7cc0b.png" alt="">
+          </div>
+          <!-- <div class="frame-module--selection">
+            <a href="#" class="frame-option">
+              <img src="assets/img/national-woman-day/11f42fb8-f5c8-4e09-a0b2-ed8e34b7cc0b.png" alt="">
+            </a>
+            <a href="#" class="frame-option">
+              <img src="assets/img/national-woman-day/99113e5a-5115-4e91-a048-39e5df448f84.png" alt="">
+            </a>
+            <a href="#" class="frame-option">
+              <img src="assets/img/national-woman-day/d6df22a8-1136-4311-8407-20a4375dfa4c.png" alt="">
+            </a>
+          </div> -->
+        </div>
+
+        <div class="frame-module--actions">
+          <div></div>
+          <div class="frame-module--selection">
+            <a href="#" class="frame-option">
+              <img src="assets/img/national-woman-day/11f42fb8-f5c8-4e09-a0b2-ed8e34b7cc0b.png" alt="">
+            </a>
+            <a href="#" class="frame-option">
+              <img src="assets/img/national-woman-day/99113e5a-5115-4e91-a048-39e5df448f84.png" alt="">
+            </a>
+            <a href="#" class="frame-option">
+              <img src="assets/img/national-woman-day/d6df22a8-1136-4311-8407-20a4375dfa4c.png" alt="">
+            </a>
+          </div>
+          <div>
+            <button class="btn btn-primary">Choose Photo</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="campaign-info">
+        <div class="container">
+          <h1 class="campaign-info--title">
+            2022 National Women's Month Celebration
+          </h1>
+
+          <div class="campaign-info--avatar">
+            <a href="profile.html" class="photo">
+              <img src="assets/img/avatars/pcw-ph.svg" alt="Avatar">
+            </a>
+            <div href="profile.html" class="profile">
+              <a href="profile.html" class="name">Philippine Commission on Women</a>
+              <ul class="username-follow">
+                <li>
+                  @pcw_gov_ph
+                </li>
+                <li>
+                  <a href="#">Follow</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+
+          <nav class="campaign-info--meta mt-2">
+            <div class="meta">
+              <i data-feather="users" width="16"></i>
+              <span class="ml-2">202,595 </span>
+            </div>
+
+            <div class="meta">
+              <i data-feather="clock" width="16"></i>
+              <span class="ml-2">5 Months Ago</span>
+            </div>
+
+            <div class="flex-fill "></div>
+
+            <button class="btn btn-transparent btn-sm">
+              <i data-feather="link" width="16"></i>
+            </button>
+
+            <button class="btn btn-transparent btn-sm">
+              <i data-feather="share" width="16"></i>
+            </button>
+
+            <button class="btn btn-transparent btn-sm">
+              <i data-feather="more-horizontal" width="16"></i>
+            </button>
+          </nav>
+
+          <div class="tabs-wrapper border-b mt-20">
+            <ul class="twb-tabs">
+              <li class="twb-tab is-active">
+                <a>About</a>
+              </li>
+
+              <li class="twb-tab" @click="switchTab('supported campaigns')">
+                <a>
+                  <i data-feather="message-square" width="16" height="16"></i>
+                  <span class="ml-1">Comments</span>
+                </a>
+              </li>
+
+              <li class="twb-tab" @click="switchTab('supported campaigns')">
+                <a>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" role="img"
+                    aria-labelledby="feedIconTitle" stroke="#000000" stroke-width="2" stroke-linecap="square"
+                    stroke-linejoin="miter" fill="none" color="#000000">
+                    <title id="feedIconTitle">Feed</title>
+                    <circle cx="7.5" cy="7.5" r="2.5" />
+                    <path d="M22 13H2" />
+                    <path d="M18 6h-5m5 3h-5" />
+                    <path d="M5 2h14a3 3 0 0 1 3 3v17H2V5a3 3 0 0 1 3-3z" />
+                  </svg>
+                  <span class="ml-1">Support Activity</span>
+                </a>
+              </li>
+
+              <li class="slider" role="presentation"></li>
+            </ul>
+          </div>
+
+          <div class="content-tab prose">
+            <p>
+              The 2022 National Women’s Month Celebration (NWMC) endeavors to highlight the gains achieved for women and
+              girls, assess actions towards gender equality and look forward to steps that must be taken to ensure
+              progress in empowering women. With the country still reeling from the COVID-19 pandemic, studies and data
+              show that the health crisis stalled movements towards gender equality, worsening inequalities, further
+              exposing gender gaps, and exacerbating vulnerabilities in social and political, and economic aspects.
+            </p>
+
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/WtF72i2ODJc"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+
+            <p>
+              Hence, in this observance, the PCW calls on government agencies and stakeholders to celebrate the gains
+              and be proactive in preventing backsliding from what we have achieved in gender equality and women’s
+              empowerment (GEWE). It also serves as an opportune time to give Juanas the power to lay down the blueprint
+              for future leaders regarding essential gender issues that demand immediate attention and solution. This
+              Women’s Month, Juanas take center stage – standing up for their rights, challenging stereotypes, breaking
+              barriers, and serving as pioneers of change. This year, the nation recognizes women’s valuable role in
+              society and proves that inclusive and sustainable development is only possible when gender equality
+              becomes obtainable.
+            </p>
+
+            <p class="fw-bold">
+              HERstory: How Did it Start?
+            </p>
+
+            <p>
+              Culminating the 6-year theme <strong>“WE Make CHANGE Work for Women”</strong> this year poses a statement
+              and a question: Did WE Make CHANGE Work for Women? How and to what extent? With this theme, stakeholders
+              can gauge the changes implemented towards GEWE, pursuant to laws on women, particularly the Magna Carta of
+              Women.
+
+
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- END OF MAIN CONTENT -->
+
+  </div>
+
+
+  <!-- 🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈 SCRIPTS -->
+  <script src="assets/js/jquery-3.6.0.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/gsap.min.js"></script>
+  <script src="assets/js/ScrollTrigger.min.js"></script>
+  <script src="assets/js/sticky-sidebar.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/plugin/relativeTime.js"></script>
+  <script src="//unpkg.com/alpinejs" defer></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+
+  <script>
+    feather.replace()
+
+  </script>
+</body>
+
+</html>

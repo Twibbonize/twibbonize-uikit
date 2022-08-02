@@ -1539,6 +1539,16 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/assets\/img\/avatars\/pcw-ph.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/img\/avatars\/pcw-ph.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/assets\/img\/avatars\/pemprov-dki.jpeg" : {
       "ft" : 16384,
       "iS" : 61027,
@@ -4208,6 +4218,45 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/assets\/img\/national-woman-day\/11f42fb8-f5c8-4e09-a0b2-ed8e34b7cc0b.png" : {
+      "ft" : 32768,
+      "iS" : 69977,
+      "oA" : 0,
+      "oAP" : "\/assets\/img\/national-woman-day\/11f42fb8-f5c8-4e09-a0b2-ed8e34b7cc0b.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/assets\/img\/national-woman-day\/99113e5a-5115-4e91-a048-39e5df448f84.png" : {
+      "ft" : 32768,
+      "iS" : 473446,
+      "oA" : 0,
+      "oAP" : "\/assets\/img\/national-woman-day\/99113e5a-5115-4e91-a048-39e5df448f84.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/assets\/img\/national-woman-day\/d6df22a8-1136-4311-8407-20a4375dfa4c.png" : {
+      "ft" : 32768,
+      "iS" : 78343,
+      "oA" : 0,
+      "oAP" : "\/assets\/img\/national-woman-day\/d6df22a8-1136-4311-8407-20a4375dfa4c.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/assets\/img\/news\/App-Launching-EN-1.jpeg" : {
       "ft" : 16384,
       "iS" : 159217,
@@ -6217,6 +6266,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/build\/.gitignore",
+      "oF" : 0
+    },
+    "\/campaign_page.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/campaign_page.html",
       "oF" : 0
     },
     "\/campaign.html" : {

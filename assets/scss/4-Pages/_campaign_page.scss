@@ -1,82 +1,268 @@
 .ads {
-    width: auto;
-    max-height: 120px;
+  width: auto;
+  max-height: 120px;
 }
 
 .potrait-ads {
 
-    img {
-        width: 160px;
-    }
+  img {
+    width: 160px;
+  }
 }
 
 .campaign__title {
-    font-size: 34px;
-    font-weight: 700;
-    margin-top: 32px;
-    line-height: 44px;
+  font-size: 34px;
+  font-weight: 700;
+  margin-top: 32px;
+  line-height: 44px;
 }
 
 
 .more {
-    display: none;
+  display: none;
 }
 
 
 .main-section {
-    width: 430px;
+  width: 430px;
 }
 
 
-.frame-module {
-    padding: 5%;
-    padding-top: 0;
-    display: flex;
-    justify-content: center;
+// .frame-module {
+//   padding-top: 0;
+//   display: flex;
+//   justify-content: center;
+//   flex-grow: 1;
+
+//   .chosen-frame img {
+//     border-top-left-radius: 8px;
+//     border-bottom-left-radius: 8px;
+//     // border-top-right-radius: 8px;
+//     max-width: 430px;
+//   }
+
+//   .frame-options {
+//     display: flex;
+//     flex-direction: column;
+//     overflow: scroll;
+//     // max-width: 100%;
+//     height: 430px;
+//     padding: 24px;
+//     border: 1px solid $color_stroke;
+//     align-items: center;
+//     border-top-right-radius: 8px;
+//     border-bottom-right-radius: 8px;
+
+
+//     li.active {
+//       outline: $color_brand 1px solid;
+//     }
+
+//     li {
+//       border-radius: 5px;
+//       padding: 8px;
+//       background-color: $color-grey;
+//     }
+
+//     li:not(:last-child) {
+//       margin-bottom: 16px;
+//     }
+
+//     img {
+//       width: 64px;
+//       border-radius: 5px;
+//     }
+//   }
+// }
+
+.campaign-wrapper {
+  max-width: 1056px;
+  margin: auto;
+}
+
+
+.main-wrapper {
+  display: flex;
+  align-items: stretch;
+  flex-basis: auto;
+  flex-shrink: 0;
+  max-width: 100%;
+  flex-flow: row nowrap;
+  // position: absolute;
+  // inset: 0;
+  height: 100vh;
+
+
+  .frame-module {
+    flex-shrink: 1;
     flex-grow: 1;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    flex-basis: auto;
+    flex-direction: column;
+    max-width: 100%;
+    align-items: center;
+    padding-top: 80px;
+    position: relative;
 
-    .chosen-frame img {
-        border-top-left-radius: 8px;
-        border-bottom-left-radius: 8px;
-        // border-top-right-radius: 8px;
-        max-width: 430px;
-    }
+    &--content {
+      position: relative;
+      display: flex;
+      width: 100%;
+      height: 100%;
 
-    .frame-options {
+      .frame-module--chosen {
+        flex-grow: 1;
+        background-color: $color_light;
+        border-radius: 8px;
         display: flex;
         flex-direction: column;
-        overflow: scroll;
-        // max-width: 100%;
-        height: 430px;
-        padding: 24px;
-        border: 1px solid $color_stroke;
         align-items: center;
-        border-top-right-radius: 8px;
-        border-bottom-right-radius: 8px;
+        justify-content: center;
 
-
-        li.active {
-            outline: $color_brand 1px solid;
+        img {
+          max-height: 100%;
+          max-width: 420px;
         }
+      }
 
-        li {
-            border-radius: 5px;
-            padding: 8px;
-            background-color: $color-grey;
-        }
 
-        li:not(:last-child) {
-            margin-bottom: 16px;
+    }
+
+    &--actions {
+      .frame-module--selection {
+        display: flex;
+        height: 100%;
+        // padding: 0 24px;
+        // padding-top: 24px;
+        // border-left: 1px solid $color_stroke;
+        // border-right: 1px solid $color_stroke;
+        background: $color_white;
+
+        .frame-option {
+          display: block;
+          padding: 8px;
+          background: $color-grey-light;
+          border: 1px solid $color_stroke;
+          border-radius: 8px;
+
+
+          &:not(:last-child) {
+            margin-right: 16px;
+          }
         }
 
         img {
-            width: 64px;
-            border-radius: 5px;
+          width: 32px;
         }
-    }
-} 
+      }
 
-.campaign-wrapper {
-    max-width: 1056px;
-    margin: auto;
+      position: absolute;
+      bottom: 0%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 24px;
+      border-top: 1px solid $color_stroke;
+    //   border-right: 1px solid $color_stroke;
+
+      background: $color_white;
+    }
+  }
+
+  .campaign-info {
+    width: 515px;
+    padding-top: 120px;
+
+    overflow-y: scroll;
+
+    &--title {
+      font-size: 28px;
+    }
+
+    &--avatar {
+      margin-top: 16px;
+      display: flex;
+      align-items: center;
+
+      .photo {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .profile {
+        margin-left: 8px;
+
+        .name {
+          font-size: 14px;
+          color: $color_black;
+          font-weight: 600;
+          line-height: 0;
+        }
+
+        .username-follow {
+          display: flex;
+          align-items: center;
+          font-size: 12px;
+          color: $color_text;
+
+          & li:first-child {
+            margin-right: 8px;
+
+            &::after {
+              width: 4px;
+              height: 4px;
+              display: inline-block;
+              background: $color-grey-icon;
+              font-size: 1;
+              border-radius: 50%;
+              content: '';
+              margin-bottom: 2px;
+              margin-left: 4px;
+            }
+          }
+        }
+      }
+    }
+
+
+    &--meta {
+      display: flex;
+      align-items: center;
+
+      .meta {
+        font-size: 14px;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        color: $color_text;
+
+        &:not(:last-child) {
+          margin-right: 16px;
+        }
+      }
+    }
+  }
+}
+
+
+.prose {
+  font-size: 1rem;
+  line-height: 1.7777778;
+  color: $color_text;
+
+  * {
+    margin-top: 1.3333333em;
+    margin-bottom: 1.3333333em;
+  }
 }
